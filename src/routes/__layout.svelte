@@ -4,6 +4,11 @@
 </script>
 
 <main>
-  <slot />
-</main>
+  <div class="wrapper">
+    <div class="logo">Alices</div>
 
+    <div class="cbsc">Café • Bar • Saisonnier • Culturel</div>
+
+    <slot />
+  </div>
+</main>
