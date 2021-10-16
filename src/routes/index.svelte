@@ -38,6 +38,12 @@
 
 <hr />
 
-<div class="social_networks">Facebook - Insta - Mapster</div>
+<div class="social_networks">
+  Facebook
+  -
+  <a href="https://www.instagram.com/alices.lille/" target="_blank">Insta</a>
+  -
+  Mapster
+</div>
 
 <hr />
