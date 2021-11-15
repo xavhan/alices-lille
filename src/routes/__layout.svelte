@@ -30,6 +30,12 @@
 
     <div class="cbsc">Café • Bar • Saisonnier • Culturel</div>
 
+    <div class="address">
+      <a href="https://goo.gl/maps/whMaXe8PMdZi9cXB7">
+        12 rue des 3 couronnes, 59000 Lille
+      </a>
+    </div>
+
     <slot />
   </div>
 </main>
