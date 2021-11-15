@@ -1,74 +1,94 @@
 :root {
-  --alices-red: hsl(351, 74%, 37%);
-  --alices-darkred: #4b0f1c;
-  --alices-brightred: #c51e30;
-  --alices-white: #ffffff;
-  --alices-gold: #dab398;
-  --spacing: 10px;
-  --spacing-big: 20px;
-  --spacing-huge: 40px;
+    --alices-red: hsl(351, 74%, 37%);
+    --alices-darkred: #4b0f1c;
+    --alices-brightred: #c51e30;
+    --alices-white: #ffffff;
+    --alices-gold: #dab398;
+    --spacing: 10px;
+    --spacing-big: 20px;
+    --spacing-huge: 40px;
 }
-html,
+
 body {
-  height: 100%;
+    font-family: 'Bebas Neue', sans-serif;
+    flex-direction: column;
+    background-color: var(--alices-red);
+    color: var(--alices-white);
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    padding: 60px;
 }
-body {
-  flex-direction: column;
-  background-color: var(--alices-red);
-  color: var(--alices-white);
-  text-align: center;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-}
+
 .wrapper {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
 }
+
 .logo {
-  margin-bottom: var(--spacing-big);
-  font-size: 60px;
+    margin-bottom: var(--spacing-big);
+    font-size: 60px;
 }
+
 .cbsc {
-  color: var(--alices-gold);
-  font-size: 20px;
-  margin-bottom: var(--spacing-huge);
+    color: var(--alices-gold);
+    font-family: 'Trueno Light';
+    font-size: 20px;
+    margin-bottom: var(--spacing-big);
 }
+
+.address {
+    margin-bottom: var(--spacing-huge);
+}
+
 .buttons {
-  margin-bottom: var(--spacing-huge);
+    margin-bottom: var(--spacing-huge);
 }
+
 .buttons a {
-  display: inline-block;
-  text-transform: uppercase;
-  color: var(--alices-white);
-  padding: 1.5rem 2rem;
-  border-radius: 40px;
-  margin-bottom: var(--spacing);
-  text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--alices-white);
+    padding: 1.5rem 2rem;
+    border-radius: 40px;
+    margin-bottom: var(--spacing);
+    text-decoration: none;
 }
+
 .buttons a:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 .menu a {
-  background-color: var(--alices-darkred);
+    background-color: var(--alices-darkred);
 }
+
 .map a {
-  background-color: var(--alices-brightred);
+    background-color: var(--alices-brightred);
 }
+
 hr {
-  border-color: var(--alices-gold);
+    border-color: var(--alices-gold);
 }
-.open_title {
-  color: var(--alices-gold);
+
+.title {
+    color: var(--alices-gold);
+    font-family: 'Trueno Light';
 }
+
 .open_hours {
-  padding-top: var(--spacing-big);
-  padding-bottom: var(--spacing-big);
+    padding-top: var(--spacing-big);
+    padding-bottom: var(--spacing-big);
+    line-height: 1.3;
+    margin-bottom: var(--spacing-big);
 }
+
 .social_networks {
-  padding-top: var(--spacing);
-  padding-bottom: var(--spacing);
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+}
+
+a, a:visited {
+    color: var(--alices-white);
 }

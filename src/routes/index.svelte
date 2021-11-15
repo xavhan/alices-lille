@@ -5,14 +5,11 @@
   export const prerender = true;
 </script>
 
-<script lang="ts">
-</script>
-
 <svelte:head>
   <title>Alices | Lille</title>
 </svelte:head>
 
-<div class="buttons">
+<!-- <div class="buttons">
   <div class="menu">
     <a href="carte"> Découvrir la carte </a>
   </div>
@@ -20,11 +17,11 @@
   <div class="map">
     <a href="venir"> Nous rendre visite </a>
   </div>
-</div>
+</div> -->
 
 <hr />
 
-<div class="open_title">Horaires d'ouverture</div>
+<div class="title">Horaires d'ouverture</div>
 
 <hr />
 
@@ -38,6 +35,16 @@
 
 <hr />
 
-<div class="social_networks">Facebook - Insta - Mapster</div>
+<div class="title">Reseaux sociaux</div>
 
 <hr />
+
+
+<div class="social_networks">
+  <!-- Facebook
+  - -->
+  <a href="https://www.instagram.com/alices.lille/" target="_blank">Instagram</a>
+  <!-- -
+  Mapster -->
+</div>
+
