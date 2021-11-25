@@ -63,10 +63,8 @@
 
 
 <div class="social_networks">
-  <!-- Facebook
-  - -->
   <a href="https://www.instagram.com/alices.lille/" target="_blank">Instagram</a>
-  <!-- -
-  Mapster -->
+  •
+  <a href="https://www.facebook.com/Alices-100810122354194/" target="_blank">Facebook</a>
 </div>
 
