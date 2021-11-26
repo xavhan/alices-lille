@@ -27,14 +27,13 @@ body {
 }
 
 .logo {
-    margin-bottom: var(--spacing-big);
     font-size: 60px;
 }
 
 .cbsc {
     color: var(--alices-gold);
     font-family: 'Trueno Light';
-    font-size: 20px;
+    font-size: 12px;
     margin-bottom: var(--spacing-big);
 }
 
