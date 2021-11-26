@@ -1,18 +1,57 @@
 <script context="module">
   import { browser, dev } from '$app/env';
+  import MenuBlock from '$lib/components/MenuBlock.svelte';
+  import Beers from '$lib/components/Beers.svelte';
+  import Shooters from '$lib/components/Shooters.svelte';
+  import Stack from '$lib/components/Stack.svelte';
   export const hydrate = dev;
   export const router = browser;
   export const prerender = true;
-  import { menu } from './menu';
+  import { taps, bottles, shooters } from './menu';
 </script>
 
 <svelte:head>
   <title>La Carte</title>
 </svelte:head>
 
-{#each menu.categoriesOrder as cat}
+<Stack>
+  <MenuBlock
+    title="Bières Pression"
+    text="Disponibles en 25, 33 ou 50cl"
+  >
+    <Beers beers={taps}></Beers>
+  </MenuBlock>
+
+  <MenuBlock
+    title="Bières Bouteilles"
+  >
+    <Beers beers={bottles}></Beers>
+  </MenuBlock>
+
+  <MenuBlock
+    title="Shooters"
+    text="4€ l’unité & 20€ les 6"
+  >
+    <Shooters shooters={shooters}></Shooters>
+  </MenuBlock>
+
+  <MenuBlock
+    title="Vin"
+    text="Tous nos vins au verre 12cl sont disponibles en bouteille 75cl"
+  >
+    
+  </MenuBlock>
+
+  <MenuBlock
+    title="Cocktails"
+  >
+    
+  </MenuBlock>
+</Stack>
+
+<!-- {#each menu.categoriesOrder as cat}
   <hr />
-  <h2>{menu.categories[cat].label}</h2>
+  <div class="title">{menu.categories[cat].label}</div>
   <hr />
   <dl>
     {#each menu.products[cat] as product}
@@ -31,24 +70,7 @@
     {/each}
   </dl>
 {/each}
-<hr />
+<hr /> -->
 
 <style>
-  hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  dt {
-    display: inline-block;
-  }
-  dd {
-    margin-left: 10px;
-    display: inline-block;
-  }
-  dl div {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 </style>
