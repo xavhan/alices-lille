@@ -31,21 +31,18 @@
   }}
 />
 
-<!-- <div class="buttons">
-  <div class="menu">
-    <a href="carte"> Découvrir la carte </a>
-  </div>
-
-  <div class="map">
-    <a href="venir"> Nous rendre visite </a>
-  </div>
-</div> -->
+<div class="menu">
+  <a href='./carte'>Découvrir la carte</a>
+</div>
 
 <hr />
 
 <div class="title">Horaires d'ouverture</div>
 
 <hr />
+
+<br>
+
 
 <div class="open_hours">
   Mardi au Jeudi: 16h - 00H

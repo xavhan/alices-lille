@@ -26,7 +26,9 @@
 
 <main>
   <div class="wrapper">
-    <div class="logo">Alices</div>
+    <a href="/">
+      <div class="logo">Alices</div>
+    </a>
 
     <div class="cbsc">Café • Bar • Saisonnier • Culturel</div>
 
@@ -39,3 +41,12 @@
     <slot />
   </div>
 </main>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+  }
+</style>

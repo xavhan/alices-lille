@@ -1,4 +1,5 @@
 <script context="module">
+  import SvelteSeo from "svelte-seo";
   import { browser, dev } from '$app/env';
   import MenuBlock from '$lib/components/MenuBlock.svelte';
   import Beers from '$lib/components/Beers.svelte';
@@ -12,9 +13,10 @@
   import { taps, bottles, shooters, wines, cocktails } from './menu';
 </script>
 
-<svelte:head>
-  <title>La Carte</title>
-</svelte:head>
+<SvelteSeo
+  title="Alices | La Carte"
+  description="Venez decouvrir la carte des boissons et tartinables du Alices"
+/>
 
 <Stack>
   <MenuBlock
@@ -49,30 +51,8 @@
   >
     <Cocktails cocktails={cocktails}></Cocktails>
   </MenuBlock>
+
+  <MenuBlock
+    title="Et pleins d'autres pepites au bar !"
+  ></MenuBlock>
 </Stack>
-
-<!-- {#each menu.categoriesOrder as cat}
-  <hr />
-  <div class="title">{menu.categories[cat].label}</div>
-  <hr />
-  <dl>
-    {#each menu.products[cat] as product}
-      <div>
-        <dt>{product.label}</dt>
-        <dd>
-          {menu.categories[cat].formats
-            .reduce(
-              (acc, format) =>
-                product.prices[format] ? [...acc, product.prices[format]] : acc,
-              []
-            )
-            .join(' / ')}
-        </dd>
-      </div>
-    {/each}
-  </dl>
-{/each}
-<hr /> -->
-
-<style>
-</style>

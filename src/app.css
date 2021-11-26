@@ -41,30 +41,19 @@ body {
     margin-bottom: var(--spacing-huge);
 }
 
-.buttons {
+.menu {
+    margin-top: var(--spacing-huge);
     margin-bottom: var(--spacing-huge);
 }
-
-.buttons a {
+.menu a {
     display: inline-block;
     text-transform: uppercase;
     color: var(--alices-white);
-    padding: 1.5rem 2rem;
+    padding: 1rem 1.5rem;
     border-radius: 40px;
-    margin-bottom: var(--spacing);
     text-decoration: none;
-}
-
-.buttons a:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.menu a {
+    font-family: 'Trueno Light';
     background-color: var(--alices-darkred);
-}
-
-.map a {
-    background-color: var(--alices-brightred);
 }
 
 hr {
