@@ -39,7 +39,7 @@
 
   <MenuBlock
     title="Vin"
-    text="Tous nos vins au verre 12cl sont disponibles en bouteille 75cl"
+    text="Au verre ou en bouteille"
   >
     <Wines wines={wines}></Wines>
   </MenuBlock>

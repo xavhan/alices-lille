@@ -17,7 +17,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     display: flex;
-    padding: 60px;
+    padding: 60px 30px;
 }
 
 .wrapper {
