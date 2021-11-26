@@ -2,7 +2,7 @@ import type { Beer, Wine, Cocktail } from '$lib/types';
 export const taps: Beer[] = [
   {
     label: 'Pills - la Bise 5º4',
-    brewery: 'Brasserie Duyck',
+    brewery: 'Duyck',
     prices: {
       25: 2.8,
       50: 5,
@@ -10,7 +10,7 @@ export const taps: Beer[] = [
   },
   {
     label: 'Blonde - Bonne Pioche 5º5',
-    brewery: 'Brasserie Tamdem',
+    brewery: 'Tamdem',
     prices: {
       25: 3.5,
       50: 6.5,
@@ -18,7 +18,7 @@ export const taps: Beer[] = [
   },
   {
     label: 'IPA - Poule mouilée 6°5',
-    brewery: 'brasserie tandem',
+    brewery: 'Tandem',
     prices: {
       25: 3.8,
       50: 7,
@@ -26,7 +26,7 @@ export const taps: Beer[] = [
   },
   {
     label: 'AMBRÉE - MONGY NOËL 7°',
-    brewery: 'Brasserie cambier',
+    brewery: 'Cambier',
     prices: {
       25: 4.4,
       50: 8,
@@ -34,7 +34,7 @@ export const taps: Beer[] = [
   },
   {
     label: 'Fumée - spring sin',
-    brewery: 'Brasserie des singes savants',
+    brewery: 'Les singes savants',
     prices: {
       25: 4.8,
       50: 8.5,
@@ -54,9 +54,9 @@ export const bottles: Beer[] = [
     brewery: 'Brasserie des Singes Savants',
   },
   {
-    label: 'TRAPPISTE - Rochefort triple 8°1',
+    label: 'TRAPPISTE - Westmalle tripel 9°5',
     prices: { 33: 6 },
-    brewery: 'Brasserie abbaye Rochefort',
+    brewery: 'Abbaye de Westmalle',
   },
   {
     label: 'GUEUZE 75cl - Saint Lamvinus 7°',
