@@ -1,30 +1,24 @@
 <script lang="ts">
     import { euro } from '$lib/money';
-    import type { Beer } from '$lib/types'
+    import type { Cocktail } from '$lib/types'
     import Stack from './Stack.svelte';
-    export let beers: Beer[];
+    export let cocktails: Cocktail[];
 </script>
 
-<div class="beers">
+<div class="cocktails">
     <Stack --space="10px">
-        {#each beers as { label, brewery, prices }}
-            <div class="beer">
+        {#each cocktails as { label, prices, composition }}
+            <div class="cocktail">
                 <div class="names">
                     <div>
                         <div class="label">{label}</div>
-                        <div class="brewery">{brewery}</div>
+                        <div class="composition">{composition}</div>
                     </div>
                 </div>
                 <div>
                     <Stack horizontal>  
-                        {#if prices['25']}
-                            <div class="price">{euro(prices['25'])}</div>
-                        {/if}
-                        {#if prices['33']}
-                            <div class="price">{euro(prices['33'])}</div>
-                        {/if}
-                        {#if prices['50']}
-                            <div class="price">{euro(prices['50'])}</div>
+                        {#if prices['12']}
+                            <div class="price">{euro(prices['12'])}</div>
                         {/if}
                     </Stack>
                 </div>
@@ -34,13 +28,13 @@
 </div>
 
 <style>
-    .beers {
+    .cocktails {
         display: flex;
         flex-direction: column;
         padding-top: 10px;
         /* font-family: 'Trueno Light'; */
     }
-    .beer {
+    .cocktail {
         display: flex;
         align-items: center;
     }
@@ -51,7 +45,7 @@
     /* .label{
         font-family: 'Trueno Light';
     } */
-    .brewery {
+    .composition {
         color: var(--alices-gold)
     }
 </style>

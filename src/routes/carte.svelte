@@ -3,11 +3,13 @@
   import MenuBlock from '$lib/components/MenuBlock.svelte';
   import Beers from '$lib/components/Beers.svelte';
   import Shooters from '$lib/components/Shooters.svelte';
+  import Wines from '$lib/components/Wines.svelte';
+  import Cocktails from '$lib/components/Cocktails.svelte';
   import Stack from '$lib/components/Stack.svelte';
   export const hydrate = dev;
   export const router = browser;
   export const prerender = true;
-  import { taps, bottles, shooters } from './menu';
+  import { taps, bottles, shooters, wines, cocktails } from './menu';
 </script>
 
 <svelte:head>
@@ -39,13 +41,13 @@
     title="Vin"
     text="Tous nos vins au verre 12cl sont disponibles en bouteille 75cl"
   >
-    
+    <Wines wines={wines}></Wines>
   </MenuBlock>
 
   <MenuBlock
     title="Cocktails"
   >
-    
+    <Cocktails cocktails={cocktails}></Cocktails>
   </MenuBlock>
 </Stack>
 
