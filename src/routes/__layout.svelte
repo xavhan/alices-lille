@@ -11,7 +11,7 @@
     }
     @font-face {
         font-family: "Bebas Neue";
-        src: url("./fonts/BebasNeue.otf");
+        src: url("/fonts/BebasNeue.otf");
     }
     @font-face {
         font-family: "Trueno Light";
