@@ -1,5 +1,5 @@
 <script context="module">
-  import SvelteSeo from "svelte-seo";
+  import SvelteSeo from 'svelte-seo';
   import { browser, dev } from '$app/env';
   import MenuBlock from '$lib/components/MenuBlock.svelte';
   import Beers from '$lib/components/Beers.svelte';
@@ -19,40 +19,25 @@
 />
 
 <Stack>
-  <MenuBlock
-    title="Bières Pression"
-    text="Disponibles en 25, 33 ou 50cl"
-  >
-    <Beers beers={taps}></Beers>
+  <MenuBlock title="Bières Pression" text="Disponibles en 25, 33 ou 50cl">
+    <Beers beers={taps} />
   </MenuBlock>
 
-  <MenuBlock
-    title="Bières Bouteilles"
-  >
-    <Beers beers={bottles}></Beers>
+  <MenuBlock title="Bières Bouteilles">
+    <Beers beers={bottles} />
   </MenuBlock>
 
-  <MenuBlock
-    title="Shooters"
-    text="4€ l’unité & 20€ les 6"
-  >
-    <Shooters shooters={shooters}></Shooters>
+  <MenuBlock title="Shooters" text="4€ l’unité & 20€ les 6">
+    <Shooters {shooters} />
   </MenuBlock>
 
-  <MenuBlock
-    title="Vin"
-    text="Au verre ou en bouteille"
-  >
-    <Wines wines={wines}></Wines>
+  <MenuBlock title="Vin" text="Au verre ou en bouteille">
+    <Wines {wines} />
   </MenuBlock>
 
-  <MenuBlock
-    title="Cocktails"
-  >
-    <Cocktails cocktails={cocktails}></Cocktails>
+  <MenuBlock title="Cocktails">
+    <Cocktails {cocktails} />
   </MenuBlock>
 
-  <MenuBlock
-    title="Et pleins d'autres pepites au bar !"
-  ></MenuBlock>
+  <MenuBlock title="Et pleins d'autres pepites au bar !" />
 </Stack>

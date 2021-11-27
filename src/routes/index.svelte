@@ -1,67 +1,68 @@
 <script context="module" lang="ts">
   import { browser, dev } from '$app/env';
-  import SvelteSeo from "svelte-seo";
+  import SvelteSeo from 'svelte-seo';
+  import { FACEBOOK_URL, GOOGLE_URL, INSTAGRAM_URL } from '$lib/url';
+  import HomeBlock from '$lib/components/HomeBlock.svelte';
+  import Stack from '$lib/components/Stack.svelte';
+  import { time, timerange } from '$lib/time';
 
   export const hydrate = dev;
   export const router = browser;
   export const prerender = true;
 </script>
 
-
 <SvelteSeo
   title="Alices | Lille"
   description="Café Bar Saisonnier Culturel"
   jsonLd={{
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Alices",
-    "description": "Café Bar Saisonnier Culturel",
-    "currenciesAccepted": "EUR",
-    "openingHours":[
-      "Tu-Th 16:00-00:00", 
-      "Fr 16:00-01:00", 
-      "Sa 15:00-02:00"
-    ],
-    "address": "12 rue des 3 couronnes, 59000 Lille, France",
-    "paymentAccepted":"Cash, Credit Card",
-    "latitude": "50.6375004",
-    "longitude": "3.0638824",
-    "maximumAttendeeCapacity": 50,
-    "url": "https://alices-lille.com",
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'Alices',
+    description: 'Café Bar Saisonnier Culturel',
+    currenciesAccepted: 'EUR',
+    openingHours: ['Tu-Th 16:00-00:00', 'Fr 16:00-01:00', 'Sa 15:00-02:00'],
+    address: '12 rue des 3 couronnes, 59000 Lille, France',
+    paymentAccepted: 'Cash, Credit Card',
+    latitude: '50.6375004',
+    longitude: '3.0638824',
+    maximumAttendeeCapacity: 50,
+    url: 'https://alices-lille.com',
   }}
 />
 
-<div class="menu">
-  <a href='./carte'>Découvrir la carte</a>
-</div>
+<Stack>
+  <div class="menu">
+    <a href="./carte">Découvrir la carte</a>
+  </div>
 
-<hr />
+  <HomeBlock title="Horaires d'ouverture">
+    <div class="opening_hours">
+      <div>
+        Mardi au Jeudi : 
+        <br>
+        Vendredi : 
+        <br>
+        Samedi : 
+      </div>
+      <div>
+        {timerange(['16:00', '0:00'])}
+        <br>
+        {timerange(['16:00', '1:00'])}
+        <br>
+        {timerange(['15:00', '2:00'])}
+      </div>
+    </div>
+  </HomeBlock>
 
-<div class="title">Horaires d'ouverture</div>
+  <HomeBlock title="Réseaux sociaux">
+    <a href={INSTAGRAM_URL} target="_blank" rel="noopener">Instagram</a>
+    •
+    <a href={FACEBOOK_URL} target="_blank" rel="noopener">Facebook</a>
+  </HomeBlock>
 
-<hr />
-
-<br>
-
-
-<div class="open_hours">
-  Mardi au Jeudi: 16h - 00H
-  <br />
-  Vendredi: 16h - 1h
-  <br />
-  Samedi: 15h - 2h
-</div>
-
-<hr />
-
-<div class="title">Reseaux sociaux</div>
-
-<hr />
-
-
-<div class="social_networks">
-  <a href="https://www.instagram.com/alices.lille/" target="_blank">Instagram</a>
-  •
-  <a href="https://www.facebook.com/Alices-100810122354194/" target="_blank">Facebook</a>
-</div>
-
+  <HomeBlock title="Soutien">
+    <a href={GOOGLE_URL} target="_blank" rel="noopener">
+      Ça vous a plu ? faites-le savoir !
+    </a>
+  </HomeBlock>
+</Stack>

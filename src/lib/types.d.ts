@@ -12,8 +12,8 @@ export type Beer = {
     25: number;
     33: number;
     50: number;
-  }>
-}
+  }>;
+};
 export type Wine = {
   label: string;
   grapes?: string;
@@ -22,12 +22,12 @@ export type Wine = {
   prices: Partial<{
     12: number;
     75: number;
-  }>
-}
+  }>;
+};
 export type Cocktail = {
   label: string;
   composition: string;
   prices: Partial<{
     12: number;
-  }>
-}
+  }>;
+};
