@@ -28,4 +28,8 @@
     justify-content: space-between;
     align-items: baseline;
   }
+  .title {
+    color: var(--alices-gold);
+    font-family: 'Trueno Light';
+  }
 </style>

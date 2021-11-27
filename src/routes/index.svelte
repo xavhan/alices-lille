@@ -36,22 +36,11 @@
   </div>
 
   <HomeBlock title="Horaires d'ouverture">
-    <div class="opening_hours">
-      <div>
-        Mardi au Jeudi : 
-        <br>
-        Vendredi : 
-        <br>
-        Samedi : 
-      </div>
-      <div>
-        {timerange(['16:00', '0:00'])}
-        <br>
-        {timerange(['16:00', '1:00'])}
-        <br>
-        {timerange(['15:00', '2:00'])}
-      </div>
-    </div>
+      Mardi au Jeudi : {timerange(['16:00', '0:00'])}
+      <br>
+      Vendredi : {timerange(['16:00', '1:00'])}
+      <br>
+      Samedi : {timerange(['15:00', '2:00'])}
   </HomeBlock>
 
   <HomeBlock title="Réseaux sociaux">

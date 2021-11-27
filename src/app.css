@@ -51,14 +51,6 @@ body {
   background-color: var(--alices-darkred);
 }
 
-.opening_hours {
-  display: flex;
-  margin-left: 124px; /* TODO: remove magic */
-}
-.opening_hours > div {
-  text-align: end;
-}
-
 hr {
   border-color: var(--alices-gold);
 }
