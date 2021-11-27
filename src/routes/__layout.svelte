@@ -6,26 +6,20 @@
 <svelte:head>
   <style>
     @font-face {
-        font-family: "Albra Medium";
-        src: url("/fonts/AlbraMedium.otf");
+      font-family: 'Bebas Neue';
+      src: url('/fonts/BebasNeue.otf');
+      font-display: auto;
     }
     @font-face {
-        font-family: "Bebas Neue";
-        src: url("/fonts/BebasNeue.otf");
-    }
-    @font-face {
-        font-family: "Trueno Light";
-        src: url("/fonts/TruenoLt.otf");
-    }
-    @font-face {
-        font-family: "Trueno Medium";
-        src: url("/fonts/TruenoRg.otf");
+      font-family: 'Trueno Light';
+      src: url('/fonts/TruenoLt.otf');
+      font-display: auto;
     }
   </style>
 </svelte:head>
 
 <main>
-  <div class="wrapper">
+  <header>
     <a href="/">
       <div class="logo">Alices</div>
     </a>
@@ -37,12 +31,31 @@
         12 rue des 3 couronnes, 59000 Lille
       </a>
     </div>
+  </header>
 
-    <slot />
-  </div>
+  <slot />
 </main>
 
 <style>
+  main {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  header {
+    margin-bottom: var(--spacing-huge);
+  }
+
+  .logo {
+    font-size: 60px;
+  }
+
+  .cbsc {
+    color: var(--alices-gold);
+    font-family: 'Trueno Light';
+    font-size: 12px;
+    margin-bottom: var(--spacing);
+  }
   a {
     text-decoration: none;
   }

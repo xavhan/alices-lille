@@ -126,7 +126,7 @@ export const wines: Wine[] = [
   {
     label: 'Champagne bouteille 75cl',
     grapes: 'CHARDONNAY, MEUNIER, PINOT NOIR',
-    estate: 'domaine Champagne André Heuck',
+    estate: 'Champagne André Heuck',
     prices: { 75: 80 },
   },
 ];
