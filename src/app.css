@@ -20,24 +20,7 @@ body {
   padding: 60px 30px;
 }
 
-.wrapper {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.logo {
-  font-size: 60px;
-}
-
-.cbsc {
-  color: var(--alices-gold);
-  font-family: 'Trueno Light';
-  font-size: 12px;
-  margin-bottom: var(--spacing);
-}
-
 .menu {
-  margin-top: var(--spacing-huge);
   margin-bottom: var(--spacing-huge);
 }
 .menu a {
