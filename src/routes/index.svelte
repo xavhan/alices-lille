@@ -44,13 +44,13 @@
   </HomeBlock>
 
   <HomeBlock title="Réseaux sociaux">
-    <a href={INSTAGRAM_URL} target="_blank" rel="noopener">Instagram</a>
+    <a href={INSTAGRAM_URL} target="_blank" rel="nofollow noopener" title="Aller sur notre Insta">Instagram</a>
     •
-    <a href={FACEBOOK_URL} target="_blank" rel="noopener">Facebook</a>
+    <a href={FACEBOOK_URL} target="_blank" rel="nofollow noopener" title="Aller sur notre Facebook">Facebook</a>
   </HomeBlock>
 
   <HomeBlock title="Soutien">
-    <a href={GOOGLE_URL} target="_blank" rel="noopener">
+    <a href={GOOGLE_URL} target="_blank" rel="nofollow noopener" title="Laisser un commentaire sur Google">
       Ça vous a plu ? faites-le savoir !
     </a>
   </HomeBlock>

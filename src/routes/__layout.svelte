@@ -21,14 +21,16 @@
 <main>
   <header>
     <a href="/">
-      <div class="logo">Alices</div>
+      <h1 class="logo">Alices</h1>
     </a>
 
-    <div class="cbsc">Café • Bar • Saisonnier • Culturel</div>
+    <h2 class="cbsc">Café • Bar • Saisonnier • Culturel</h2>
 
     <div class="address">
-      <a href="https://goo.gl/maps/whMaXe8PMdZi9cXB7">
-        12 rue des 3 couronnes, 59000 Lille
+      <a href="https://goo.gl/maps/whMaXe8PMdZi9cXB7" target="_blank" rel="nofollow noopener" title="Voir sur Google Maps">
+        <address>
+          12 rue des 3 couronnes, 59000 Lille
+        </address>
       </a>
     </div>
   </header>
