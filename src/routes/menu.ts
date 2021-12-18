@@ -1,4 +1,4 @@
-import type { Beer, Wine, Cocktail, Spirit } from '$lib/types';
+import type { Beer, Wine, Cocktail, Spirit, Soft, FoodItem } from '$lib/types';
 export const taps: Beer[] = [
   {
     label: 'Pills - la Bise 5º4',
@@ -207,5 +207,30 @@ export const spirits: Spirit[] = [
     description: 'Genièvre Flandre Artois',
     degree: 42,
     prices: { 12: 11 },
+  },
+];
+export const softs: Soft[] = [
+  { label: 'Jus de Pomme', prices: { 33: 3.5 } },
+  { label: 'Jus de Pomme/Gingembre', prices: { 33: 3.5 } },
+  { label: 'Jus de Pamplemousse', prices: { 33: 3.5 } },
+  { label: 'Limo nature', prices: { 33: 4.3 } },
+  { label: 'Limo fleur de sureau', prices: { 33: 4.3 } },
+  { label: 'Meuh Cola', prices: { 33: 4.3 } },
+  { label: 'Kombucha gingembre', prices: { 33: 4.5 } },
+  { label: 'Club Maté', prices: { 33: 4.5 } },
+  { label: 'Sirop Citron', prices: { 33: 2.5 } },
+  { label: 'Sirop Framboise/Mure', prices: { 33: 2.5 } },
+  { label: 'Eau Gazeuse celtic', prices: { 33: 3 } },
+];
+export const food: FoodItem[] = [
+  {
+    label: 'Tarhaddock',
+    description: 'Tarama de haddock',
+    prices: { 200: 12 },
+  },
+  {
+    label: 'Chevrave',
+    description: 'Chèvre, Betterave, zestes de citron',
+    prices: { 200: 12 },
   },
 ];

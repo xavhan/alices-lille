@@ -1,0 +1,48 @@
+<script lang="ts">
+  import { euro } from '$lib/money';
+  import type { FoodItem } from '$lib/types';
+  import Stack from './Stack.svelte';
+  export let food: FoodItem[];
+</script>
+
+<div class="food">
+  <Stack --space="10px">
+    {#each food as { label, description, prices }}
+      <div class="fooditem">
+        <div class="names">
+          <div>
+            <div class="label">{label}</div>
+            <div class="description">{description}</div>
+          </div>
+        </div>
+        <div>
+          <Stack horizontal>
+            {#if prices['200']}
+              <div class="price">{euro(prices['200'])}</div>
+            {/if}
+          </Stack>
+        </div>
+      </div>
+    {/each}
+  </Stack>
+</div>
+
+<style>
+  .food {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    /* font-family: 'Trueno Light'; */
+  }
+  .fooditem {
+    display: flex;
+    align-items: center;
+  }
+  .names {
+    flex: 1;
+    text-align: start;
+  }
+  .description {
+    color: var(--alices-gold);
+  }
+</style>

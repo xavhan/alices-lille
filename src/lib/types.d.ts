@@ -2,9 +2,6 @@
  * Can be made globally available by placing this
  * inside `global.d.ts` and removing `export` keyword
  */
-export interface Locals {
-  userid: string;
-}
 export type Beer = {
   label: string;
   brewery?: string;
@@ -37,5 +34,19 @@ export type Spirit = {
   degree: number;
   prices: Partial<{
     12: number; // TODO: change key
+  }>;
+};
+
+export type Soft = {
+  label: string;
+  prices: Partial<{
+    33: number; // TODO: change key
+  }>;
+};
+export type FoodItem = {
+  label: string;
+  description: string;
+  prices: Partial<{
+    200: number; // TODO: change key
   }>;
 };
