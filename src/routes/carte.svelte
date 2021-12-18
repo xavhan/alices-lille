@@ -10,7 +10,8 @@
   export const hydrate = dev;
   export const router = browser;
   export const prerender = true;
-  import { taps, bottles, shooters, wines, cocktails } from './menu';
+  import { taps, bottles, shooters, wines, cocktails, spirits } from './menu';
+  import Spirits from '$lib/components/Spirits.svelte';
 </script>
 
 <SvelteSeo
@@ -27,16 +28,20 @@
     <Beers beers={bottles} />
   </MenuBlock>
 
-  <MenuBlock title="Shooters" text="4€ l’unité & 20€ les 6">
-    <Shooters {shooters} />
-  </MenuBlock>
-
   <MenuBlock title="Vin" text="Au verre ou en bouteille">
     <Wines {wines} />
   </MenuBlock>
 
   <MenuBlock title="Cocktails">
     <Cocktails {cocktails} />
+  </MenuBlock>
+
+  <MenuBlock title="Shooters" text="4€ l’unité & 20€ les 6">
+    <Shooters {shooters} />
+  </MenuBlock>
+
+  <MenuBlock title="Spiritueux">
+    <Spirits {spirits} />
   </MenuBlock>
 
   <MenuBlock title="Et pleins d'autres pepites au bar !" />

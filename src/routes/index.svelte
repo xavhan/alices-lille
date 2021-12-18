@@ -36,21 +36,36 @@
   </div>
 
   <HomeBlock title="Horaires d'ouverture">
-      Mardi au Jeudi : {timerange(['16:00', '0:00'])}
-      <br>
-      Vendredi : {timerange(['16:00', '1:00'])}
-      <br>
-      Samedi : {timerange(['15:00', '2:00'])}
+    Mardi au Jeudi : {timerange(['16:00', '0:00'])}
+    <br />
+    Vendredi : {timerange(['16:00', '1:00'])}
+    <br />
+    Samedi : {timerange(['15:00', '2:00'])}
   </HomeBlock>
 
   <HomeBlock title="Réseaux sociaux">
-    <a href={INSTAGRAM_URL} target="_blank" rel="nofollow noopener" title="Aller sur notre Insta">Instagram</a>
+    <a
+      href={INSTAGRAM_URL}
+      target="_blank"
+      rel="nofollow noopener"
+      title="Aller sur notre Insta">Instagram</a
+    >
     •
-    <a href={FACEBOOK_URL} target="_blank" rel="nofollow noopener" title="Aller sur notre Facebook">Facebook</a>
+    <a
+      href={FACEBOOK_URL}
+      target="_blank"
+      rel="nofollow noopener"
+      title="Aller sur notre Facebook">Facebook</a
+    >
   </HomeBlock>
 
   <HomeBlock title="Soutien">
-    <a href={GOOGLE_URL} target="_blank" rel="nofollow noopener" title="Laisser un commentaire sur Google">
+    <a
+      href={GOOGLE_URL}
+      target="_blank"
+      rel="nofollow noopener"
+      title="Laisser un commentaire sur Google"
+    >
       Ça vous a plu ? faites-le savoir !
     </a>
   </HomeBlock>

@@ -28,6 +28,14 @@ export type Cocktail = {
   label: string;
   composition: string;
   prices: Partial<{
-    12: number;
+    12: number; // TODO: change key
+  }>;
+};
+export type Spirit = {
+  label: string;
+  description: string;
+  degree: number;
+  prices: Partial<{
+    12: number; // TODO: change key
   }>;
 };

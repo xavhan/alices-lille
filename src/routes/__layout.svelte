@@ -27,10 +27,13 @@
     <h2 class="cbsc">Café • Bar • Saisonnier • Culturel</h2>
 
     <div class="address">
-      <a href="https://goo.gl/maps/whMaXe8PMdZi9cXB7" target="_blank" rel="nofollow noopener" title="Voir sur Google Maps">
-        <address>
-          12 rue des 3 couronnes, 59000 Lille
-        </address>
+      <a
+        href="https://goo.gl/maps/whMaXe8PMdZi9cXB7"
+        target="_blank"
+        rel="nofollow noopener"
+        title="Voir sur Google Maps"
+      >
+        <address>12 rue des 3 couronnes, 59000 Lille</address>
       </a>
     </div>
   </header>
@@ -43,7 +46,7 @@
     max-width: 400px;
     margin: 0 auto;
   }
-  
+
   header {
     margin-bottom: var(--spacing-huge);
   }

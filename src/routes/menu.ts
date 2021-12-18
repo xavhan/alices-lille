@@ -1,4 +1,4 @@
-import type { Beer, Wine, Cocktail } from '$lib/types';
+import type { Beer, Wine, Cocktail, Spirit } from '$lib/types';
 export const taps: Beer[] = [
   {
     label: 'Pills - la Bise 5º4',
@@ -156,5 +156,56 @@ export const cocktails: Cocktail[] = [
     label: 'IRISH COFFEE',
     composition: 'whisky, café, chantilly',
     prices: { 12: 8 },
+  },
+];
+
+export const spirits: Spirit[] = [
+  {
+    label: 'RHUM KIRK AND SWEENEY RESERVA',
+    description: 'santiago de los caballeros ',
+    degree: 40,
+    prices: { 12: 9 },
+  },
+  {
+    label: 'RHUM BULLION',
+    description: 'four square distillery ',
+    degree: 40,
+    prices: { 12: 11 },
+  },
+  {
+    label: 'WHISKY BULLEIT BOURBON',
+    description: 'Frontier Whiskey',
+    degree: 45,
+    prices: { 12: 7 },
+  },
+  {
+    label: 'WHISKY COFFEY GRAIN',
+    description: 'Nikka',
+    degree: 45,
+    prices: { 12: 9 },
+  },
+  {
+    label: 'SCOTCH ISLAY SINGLE MALT',
+    description: 'Port Charlotte',
+    degree: 50,
+    prices: { 12: 12 },
+  },
+  {
+    label: 'CALVADOS',
+    description: 'Christian Drouin ',
+    degree: 40,
+    prices: { 12: 8 },
+  },
+  {
+    label: 'MIRABELLE VIEILLE RESERVE',
+    description: 'Rozelieures',
+    degree: 45,
+    prices: { 12: 9 },
+  },
+  {
+    label: 'HOULLE',
+    description: 'Genièvre Flandre Artois',
+    degree: 42,
+    prices: { 12: 11 },
   },
 ];

@@ -5,6 +5,6 @@ export const time = (t: string, locale = 'fr-FR') => {
   return dummyDate.toLocaleTimeString(locale, { hour: 'numeric' });
 };
 
-export const timerange = (range = ['',''], locale?: string) => {
-  return range.map(t => time(t, locale)).join(' - ')
-}
+export const timerange = (range = ['', ''], locale?: string) => {
+  return range.map((t) => time(t, locale)).join(' - ');
+};
