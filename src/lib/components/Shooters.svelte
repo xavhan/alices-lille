@@ -1,13 +1,14 @@
 <script lang="ts">
   import Stack from './Stack.svelte';
-  export let shooters = [];
+  // export let shooters = [];
 </script>
 
 <div class="shooters">
   <Stack --space="10px">
-    {#each shooters as { label }}
-      <div class="shooter">{label}</div>
-    {/each}
+    <div class="shooter">
+      Nos recettes maison changent régulièrement <br>
+      Viens voir les jarres au bar ! 
+    </div>
   </Stack>
 </div>
 

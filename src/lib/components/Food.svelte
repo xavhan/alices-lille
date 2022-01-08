@@ -7,12 +7,11 @@
 
 <div class="food">
   <Stack --space="10px">
-    {#each food as { label, description, prices }}
+    {#each food as { label, prices }}
       <div class="fooditem">
         <div class="names">
           <div>
             <div class="label">{label}</div>
-            <div class="description">{description}</div>
           </div>
         </div>
         <div>
@@ -41,8 +40,5 @@
   .names {
     flex: 1;
     text-align: start;
-  }
-  .description {
-    color: var(--alices-gold);
   }
 </style>

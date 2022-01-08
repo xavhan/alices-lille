@@ -4,13 +4,13 @@ export const taps: Beer[] = [
     label: 'Pills - la Bise 5º4',
     brewery: 'Duyck',
     prices: {
-      25: 2.8,
+      25: 3,
       50: 5,
     },
   },
   {
-    label: 'Blonde - Bonne Pioche 5º5',
-    brewery: 'Tamdem',
+    label: 'Blonde - LIL Blonde 5º',
+    brewery: 'Gobrecht',
     prices: {
       25: 3.5,
       50: 6.5,
@@ -25,7 +25,7 @@ export const taps: Beer[] = [
     },
   },
   {
-    label: 'AMBRÉE - MONGY NOËL 7°',
+    label: "AMBRÉE - MONGY d'hiver 8°",
     brewery: 'Cambier',
     prices: {
       25: 4.4,
@@ -33,8 +33,8 @@ export const taps: Beer[] = [
     },
   },
   {
-    label: 'Fumée - spring sin',
-    brewery: 'Les singes savants',
+    label: 'Biere Spéciale',
+    brewery: 'Pépite à venir découvrir au bar',
     prices: {
       25: 4.8,
       50: 8.5,
@@ -49,27 +49,27 @@ export const bottles: Beer[] = [
     brewery: 'brasserie alvinne',
   },
   {
-    label: 'Ambrée - Raskar Kawa ',
+    label: 'Bière du moment',
     prices: { 33: 7 },
     brewery: 'Brasserie des Singes Savants',
   },
   {
-    label: 'TRAPPISTE - Westmalle tripel 9°5',
+    label: 'TRAPPISTE - Rochefort triple 8º1',
     prices: { 33: 6 },
-    brewery: 'Abbaye de Westmalle',
+    brewery: 'Abbaye de Rochefort',
   },
   {
-    label: 'GUEUZE 75cl - Saint Lamvinus 7°',
+    label: 'GUEUZE 75cl',
     prices: { 33: 30 },
     brewery: 'Brasserie Cantillon',
   },
   {
-    label: 'SANS GLUTEN - Blonde / AMbrée',
+    label: 'SANS GLUTEN - Blonde / Ambrée',
     prices: { 33: 5.3 },
     brewery: 'Brunehaut',
   },
   {
-    label: 'blonde SANS Alcool - pico bello 0,3°',
+    label: 'blonde SANS Alcool - Pico 0,3°',
     prices: { 33: 5 },
     brewery: 'Brussel Beer project',
   },
@@ -135,7 +135,7 @@ export const cocktails: Cocktail[] = [
   {
     label: 'DARK & STORMY',
     composition: 'Rhum, ginger beer, citron',
-    prices: { 12: 9 },
+    prices: { 12: 10 },
   },
   {
     label: 'NEGRONI',
@@ -156,6 +156,11 @@ export const cocktails: Cocktail[] = [
     label: 'IRISH COFFEE',
     composition: 'whisky, café, chantilly',
     prices: { 12: 8 },
+  },
+  {
+    label: 'GIMLET',
+    composition: "Gin infusé feuille de clémentine, citron, cordial d'agrumes",
+    prices: { 12: 10 },
   },
 ];
 
@@ -224,13 +229,7 @@ export const softs: Soft[] = [
 ];
 export const food: FoodItem[] = [
   {
-    label: 'Tarhaddock',
-    description: 'Tarama de haddock',
-    prices: { 200: 12 },
-  },
-  {
-    label: 'Chevrave',
-    description: 'Chèvre, Betterave, zestes de citron',
+    label: "Tartinade à l'unité du moment",
     prices: { 200: 12 },
   },
 ];
