@@ -45,7 +45,6 @@ export type Soft = {
 };
 export type FoodItem = {
   label: string;
-  description: string;
   prices: Partial<{
     200: number; // TODO: change key
   }>;
