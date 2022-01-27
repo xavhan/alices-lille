@@ -17,7 +17,7 @@ export const EVENTS: Event[] = [
     ].join('\n'),
   },
   {
-    label: 'Cremaillère',
+    label: 'Crémaillère',
     guests: [DJS.Donov],
     date: '2021-11-13',
   },

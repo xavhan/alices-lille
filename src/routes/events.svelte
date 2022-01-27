@@ -1,13 +1,14 @@
 <script context="module">
+  import Event from '$lib/components/Event.svelte'
+
   import SvelteSeo from 'svelte-seo';
   import { browser, dev } from '$app/env';
   import Stack from '$lib/components/Stack.svelte';
-  import { format } from '$lib/date';
-  import { eventList, linkToCalendar } from '$lib/events';
+  import { eventList } from '$lib/events';
 
   export const hydrate = dev;
   export const router = browser;
-  export const prerender = true; // WIP for now
+  // export const prerender = true; // WIP for now
 </script>
 
 <SvelteSeo
@@ -23,28 +24,15 @@
   <ol>
     <Stack>
       {#each eventList.future as event}
-        <li>
-          <div>
-            <div>
-              {format(event.date)}
-            </div>
-            <div>
-              <a href={linkToCalendar(event)} title="Note la date" target="_blank">Note la date</a>
-            </div>
-          </div>
-          <div>
-            <h2>{event.label}</h2>
-            <ul>
-              {#each event.guests as guest}
-                <li>{guest.label}</li>
-              {/each}
-            </ul>
-          </div>
+        <li class="flex flex-col">
+          <Event {event} />
         </li>    
       {/each}
     </Stack>
   </ol>
-
+  
+  <br>
+  <br>
   <hr>
   <h1>Les succès du Mini-Club</h1>
   <hr>
@@ -52,15 +40,19 @@
   <ol>
     <Stack>
       {#each eventList.past as event}
-        <li>
-          <h2>{format(event.date)} - {event.label}</h2>
-          <ul>
-            {#each event.guests as guest}
-              <li>{guest.label}</li>
-            {/each}
-          </ul>
-        </li>    
+        <li class="flex flex-col">
+          <Event {event} />
+        </li>      
       {/each}
     </Stack>
   </ol>
 </Stack>
+
+<style>
+  .flex {
+    display: flex
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+</style>
