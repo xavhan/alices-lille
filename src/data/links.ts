@@ -1,11 +1,9 @@
-import type { Link } from '$lib/types';
-import { FACEBOOK_URL, INSTAGRAM_URL } from '$lib/url';
+import type { Link } from './types';
+
+export const INSTAGRAM_URL = 'https://www.instagram.com/alices.lille/';
+export const FACEBOOK_URL = 'https://www.facebook.com/Alices-100810122354194/';
 
 export const LINKS: Link[] = [
-  {
-    label: '💃 MiniClub#1 Event Facebook 🕺',
-    href: 'https://www.facebook.com/events/619313212531323/',
-  },
   {
     label: 'Instagram',
     href: INSTAGRAM_URL,

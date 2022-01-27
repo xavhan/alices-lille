@@ -1,10 +1,11 @@
 <script context="module" lang="ts">
   import { browser, dev } from '$app/env';
   import SvelteSeo from 'svelte-seo';
-  import { FACEBOOK_URL, GOOGLE_URL, INSTAGRAM_URL } from '$lib/url';
+  import { GOOGLE_URL } from '$lib/url';
+  import { FACEBOOK_URL, INSTAGRAM_URL } from '$data/links';
   import HomeBlock from '$lib/components/HomeBlock.svelte';
   import Stack from '$lib/components/Stack.svelte';
-  import { time, timerange } from '$lib/time';
+  import { timerange } from '$lib/time';
 
   export const hydrate = dev;
   export const router = browser;
