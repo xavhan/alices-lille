@@ -55,3 +55,17 @@ export type FoodItem = {
     200: number; // TODO: change key
   }>;
 };
+
+export type Event = {
+  label: string;
+  description?: string;
+  guests: DJ[];
+  date: string;
+  facebookEvent?: string;
+}
+
+export type DJ = {
+  label: string;
+  links?: string[];
+  description?: string;
+}

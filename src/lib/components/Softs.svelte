@@ -1,6 +1,6 @@
 <script lang="ts">
   import { euro } from '$lib/money';
-  import type { Soft } from '$lib/types';
+  import type { Soft } from 'src/data/types';
   import Stack from './Stack.svelte';
   export let softs: Soft[];
 </script>

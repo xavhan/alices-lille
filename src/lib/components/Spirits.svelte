@@ -1,6 +1,6 @@
 <script lang="ts">
   import { euro } from '$lib/money';
-  import type { Spirit } from '$lib/types';
+  import type { Spirit } from 'src/data/types';
   import Stack from './Stack.svelte';
   export let spirits: Spirit[];
 </script>

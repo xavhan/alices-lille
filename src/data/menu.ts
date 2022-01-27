@@ -1,4 +1,4 @@
-import type { Beer, Wine, Cocktail, Spirit, Soft, FoodItem } from '$data/types';
+import type { Beer, Wine, Cocktail, Spirit, Soft, FoodItem } from 'src/data/typesypes';
 export const taps: Beer[] = [
   {
     label: 'Pills - la Bise 5º4',

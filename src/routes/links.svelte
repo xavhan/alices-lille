@@ -2,7 +2,7 @@
   import { browser, dev } from '$app/env';
   import SvelteSeo from 'svelte-seo';
   import Stack from '$lib/components/Stack.svelte';
-  import { LINKS } from '$data/links';
+  import { links } from '$lib/links';
 
   export const hydrate = dev;
   export const router = browser;
@@ -17,7 +17,7 @@
 <Stack>
   <hr />
 
-  {#each LINKS as {href, label, target = '_blank' }}
+  {#each links as {href, label, target = '_blank' }}
     <a {href} {target} rel="nofollow noopener">
       {label}
     </a>
