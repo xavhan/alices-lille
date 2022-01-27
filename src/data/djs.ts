@@ -1,7 +1,7 @@
 import type { DJ } from "./types";
 
 export const Donov: DJ = {
-    label: "Donov la Malice",
+    label: "Donov",
     links: [
         'https://www.instagram.com/donovlamalice',
         'https://www.facebook.com/donovdj',

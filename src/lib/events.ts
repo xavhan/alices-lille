@@ -36,8 +36,6 @@ export const linkToCalendar = (event: Event): string => {
       .filter(Boolean)
       .join('\n\n'),
     location: 'Alices, 12 Rue des 3 Couronnes, 59800 Lille, France',
-    text: `💃 ${event.label} 🕺 ${event.guests
-      .map((dj) => dj.label)
-      .join(' / ')}`,
+    text: `💃 ${event.label} aux Alices avec ${event.guests.map((dj) => dj.label).join(' x ')}`,
   });
 };
