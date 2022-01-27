@@ -58,7 +58,6 @@ export type FoodItem = {
 
 export type Event = {
   label: string;
-  number: number;
   description?: string;
   guests: DJ[];
   date: string;

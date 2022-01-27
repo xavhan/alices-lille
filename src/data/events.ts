@@ -1,21 +1,19 @@
-import * as DJ from './djs';
+import {DJS} from './djs';
 import type { Event } from './types';
 
-export const events: Event[] = [
+export const EVENTS: Event[] = [
   {
-    label: 'La premiere',
-    number: 1,
+    label: 'MiniClub#1: La premiere',
     guests: [
-        DJ.Donov,
-        DJ.InnerSense
+        DJS.Donov,
+        DJS.InnerSense
     ],
     date: '2022-02-19',
   },
   {
-    label: 'Cremaillere',
-    number: 0,
+    label: 'Cremaillère',
     guests: [
-        DJ.Donov,
+        DJS.Donov,
     ],
     date: '2021-11-13',
   },

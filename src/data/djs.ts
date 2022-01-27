@@ -15,3 +15,8 @@ export const InnerSense: DJ = {
         'https://soundcloud.com/inner-sense',
     ]
 }
+
+export const DJS = {
+  Donov,
+  InnerSense,
+}
