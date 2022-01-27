@@ -2,6 +2,12 @@
  * Can be made globally available by placing this
  * inside `global.d.ts` and removing `export` keyword
  */
+export type Link = {
+  label: string;
+  href: string;
+  target?: null;
+};
+
 export type Beer = {
   label: string;
   brewery?: string;
