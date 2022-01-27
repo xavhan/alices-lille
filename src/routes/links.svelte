@@ -17,7 +17,7 @@
 <Stack>
   <hr />
 
-  {#each links as {href, label, target = '_blank' }}
+  {#each links as { href, label, target = '_blank' }}
     <a {href} {target} rel="nofollow noopener">
       {label}
     </a>

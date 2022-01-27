@@ -13,9 +13,8 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@sveltejs/adapter-netlify": "1.0.0-next.35",
-    "@sveltejs/kit": "^1.0.0-next.201",
-    "@types/cookie": "^0.4.0",
+    "@sveltejs/adapter-netlify": "1.0.0-next.44",
+    "@sveltejs/kit": "1.0.0-next.247",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "eslint": "^8.3.0",
@@ -33,10 +32,9 @@
   },
   "type": "module",
   "dependencies": {
-    "@lukeed/uuid": "^2.0.0",
-    "cookie": "^0.4.1",
     "open-props": "^1.2.3",
     "qs": "^6.10.1",
     "svelte-seo": "^1.3.1"
-  }
+  },
+  "license": "UNLICENSED"
 }

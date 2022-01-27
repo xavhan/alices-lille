@@ -1,14 +1,14 @@
 const dateFormatter = new Intl.DateTimeFormat('fr-FR', { dateStyle: 'full' });
-export const format = (date:string): string => {
+export const format = (date: string): string => {
   return dateFormatter.format(new Date(date));
-}
+};
 
 export const yesterday = (): Date => {
-  const yesterday = new Date()
-  yesterday.setDate(yesterday.getDate() - 1)
-  yesterday.setHours(0,0,0,0);
+  const yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1);
+  yesterday.setHours(0, 0, 0, 0);
   return yesterday;
-}
+};
 export const afterYesterday = (date: Date) => {
-  return date > yesterday()
-}
+  return date > yesterday();
+};

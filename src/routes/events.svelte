@@ -1,5 +1,5 @@
 <script context="module">
-  import Event from '$lib/components/Event.svelte'
+  import Event from '$lib/components/Event.svelte';
 
   import SvelteSeo from 'svelte-seo';
   import { browser, dev } from '$app/env';
@@ -11,38 +11,35 @@
   // export const prerender = true; // WIP for now
 </script>
 
-<SvelteSeo
-  title="Alices | Events"
-  description="Alices c'est aussi la fête !"
-/>
+<SvelteSeo title="Alices | Events" description="Alices c'est aussi la fête !" />
 
 <Stack>
-  <hr>
+  <hr />
   <h1>Bientôt au Mini-Club</h1>
-  <hr>
+  <hr />
 
   <ol>
     <Stack>
       {#each eventList.future as event}
         <li class="flex flex-col">
           <Event {event} />
-        </li>    
+        </li>
       {/each}
     </Stack>
   </ol>
-  
-  <br>
-  <br>
-  <hr>
+
+  <br />
+  <br />
+  <hr />
   <h1>Les succès du Mini-Club</h1>
-  <hr>
+  <hr />
 
   <ol>
     <Stack>
       {#each eventList.past as event}
         <li class="flex flex-col">
           <Event {event} />
-        </li>      
+        </li>
       {/each}
     </Stack>
   </ol>
@@ -50,7 +47,7 @@
 
 <style>
   .flex {
-    display: flex
+    display: flex;
   }
   .flex-col {
     flex-direction: column;

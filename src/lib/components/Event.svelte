@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type {Event} from '$data/types';
+  import type { Event } from '$data/types';
   import Stack from '$lib/components/Stack.svelte';
   import { format } from '$lib/date';
   import { isPast, linkToCalendar } from '$lib/events';
@@ -15,16 +15,26 @@
       <div>
         {format(event.date)}
       </div>
-      
+
       {#if event.facebookEvent}
         <div>
-          <a href={event.facebookEvent} title="Event facebook" target="_blank" rel="nofollow noopener">Event facebook</a>
+          <a
+            href={event.facebookEvent}
+            title="Event facebook"
+            target="_blank"
+            rel="nofollow noopener">Event facebook</a
+          >
         </div>
       {/if}
 
       {#if !isPast(event)}
         <div>
-          <a href={linkToCalendar(event)} title="Note la date" target="_blank" rel="nofollow noopener">Note la date</a>
+          <a
+            href={linkToCalendar(event)}
+            title="Note la date"
+            target="_blank"
+            rel="nofollow noopener">Note la date</a
+          >
         </div>
       {/if}
     </div>
@@ -44,13 +54,13 @@
 
 <style>
   .flex {
-    display: flex
+    display: flex;
   }
   .flex-col {
     flex-direction: column;
   }
   .justify-between {
-    justify-content: space-between
+    justify-content: space-between;
   }
   .text-left {
     text-align: left;
@@ -59,4 +69,3 @@
     text-align: right;
   }
 </style>
-
