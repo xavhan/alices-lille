@@ -6,8 +6,8 @@
 <div class="shooters">
   <Stack --space="10px">
     <div class="shooter">
-      Nos recettes maison changent régulièrement <br>
-      Viens voir les jarres au bar ! 
+      Nos recettes maison changent régulièrement <br />
+      Viens voir les jarres au bar !
     </div>
   </Stack>
 </div>

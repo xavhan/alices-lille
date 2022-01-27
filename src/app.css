@@ -1,3 +1,5 @@
+@import 'open-props/style';
+
 :root {
   --alices-red: hsl(351, 74%, 37%);
   --alices-darkred: #4b0f1c;
@@ -24,14 +26,18 @@ body {
   margin-bottom: var(--spacing-huge);
 }
 .menu a {
-  display: inline-block;
+  display: block;
   text-transform: uppercase;
   color: var(--alices-white);
-  padding: 1rem 1.5rem;
-  border-radius: 40px;
+  padding: var(--size-4) var(--size-6);
+  border-radius: var(--radius-round);
   text-decoration: none;
   font-family: 'Trueno Light';
   background-color: var(--alices-darkred);
+  box-shadow: var(--shadow-1);
+}
+.menu a:hover {
+  box-shadow: var(--shadow-3);
 }
 
 hr {
