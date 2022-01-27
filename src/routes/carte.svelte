@@ -21,7 +21,7 @@
     spirits,
     softs,
     food,
-  } from '../data/menu
+  } from './menu';
   export const hydrate = dev;
   export const router = browser;
   export const prerender = true;
