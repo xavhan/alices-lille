@@ -1,6 +1,6 @@
 <script lang="ts">
   import { euro } from '$lib/money';
-  import type { FoodItem } from '$lib/types';
+  import type { FoodItem } from 'src/data/types';
   import Stack from './Stack.svelte';
   export let food: FoodItem[];
 </script>

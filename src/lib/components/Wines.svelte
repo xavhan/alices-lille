@@ -1,6 +1,6 @@
 <script lang="ts">
   import { euro } from '$lib/money';
-  import type { Wine } from '$lib/types';
+  import type { Wine } from 'src/data/types';
   import Stack from './Stack.svelte';
   export let wines: Wine[];
 </script>
