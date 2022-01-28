@@ -15,13 +15,12 @@
   import {
     taps,
     bottles,
-    shooters,
     wines,
     cocktails,
     spirits,
     softs,
     food,
-  } from './menu';
+  } from '$data/menu';
   export const hydrate = dev;
   export const router = browser;
   export const prerender = true;
@@ -33,7 +32,7 @@
 />
 
 <Stack>
-  <MenuBlock title="Bières Pression" text="Disponibles en 25, 33 ou 50cl">
+  <MenuBlock title="Bières Pression" text="25, 33 ou 50cl">
     <Beers beers={taps} />
   </MenuBlock>
 
@@ -50,7 +49,7 @@
   </MenuBlock>
 
   <MenuBlock title="Shooters" text="4€ l’unité & 20€ les 6">
-    <Shooters {shooters} />
+    <Shooters />
   </MenuBlock>
 
   <MenuBlock title="Spiritueux">

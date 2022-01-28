@@ -5,31 +5,31 @@
   export let wines: Wine[];
 </script>
 
-<div class="wines">
-  <Stack --space="10px">
+<div class="flex flex-col pt-2">
+  <Stack>
     {#each wines as { label, estate, prices, grapes, text }}
-      <div class="wine">
-        <div class="names">
+      <div class="flex items-center">
+        <div class="flex-1 text-left">
           <div>
-            <div class="label">{label}</div>
+            <div>{label}</div>
             {#if grapes}
-              <div class="grapes">{grapes}</div>
+              <div class="text-rouge">{grapes}</div>
             {/if}
             {#if estate}
-              <div class="estate">{estate}</div>
+              <div class="text-dore">{estate}</div>
             {/if}
             {#if text}
-              <div class="text">{text}</div>
+              <div class="text-rouge">{text}</div>
             {/if}
           </div>
         </div>
         <div>
           <Stack horizontal>
             {#if prices['12']}
-              <div class="price">{euro(prices['12'])}</div>
+              <div>{euro(prices['12'])}</div>
             {/if}
             {#if prices['75']}
-              <div class="price">{euro(prices['75'])}</div>
+              <div>{euro(prices['75'])}</div>
             {/if}
           </Stack>
         </div>
@@ -37,30 +37,3 @@
     {/each}
   </Stack>
 </div>
-
-<style>
-  .wines {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    /* font-family: 'Trueno Light'; */
-  }
-  .wine {
-    display: flex;
-    align-items: center;
-  }
-  .names {
-    flex: 1;
-    text-align: start;
-  }
-  /* .label{
-        font-family: 'Trueno Light';
-    } */
-  .estate {
-    color: var(--alices-gold);
-  }
-  .grapes,
-  .text {
-    color: var(--alices-darkred);
-  }
-</style>

@@ -5,22 +5,22 @@
   export let spirits: Spirit[];
 </script>
 
-<div class="spirits">
-  <Stack --space="10px">
+<div class="flex flex-col pt-2">
+  <Stack>
     {#each spirits as { label, prices, description, degree }}
-      <div class="spirit">
-        <div class="names">
+      <div class="flex items-center">
+        <div class="flex-1 text-left">
           <div>
             <div class="label">
-              {label}<span class="degree">{degree.toString()}°</span>
+              {label}<span class="ml-1 text-ropuge">{degree.toString()}°</span>
             </div>
-            <div class="description">{description}</div>
+            <div class="text-dore">{description}</div>
           </div>
         </div>
         <div>
           <Stack horizontal>
             {#if prices['12']}
-              <div class="price">{euro(prices['12'])}</div>
+              <div>{euro(prices['12'])}</div>
             {/if}
           </Stack>
         </div>
@@ -28,30 +28,3 @@
     {/each}
   </Stack>
 </div>
-
-<style>
-  .spirits {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    /* font-family: 'Trueno Light'; */
-  }
-  .spirit {
-    display: flex;
-    align-items: center;
-  }
-  .names {
-    flex: 1;
-    text-align: start;
-  }
-  /* .label{
-        font-family: 'Trueno Light';
-    } */
-  .description {
-    color: var(--alices-gold);
-  }
-  .degree {
-    color: var(--alices-darkred);
-    margin-left: 5px;
-  }
-</style>

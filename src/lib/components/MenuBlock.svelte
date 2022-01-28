@@ -1,35 +1,18 @@
 <script lang="ts">
   export let title;
-  // export let image;
   export let text = '';
 </script>
 
-<div class="menublock">
+<div class="pb-2">
   <hr />
-  <div class="menublock_title">
-    <div class="title">{title}</div>
+  <div class="flex justify-between items-baseline">
+    <div class="font-sans-2 text-dore items-baseline">{title}</div>
 
     {#if text}
-      <div class="text">{text}</div>
+      <div>{text}</div>
     {/if}
   </div>
   <hr />
 
-  <!-- {#if image}
-      <img src={image} alt={title} />
-    {/if} -->
-
   <slot />
 </div>
-
-<style>
-  .menublock_title {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  .title {
-    color: var(--alices-gold);
-    font-family: 'Trueno Light';
-  }
-</style>

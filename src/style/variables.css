@@ -1,0 +1,21 @@
+:root {
+  /* https://www.figma.com/file/cRCUqgLlAfwNf41xaD3VlE/ALICES-COM?node-id=3%3A2494 */
+  --alices-rouge: #a61a2f;
+
+  --alices-noir: #302a25;
+  --alices-vin: #4d101c;
+
+  --alices-dore: #ba9a60;
+  --alices-biere: #e2ac68;
+
+  --alices-cappucino: #dab398;
+  --alices-cafe: #b8734c;
+
+  --alices-gris: #cbc9bd;
+  --alices-chocolat: #8e5a49;
+
+  --alices-blanccasse: #fbfae6;
+  --alices-beige: #fedbae;
+
+  --font-sans-2: 'Trueno Light';
+}

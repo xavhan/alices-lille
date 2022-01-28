@@ -1,11 +1,4 @@
-import type {
-  Beer,
-  Wine,
-  Cocktail,
-  Spirit,
-  Soft,
-  FoodItem,
-} from 'src/data/typesypes';
+import type { Beer, Wine, Cocktail, Spirit, Soft, FoodItem } from './types';
 export const taps: Beer[] = [
   {
     label: 'Pills - la Bise 5º4',
@@ -168,6 +161,12 @@ export const cocktails: Cocktail[] = [
     label: 'GIMLET',
     composition: "Gin infusé feuille de clémentine, citron, cordial d'agrumes",
     prices: { 12: 10 },
+  },
+  {
+    label: "Général Clem'to",
+    composition: "Cordial d'agrumes, pamplemousse, citron, tonic",
+    virgin: true,
+    prices: { 12: 6 },
   },
 ];
 

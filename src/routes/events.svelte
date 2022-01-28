@@ -5,34 +5,41 @@
   import { browser, dev } from '$app/env';
   import Stack from '$lib/components/Stack.svelte';
   import { eventList } from '$lib/events';
+  import Header from '$lib/components/Header.svelte';
 
   export const hydrate = dev;
   export const router = browser;
-  // export const prerender = true; // WIP for now
+  export const prerender = true;
 </script>
 
 <SvelteSeo title="Alices | Events" description="Alices c'est aussi la fête !" />
 
 <Stack>
-  <hr />
-  <h1>Bientôt au Mini-Club</h1>
-  <hr />
+  <Header>Bientôt dans le Mini-Club</Header>
 
-  <ol>
-    <Stack>
-      {#each eventList.future as event}
-        <li class="flex flex-col">
-          <Event {event} />
-        </li>
-      {/each}
-    </Stack>
-  </ol>
+  {#if eventList.future.length}
+    <ol>
+      <Stack>
+        {#each eventList.future as event}
+          <li class="flex flex-col">
+            <Event {event} />
+          </li>
+        {/each}
+      </Stack>
+    </ol>
+  {:else}
+    <br />
+    <br />
+    <br />
+    <br />
+    💃 🤔
+    <br />
+    <br />
+    <br />
+    <br />
+  {/if}
 
-  <br />
-  <br />
-  <hr />
-  <h1>Les succès du Mini-Club</h1>
-  <hr />
+  <Header>Les succès du Mini-Club</Header>
 
   <ol>
     <Stack>
@@ -44,12 +51,3 @@
     </Stack>
   </ol>
 </Stack>
-
-<style>
-  .flex {
-    display: flex;
-  }
-  .flex-col {
-    flex-direction: column;
-  }
-</style>

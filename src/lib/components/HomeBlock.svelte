@@ -1,24 +1,12 @@
 <script lang="ts">
+  import Header from '$lib/components/Header.svelte';
   export let title = '';
 </script>
 
-<div>
-  <hr />
-  <div class="title">{title}</div>
-  <hr />
-</div>
+<Header>
+  {title}
+</Header>
 
-<div class="content">
+<div class="pt-2 pb-2">
   <slot />
 </div>
-
-<style>
-  .title {
-    color: var(--alices-gold);
-    font-family: 'Trueno Light';
-  }
-  .content {
-    padding-top: var(--spacing);
-    padding-bottom: var(--spacing);
-  }
-</style>
