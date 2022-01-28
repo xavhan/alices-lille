@@ -32,7 +32,7 @@
 />
 
 <Stack>
-  <MenuBlock title="Bières Pression" text="Disponibles en 25, 33 ou 50cl">
+  <MenuBlock title="Bières Pression" text="25, 33 ou 50cl">
     <Beers beers={taps} />
   </MenuBlock>
 
