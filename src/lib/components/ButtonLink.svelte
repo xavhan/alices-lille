@@ -9,6 +9,7 @@
 
 <style>
   a {
+    font-size: var(--font-size-0);
     display: block;
     text-transform: uppercase;
     text-decoration: none;

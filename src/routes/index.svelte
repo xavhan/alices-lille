@@ -35,7 +35,10 @@
 
 <Stack>
   <div class="menu">
-    <ButtonLink href="./carte">Découvrir la carte</ButtonLink>
+    <Stack>
+      <ButtonLink href="./carte">Découvrir la carte</ButtonLink>
+      <ButtonLink href="./events">Nos events</ButtonLink>
+    </Stack>
   </div>
 
   <HomeBlock title="Horaires d'ouverture">

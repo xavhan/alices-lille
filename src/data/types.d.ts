@@ -63,6 +63,7 @@ export type Event = {
   guests: DJ[];
   date: string;
   facebookEvent?: string;
+  imageSrc?: string;
 };
 
 export type DJ = {

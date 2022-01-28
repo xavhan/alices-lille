@@ -15,20 +15,29 @@
 <SvelteSeo title="Alices | Events" description="Alices c'est aussi la fête !" />
 
 <Stack>
-  <Header>Bientôt au Mini-Club</Header>
+  <Header>Bientôt dans le Mini-Club</Header>
 
-  <ol>
-    <Stack>
-      {#each eventList.future as event}
-        <li class="flex flex-col">
-          <Event {event} />
-        </li>
-      {/each}
-    </Stack>
-  </ol>
-
-  <br />
-  <br />
+  {#if eventList.future.length}
+    <ol>
+      <Stack>
+        {#each eventList.future as event}
+          <li class="flex flex-col">
+            <Event {event} />
+          </li>
+        {/each}
+      </Stack>
+    </ol>
+  {:else}
+    <br />
+    <br />
+    <br />
+    <br />
+    💃 🤔
+    <br />
+    <br />
+    <br />
+    <br />
+  {/if}
 
   <Header>Les succès du Mini-Club</Header>
 

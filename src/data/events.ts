@@ -15,10 +15,12 @@ export const EVENTS: Event[] = [
       `Pour ce premier événement de 2022 on se retrouve au premier étage du ALICES. Sous la boule à facettes, c'est le MINICLUB où tu pourras danser toute la soirée.`,
       `Au programme : des bières, du vin, des cocktails de fou et toujours des shots !`,
     ].join('\n'),
+    imageSrc: '/images/miniclub001.png',
   },
   {
     label: 'Crémaillère',
     guests: [DJS.Donov],
     date: '2021-11-13',
+    imageSrc: '/images/miniclub000.jpg',
   },
 ];

@@ -9,7 +9,7 @@ export const links: Link[] = [
       href: event.facebookEvent || FACEBOOK_URL,
     },
     {
-      label: `🗓 ${event.label} dans GCal`,
+      label: `🗓 ${event.label} save the date`,
       href: linkToCalendar(event),
     },
   ]),
