@@ -9,7 +9,7 @@
 
   export const hydrate = dev;
   export const router = browser;
-  // export const prerender = true; // WIP for now
+  export const prerender = true;
 </script>
 
 <SvelteSeo title="Alices | Events" description="Alices c'est aussi la fête !" />
