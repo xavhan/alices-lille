@@ -9,7 +9,7 @@
 <style>
   /* look at my cute face*/
   .stack :global(> * + *) {
-    margin-top: var(--space, 20px);
+    margin-top: var(--spacing, var(--size-2));
   }
   .stack.horizontal {
     display: flex;
@@ -17,6 +17,6 @@
   }
   .stack.horizontal :global(> * + *) {
     margin-top: 0;
-    margin-left: var(--space, 10px);
+    margin-left: var(--spacing, var(--size-2));
   }
 </style>

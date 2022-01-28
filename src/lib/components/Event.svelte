@@ -3,6 +3,7 @@
   import Stack from '$lib/components/Stack.svelte';
   import { format } from '$lib/date';
   import { isPast, linkToCalendar } from '$lib/events';
+  import Link from './Link.svelte';
 
   export let event: Event;
 </script>
@@ -10,7 +11,7 @@
 <Stack>
   <h2>{event.label}</h2>
 
-  <div class="flex justify-between">
+  <div class="flex justify-between items-center">
     <div class="flex flex-col text-left">
       <div>
         {format(event.date)}
@@ -18,23 +19,13 @@
 
       {#if event.facebookEvent}
         <div>
-          <a
-            href={event.facebookEvent}
-            title="Event facebook"
-            target="_blank"
-            rel="nofollow noopener">Event facebook</a
-          >
+          <Link href={event.facebookEvent} target="_blank">Event facebook</Link>
         </div>
       {/if}
 
       {#if !isPast(event)}
         <div>
-          <a
-            href={linkToCalendar(event)}
-            title="Note la date"
-            target="_blank"
-            rel="nofollow noopener">Note la date</a
-          >
+          <Link href={linkToCalendar(event)} target="_blank">Note la date</Link>
         </div>
       {/if}
     </div>
@@ -51,21 +42,3 @@
     </div>
   </div>
 </Stack>
-
-<style>
-  .flex {
-    display: flex;
-  }
-  .flex-col {
-    flex-direction: column;
-  }
-  .justify-between {
-    justify-content: space-between;
-  }
-  .text-left {
-    text-align: left;
-  }
-  .text-right {
-    text-align: right;
-  }
-</style>

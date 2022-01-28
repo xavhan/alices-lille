@@ -1,0 +1,24 @@
+@import 'open-props/style';
+@import './variables';
+@import './soon-to-be-tailwind.css';
+
+body {
+  background-color: var(--alices-blanccasse);
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: var(--font-letterspacing-2);
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  padding: 60px 30px;
+  color: var(--alices-vin);
+}
+
+.menu {
+  margin-bottom: var(--size-5);
+}
+
+a,
+a:visited {
+  color: var(--alices-vin);
+}

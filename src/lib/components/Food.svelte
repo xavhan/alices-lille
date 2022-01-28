@@ -5,19 +5,19 @@
   export let food: FoodItem[];
 </script>
 
-<div class="food">
-  <Stack --space="10px">
+<div class="flex flex-col pt-2">
+  <Stack>
     {#each food as { label, prices }}
-      <div class="fooditem">
-        <div class="names">
+      <div class="flex items-center">
+        <div class="flex-1 text-left">
           <div>
-            <div class="label">{label}</div>
+            <div>{label}</div>
           </div>
         </div>
         <div>
           <Stack horizontal>
             {#if prices['200']}
-              <div class="price">{euro(prices['200'])}</div>
+              <div>{euro(prices['200'])}</div>
             {/if}
           </Stack>
         </div>
@@ -25,20 +25,3 @@
     {/each}
   </Stack>
 </div>
-
-<style>
-  .food {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    /* font-family: 'Trueno Light'; */
-  }
-  .fooditem {
-    display: flex;
-    align-items: center;
-  }
-  .names {
-    flex: 1;
-    text-align: start;
-  }
-</style>

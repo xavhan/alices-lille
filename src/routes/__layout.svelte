@@ -1,6 +1,7 @@
 <script lang="ts">
-  import '../reset.css';
-  import '../app.css';
+  import '../style/reset.css';
+  import '../style/app.css';
+  import Link from '$lib/components/Link.svelte';
 </script>
 
 <svelte:head>
@@ -18,23 +19,20 @@
   </style>
 </svelte:head>
 
-<main>
+<main class="mx-auto">
   <header>
-    <a href="/">
+    <a href="/" class="no-underline">
       <h1 class="logo">Alices</h1>
     </a>
 
-    <h2 class="cbsc">Café • Bar • Saisonnier • Culturel</h2>
+    <h2 class="cbsc mb-2 font-sans-2 text-dore">
+      Café • Bar • Saisonnier • Culturel
+    </h2>
 
     <div class="address">
-      <a
-        href="https://goo.gl/maps/whMaXe8PMdZi9cXB7"
-        target="_blank"
-        rel="nofollow noopener"
-        title="Voir sur Google Maps"
-      >
+      <Link href="https://goo.gl/maps/whMaXe8PMdZi9cXB7" target="_blank">
         <address>12 rue des 3 couronnes, 59000 Lille</address>
-      </a>
+      </Link>
     </div>
   </header>
 
@@ -43,28 +41,19 @@
 
 <style>
   main {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: var(--size-xs);
   }
 
   header {
-    margin-bottom: var(--spacing-huge);
+    margin-bottom: var(--size-6);
   }
 
   .logo {
-    font-size: 60px;
+    font-size: var(--font-size-8);
+    color: var(--alices-noir);
   }
 
   .cbsc {
-    color: var(--alices-gold);
-    font-family: 'Trueno Light';
-    font-size: 12px;
-    margin-bottom: var(--spacing);
-  }
-  a {
-    text-decoration: none;
-  }
-  a:visited {
-    color: white;
+    font-size: var(--font-size-0);
   }
 </style>

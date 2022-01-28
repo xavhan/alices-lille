@@ -6,6 +6,8 @@
   import HomeBlock from '$lib/components/HomeBlock.svelte';
   import Stack from '$lib/components/Stack.svelte';
   import { timerange } from '$lib/time';
+  import ButtonLink from '$lib/components/ButtonLink.svelte';
+  import Link from '$lib/components/Link.svelte';
 
   export const hydrate = dev;
   export const router = browser;
@@ -33,11 +35,11 @@
 
 <Stack>
   <div class="menu">
-    <a href="./carte">Découvrir la carte</a>
+    <ButtonLink href="./carte">Découvrir la carte</ButtonLink>
   </div>
 
   <HomeBlock title="Horaires d'ouverture">
-    Mardi au Jeudi : {timerange(['16:00', '0:00'])}
+    Mardi au Jeudi : {timerange(['16:00', '00:00'])}
     <br />
     Vendredi : {timerange(['16:00', '1:00'])}
     <br />
@@ -45,29 +47,14 @@
   </HomeBlock>
 
   <HomeBlock title="Réseaux sociaux">
-    <a
-      href={INSTAGRAM_URL}
-      target="_blank"
-      rel="nofollow noopener"
-      title="Aller sur notre Insta">Instagram</a
-    >
+    <Link href={INSTAGRAM_URL} target="_blank">Instagram</Link>
     •
-    <a
-      href={FACEBOOK_URL}
-      target="_blank"
-      rel="nofollow noopener"
-      title="Aller sur notre Facebook">Facebook</a
-    >
+    <Link href={FACEBOOK_URL} target="_blank">Facebook</Link>
   </HomeBlock>
 
   <HomeBlock title="Soutien">
-    <a
-      href={GOOGLE_URL}
-      target="_blank"
-      rel="nofollow noopener"
-      title="Laisser un commentaire sur Google"
-    >
+    <Link href={GOOGLE_URL} target="_blank">
       Ça vous a plu ? faites-le savoir !
-    </a>
+    </Link>
   </HomeBlock>
 </Stack>

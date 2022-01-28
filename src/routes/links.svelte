@@ -2,6 +2,7 @@
   import { browser, dev } from '$app/env';
   import SvelteSeo from 'svelte-seo';
   import Stack from '$lib/components/Stack.svelte';
+  import ButtonLink from '$lib/components/ButtonLink.svelte';
   import { links } from '$lib/links';
 
   export const hydrate = dev;
@@ -14,31 +15,14 @@
   description="Tous les liens de la vie du bar"
 />
 
-<Stack>
+<Stack --spacing="var(--size-4)">
   <hr />
 
   {#each links as { href, label, target = '_blank' }}
-    <a {href} {target} rel="nofollow noopener">
+    <ButtonLink {href} {target}>
       {label}
-    </a>
+    </ButtonLink>
   {/each}
 
   <hr />
 </Stack>
-
-<style>
-  a {
-    display: block;
-    text-transform: uppercase;
-    color: var(--alices-white);
-    padding: var(--size-4) var(--size-6);
-    border-radius: var(--radius-round);
-    text-decoration: none;
-    font-family: 'Trueno Light';
-    background-color: var(--alices-darkred);
-    box-shadow: var(--shadow-1);
-  }
-  a:hover {
-    box-shadow: var(--shadow-3);
-  }
-</style>

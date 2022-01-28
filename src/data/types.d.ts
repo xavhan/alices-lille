@@ -30,6 +30,7 @@ export type Wine = {
 export type Cocktail = {
   label: string;
   composition: string;
+  virgin?: true;
   prices: Partial<{
     12: number; // TODO: change key
   }>;

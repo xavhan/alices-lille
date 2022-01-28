@@ -1,19 +1,6 @@
-<script lang="ts">
-  import Stack from './Stack.svelte';
-  // export let shooters = [];
-</script>
-
-<div class="shooters">
-  <Stack --space="10px">
-    <div class="shooter">
-      Nos recettes maison changent régulièrement <br />
-      Viens voir les jarres au bar !
-    </div>
-  </Stack>
+<div class="pt-2">
+  <div class="text-left">
+    Nos recettes maison changent régulièrement <br />
+    Viens voir les jarres au bar !
+  </div>
 </div>
-
-<style>
-  .shooters {
-    text-align: start;
-  }
-</style>
