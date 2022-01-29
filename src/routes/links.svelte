@@ -13,6 +13,7 @@
 <SvelteSeo
   title="Alices | Liens"
   description="Tous les liens de la vie du bar"
+  canonical="https://alices-lille.com/links"
 />
 
 <Stack --spacing="var(--size-4)">

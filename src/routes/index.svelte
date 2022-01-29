@@ -17,6 +17,7 @@
 <SvelteSeo
   title="Alices | Lille"
   description="Café Bar Saisonnier Culturel"
+  canonical="https://alices-lille.com"
   jsonLd={{
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',

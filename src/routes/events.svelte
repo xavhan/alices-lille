@@ -12,7 +12,11 @@
   export const prerender = true;
 </script>
 
-<SvelteSeo title="Alices | Events" description="Alices c'est aussi la fête !" />
+<SvelteSeo
+  title="Alices | Events"
+  description="Alices c'est aussi la fête !"
+  canonical="https://alices-lille.com/events"
+/>
 
 <Stack>
   <Header>Bientôt dans le Mini-Club</Header>

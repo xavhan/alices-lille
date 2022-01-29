@@ -29,6 +29,7 @@
 <SvelteSeo
   title="Alices | La Carte"
   description="Venez decouvrir la carte des boissons et tartinables du Alices"
+  canonical="https://alices-lille.com/carte"
 />
 
 <Stack>
