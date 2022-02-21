@@ -15,23 +15,20 @@ export const InnerSense: DJ = {
   links: [
     'https://soundcloud.com/inner-sense',
     'https://www.facebook.com/InnerSenseFr',
-    `https://www.instagram.com/donovlamalice`
+    `https://www.instagram.com/donovlamalice`,
   ],
   description:
     'Passionné de musique et collectionneur de disques depuis 30 ans Inner Sense affectionne les sonorités House, Garage, Disco et Funky. Il a également produit plusieurs morceaux pour le label My Love Is Underground dont il est très proche.',
 };
 
-
 export const JimIrie: DJ = {
   label: 'Jim Irie',
-  links: [
-    'https://www.soundcloud.com/jimirieonelove'
-  ],
+  links: ['https://www.soundcloud.com/jimirieonelove'],
   description: [
     'JIM IRE one love = French Boogie/ Zouk / Reggae / Disco / Modern Soul / Gospel / Folk et bien plus encore...',
     `Que ce soit au sein des crews Discomatin, La Freak, Babylon Rockerz / Red Lebanese ou avec sa résidence sur les ondes de Rinse France, Jim Irie est partout, toujours chaud bouillant !`,
     `Disquaire extraordinaire, ambianceur intersidéral, on est super heureuses de l’accueillir chez nous, chez Alices !`,
-  ].join('\n')
+  ].join('\n'),
 };
 
 export const DJS = {

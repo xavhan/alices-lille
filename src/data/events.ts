@@ -13,7 +13,7 @@ export const EVENTS: Event[] = [
       ``,
       `Au premier étage du ALICES sous la boule à facettes, viens bouger et transpirer comme si demain n'existait pas avec cette fois ci aux platines JIM IRE et la participation du légendaire DONOV 💃🏻🕺🏻`,
       ``,
-      `Au programme des bières, du vin, des cocktails, des shooters et du son du son du son ! ☄️🍷🍻🍸☄️`
+      `Au programme des bières, du vin, des cocktails, des shooters et du son du son du son ! ☄️🍷🍻🍸☄️`,
     ].join('\n'),
     imageSrc: '/images/miniclub002.png',
   },

@@ -20,7 +20,7 @@ const toGoogleDateRange = (date: string) => {
   const twoAMFrance = '010000';
   return [
     y + m + d + 'T' + ninePMFrance + 'Z',
-    y + m + String(Number(d)+1).padStart(2, '0') + 'T' + twoAMFrance + 'Z',
+    y + m + String(Number(d) + 1).padStart(2, '0') + 'T' + twoAMFrance + 'Z',
   ].join('/');
 };
 

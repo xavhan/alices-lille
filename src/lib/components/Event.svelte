@@ -54,7 +54,9 @@
 
         {#if !isPast(event)}
           <div>
-            <Link href={linkToCalendar(event)} target="_blank">Note la date</Link>
+            <Link href={linkToCalendar(event)} target="_blank"
+              >Note la date</Link
+            >
           </div>
         {/if}
       </div>
