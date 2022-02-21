@@ -54,7 +54,31 @@
                 <ul class="text-right">
                   {#each guest.links as link}
                     <li>
-                      <a href={link}>{link}</a>
+                      {#if typeof link === 'string'}
+                        <Link
+                          href={link}
+                          target="_blank"
+                          title={'aller ecouter sur ' + link}>{link}</Link
+                        >
+                      {:else if link.type === 'soundcloud'}
+                        <Link
+                          href={link.href}
+                          target="_blank"
+                          title="aller sur son Soundcloud">Soundcloud</Link
+                        >
+                      {:else if link.type === 'facebook'}
+                        <Link
+                          href={link.href}
+                          target="_blank"
+                          title="aller sur son Facebook">Facebook</Link
+                        >
+                      {:else if link.type === 'instagram'}
+                        <Link
+                          href={link.href}
+                          target="_blank"
+                          title="aller sur son Instagram">Instagram</Link
+                        >
+                      {/if}
                     </li>
                   {/each}
                   <br />

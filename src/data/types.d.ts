@@ -66,8 +66,22 @@ export type Event = {
   imageSrc?: string;
 };
 
+export type DJLink =
+  | string
+  | {
+      type: 'soundcloud';
+      href: string;
+    }
+  | {
+      type: 'instagram';
+      href: string;
+    }
+  | {
+      type: 'facebook';
+      href: string;
+    };
 export type DJ = {
   label: string;
-  links?: string[];
+  links?: DJLink[];
   description?: string;
 };
