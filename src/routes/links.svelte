@@ -7,7 +7,6 @@
 
   export const hydrate = dev;
   export const router = browser;
-  export const prerender = true;
 </script>
 
 <SvelteSeo
