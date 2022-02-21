@@ -25,6 +25,9 @@
 .text-right {
   text-align: right;
 }
+.text-justify {
+  text-align: justify;
+}
 .no-underline {
   text-decoration-line: none;
 }
@@ -58,4 +61,10 @@
 }
 .font-sans-2 {
   font-family: var(--font-sans-2), sans-serif;
+}
+.leading-4 {
+  line-height: 1rem;
+}
+.leading-6 {
+  line-height: 1.5rem;
 }

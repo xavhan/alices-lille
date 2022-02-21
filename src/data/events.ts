@@ -4,7 +4,7 @@ import type { Event } from './types';
 export const EVENTS: Event[] = [
   {
     label: 'MiniClub#2',
-    guests: [DJS.Donov, DJS.JimIrie],
+    guests: [DJS.JimIrie, DJS.Donov],
     date: '2022-03-05',
     facebookEvent: 'https://www.facebook.com/events/278939877539123/',
     description: [
@@ -19,7 +19,7 @@ export const EVENTS: Event[] = [
   },
   {
     label: 'MiniClub#1',
-    guests: [DJS.Donov, DJS.InnerSense],
+    guests: [DJS.InnerSense, DJS.Donov],
     date: '2022-02-19',
     facebookEvent: 'https://www.facebook.com/events/619313212531323/',
     description: [
