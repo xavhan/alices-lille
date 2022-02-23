@@ -3,6 +3,8 @@ import type { Event } from './types';
 
 export const EVENTS: Event[] = [
   {
+    n: 2,
+    slug: "jimirie-donov",
     label: 'MiniClub#2',
     guests: [DJS.JimIrie, DJS.Donov],
     date: '2022-03-05',
@@ -18,6 +20,8 @@ export const EVENTS: Event[] = [
     imageSrc: '/images/miniclub002.png',
   },
   {
+    n: 1,
+    slug: "innersense-donov",
     label: 'MiniClub#1',
     guests: [DJS.InnerSense, DJS.Donov],
     date: '2022-02-19',
