@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import { format } from '$lib/date';
   import Header from "$lib/components/Header.svelte";
@@ -20,10 +24,6 @@
 <small>Alices, le {format(date)}</small>
 
 <style>
-  .date {
-    text-align: right;
-    margin-bottom: var(--size-4);
-  }
   :global(*) { 
     text-align: left;
   }
