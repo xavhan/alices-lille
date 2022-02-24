@@ -14,7 +14,7 @@ export const eventList: { future: Event[]; past: Event[] } = {
   ...groupByDate(EVENTS),
 };
 
-export const getEvent = (n: Event['n']) => EVENTS.find(e => e.n === n)
+export const getEvent = (n: Event['n']) => EVENTS.find((e) => e.n === n);
 
 const toGoogleDateRange = (date: string) => {
   const [y, m, d] = date.split('-');

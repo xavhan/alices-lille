@@ -59,7 +59,7 @@ export type FoodItem = {
 
 export type Event = {
   n?: number;
-  slug?: string; 
+  slug?: string;
   label: string;
   description?: string;
   guests: DJ[];

@@ -4,7 +4,7 @@ import type { Event } from './types';
 export const EVENTS: Event[] = [
   {
     n: 2,
-    slug: "jimirie-donov",
+    slug: 'jimirie-donov',
     label: 'MiniClub#2',
     guests: [DJS.JimIrie, DJS.Donov],
     date: '2022-03-05',
@@ -17,11 +17,11 @@ export const EVENTS: Event[] = [
       ``,
       `Au programme des bières, du vin, des cocktails, des shooters et du son du son du son ! ☄️🍷🍻🍸☄️`,
     ].join('\n'),
-    imageSrc: '/images/miniclub002.png',
+    imageSrc: '/images/miniclub002.jpg',
   },
   {
     n: 1,
-    slug: "innersense-donov",
+    slug: 'innersense-donov',
     label: 'MiniClub#1',
     guests: [DJS.InnerSense, DJS.Donov],
     date: '2022-02-19',
@@ -34,9 +34,11 @@ export const EVENTS: Event[] = [
       `Pour ce premier événement de 2022 on se retrouve au premier étage du ALICES. Sous la boule à facettes, c'est le MINICLUB où tu pourras danser toute la soirée.`,
       `Au programme : des bières, du vin, des cocktails de fou et toujours des shots !`,
     ].join('\n'),
-    imageSrc: '/images/miniclub001.png',
+    imageSrc: '/images/miniclub001.jpg',
   },
   {
+    n: 0,
+    slug: 'cremaillere',
     label: 'Crémaillère',
     guests: [DJS.Donov],
     date: '2021-11-13',

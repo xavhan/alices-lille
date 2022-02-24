@@ -1,11 +1,11 @@
 <div>
   <hr />
-  <h1><slot /></h1>
+  <h2><slot /></h2>
   <hr />
 </div>
 
 <style>
-  h1 {
+  h2 {
     margin: var(--size-2) 0;
     font-family: 'Trueno Light';
   }
