@@ -13,12 +13,13 @@
 
 <SvelteSeo
   title="Alices | Events"
-  description="Alices c'est aussi la fête !"
+  description="Sous la boule à facettes, c'est le MINICLUB où tu pourras danser toute la soirée. Au programme : des bières, du vin, des cocktails de fou et toujours des shots ! Mais surtout du bon son avec ..."
   canonical="https://alices-lille.com/events"
 />
 
 <Stack>
   <Header>Bientôt dans le Mini-Club</Header>
+  <br />
 
   {#if eventList.future.length}
     <ol>
@@ -43,12 +44,12 @@
   {/if}
 
   <Header>Les succès du Mini-Club</Header>
-
+  <br />
   <ol>
     <Stack>
       {#each eventList.past as event}
         <li class="flex flex-col">
-          <Event {event} />
+          <Event {event} hideDesc />
         </li>
       {/each}
     </Stack>
