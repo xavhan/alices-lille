@@ -1,10 +1,10 @@
 <script context="module">
-  import { getEvent } from '$lib/events';
   export const prerender = true;
-  export async function load({ url, params }) {
+  export async function load({ url, params, fetch }) {
+    const miniclub = await fetch(`${params.n}.json`).then((r) => r.json());
     return {
       props: {
-        miniclub: getEvent(parseInt(params.n)),
+        miniclub,
         url: url.toString(),
       },
     };
