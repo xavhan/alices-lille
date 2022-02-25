@@ -36,12 +36,6 @@
       </a>
     </div>
 
-    {#if event.html}
-      <div class="mb-2">
-        {@html event.html}
-      </div>
-    {/if}
-
     <div class="py-2">
       {#if !isPast(event)}
         {#if event.facebookEvent}
@@ -62,6 +56,12 @@
       {/if}
 
       {#if !hideDesc}
+        {#if event.html}
+          <div class="mb-2">
+            {@html event.html}
+          </div>
+        {/if}
+
         <br />
 
         <ol class="text-left font-serif leading-6">
