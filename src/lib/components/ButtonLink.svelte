@@ -3,7 +3,7 @@
   export let target = undefined;
 </script>
 
-<a {href} {target} rel="nofollow noopener" class="font-sans-2">
+<a {href} {target} class="font-sans-2">
   <slot />
 </a>
 
