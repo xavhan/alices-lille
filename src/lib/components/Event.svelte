@@ -11,7 +11,7 @@
 
 <Stack>
   <div>
-    <div>
+    <div class="mb-4">
       <a
         href={isPast(event)
           ? `/miniclub/${event.n}-${event.slug}`
@@ -35,6 +35,12 @@
         />
       </a>
     </div>
+
+    {#if event.html}
+      <div class="mb-2">
+        {@html event.html}
+      </div>
+    {/if}
 
     <div class="py-2">
       {#if !isPast(event)}

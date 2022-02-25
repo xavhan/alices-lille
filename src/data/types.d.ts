@@ -66,6 +66,7 @@ export type Event = {
   date: string;
   facebookEvent?: string;
   imageSrc?: string;
+  html?: string;
 };
 
 export type DJLink =

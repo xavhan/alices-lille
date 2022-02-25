@@ -52,6 +52,9 @@
 .mb-2 {
   margin-bottom: var(--size-2);
 }
+.mb-4 {
+  margin-bottom: var(--size-4);
+}
 .ml-1 {
   margin-left: var(--size-1);
 }
