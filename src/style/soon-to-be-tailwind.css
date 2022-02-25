@@ -52,12 +52,20 @@
 .mb-2 {
   margin-bottom: var(--size-2);
 }
+.mb-4 {
+  margin-bottom: var(--size-4);
+}
 .ml-1 {
   margin-left: var(--size-1);
 }
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.font-sans {
+  font-family: var(--font-sans), sans-serif;
+  letter-spacing: var(--font-letterspacing-2);
+  text-transform: uppercase;
 }
 .font-sans-2 {
   font-family: var(--font-sans-2), sans-serif;
@@ -68,3 +76,4 @@
 .leading-6 {
   line-height: 1.5rem;
 }
+

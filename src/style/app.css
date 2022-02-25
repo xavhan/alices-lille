@@ -4,21 +4,15 @@
 
 body {
   background-color: var(--alices-blanccasse);
-  font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: var(--font-letterspacing-2);
-  flex-direction: column;
   text-align: center;
-  text-transform: uppercase;
-  display: flex;
-  padding: 60px 30px;
-  color: var(--alices-vin);
-}
-
-.menu {
-  margin-bottom: var(--size-5);
+  padding: var(--size-8) var(--size-6);
 }
 
 a,
 a:visited {
   color: var(--alices-vin);
+}
+
+hr {
+  border-top: var(--border-size-1) solid var(--alices-dore);
 }

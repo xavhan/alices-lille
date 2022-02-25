@@ -35,7 +35,7 @@
 />
 
 <Stack>
-  <div class="menu">
+  <div class="menu mb-4">
     <Stack>
       <ButtonLink href="./carte">Découvrir la carte</ButtonLink>
       <ButtonLink href="./events">Nos events</ButtonLink>
@@ -51,13 +51,13 @@
   </HomeBlock>
 
   <HomeBlock title="Réseaux sociaux">
-    <Link href={INSTAGRAM_URL} target="_blank">Instagram</Link>
+    <Link href={INSTAGRAM_URL} target="_blank" title="Aller sur Instagram">Instagram</Link>
     •
-    <Link href={FACEBOOK_URL} target="_blank">Facebook</Link>
+    <Link href={FACEBOOK_URL} target="_blank" title="Aller sur Facebook">Facebook</Link>
   </HomeBlock>
 
   <HomeBlock title="Soutien">
-    <Link href={GOOGLE_URL} target="_blank">
+    <Link href={GOOGLE_URL} target="_blank"  title="Mettre une note sur Google">
       Ça vous a plu ? faites-le savoir !
     </Link>
   </HomeBlock>

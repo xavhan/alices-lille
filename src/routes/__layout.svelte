@@ -19,7 +19,7 @@
   </style>
 </svelte:head>
 
-<main class="mx-auto">
+<main class="mx-auto font-sans">
   <header>
     <a href="/" class="no-underline">
       <h1 class="logo">Alices</h1>
