@@ -23,7 +23,7 @@
     "husky": "^7.0.4",
     "prettier": "~2.5.0",
     "prettier-plugin-svelte": "^2.2.0",
-    "svelte": "^3.34.0",
+    "svelte": "^3.46.4",
     "svelte-check": "^2.0.0",
     "svelte-preprocess": "^4.0.0",
     "svelte-sitemap": "^2.1.2",
