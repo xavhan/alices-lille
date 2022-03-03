@@ -12,17 +12,20 @@
   export const hydrate = dev;
   export const router = browser;
   export const prerender = true;
+
+  const SEO_DESCRIPTION =
+    "Situé entre la grand place et l'opéra de Lille, Alices vous accueille pour un café, un verre de vin nature, une pinte de bière locale ou même faire la fête le soir dans son Mini Club. Réservation possible sur Instagram ou Facebook.";
 </script>
 
 <SvelteSeo
   title="Alices | Lille"
-  description="Café Bar Saisonnier Culturel"
+  description={SEO_DESCRIPTION}
   canonical="https://alices-lille.com"
   jsonLd={{
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Alices',
-    description: 'Café Bar Saisonnier Culturel',
+    description: SEO_DESCRIPTION,
     currenciesAccepted: 'EUR',
     openingHours: ['Tu-Th 16:00-00:00', 'Fr 16:00-01:00', 'Sa 15:00-02:00'],
     address: '12 rue des 3 couronnes, 59000 Lille, France',

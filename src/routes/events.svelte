@@ -14,7 +14,7 @@
 
 <SvelteSeo
   title="Alices | Events"
-  description="Sous la boule à facettes, c'est le MINICLUB où tu pourras danser toute la soirée. Au programme : des bières, du vin, des cocktails de fou et toujours des shots ! Mais surtout du bon son avec ..."
+  description="Sous la boule à facettes, c'est le Mini Club où tu pourras danser toute la soirée. Au programme : des bières, du vin, des cocktails de fou et toujours des shots ! Mais surtout du bon son avec ..."
   canonical="https://alices-lille.com/events"
 />
 

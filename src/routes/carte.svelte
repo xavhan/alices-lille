@@ -24,11 +24,14 @@
   export const hydrate = dev;
   export const router = browser;
   export const prerender = true;
+
+  const SEO_DESCRIPTION =
+    'Café torréfié à Lille, vins natures et surprenants, bières locales, cocktails délicieux, large gamme de softs et tartinables faits sur place';
 </script>
 
 <SvelteSeo
   title="Alices | La Carte"
-  description="Venez decouvrir la carte des boissons et tartinables du Alices"
+  description={SEO_DESCRIPTION}
   canonical="https://alices-lille.com/carte"
 />
 
