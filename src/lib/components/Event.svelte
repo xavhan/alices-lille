@@ -20,6 +20,7 @@
           event.label
         }`}
         target={isPast(event) ? null : '_blank'}
+        rel={isPast(event) ? null : 'nofollow'}
       >
         <img
           src={event.imageSrc}
@@ -40,15 +41,15 @@
       {#if !isPast(event)}
         {#if event.facebookEvent}
           <Link
+            external
             href={event.facebookEvent}
-            target="_blank"
             title="Aller sur l'event Facebook">Event facebook</Link
           > •
         {/if}
 
         <Link
+          external
           href={linkToCalendar(event)}
-          target="_blank"
           title="Sauvegarder dans le calendrier">Save the date</Link
         >
 
@@ -76,26 +77,26 @@
                   <li>
                     {#if typeof link === 'string'}
                       <Link
+                        external
                         href={link}
-                        target="_blank"
                         title={'aller ecouter sur ' + link}>{link}</Link
                       >
                     {:else if link.type === 'soundcloud'}
                       <Link
+                        external
                         href={link.href}
-                        target="_blank"
                         title="aller sur son Soundcloud">Soundcloud</Link
                       >
                     {:else if link.type === 'facebook'}
                       <Link
+                        external
                         href={link.href}
-                        target="_blank"
                         title="aller sur son Facebook">Facebook</Link
                       >
                     {:else if link.type === 'instagram'}
                       <Link
+                        external
                         href={link.href}
-                        target="_blank"
                         title="aller sur son Instagram">Instagram</Link
                       >
                     {/if}

@@ -51,13 +51,17 @@
   </HomeBlock>
 
   <HomeBlock title="Réseaux sociaux">
-    <Link href={INSTAGRAM_URL} target="_blank">Instagram</Link>
+    <Link external href={INSTAGRAM_URL} title="aller sur notre Instagram"
+      >Instagram</Link
+    >
     •
-    <Link href={FACEBOOK_URL} target="_blank">Facebook</Link>
+    <Link external href={FACEBOOK_URL} title="aller sur notre Facebook"
+      >Facebook</Link
+    >
   </HomeBlock>
 
   <HomeBlock title="Soutien">
-    <Link href={GOOGLE_URL} target="_blank">
+    <Link external href={GOOGLE_URL} title="Laisser 5 etoiles sur Google">
       Ça vous a plu ? faites-le savoir !
     </Link>
   </HomeBlock>

@@ -30,7 +30,11 @@
     </h2>
 
     <div class="address">
-      <Link href="https://goo.gl/maps/whMaXe8PMdZi9cXB7" target="_blank">
+      <Link
+        external
+        href="https://goo.gl/maps/whMaXe8PMdZi9cXB7"
+        title="Voir sur Google Maps"
+      >
         <address>12 rue des 3 couronnes, 59000 Lille</address>
       </Link>
     </div>
