@@ -13,7 +13,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@sveltejs/adapter-netlify": "1.0.0-next.49",
+    "@sveltejs/adapter-static": "^1.0.0-next.28",
     "@sveltejs/kit": "1.0.0-next.291",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
