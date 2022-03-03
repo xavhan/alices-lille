@@ -14,7 +14,7 @@
     <div class="mb-4">
       <a
         href={isPast(event)
-          ? `/miniclub/${event.n}-${event.slug}`
+          ? `miniclub/${event.n}-${event.slug}`
           : event.facebookEvent}
         title={`Aller sur l'event${isPast(event) ? '' : ' Facebook'} - ${
           event.label
