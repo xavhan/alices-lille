@@ -18,7 +18,7 @@
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "eslint": "^8.3.0",
-    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^3.4.1",
     "husky": "^7.0.4",
     "prettier": "~2.5.0",
