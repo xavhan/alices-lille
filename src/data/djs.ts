@@ -32,9 +32,25 @@ export const JimIrie: DJ = {
     `Disquaire extraordinaire, ambianceur intersidéral, on est super heureuses de l’accueillir chez nous, chez Alices !`,
   ].join('\n'),
 };
+export const Ango: DJ = {
+  label: 'Ango',
+  links: [
+    {
+      type: 'mixcloud',
+      href: 'https://www.mixcloud.com/ango_supagroovalistic/',
+    },
+    { type: 'instagram', href: 'https://www.instagram.com/ango_supa/' },
+  ],
+  description: [
+    `Global Grooves // funk, soul, disco, house, brazil, afro, latin, jazz, hiphop ...`,
+    `Ango est la moitié de Supa et fondateur de la web radio Comala Radio. Musicien et DJ derrière les platines depuis plus de 10 ans, ses mixs vous proposent un voyage dans la galaxie "Global Sounds" entre Rio, Téhéran, Lagos, Détroit, Los Angeles, Londres.`,
+    `Il partage sa musique à travers les soirées, et bien sûr à travers les émissions SupaGroovalistic et Morning Sunrise`,
+  ].join('\n'),
+};
 
 export const DJS = {
   Donov,
   InnerSense,
   JimIrie,
+  Ango,
 };

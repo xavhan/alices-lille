@@ -76,6 +76,10 @@ export type DJLink =
       href: string;
     }
   | {
+      type: 'mixcloud';
+      href: string;
+    }
+  | {
       type: 'instagram';
       href: string;
     }

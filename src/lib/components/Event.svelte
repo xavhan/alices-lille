@@ -87,6 +87,12 @@
                         href={link.href}
                         title="aller sur son Soundcloud">Soundcloud</Link
                       >
+                    {:else if link.type === 'mixcloud'}
+                      <Link
+                        external
+                        href={link.href}
+                        title="aller sur son mixcloud">Mixcloud</Link
+                      >
                     {:else if link.type === 'facebook'}
                       <Link
                         external
