@@ -36,7 +36,7 @@
   jsonLd={{
     '@type': 'Event',
     name: miniclub.label,
-    url: {"https://alices-lille.com/miniclub/" + miniclub.n + '-' + miniclub.slug},
+    url: "https://alices-lille.com/miniclub/" + miniclub.n + '-' + miniclub.slug,
     description: `${miniclub.label} c'était génial ! Merci à ${miniclub.guests
       .map((dj) => dj.label)
       .join(' et ')} pour le son et l'ambiance de folie. ${format(
