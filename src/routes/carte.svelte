@@ -27,6 +27,15 @@
 
   const SEO_DESCRIPTION =
     'Café torréfié à Lille, vins natures et surprenants, bières locales, cocktails délicieux, large gamme de softs et tartinables faits sur place';
+
+  const CURRENT_SEASON = 'spring2022';
+  const filter = (items) =>
+    items.filter(
+      (item) =>
+        !item.disabled &&
+        (item.availability === undefined ||
+          item.availability.includes(CURRENT_SEASON))
+    );
 </script>
 
 <SvelteSeo
@@ -37,19 +46,19 @@
 
 <Stack>
   <MenuBlock title="Bières Pression" text="25, 33 ou 50cl">
-    <Beers beers={taps} />
+    <Beers beers={filter(taps)} />
   </MenuBlock>
 
   <MenuBlock title="Bières Bouteilles">
-    <Beers beers={bottles} />
+    <Beers beers={filter(bottles)} />
   </MenuBlock>
 
   <MenuBlock title="Vin" text="Au verre ou en bouteille">
-    <Wines {wines} />
+    <Wines wines={filter(wines)} />
   </MenuBlock>
 
   <MenuBlock title="Cocktails">
-    <Cocktails {cocktails} />
+    <Cocktails cocktails={filter(cocktails)} />
   </MenuBlock>
 
   <MenuBlock title="Shooters" text="4€ l’unité & 20€ les 6">
@@ -57,14 +66,14 @@
   </MenuBlock>
 
   <MenuBlock title="Spiritueux">
-    <Spirits {spirits} />
+    <Spirits spirits={filter(spirits)} />
   </MenuBlock>
 
   <MenuBlock title="Softs">
-    <Softs {softs} />
+    <Softs softs={filter(softs)} />
   </MenuBlock>
 
-  <MenuBlock title="Tartinades" text="pots de 200g faits sur place">
+  <MenuBlock title="Tartinades">
     <Food {food} />
   </MenuBlock>
 

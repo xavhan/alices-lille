@@ -16,6 +16,9 @@
 .items-center {
   align-items: center;
 }
+.items-end {
+  align-items: flex-end;
+}
 .items-baseline {
   align-items: baseline;
 }
@@ -70,4 +73,8 @@
 }
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.animate-blink {
+  animation: var(--animation-blink);
 }

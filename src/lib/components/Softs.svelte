@@ -7,8 +7,8 @@
 
 <div class="flex flex-col pt-2">
   <Stack>
-    {#each softs as { label, prices }}
-      <div class="flex items-center">
+    {#each softs as { label, price }}
+      <div class="flex items-end">
         <div class="flex-1 text-left">
           <div>
             <div>
@@ -18,9 +18,7 @@
         </div>
         <div>
           <Stack horizontal>
-            {#if prices['33']}
-              <div>{euro(prices['33'])}</div>
-            {/if}
+            <div>{euro(price)}</div>
           </Stack>
         </div>
       </div>
