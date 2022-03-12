@@ -94,10 +94,10 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@sveltejs/adapter-netlify@^1.0.0-next.50":
-  version "1.0.0-next.50"
-  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-netlify/-/adapter-netlify-1.0.0-next.50.tgz#090da9a1a0e1fc7097ab40a618136fd69a178e44"
-  integrity sha512-lpHvjcHiC77SPyLp7OjhenJF9KYfKsXlmUua7icNh0Hc8SKtRQf0dn+a1Zy77AslikvOX7/4HZE8zPIyIvYYqw==
+"@sveltejs/adapter-netlify@1.0.0-next.49":
+  version "1.0.0-next.49"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-netlify/-/adapter-netlify-1.0.0-next.49.tgz#c86695a0da1ac957b0a8e589bdaf1312b86a126f"
+  integrity sha512-EYP0/eK1foC90fBNn6V9fP0ngrMF3MrkaNN+wCnMj0rHGKOKUzXlIeyPtGtQnDL9cqHac39pbPhSyMaMuWZF/w==
   dependencies:
     "@iarna/toml" "^2.2.5"
     esbuild "^0.14.21"
