@@ -34,7 +34,7 @@
     )} pour le son et l'ambiance de folie. On se souviendra de ce ${format(
     miniclub.date
   )}`}
-  canonical={url}
+  canonical={"https://alices-lille.com/miniclub/" + miniclub.n + '-' + miniclub.slug}
   jsonLd={{
     '@type': 'Event',
     name: miniclub.label,
