@@ -1,11 +1,10 @@
 <script context="module">
   export const prerender = true;
-  export async function load({ url, params, fetch }) {
+  export async function load({ params, fetch }) {
     const miniclub = await fetch(`${params.n}.json`).then((r) => r.json());
     return {
       props: {
         miniclub,
-        url: url.toString(),
       },
     };
   }
@@ -20,7 +19,6 @@
   import Stack from '$lib/components/Stack.svelte';
 
   export let miniclub: EventT;
-  export let url: string;
 </script>
 
 <SvelteSeo
@@ -38,7 +36,7 @@
   jsonLd={{
     '@type': 'Event',
     name: miniclub.label,
-    url: url,
+    url: {"https://alices-lille.com/miniclub/" + miniclub.n + '-' + miniclub.slug},
     description: `${miniclub.label} c'était génial ! Merci à ${miniclub.guests
       .map((dj) => dj.label)
       .join(' et ')} pour le son et l'ambiance de folie. ${format(
