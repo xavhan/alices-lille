@@ -3,28 +3,34 @@
   import type { Beer } from 'src/data/types';
   import Stack from './Stack.svelte';
   export let beers: Beer[];
+
+  const main_label = ({ abv, label, type_label }) => {
+    return [
+      type_label ? `${type_label} - ` : '',
+      label,
+      abv ? ` ${abv}°` : '',
+    ].join('');
+  };
 </script>
 
 <div class="flex flex-col pt-2">
   <Stack>
-    {#each beers as { label, brewery, prices }}
-      <div class="flex items-center">
+    {#each beers as { type_label, label, brewery, price, abv }}
+      <div class="flex items-end">
         <div class="flex-1 text-left">
           <div>
-            <div>{label}</div>
+            <div>{main_label({ abv, label, type_label })}</div>
             <div class="text-dore">{brewery}</div>
           </div>
         </div>
         <div>
           <Stack horizontal>
-            {#if prices['25']}
-              <div>{euro(prices['25'])}</div>
-            {/if}
-            {#if prices['33']}
-              <div>{euro(prices['33'])}</div>
-            {/if}
-            {#if prices['50']}
-              <div>{euro(prices['50'])}</div>
+            {#if typeof price === 'number'}
+              <div>{euro(price)}</div>
+            {:else}
+              {#each Object.entries(price) as [_, p]}
+                <div>{euro(p)}</div>
+              {/each}
             {/if}
           </Stack>
         </div>

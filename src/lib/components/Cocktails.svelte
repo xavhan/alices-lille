@@ -7,8 +7,8 @@
 
 <div class="flex flex-col pt-2">
   <Stack>
-    {#each cocktails as { label, prices, composition, virgin }}
-      <div class="flex items-center">
+    {#each cocktails as { label, price, composition, virgin }}
+      <div class="flex items-end">
         <div class="flex-1 text-left">
           <div>
             <div>
@@ -22,9 +22,7 @@
         </div>
         <div>
           <Stack horizontal>
-            {#if prices['12']}
-              <div>{euro(prices['12'])}</div>
-            {/if}
+            <div>{euro(price)}</div>
           </Stack>
         </div>
       </div>

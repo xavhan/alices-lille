@@ -2,6 +2,19 @@
  * Can be made globally available by placing this
  * inside `global.d.ts` and removing `export` keyword
  */
+type Season = 'winter' | 'spring' | 'fall' | 'summer';
+type Year = '2022';
+type BeerType =
+  | 'Pils'
+  | 'Blonde'
+  | 'IPA'
+  | 'Ambrée'
+  | 'Triple'
+  | 'Sour'
+  | 'Trappiste'
+  | 'Gueuze'
+  | 'Sans Gluten';
+
 export type Link = {
   label: string;
   href: string;
@@ -9,52 +22,56 @@ export type Link = {
 };
 
 export type Beer = {
+  type_label?: BeerType;
   label: string;
   brewery?: string;
-  prices: Partial<{
-    25: number;
-    33: number;
-    50: number;
-  }>;
+  price:
+    | number
+    | Partial<{
+        25: number;
+        33: number;
+        50: number;
+      }>;
+  abv?: number;
+  disabled?: true;
+  availability?: `${Season}${Year}`[];
 };
 export type Wine = {
   label: string;
   grapes?: string;
   estate?: string;
   text?: string;
-  prices: Partial<{
-    12: number;
-    75: number;
-  }>;
+  price: number;
+  disabled?: true;
+  availability?: `${Season}${Year}`[];
+  highlight?: true;
 };
 export type Cocktail = {
   label: string;
   composition: string;
   virgin?: true;
-  prices: Partial<{
-    12: number; // TODO: change key
-  }>;
+  price: number;
+  disabled?: true;
+  availability?: `${Season}${Year}`[];
 };
 export type Spirit = {
   label: string;
   description: string;
-  degree: number;
-  prices: Partial<{
-    12: number; // TODO: change key
-  }>;
+  abv: number;
+  price: number;
+  disabled?: true;
+  availability?: `${Season}${Year}`[];
 };
 
 export type Soft = {
   label: string;
-  prices: Partial<{
-    33: number; // TODO: change key
-  }>;
+  price: number;
+  disabled?: true;
+  availability?: `${Season}${Year}`[];
 };
 export type FoodItem = {
   label: string;
-  prices: Partial<{
-    200: number; // TODO: change key
-  }>;
+  price: number;
 };
 
 export type Event = {

@@ -7,21 +7,19 @@
 
 <div class="flex flex-col pt-2">
   <Stack>
-    {#each spirits as { label, prices, description, degree }}
-      <div class="flex items-center">
+    {#each spirits as { label, price, description, abv }}
+      <div class="flex items-end">
         <div class="flex-1 text-left">
           <div>
             <div class="label">
-              {label}<span class="ml-1 text-ropuge">{degree.toString()}°</span>
+              {label}<span class="ml-1 text-ropuge">{abv.toString()}°</span>
             </div>
             <div class="text-dore">{description}</div>
           </div>
         </div>
         <div>
           <Stack horizontal>
-            {#if prices['12']}
-              <div>{euro(prices['12'])}</div>
-            {/if}
+            <div>{euro(price)}</div>
           </Stack>
         </div>
       </div>
