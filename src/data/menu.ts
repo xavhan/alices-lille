@@ -340,7 +340,7 @@ export const spirits: Spirit[] = [
 ];
 export const softs: Soft[] = [
   { label: 'Jus de Pomme', price: 3.5 },
-  { label: 'Jus de Pomme/Gingembre', price: 3.5 },
+  { label: 'Jus de Pomme/Rhubarbe', price: 3.5 },
   { label: 'Jus de Pamplemousse', price: 3.5, disabled: true },
   { label: 'Jus de Poire', price: 3.5, disabled: true },
   { label: 'Limo nature', price: 4.3 },
