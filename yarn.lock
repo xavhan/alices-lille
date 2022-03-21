@@ -1346,10 +1346,10 @@ svelte-seo@^1.3.1:
   dependencies:
     schema-dts "^0.8.2"
 
-svelte-sitemap@^2.1.2:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/svelte-sitemap/-/svelte-sitemap-2.3.0.tgz#5b31cdf37058baa188063bfa9f02388f3fd45f3f"
-  integrity sha512-Svm4t9Q9aiqWUanfrVdjTwSPJkY/F/LI46ue05a4MsTEAUJJfnK2FIkfoQL0UU5tavEcLRa7Dp9xxjI0GypjOQ==
+svelte-sitemap@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/svelte-sitemap/-/svelte-sitemap-2.3.2.tgz#155ab05c0dd0bb26eca9ecc434e535e9e245980f"
+  integrity sha512-hwhIg3/EFnr2mqlVstcaty4PkUQC2hC/aVy588oEYpa2o+CEJW3up7vXfZR2eE2Wrn7TupGBaW+r8/wlhY60Ow==
   dependencies:
     fast-glob "^3.2.11"
     minimist "^1.2.5"
