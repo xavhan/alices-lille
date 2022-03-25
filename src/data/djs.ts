@@ -47,10 +47,25 @@ export const Ango: DJ = {
     `Il partage sa musique à travers les soirées, et bien sûr à travers les émissions SupaGroovalistic et Morning Sunrise`,
   ].join('\n'),
 };
+export const Mimi: DJ = {
+  label: 'Mimi',
+  links: [
+    {
+      type: 'soundcloud',
+      href: 'https://soundcloud.com/mimi-ctw-podcasts',
+    },
+    { type: 'instagram', href: 'https://www.instagram.com/mimi.mailinh/' },
+  ],
+  description: [
+    `Défricheuse de musiques ambiant, downtempo, breaks, hip-hop, Balearic et raï, Mimi est Dj, résidente sur Radio Sofa, et fondatrice de la chaîne CTW Podcasts.`,
+    `Exaltée par les mélodies envoûtantes, Mimi sait manier les sonorités 70 / 80 / 90s avec justesse.`
+  ].join('\n'),
+};
 
 export const DJS = {
   Donov,
   InnerSense,
   JimIrie,
   Ango,
+  Mimi,
 };

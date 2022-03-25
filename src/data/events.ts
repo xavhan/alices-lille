@@ -3,6 +3,19 @@ import type { Event } from './types';
 
 export const EVENTS: Event[] = [
   {
+    n: 4,
+    slug: 'mimi',
+    label: 'MiniClub#4',
+    guests: [DJS.Mimi],
+    date: '2022-04-02',
+    facebookEvent: 'https://www.facebook.com/events/1304419426715968/',
+    description: [
+      `Au premier étage du ALICES sous la boule à facettes, viens bouger et transpirer comme si demain n'existait pas avec cette fois ci aux platines Ango la moitié des Supagroovalistic !`,
+      `Au programme des bières, du vin, des cocktails, des shooters et du son du son du son ! ☄️🍷🍻🍸☄️`,
+    ].join('\n'),
+    imageSrc: '/images/miniclub004.jpg',
+  },
+  {
     n: 3,
     slug: 'ango-supagroovalistic',
     label: 'MiniClub#3',
