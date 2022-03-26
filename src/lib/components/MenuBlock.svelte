@@ -6,7 +6,7 @@
 <div class="pb-2">
   <hr />
   <div class="flex justify-between items-baseline">
-    <div class="font-sans-2 text-dore items-baseline">{title}</div>
+    <div class="font-sans-2 text-rouge items-baseline">{title}</div>
 
     {#if text}
       <div>{text}</div>
