@@ -2,16 +2,19 @@ import type { DJ } from './types';
 
 export const Donov: DJ = {
   label: 'Donov',
+  slug: 'donov',
   links: [
     { type: 'instagram', href: 'https://www.instagram.com/donovlamalice' },
     { type: 'facebook', href: 'https://www.facebook.com/donovdj' },
     { type: 'soundcloud', href: 'https://soundcloud.com/donovdj/sets/dj-set' },
   ],
   description: `Joyeux luron de la scène électro/disco/bizarro lilloise, fossoyeur des brocantes et autres stocks poussiéreux à la recherche de vinyles oubliés, Donov organise également avec Bisenesse et Martine Au Bruit des soirées cools, tout en prenant part à foule d'autres projets festifs ou musicaux dans la métropole.`,
+  imageSrc: `/images/dj/donov.jpg`,
 };
 
 export const InnerSense: DJ = {
   label: 'Inner Sense',
+  slug: 'innersense',
   links: [
     { type: 'soundcloud', href: 'https://soundcloud.com/inner-sense' },
     { type: 'facebook', href: 'https://www.facebook.com/InnerSenseFr' },
@@ -23,6 +26,7 @@ export const InnerSense: DJ = {
 
 export const JimIrie: DJ = {
   label: 'Jim Irie',
+  slug: 'jimirie',
   links: [
     { type: 'soundcloud', href: 'https://www.soundcloud.com/jimirieonelove' },
   ],
@@ -34,6 +38,7 @@ export const JimIrie: DJ = {
 };
 export const Ango: DJ = {
   label: 'Ango',
+  slug: 'ango',
   links: [
     {
       type: 'mixcloud',
@@ -49,6 +54,7 @@ export const Ango: DJ = {
 };
 export const Mimi: DJ = {
   label: 'Mimi',
+  slug: 'mimi',
   links: [
     {
       type: 'soundcloud',
@@ -62,10 +68,10 @@ export const Mimi: DJ = {
   ].join('\n'),
 };
 
-export const DJS = {
+export const DJS = [
   Donov,
   InnerSense,
   JimIrie,
   Ango,
   Mimi,
-};
+];

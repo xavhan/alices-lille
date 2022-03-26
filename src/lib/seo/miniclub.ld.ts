@@ -5,6 +5,7 @@ import { list } from '$lib/list';
 import type { SvelteSeoProps } from 'svelte-seo/types/SvelteSeo';
 
 export const miniclubJSONLD = (miniclub: Event): SvelteSeoProps['jsonLd'] => ({
+  "@context": "https://schema.org",
   '@type': 'Event',
   name: miniclub.label,
   url: 'https://alices-lille.com/miniclub/next',
@@ -31,7 +32,7 @@ export const miniclubJSONLD = (miniclub: Event): SvelteSeoProps['jsonLd'] => ({
   },
   image: {
     '@type': 'ImageObject',
-    url: 'https://alices-lille.com/images/miniclub' + miniclub.n + '.jpg',
+    url: 'https://alices-lille.com' + miniclub.imageSrc,
   },
   eventAttendanceMode: 'OfflineEventAttendanceMode',
 });
