@@ -42,7 +42,19 @@ export const taps: Beer[] = [
       50: 7,
     },
     abv: 6.5,
+    disabled: true,
     availability: ['winter2022', 'spring2022'],
+  },
+  {
+    type_label: 'Belgian IPA',
+    label: 'XX Bitter',
+    brewery: 'De Ranke',
+    price: {
+      25: 3.8,
+      50: 7,
+    },
+    abv: 6.2,
+    availability: ['spring2022'],
   },
   {
     type_label: 'Ambrée',
