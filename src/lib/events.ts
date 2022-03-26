@@ -1,5 +1,5 @@
 import { EVENTS } from '$data/events';
-import type { Event } from '$data/types';
+import type { DJ, Event } from '$data/types';
 import { groupBy } from './array';
 import { afterYesterday } from './date';
 import { list } from './list';
@@ -15,6 +15,8 @@ export const eventList: { future: Event[]; past: Event[] } = {
   ...groupByDate(EVENTS),
 };
 
+export const getEventsByDj = (slug: DJ['slug']) =>
+  EVENTS.filter((e) => e.guests.map((g) => g.slug).includes(slug));
 export const getEvent = (n: Event['n']) => EVENTS.find((e) => e.n === n);
 export const getNextEvent = () =>
   [...EVENTS].sort(

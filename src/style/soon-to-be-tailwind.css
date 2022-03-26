@@ -78,3 +78,21 @@
 .animate-blink {
   animation: var(--animation-blink);
 }
+.blob-1 {
+  border-radius: var(--radius-blob-1);
+}
+.blob-2 {
+  border-radius: var(--radius-blob-2);
+}
+.blob-3 {
+  border-radius: var(--radius-blob-3);
+}
+.blob-4 {
+  border-radius: var(--radius-blob-4);
+}
+.blob-5 {
+  border-radius: var(--radius-blob-5);
+}
+.animate-blob {
+  transition: border-radius 1000ms ease-in-out;
+}
