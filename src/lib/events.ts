@@ -2,6 +2,7 @@ import { EVENTS } from '$data/events';
 import type { Event } from '$data/types';
 import { groupBy } from './array';
 import { afterYesterday } from './date';
+import { list } from './list';
 import { url } from './url';
 
 export const isPast = (e: Event): boolean => !afterYesterday(new Date(e.date));
@@ -15,6 +16,10 @@ export const eventList: { future: Event[]; past: Event[] } = {
 };
 
 export const getEvent = (n: Event['n']) => EVENTS.find((e) => e.n === n);
+export const getNextEvent = () =>
+  [...EVENTS].sort(
+    (a, b) => Number(new Date(b.date)) - Number(new Date(a.date))
+  )[0];
 
 const toGoogleDateRange = (date: string) => {
   const [y, m, d] = date.split('-');
@@ -38,8 +43,8 @@ export const linkToCalendar = (event: Event): string => {
       .filter(Boolean)
       .join('\n\n'),
     location: 'Alices, 12 Rue des 3 Couronnes, 59800 Lille, France',
-    text: `💃 ${event.label} aux Alices avec ${event.guests
-      .map((dj) => dj.label)
-      .join(' x ')}`,
+    text: `💃 ${event.label} aux Alices avec ${list(
+      event.guests.map((dj) => dj.label)
+    )}`,
   });
 };

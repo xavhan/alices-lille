@@ -1,7 +1,7 @@
 <script context="module">
   export const prerender = true;
-  export async function load({ params, fetch }) {
-    const miniclub = await fetch(`${params.n}.json`).then((r) => r.json());
+  export async function load({ fetch }) {
+    const miniclub = await fetch(`next.json`).then((r) => r.json());
     return {
       props: {
         miniclub,
@@ -24,23 +24,21 @@
 
 <SvelteSeo
   title="Alices | {miniclub.label}"
-  description={`${miniclub.label} aux Alices c'était génial ! Merci à ${list(
+  description={`Bientot dans le mini club, ${list(
     miniclub.guests.map((dj) => dj.label)
-  )} pour le son et l'ambiance de folie. On se souviendra de ce ${format(
+  )} pour vous faire danser toute la nuit ! Notez la date: ${format(
     miniclub.date
   )}`}
-  canonical={'https://alices-lille.com/miniclub/' +
-    miniclub.n +
-    '-' +
-    miniclub.slug}
+  canonical={'https://alices-lille.com/miniclub/next'}
   jsonLd={{
     '@type': 'Event',
     name: miniclub.label,
-    url:
-      'https://alices-lille.com/miniclub/' + miniclub.n + '-' + miniclub.slug,
-    description: `${miniclub.label} c'était génial ! Merci à ${list(
+    url: 'https://alices-lille.com/miniclub/next',
+    description: `Bientot dans le mini club, ${list(
       miniclub.guests.map((dj) => dj.label)
-    )} pour le son et l'ambiance de folie. ${format(miniclub.date)}`,
+    )} pour vous faire danser toute la nuit ! Notez la date: ${format(
+      miniclub.date
+    )}`,
     startDate: miniclub.date + ' 09:00PM',
     endDate: miniclub.date + ' 02:00AM',
     location: {
@@ -54,7 +52,7 @@
 
 <Stack>
   <Header>
-    {miniclub.label}
+    Next: {miniclub.label} avec {list(miniclub.guests.map((dj) => dj.label))}
   </Header>
 
   <br />

@@ -58,7 +58,7 @@ export const Mimi: DJ = {
   ],
   description: [
     `Défricheuse de musiques ambiant, downtempo, breaks, hip-hop, Balearic et raï, Mimi est Dj, résidente sur Radio Sofa, et fondatrice de la chaîne CTW Podcasts.`,
-    `Exaltée par les mélodies envoûtantes, Mimi sait manier les sonorités 70 / 80 / 90s avec justesse.`
+    `Exaltée par les mélodies envoûtantes, Mimi sait manier les sonorités 70 / 80 / 90s avec justesse.`,
   ].join('\n'),
 };
 

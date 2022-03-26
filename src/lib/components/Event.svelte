@@ -3,6 +3,7 @@
   import Stack from '$lib/components/Stack.svelte';
   import { format } from '$lib/date';
   import { isPast, linkToCalendar } from '$lib/events';
+  import { list } from '$lib/list';
   import Link from './Link.svelte';
 
   export let event: Event;
@@ -24,12 +25,12 @@
       >
         <img
           src={event.imageSrc}
-          title={`${event.label} ${format(event.date)} avec ${event.guests
-            .map((dj) => dj.label)
-            .join(' x ')}`}
-          alt={`${event.label} ${format(event.date)} avec ${event.guests
-            .map((dj) => dj.label)
-            .join(' x ')}`}
+          title="{`${event.label} ${format(event.date)} avec ${list(
+            event.guests.map((dj) => dj.label)
+          )}`},"
+          alt="{`${event.label} ${format(event.date)} avec ${list(
+            event.guests.map((dj) => dj.label)
+          )}`},"
           width="360"
           height="360"
           loading="lazy"
@@ -53,6 +54,8 @@
           title="Sauvegarder dans le calendrier">Save the date</Link
         >
 
+        <br />
+        <br />
         <br />
       {/if}
 
@@ -117,5 +120,5 @@
       {/if}
     </div>
     <div />
-  </div></Stack
->
+  </div>
+</Stack>

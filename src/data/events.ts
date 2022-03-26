@@ -14,6 +14,7 @@ export const EVENTS: Event[] = [
       `Au programme des bières, du vin, des cocktails, des shooters et du son du son du son ! ☄️🍷🍻🍸☄️`,
     ].join('\n'),
     imageSrc: '/images/miniclub004.jpg',
+    html: `<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1092116194&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/goptun" title="Gop Tun" target="_blank" style="color: #cccccc; text-decoration: none;">Gop Tun</a> · <a href="https://soundcloud.com/goptun/gop-cast-072-mimi" title="Gop Cast 072 - Mimi" target="_blank" style="color: #cccccc; text-decoration: none;">Gop Cast 072 - Mimi</a></div>`,
   },
   {
     n: 3,

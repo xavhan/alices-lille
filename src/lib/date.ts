@@ -1,6 +1,12 @@
 const dateFormatter = new Intl.DateTimeFormat('fr-FR', { dateStyle: 'full' });
+const dateFormatterShort = new Intl.DateTimeFormat('fr-FR', {
+  dateStyle: 'long',
+});
 export const format = (date: string): string => {
   return dateFormatter.format(new Date(date));
+};
+export const formatShort = (date: string): string => {
+  return dateFormatterShort.format(new Date(date));
 };
 
 export const yesterday = (): Date => {
