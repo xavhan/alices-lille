@@ -9,8 +9,9 @@
   import ButtonLink from '$lib/components/ButtonLink.svelte';
   import Link from '$lib/components/Link.svelte';
   import { getNextEvent } from '$lib/events';
-  import { format, formatShort } from '$lib/date';
+  import { formatShort } from '$lib/date';
   import { list } from '$lib/list';
+  import { alicesJSONLD } from '$lib/seo/alices.ld';
 
   export const hydrate = dev;
   export const router = browser;
@@ -26,20 +27,7 @@
   title="Alices | Lille"
   description={SEO_DESCRIPTION}
   canonical="https://alices-lille.com"
-  jsonLd={{
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: 'Alices',
-    description: SEO_DESCRIPTION,
-    currenciesAccepted: 'EUR',
-    openingHours: ['Tu-Th 16:00-00:00', 'Fr 16:00-01:00', 'Sa 15:00-02:00'],
-    address: '12 rue des 3 couronnes, 59000 Lille, France',
-    paymentAccepted: 'Cash, Credit Card',
-    latitude: '50.6375004',
-    longitude: '3.0638824',
-    maximumAttendeeCapacity: 50,
-    url: 'https://alices-lille.com',
-  }}
+  jsonLd={alicesJSONLD(SEO_DESCRIPTION)}
 />
 
 <Stack>

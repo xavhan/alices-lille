@@ -31,6 +31,12 @@ const toGoogleDateRange = (date: string) => {
   ].join('/');
 };
 
+export const nextDay = (date: string): string => {
+  const d = new Date(date).setDate(new Date(date).getDate() + 1);
+  const [shortIso] = new Date(d).toISOString().split('T');
+  return shortIso;
+};
+
 export const linkToCalendar = (event: Event): string => {
   return url('https://calendar.google.com/calendar/render', {
     action: 'TEMPLATE',

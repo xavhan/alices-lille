@@ -18,36 +18,20 @@
   import { format } from '$lib/date';
   import Stack from '$lib/components/Stack.svelte';
   import { list } from '$lib/list';
+  import { miniclubJSONLD } from '$lib/seo/miniclub.ld';
 
   export let miniclub: EventT;
 </script>
 
 <SvelteSeo
   title="Alices | {miniclub.label}"
-  description={`Bientot dans le mini club, ${list(
+  description="{`${list(
     miniclub.guests.map((dj) => dj.label)
-  )} pour vous faire danser toute la nuit ! Notez la date: ${format(
+  )}, bientôt dans le mini club, pour vous faire danser toute la nuit ! Notez la date: ${format(
     miniclub.date
-  )}`}
+  )}`},"
   canonical={'https://alices-lille.com/miniclub/next'}
-  jsonLd={{
-    '@type': 'Event',
-    name: miniclub.label,
-    url: 'https://alices-lille.com/miniclub/next',
-    description: `Bientot dans le mini club, ${list(
-      miniclub.guests.map((dj) => dj.label)
-    )} pour vous faire danser toute la nuit ! Notez la date: ${format(
-      miniclub.date
-    )}`,
-    startDate: miniclub.date + ' 09:00PM',
-    endDate: miniclub.date + ' 02:00AM',
-    location: {
-      '@type': 'Place',
-      name: 'Alices',
-      sameAs: 'https://alices-lille.com',
-      address: '12 rue des 3 couronnes, 59000 Lille, France',
-    },
-  }}
+  jsonLd={miniclubJSONLD(miniclub)}
 />
 
 <Stack>
