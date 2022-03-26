@@ -5,7 +5,7 @@ import { list } from '$lib/list';
 import type { SvelteSeoProps } from 'svelte-seo/types/SvelteSeo';
 
 export const miniclubJSONLD = (miniclub: Event): SvelteSeoProps['jsonLd'] => ({
-  "@context": "https://schema.org",
+  '@context': 'https://schema.org',
   '@type': 'Event',
   name: miniclub.label,
   url: 'https://alices-lille.com/miniclub/next',

@@ -109,5 +109,5 @@ export type DJ = {
   slug: string;
   links?: DJLink[];
   description?: string;
-  imageSrc?: string
+  imageSrc?: string;
 };

@@ -4,7 +4,7 @@
   import { format } from '$lib/date';
   import { isPast, linkToCalendar } from '$lib/events';
   import { list } from '$lib/list';
-import Dj from './DJ.svelte';
+  import Dj from './DJ.svelte';
   import Link from './Link.svelte';
 
   export let event: Event;
@@ -69,7 +69,7 @@ import Dj from './DJ.svelte';
 
         <br />
 
-        <ol class="text-left font-serif leading-6">
+        <ol class="text-left">
           {#each event.guests as guest}
             <li>
               <Dj dj={guest} />
