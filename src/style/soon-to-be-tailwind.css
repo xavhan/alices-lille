@@ -93,3 +93,6 @@
 .blob-5 {
   border-radius: var(--radius-blob-5);
 }
+.animate-blob {
+  transition: border-radius 1000ms ease-in-out;
+}

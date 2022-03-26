@@ -17,6 +17,8 @@
   import type { DJ } from '$data/types';
   import Dj from '$lib/components/DJ.svelte';
   import { djJSONLD } from '$lib/seo/dj.ld';
+  import { getEventsByDj } from '$lib/events';
+  import Event from '$lib/components/Event.svelte';
 
   export let dj: DJ;
 </script>
@@ -36,4 +38,19 @@
   <br />
 
   <Dj {dj} />
+
+  <br />
+  <br />
+
+  <Header>{dj.label} aux Alices</Header>
+  <br />
+  <ol>
+    <Stack>
+      {#each getEventsByDj(dj.slug) as event}
+        <li class="flex flex-col">
+          <Event {event} hideDesc />
+        </li>
+      {/each}
+    </Stack>
+  </ol>
 </Stack>

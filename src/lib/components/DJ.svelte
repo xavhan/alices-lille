@@ -1,17 +1,27 @@
 <script lang="ts">
   import type { DJ } from '$data/types';
+  import { getEvent, getEventsByDj } from '$lib/events';
   import { random } from '$lib/random';
+  import Event from './Event.svelte';
+  import Header from './Header.svelte';
 
   import Link from './Link.svelte';
+  import Stack from './Stack.svelte';
 
   export let dj: DJ;
+
+  let n = random([1, 5]);
+  setInterval(() => {
+    n = ((n + 1) % 5) + 1;
+  }, 1000);
 </script>
 
 <div class="font-serif leading-6">
   <div class="flex items-center justify-between">
     <div>
-      <h3 class="text-right text-rouge">{dj.label}</h3>
-      <ul class="text-right">
+      <h3 class="text-left text-rouge">{dj.label}</h3>
+      <br>
+      <ul class="text-left">
         {#each dj.links as link}
           <li>
             {#if typeof link === 'string'}
@@ -42,7 +52,7 @@
     {#if dj.imageSrc}
       <a href={`/dj/${dj.slug}`} title={`Aller sur la page de ${dj.label}`}>
         <img
-          class={'blob-' + random([1, 5])}
+          class={'animate-blob blob-' + n}
           src={dj.imageSrc}
           title={dj.label}
           alt="Photo de {dj.label}"
@@ -55,7 +65,4 @@
   </div>
   <br />
   <p class="text-justify font-serif leading-6">{dj.description}</p>
-  <br />
 </div>
-
-

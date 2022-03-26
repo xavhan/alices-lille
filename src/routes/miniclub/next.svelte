@@ -1,7 +1,7 @@
 <script context="module">
   export const prerender = true;
   export async function load({ fetch }) {
-    const miniclub = await fetch(`next.json`).then((r) => r.json());
+    const miniclub = await fetch(`/miniclub/next.json`).then((r) => r.json());
     return {
       props: {
         miniclub,

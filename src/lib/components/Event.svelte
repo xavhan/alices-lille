@@ -70,11 +70,13 @@
         <br />
 
         <ol class="text-left">
-          {#each event.guests as guest}
-            <li>
-              <Dj dj={guest} />
-            </li>
-          {/each}
+          <Stack --spacing="var(--size-4)">
+            {#each event.guests as guest}
+              <li>
+                <Dj dj={guest} />
+              </li>
+            {/each}
+          </Stack>
         </ol>
       {/if}
     </div>
