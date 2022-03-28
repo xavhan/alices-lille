@@ -20,7 +20,7 @@
   <div class="flex items-center justify-between">
     <div>
       <h3 class="text-left text-rouge">{dj.label}</h3>
-      <br>
+      <br />
       <ul class="text-left">
         {#each dj.links as link}
           <li>

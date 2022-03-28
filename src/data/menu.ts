@@ -1,83 +1,9 @@
+import { beers } from './products/beers';
 import type { Beer, Wine, Cocktail, Spirit, Soft, FoodItem } from './types';
 export const taps: Beer[] = [
-  {
-    type_label: 'Pils',
-    label: 'la Bise',
-    brewery: 'Duyck',
-    price: {
-      25: 3,
-      50: 5,
-    },
-    abv: 5.4,
-    availability: ['winter2022', 'spring2022'],
-  },
-  {
-    type_label: 'Blonde',
-    label: 'LIL Blonde',
-    brewery: 'Gobrecht',
-    price: {
-      25: 3.5,
-      50: 6.5,
-    },
-    abv: 5,
-    availability: ['winter2022'],
-  },
-  {
-    type_label: 'Blonde',
-    label: 'Taras Boulba',
-    brewery: 'Brasserie de la Senne',
-    price: {
-      25: 3.5,
-      50: 6.5,
-    },
-    abv: 4.5,
-    availability: ['spring2022'],
-  },
-  {
-    type_label: 'IPA',
-    label: 'Poule mouilée',
-    brewery: 'Tandem',
-    price: {
-      25: 3.8,
-      50: 7,
-    },
-    abv: 6.5,
-    disabled: true,
-    availability: ['winter2022', 'spring2022'],
-  },
-  {
-    type_label: 'Belgian IPA',
-    label: 'XX Bitter',
-    brewery: 'De Ranke',
-    price: {
-      25: 3.8,
-      50: 7,
-    },
-    abv: 6.2,
-    availability: ['spring2022'],
-  },
-  {
-    type_label: 'Ambrée',
-    label: "MONGY d'hiver",
-    brewery: 'Cambier',
-    price: {
-      25: 4.4,
-      50: 8,
-    },
-    abv: 8,
-    availability: ['winter2022'],
-  },
-  {
-    type_label: 'Triple',
-    label: 'Wal',
-    brewery: 'Cambier',
-    price: {
-      25: 4.4,
-      50: 8,
-    },
-    abv: 8.3,
-    availability: ['spring2022'],
-  },
+  ...['la-bise-blonde', 'taras-boulba', 'xx-bitter', 'wal']
+    .map((slug) => beers.get(slug))
+    .filter(Boolean),
   {
     label: 'Biere Spéciale',
     brewery: 'Pépite à venir découvrir au bar',

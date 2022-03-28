@@ -23,6 +23,7 @@ export type Link = {
 };
 
 export type Beer = {
+  slug?: string;
   type_label?: BeerType;
   label: string;
   brewery?: string;
