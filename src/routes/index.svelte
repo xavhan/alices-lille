@@ -34,13 +34,15 @@
   <div class="menu">
     <Stack --spacing="var(--size-4)">
       <ButtonLink href="./carte">Découvrir la carte</ButtonLink>
-      <div class="animate-blink my-4">
-        <Link href="./miniclub/next" title="Voir le prochain miniclub"
-          >{formatShort(next.date)}: {next.label} avec {list(
-            next.guests.map((g) => g.label)
-          )}</Link
-        >
-      </div>
+      {#if next}
+        <div class="animate-blink my-4">
+          <Link href="./miniclub/next" title="Voir le prochain miniclub"
+            >{formatShort(next.date)}: {next.label} avec {list(
+              next.guests.map((g) => g.label)
+            )}</Link
+          >
+        </div>
+      {/if}
       <ButtonLink href="./events">Tous nos events</ButtonLink>
     </Stack>
   </div>

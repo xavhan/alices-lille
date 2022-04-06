@@ -18,9 +18,12 @@ export const eventList: { future: Event[]; past: Event[] } = {
 export const getEventsByDj = (slug: DJ['slug']) =>
   EVENTS.filter((e) => e.guests.map((g) => g.slug).includes(slug));
 export const getEvent = (n: Event['n']) => EVENTS.find((e) => e.n === n);
-export const getNextEvent = () =>
-  [...EVENTS].sort(
-    (a, b) => Number(new Date(b.date)) - Number(new Date(a.date))
+
+export const getNextEvent = (): Event | undefined =>
+  [...EVENTS]
+    .filter(e => Number(new Date(e.date)) - Number(new Date()) > 0)
+    .sort(
+    (a, b) => Number(new Date(a.date)) - Number(new Date(b.date))
   )[0];
 
 const toGoogleDateRange = (date: string) => {
