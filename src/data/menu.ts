@@ -20,7 +20,7 @@ export const taps: Beer[] = [
       50: 6.5,
     },
     abv: 5,
-    availability: ['winter2022'],
+    availability: ['winter2022', 'spring2022'],
   },
   {
     type_label: 'Blonde',
@@ -31,6 +31,7 @@ export const taps: Beer[] = [
       50: 6.5,
     },
     abv: 4.5,
+    disabled: true,
     availability: ['spring2022'],
   },
   {
@@ -42,7 +43,6 @@ export const taps: Beer[] = [
       50: 7,
     },
     abv: 6.5,
-    disabled: true,
     availability: ['winter2022', 'spring2022'],
   },
   {
@@ -54,6 +54,7 @@ export const taps: Beer[] = [
       50: 7,
     },
     abv: 6.2,
+    disabled: true,
     availability: ['spring2022'],
   },
   {
@@ -70,7 +71,7 @@ export const taps: Beer[] = [
   {
     type_label: 'Triple',
     label: 'Wal',
-    brewery: 'Cambier',
+    brewery: 'Célestin',
     price: {
       25: 4.4,
       50: 8,
@@ -79,8 +80,8 @@ export const taps: Beer[] = [
     availability: ['spring2022'],
   },
   {
-    label: 'Biere Spéciale',
-    brewery: 'Pépite à venir découvrir au bar',
+    label: 'Free Bird',
+    brewery: 'Le singe savant',
     price: {
       25: 4.8,
       50: 8.5,
@@ -97,9 +98,16 @@ export const bottles: Beer[] = [
     brewery: 'Brasserie alvinne',
   },
   {
-    label: 'Bière du moment',
+    label: 'Bières du moment',
     price: 7,
-    brewery: 'Singes Savants, Hub, Cambier...',
+    brewery: 'Singe Savant, Hub, Cambier...',
+  },
+  {
+    type_label: 'Trappiste',
+    label: 'Westmalle tripel',
+    price: 6,
+    abv: 9.5,
+    brewery: 'Abbaye de Westmalle',
   },
   {
     type_label: 'Trappiste',
@@ -113,6 +121,7 @@ export const bottles: Beer[] = [
     label: 'GUEUZE 75cl',
     price: 30,
     brewery: 'Brasserie Cantillon',
+    disabled: true,
     availability: ['winter2022'],
   },
   {
@@ -122,7 +131,7 @@ export const bottles: Beer[] = [
     brewery: 'Brunehaut',
   },
   {
-    label: 'Bière SANS Alcool',
+    label: 'Bière sans Alcool',
     price: 5,
     brewery: 'BBP / La débauche',
   },
@@ -172,7 +181,7 @@ export const wines: Wine[] = [
   },
   {
     label: 'VIN ROSÉ',
-    grapes: 'Sirah, Cinsault',
+    grapes: 'Syrah, Cinsault',
     estate: 'Domaine Henri et Théophile Milan',
     price: 7.5,
     availability: ['spring2022'],
@@ -276,14 +285,14 @@ export const cocktails: Cocktail[] = [
     availability: ['spring2022'],
   },
   {
-    label: 'Old Fashion',
+    label: 'Old Fashioned',
     composition: 'Bourbon, Angostura Bitter, Sucre',
     price: 8,
     availability: ['spring2022'],
   },
   {
-    label: 'Expresso Martini',
-    composition: 'Vodka, Liqueur de Café, Expresso',
+    label: 'Espresso Martini',
+    composition: 'Vodka, Liqueur de Café, Espresso',
     price: 10,
     availability: ['spring2022'],
   },
@@ -354,7 +363,7 @@ export const softs: Soft[] = [
   { label: 'Jus de Pomme', price: 3.5 },
   { label: 'Jus de Pomme/Rhubarbe', price: 3.5 },
   { label: 'Jus de Pamplemousse', price: 3.5, disabled: true },
-  { label: 'Jus de Poire', price: 3.5, disabled: true },
+  { label: 'Jus de Poire', price: 3.5 },
   { label: 'Limo nature', price: 4.3 },
   { label: 'Limo fleur de sureau', price: 4.3, disabled: true },
   { label: 'Fritz Rhubarbe', price: 4.3 },
