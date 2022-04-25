@@ -19,7 +19,7 @@ export const taps: Beer[] = [
       25: 3.5,
       50: 6.5,
     },
-    abv: 5,
+    abv: 5.5,
     availability: ['winter2022', 'spring2022'],
   },
   {
@@ -82,6 +82,25 @@ export const taps: Beer[] = [
   {
     label: 'Free Bird',
     brewery: 'Le singe savant',
+    price: {
+      25: 4.8,
+      50: 8.5,
+    },
+    disabled: true,
+  },
+  {
+    label: 'Spring Sin',
+    abv: 5.8,
+    brewery: 'Le singe savant',
+    price: {
+      25: 4.8,
+      50: 8.5,
+    },
+  },
+  {
+    label: 'Bandicot',
+    brewery: 'Le singe savant',
+    disabled: true,
     price: {
       25: 4.8,
       50: 8.5,
@@ -172,12 +191,19 @@ export const wines: Wine[] = [
     price: 7,
     availability: ['winter2022', 'spring2022'],
   },
+  // {
+  //   label: 'VIN BLANC FRUITÉ',
+  //   grapes: 'Chardonnay, viognier',
+  //   estate: 'Domaine de la Croix Gratiot',
+  //   price: 7.5,
+  //   availability: ['winter2022', 'spring2022'],
+  // },
   {
     label: 'VIN BLANC FRUITÉ',
-    grapes: 'Chardonnay, viognier',
-    estate: 'Domaine de la Croix Gratiot',
+    grapes: 'Chenin, sauvignon',
+    estate: 'Domaine Clément Barault',
     price: 7.5,
-    availability: ['winter2022', 'spring2022'],
+    availability: ['spring2022'],
   },
   {
     label: 'VIN ROSÉ',
