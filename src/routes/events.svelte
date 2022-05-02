@@ -44,6 +44,23 @@
     <br />
   {/if}
 
+  <Header>💫 INFOS PRATIQUES 💫</Header>
+  <br />
+
+  <div class="whitespace-pre-wrap">
+    ALICES est ouvert le samedi à partir de 16h
+    
+    ⭐️ 
+    
+    La soirée commence à 21h
+    
+    ⭐️ 
+    
+    ALICES est un lieu safe ! Nous attendons de vous que vous soyez respectueux.euses envers les autres, quels que soient leurs origines, genres, orientations sexuelles, religions ou âges
+  </div>
+  
+  <br />
+
   <Header>Les succès du Mini-Club</Header>
   <br />
   <ol>
