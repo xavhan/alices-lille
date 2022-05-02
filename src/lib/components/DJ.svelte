@@ -64,5 +64,5 @@
     {/if}
   </div>
   <br />
-  <p class="text-justify font-serif leading-6">{dj.description}</p>
+  <p class="text-justify font-serif leading-6 whitespace-pre-wrap">{dj.description}</p>
 </div>

@@ -71,5 +71,25 @@ export const Mimi: DJ = {
   ].join('\n'),
   imageSrc: `/images/dj/mimi.jpg`,
 };
+export const Garage83C: DJ = {
+  label: 'Garage 83-C',
+  slug: 'garage-83-c',
+  links: [
+    { type: 'soundcloud', href: 'https://soundcloud.com/garage83c' },
+    { type: 'facebook', href: 'https://www.facebook.com/Garage83C/' },
+  ],
+  description: [
+    `Gston : Le petit prince d’Esquermoise a finalement choisi la vie de gangster à temps très partiel plutôt que de devenir documentariste animalier. « J’aurais préféré un buffle immense et féroce ....... » déclarait-il pourtant récemment sur les plateaux de télévision.`,
+    `ORIGINAL GANGSTERISME / DRILL DU MONDE / POSTCLUB AUX PETITES FREQUENCES`,
+    ``,
+    ``,
+    `esso lachine : Comme son nom ne l’indique pas « c un français grave à propos du futuristic club ». Dans l’ère du temps et dans le r du tempo, Esso est profondément humaniste. Mashups de Lorie, Renan Luce et Angerfist, vapote goût grenadine et hella au menu.`,
+    `LUDOTEK / CLUB SPOR’TIF / MASHUP INTER-5G / MUSIQUE DE VOITURE`,
+    ``,
+    ``,
+    `Francis Cheval : Joueur de djembé repenti, Francis préfère le post-club à la banque postale, ça fait moins mal aux doigts. Vroum tchik paf, bruit de casserole tombée dans un précipice ou transition aux 4 épices.`,
+    `BOUM KLANG / NERVOUS TAMBOURISM / TRIBAL DIGITAL`,
+  ].join('\n'),
+};
 
-export const DJS = [Donov, InnerSense, JimIrie, Ango, Mimi];
+export const DJS = [Donov, InnerSense, JimIrie, Ango, Mimi, Garage83C];

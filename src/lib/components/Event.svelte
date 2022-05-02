@@ -25,6 +25,7 @@
         rel={isPast(event) ? null : 'nofollow'}
       >
         <img
+          class="w-full"
           src={event.imageSrc}
           title="{`${event.label} ${format(event.date)} avec ${list(
             event.guests.map((dj) => dj.label)
@@ -32,8 +33,6 @@
           alt="{`${event.label} ${format(event.date)} avec ${list(
             event.guests.map((dj) => dj.label)
           )}`},"
-          width="360"
-          height="360"
           loading="lazy"
         />
       </a>

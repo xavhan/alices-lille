@@ -3,6 +3,29 @@ import type { Event } from './types';
 
 export const EVENTS: Event[] = [
   {
+    n: 5,
+    slug: 'garage-83',
+    label: 'MiniClub#5',
+    guests: [djs.Garage83C],
+    date: '2022-05-07',
+    facebookEvent: 'https://www.facebook.com/events/4986118648145000/',
+    imageSrc: '/images/miniclub/miniclub005.jpg',
+    description: [
+      `𝑴𝑰𝑵𝑰𝑪𝑳𝑼𝑩 : 𝑮𝒔𝒕𝒐𝒏 𝒙 𝒆𝒔𝒔𝒐 𝒍𝒂𝒄𝒉𝒊𝒏𝒆 𝒙 𝑭𝒓𝒂𝒏𝒄𝒊𝒔 𝑪𝒉𝒆𝒗𝒂𝒍 𝒄𝒉𝒆𝒛 𝑨𝒍𝒊𝒄𝒆𝒔.`,
+      ``,
+      `Garage 83-C all starz ou presque!`,
+      ``,
+      `Gston : Le petit prince d’Esquermoise a finalement choisi la vie de gangster à temps très partiel plutôt que de devenir documentariste animalier. « J’aurais préféré un buffle immense et féroce ....... » déclarait-il pourtant récemment sur les plateaux de télévision.`,
+      `ORIGINAL GANGSTERISME / DRILL DU MONDE / POSTCLUB AUX PETITES FREQUENCES`,
+      ``,
+      `esso lachine : Comme son nom ne l’indique pas « c un français grave à propos du futuristic club ». Dans l’ère du temps et dans le r du tempo, Esso est profondément humaniste. Mashups de Lorie, Renan Luce et Angerfist, vapote goût grenadine et hella au menu.`,
+      `LUDOTEK / CLUB SPOR’TIF / MASHUP INTER-5G / MUSIQUE DE VOITURE`,
+      ``,
+      `Francis Cheval : Joueur de djembé repenti, Francis préfère le post-club à la banque postale, ça fait moins mal aux doigts. Vroum tchik paf, bruit de casserole tombée dans un précipice ou transition aux 4 épices.`,
+      `BOUM KLANG / NERVOUS TAMBOURISM / TRIBAL DIGITAL`,
+    ].join('\n'),
+  },
+  {
     n: 4,
     slug: 'mimi',
     label: 'MiniClub#4',

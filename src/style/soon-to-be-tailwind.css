@@ -96,3 +96,9 @@
 .animate-blob {
   transition: border-radius 1000ms ease-in-out;
 }
+.whitespace-pre-wrap	{
+  white-space: pre-wrap
+}
+.w-full{
+  width: 100%;
+}
