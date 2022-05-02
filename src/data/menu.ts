@@ -20,6 +20,7 @@ export const taps: Beer[] = [
       50: 6.5,
     },
     abv: 5.5,
+    disabled: true,
     availability: ['winter2022', 'spring2022'],
   },
   {
@@ -31,7 +32,6 @@ export const taps: Beer[] = [
       50: 6.5,
     },
     abv: 4.5,
-    disabled: true,
     availability: ['spring2022'],
   },
   {
