@@ -1,161 +1,21 @@
+import { BEERS } from './beers';
 import type { Beer, Wine, Cocktail, Spirit, Soft, FoodItem } from './types';
-export const taps: Beer[] = [
-  {
-    type_label: 'Pils',
-    label: 'la Bise',
-    brewery: 'Duyck',
-    price: {
-      25: 3,
-      50: 5,
-    },
-    abv: 5.4,
-    availability: ['winter2022', 'spring2022'],
-  },
-  {
-    type_label: 'Blonde',
-    label: 'LIL Blonde',
-    brewery: 'Gobrecht',
-    price: {
-      25: 3.5,
-      50: 6.5,
-    },
-    abv: 5.5,
-    disabled: true,
-    availability: ['winter2022', 'spring2022'],
-  },
-  {
-    type_label: 'Blonde',
-    label: 'Taras Boulba',
-    brewery: 'Brasserie de la Senne',
-    price: {
-      25: 3.5,
-      50: 6.5,
-    },
-    abv: 4.5,
-    availability: ['spring2022'],
-  },
-  {
-    type_label: 'IPA',
-    label: 'Poule mouilée',
-    brewery: 'Tandem',
-    price: {
-      25: 3.8,
-      50: 7,
-    },
-    abv: 6.5,
-    availability: ['winter2022', 'spring2022'],
-  },
-  {
-    type_label: 'Belgian IPA',
-    label: 'XX Bitter',
-    brewery: 'De Ranke',
-    price: {
-      25: 3.8,
-      50: 7,
-    },
-    abv: 6.2,
-    disabled: true,
-    availability: ['spring2022'],
-  },
-  {
-    type_label: 'Ambrée',
-    label: "MONGY d'hiver",
-    brewery: 'Cambier',
-    price: {
-      25: 4.4,
-      50: 8,
-    },
-    abv: 8,
-    availability: ['winter2022'],
-  },
-  {
-    type_label: 'Triple',
-    label: 'Wal',
-    brewery: 'Célestin',
-    price: {
-      25: 4.4,
-      50: 8,
-    },
-    abv: 8.3,
-    availability: ['spring2022'],
-  },
-  {
-    label: 'Free Bird',
-    brewery: 'Le singe savant',
-    price: {
-      25: 4.8,
-      50: 8.5,
-    },
-    disabled: true,
-  },
-  {
-    label: 'Spring Sin',
-    abv: 5.8,
-    brewery: 'Le singe savant',
-    price: {
-      25: 4.8,
-      50: 8.5,
-    },
-  },
-  {
-    label: 'Bandicot',
-    brewery: 'Le singe savant',
-    disabled: true,
-    price: {
-      25: 4.8,
-      50: 8.5,
-    },
-  },
-];
-
-export const bottles: Beer[] = [
-  {
-    type_label: 'Sour',
-    label: 'Phi rabarber',
-    price: 8,
-    abv: 8,
-    brewery: 'Brasserie alvinne',
-  },
-  {
-    label: 'Bières du moment',
-    price: 7,
-    brewery: 'Singe Savant, Hub, Cambier...',
-  },
-  {
-    type_label: 'Trappiste',
-    label: 'Westmalle tripel',
-    price: 6,
-    abv: 9.5,
-    brewery: 'Abbaye de Westmalle',
-  },
-  {
-    type_label: 'Trappiste',
-    label: 'Rochefort triple',
-    price: 6,
-    abv: 8.1,
-    brewery: 'Abbaye de Rochefort',
-  },
-  {
-    type_label: 'Gueuze',
-    label: 'GUEUZE 75cl',
-    price: 30,
-    brewery: 'Brasserie Cantillon',
-    disabled: true,
-    availability: ['winter2022'],
-  },
-  {
-    type_label: 'Sans Gluten',
-    label: 'Blonde / Ambrée',
-    price: 5.3,
-    brewery: 'Brunehaut',
-  },
-  {
-    label: 'Bière sans Alcool',
-    price: 5,
-    brewery: 'BBP / La débauche',
-  },
-  { label: 'CIDRE - Brut', price: 5.3, brewery: 'Appie' },
-];
+export const taps = [
+  'bise',
+  'tarasboulba',
+  'poulemouillee',
+  'wal',
+  'bandicot',
+].map((slug) => BEERS.get(slug));
+export const bottles = [
+  'phi',
+  'bieresdumoment',
+  'westmalletripel',
+  'rocheforttriple',
+  'brunehaut',
+  'alcoolfree',
+  'appiecider',
+].map((slug) => BEERS.get(slug));
 
 export const shooters = [
   { label: 'Vodka Airelles Sauge' },
