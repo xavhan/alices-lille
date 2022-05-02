@@ -21,10 +21,8 @@ export const getEvent = (n: Event['n']) => EVENTS.find((e) => e.n === n);
 
 export const getNextEvent = (): Event | undefined =>
   [...EVENTS]
-    .filter(e => Number(new Date(e.date)) - Number(new Date()) > 0)
-    .sort(
-    (a, b) => Number(new Date(a.date)) - Number(new Date(b.date))
-  )[0];
+    .filter((e) => Number(new Date(e.date)) - Number(new Date()) > 0)
+    .sort((a, b) => Number(new Date(a.date)) - Number(new Date(b.date)))[0];
 
 const toGoogleDateRange = (date: string) => {
   const [y, m, d] = date.split('-');

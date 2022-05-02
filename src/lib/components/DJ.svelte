@@ -20,7 +20,7 @@
   <div class="flex items-center justify-between">
     <div>
       <h3 class="text-left text-rouge">{dj.label}</h3>
-      <br>
+      <br />
       <ul class="text-left">
         {#each dj.links as link}
           <li>
@@ -64,5 +64,7 @@
     {/if}
   </div>
   <br />
-  <p class="text-justify font-serif leading-6 whitespace-pre-wrap">{dj.description}</p>
+  <p class="text-justify font-serif leading-6 whitespace-pre-wrap">
+    {dj.description}
+  </p>
 </div>

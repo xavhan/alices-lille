@@ -26,7 +26,9 @@
 </script>
 
 <SvelteSeo
-  title="Alices | {miniclub.label}"
+  title={`Alices | ${miniclub.label} | ${list(
+    miniclub.guests.map((dj) => dj.label)
+  )}`}
   description={`${miniclub.label} aux Alices c'était génial ! Merci à ${list(
     miniclub.guests.map((dj) => dj.label)
   )} pour le son et l'ambiance de folie. On se souviendra de ce ${format(
