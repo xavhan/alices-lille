@@ -19,26 +19,6 @@
 />
 
 <Stack>
-  {#if eventList.future.length}
-    <Header>💫 INFOS PRATIQUES 💫</Header>
-    <br />
-
-    <div class="whitespace-pre-wrap">
-      ALICES est ouvert le samedi à partir de 16h
-      <br />
-      ⭐️
-      <br />
-      La soirée commence à 21h
-      <br />
-      ⭐️
-      <br />
-      ALICES est un lieu safe ! Nous attendons de vous que vous soyez respectueux.euses
-      envers les autres, quels que soient leurs origines, genres, orientations sexuelles,
-      religions ou âges
-    </div>
-
-    <br />
-  {/if}
   <Header>Bientôt dans le Mini-Club</Header>
   <br />
 
@@ -50,6 +30,17 @@
             <Event {event} />
           </li>
         {/each}
+        <Header>💫 INFOS PRATIQUES 💫</Header>
+        <br />
+
+        <div class="whitespace-pre-wrap">
+          ALICES est ouvert le samedi à partir de 16h La soirée commence à 21h
+          ALICES est un lieu safe ! Nous attendons de vous que vous soyez
+          respectueux.euses envers les autres, quels que soient leurs origines,
+          genres, orientations sexuelles, religions ou âges
+        </div>
+
+        <br />
       </Stack>
     </ol>
   {:else}

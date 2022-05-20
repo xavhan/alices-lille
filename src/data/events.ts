@@ -3,6 +3,18 @@ import type { Event } from './types';
 
 export const EVENTS: Event[] = [
   {
+    n: 6,
+    slug: 'vidal-benjamin-donov',
+    label: 'MiniClub#6',
+    guests: [djs.VidalBenjamin, djs.Donov],
+    date: '2022-06-04',
+    imageSrc: '/images/miniclub/miniclub006.jpg',
+    description: [`𝑴𝑰𝑵𝑰𝑪𝑳𝑼𝑩 : 𝑩𝒊𝒔𝒆𝒏𝒆𝒔𝒔𝒆 𝒊𝒏𝒗𝒊𝒕𝒆 𝑽𝒊𝒅𝒂𝒍 𝑩𝒆𝒏𝒋𝒂𝒎𝒊𝒏 + 𝑫𝒐𝒏𝒐𝒗`].join(
+      '\n'
+    ),
+    html: '<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/891537949&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/howlinbymorrison" title="Howlin&#x27;" target="_blank" style="color: #cccccc; text-decoration: none;">Howlin&#x27;</a> · <a href="https://soundcloud.com/howlinbymorrison/howlin-invites-vidal-benjamin" title="Howlin&#x27; invites Vidal Benjamin" target="_blank" style="color: #cccccc; text-decoration: none;">Howlin&#x27; invites Vidal Benjamin</a></div>',
+  },
+  {
     n: 5,
     slug: 'garage-83',
     label: 'MiniClub#5',
