@@ -92,4 +92,20 @@ export const Garage83C: DJ = {
   ].join('\n'),
 };
 
-export const DJS = [Donov, InnerSense, JimIrie, Ango, Mimi, Garage83C];
+export const VidalBenjamin: DJ = {
+  label: 'Vidal Benjamin',
+  slug: 'vidal-benjamin',
+  links: [
+    { type: 'soundcloud', href: 'https://soundcloud.com/vidal-benjamin' },
+  ],
+  description: [
+    `Depuis longtemps, Vidal Benjamin plonge les mains dans les bacs des conventions, brocantes et autres vide-greniers afin d’y dénicher des disques oubliés, négligés voire totalement méprisés.`,
+    ``,
+    `Dans le petit cercle des diggers sa réputation est faite : il est celui qui trouve et celui qui partage. Sa démarche est altruiste, pédagogique et festive.`,
+    ``,
+    `Il est également à l'origine de trois compilations emblématiques sur Versatile Records : Disco Sympathie nous a fait redécouvrir ce son caractéristique d’une certaine scène française du début des années 80, Pop Sympathie a réussi le tour de force d'extraire tout ce que la synth-pop et la new wave françaises pouvaient avoir d'ironique et d'acidulé et enfin, House Sympathie ravira les dancefloors ensoleillés bientôt.`,
+  ].join('\n'),
+  imageSrc: `/images/dj/vidalbenjamin.jpg`,
+};
+
+export const DJS = [Donov, InnerSense, JimIrie, Ango, Mimi, Garage83C, VidalBenjamin];
