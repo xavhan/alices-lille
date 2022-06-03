@@ -108,4 +108,12 @@ export const VidalBenjamin: DJ = {
   imageSrc: `/images/dj/vidalbenjamin.jpg`,
 };
 
-export const DJS = [Donov, InnerSense, JimIrie, Ango, Mimi, Garage83C, VidalBenjamin];
+export const DJS = [
+  Donov,
+  InnerSense,
+  JimIrie,
+  Ango,
+  Mimi,
+  Garage83C,
+  VidalBenjamin,
+];
