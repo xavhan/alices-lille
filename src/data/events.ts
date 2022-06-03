@@ -9,6 +9,7 @@ export const EVENTS: Event[] = [
     guests: [djs.VidalBenjamin, djs.Donov],
     date: '2022-06-04',
     imageSrc: '/images/miniclub/miniclub006.jpg',
+    facebookEvent: 'https://www.facebook.com/events/325722753045402/',
     description: [`𝑴𝑰𝑵𝑰𝑪𝑳𝑼𝑩 : 𝑩𝒊𝒔𝒆𝒏𝒆𝒔𝒔𝒆 𝒊𝒏𝒗𝒊𝒕𝒆 𝑽𝒊𝒅𝒂𝒍 𝑩𝒆𝒏𝒋𝒂𝒎𝒊𝒏 + 𝑫𝒐𝒏𝒐𝒗`].join(
       '\n'
     ),
