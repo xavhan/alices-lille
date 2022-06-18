@@ -1,4 +1,5 @@
 import type { Beer } from './types';
+
 export const BEERS = new Map<string, Beer>([
   [
     'bise',
@@ -11,7 +12,30 @@ export const BEERS = new Map<string, Beer>([
         50: 5,
       },
       abv: 5.4,
-      availability: ['winter2022', 'spring2022'],
+    },
+  ],
+  [
+    'blanche',
+    {
+      label: 'Blonde - Blanche - Saison',
+      brewery: 'Brasserie Invitée',
+      price: {
+        25: 3.5,
+        50: 6.5,
+      },
+    },
+  ],
+  [
+    'pascap',
+    {
+      type_label: 'Triple',
+      label: 'Pas Cap',
+      brewery: 'Tandem',
+      price: {
+        25: 4.4,
+        50: 8,
+      },
+      abv: 8,
     },
   ],
   [
@@ -25,7 +49,6 @@ export const BEERS = new Map<string, Beer>([
         50: 6.5,
       },
       abv: 5.5,
-      availability: ['winter2022', 'spring2022'],
     },
   ],
   [
@@ -39,7 +62,6 @@ export const BEERS = new Map<string, Beer>([
         50: 6.5,
       },
       abv: 4.5,
-      availability: ['spring2022'],
     },
   ],
   [
@@ -49,11 +71,10 @@ export const BEERS = new Map<string, Beer>([
       label: 'Poule mouillée',
       brewery: 'Tandem',
       price: {
-        25: 3.8,
-        50: 7,
+        25: 4,
+        50: 7.3,
       },
       abv: 6.5,
-      availability: ['winter2022', 'spring2022'],
     },
   ],
   [
@@ -67,7 +88,6 @@ export const BEERS = new Map<string, Beer>([
         50: 7,
       },
       abv: 6.2,
-      availability: ['spring2022'],
     },
   ],
   [
@@ -81,7 +101,6 @@ export const BEERS = new Map<string, Beer>([
         50: 8,
       },
       abv: 8,
-      availability: ['winter2022'],
     },
   ],
   [
@@ -95,7 +114,6 @@ export const BEERS = new Map<string, Beer>([
         50: 8,
       },
       abv: 8.3,
-      availability: ['spring2022'],
     },
   ],
   [
@@ -126,6 +144,17 @@ export const BEERS = new Map<string, Beer>([
     {
       label: 'Bandicot',
       brewery: 'Le singe savant',
+      price: {
+        25: 4.8,
+        50: 8.5,
+      },
+    },
+  ],
+  [
+    'singesavant',
+    {
+      label: 'Bière du singe savant',
+      brewery: 'Le fut change toute les semaines',
       price: {
         25: 4.8,
         50: 8.5,
@@ -177,7 +206,6 @@ export const BEERS = new Map<string, Beer>([
       label: 'GUEUZE 75cl',
       price: 30,
       brewery: 'Brasserie Cantillon',
-      availability: ['winter2022'],
     },
   ],
   [

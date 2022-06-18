@@ -5,6 +5,7 @@
 type Season = 'winter' | 'spring' | 'fall' | 'summer';
 type Year = '2022';
 type BeerType =
+  | 'Blanche'
   | 'Pils'
   | 'Blonde'
   | 'IPA'

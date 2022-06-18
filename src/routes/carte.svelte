@@ -28,7 +28,7 @@
   const SEO_DESCRIPTION =
     'Café torréfié à Lille, vins natures et surprenants, bières locales, cocktails délicieux, large gamme de softs et tartinables faits sur place';
 
-  const CURRENT_SEASON = 'spring2022';
+  const CURRENT_SEASON = 'summer2022';
   const filter = (items) =>
     items.filter(
       (item) =>
@@ -46,11 +46,11 @@
 
 <Stack>
   <MenuBlock title="Bières Pression" text="25, 33 ou 50cl">
-    <Beers beers={filter(taps)} />
+    <Beers beers={taps} />
   </MenuBlock>
 
   <MenuBlock title="Bières Bouteilles">
-    <Beers beers={filter(bottles)} />
+    <Beers beers={bottles} />
   </MenuBlock>
 
   <MenuBlock title="Vin" text="Au verre ou en bouteille">

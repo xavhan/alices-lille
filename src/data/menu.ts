@@ -1,11 +1,11 @@
 import { BEERS } from './beers';
-import type { Beer, Wine, Cocktail, Spirit, Soft, FoodItem } from './types';
+import type { Wine, Cocktail, Spirit, Soft, FoodItem } from './types';
 export const taps = [
   'bise',
-  'tarasboulba',
+  'blanche',
   'poulemouillee',
-  'wal',
-  'bandicot',
+  'pascap',
+  'singesavant',
 ].map((slug) => BEERS.get(slug));
 export const bottles = [
   'phi',
@@ -35,21 +35,21 @@ export const wines: Wine[] = [
     grapes: 'Merlot, Carignan',
     estate: 'Domaine Henri et Théophile Milan',
     price: 5.5,
-    availability: ['spring2022'],
+    availability: ['spring2022', 'summer2022'],
   },
   {
     label: 'VIN ROUGE TANNIQUE',
     grapes: 'Cabernet franc, merlot',
     estate: 'Domaine Daniel & Nicolas Roux',
     price: 6,
-    availability: ['winter2022', 'spring2022'],
+    availability: ['winter2022', 'spring2022', 'summer2022'],
   },
   {
     label: 'VIN BLANC MINERAL ',
     grapes: 'Muscadet',
     estate: 'Domaine Luneau-Papin',
     price: 7,
-    availability: ['winter2022', 'spring2022'],
+    availability: ['winter2022', 'spring2022', 'summer2022'],
   },
   // {
   //   label: 'VIN BLANC FRUITÉ',
@@ -63,14 +63,14 @@ export const wines: Wine[] = [
     grapes: 'Chenin, sauvignon',
     estate: 'Domaine Clément Barault',
     price: 7.5,
-    availability: ['spring2022'],
+    availability: ['spring2022', 'summer2022'],
   },
   {
     label: 'VIN ROSÉ',
     grapes: 'Syrah, Cinsault',
     estate: 'Domaine Henri et Théophile Milan',
     price: 7.5,
-    availability: ['spring2022'],
+    availability: ['spring2022', 'summer2022'],
   },
   {
     label: 'MOELLEUX',
@@ -93,33 +93,58 @@ export const wines: Wine[] = [
     highlight: true,
   },
   {
+    label: 'Petillant Naturel',
+    text: 'Petnat du mois',
+    price: 9,
+    highlight: true,
+  },
+  {
     label: 'CHAMPAGNE BOUtEILLE 75CL',
     grapes: 'PINOT MEUNIER',
     estate: 'Champagne André Heucq',
     price: 55,
-    availability: ['winter2022', 'spring2022'],
+    availability: ['winter2022', 'spring2022', 'summer2022'],
   },
   {
     label: 'Champagne bouteille 75cl',
     grapes: 'CHARDONNAY, MEUNIER, PINOT NOIR',
     estate: 'Champagne André Heuck',
     price: 80,
-    availability: ['winter2022', 'spring2022'],
+    availability: ['winter2022', 'spring2022', 'summer2022'],
   },
 ];
 
+
 export const cocktails: Cocktail[] = [
+  {
+    label: 'LONDON MULE',
+    composition: 'Gin, Cordial de gingembre, Ginger Beer, citron',
+    price: 10,
+  },
+  {
+    label: 'Pimm’s cup',
+    composition: `Pimm’s, Ginger ale, Tellement de fruits`,
+    price: 7,
+  }, {
+    label: 'Margarita',
+    composition: 'Tequila, Liqueur orange, Citron, Agave',
+    price: 10,
+  }, {
+    label: 'Bloody Mary',
+    composition: 'Vodka, Jus de tomate, Épices, Céleri',
+    price: 7,
+  },
   {
     label: 'DARK & STORMY',
     composition: 'Rhum, ginger beer, citron',
     price: 10,
-    availability: ['winter2022'],
+    availability: ['winter2022', 'summer2022'],
   },
   {
     label: 'NEGRONI',
     composition: 'Gin, Campari, Vermouth',
     price: 9,
-    availability: ['winter2022'],
+    availability: ['winter2022', 'summer2022'],
   },
   {
     label: 'WHITE RUSSIAN',
