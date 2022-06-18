@@ -10,11 +10,11 @@ export const taps = [
 export const bottles = [
   'phi',
   'bieresdumoment',
-  'westmalletripel',
   'rocheforttriple',
   'brunehaut',
   'alcoolfree',
   'appiecider',
+  'appiepoire',
 ].map((slug) => BEERS.get(slug));
 
 export const shooters = [
@@ -277,7 +277,7 @@ export const softs: Soft[] = [
   { label: 'Jus de Poire', price: 3.5 },
   { label: 'Limo nature', price: 4.3 },
   { label: 'Limo fleur de sureau', price: 4.3, disabled: true },
-  { label: 'Fritz Rhubarbe', price: 4.3 },
+  { label: 'Limo Rhubarbe', price: 4.3 },
   { label: 'Meuh Cola', price: 4.3 },
   { label: 'Kombucha gingembre', price: 4.5, disabled: true },
   { label: 'Frênette', price: 4.5 },
