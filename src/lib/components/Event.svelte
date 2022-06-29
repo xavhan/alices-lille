@@ -60,6 +60,10 @@
       {/if}
 
       {#if !hideDesc}
+        <div class="text-justify font-serif leading-6 whitespace-pre-wrap">
+          {event.description}
+        </div>
+
         {#if event.html}
           <div class="mb-2">
             {@html event.html}

@@ -108,6 +108,18 @@ export const VidalBenjamin: DJ = {
   imageSrc: `/images/dj/vidalbenjamin.jpg`,
 };
 
+export const Kepler129: DJ = {
+  label: 'Kepler-129',
+  slug: 'kepler129',
+  links: [
+    { type: 'instagram', href: 'https://www.instagram.com/kepler129' },
+    { type: 'facebook', href: 'https://www.facebook.com/129kepler' },
+    { type: 'soundcloud', href: 'https://soundcloud.com/kepler-129' },
+  ],
+  description: `Il était une fois des aliens qui décidèrent de briser la monotonie de leur planète, Kepler-129. Nos événements racontent leur histoire.`,
+  imageSrc: `/images/dj/kepler129.jpg`,
+};
+
 export const DJS = [
   Donov,
   InnerSense,
@@ -116,4 +128,5 @@ export const DJS = [
   Mimi,
   Garage83C,
   VidalBenjamin,
+  Kepler129,
 ];
