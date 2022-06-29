@@ -3,6 +3,22 @@ import type { Event } from './types';
 
 export const EVENTS: Event[] = [
   {
+    n: 7,
+    slug: 'kepler-129',
+    label: 'MiniClub#7',
+    guests: [djs.Kepler129],
+    date: '2022-07-02',
+    imageSrc: '/images/miniclub/miniclub007.jpg',
+    facebookEvent: 'https://www.facebook.com/events/1065253364114817/',
+    description: [
+      `𝑴𝑰𝑵𝑰𝑪𝑳𝑼𝑩 : 𝐊𝐞𝐩𝐥𝐞𝐫-𝟏𝟐𝟗 𝒄𝒉𝒆𝒛 𝑨𝒍𝒊𝒄𝒆𝒔.`,
+      '',
+      `Au premier étage nous accueillons ce mois ci le collectif Kepler-129, équipe d'aliens bien active dans la métropole lilloise et ailleurs.`,
+      '',
+      `Connu·e·s pour leurs teufs d'anthologie et un appétit pointu pour les sonorités electro, break, house, techno, hyper variées, toujours ambitieuses, Kepler-129 se voit comme un feuilleton d'anticipation interactif relatant l'apparition de la musique électronique sur la planète Kepler-129, à travers divers événements festifs, podcasts et label.`,
+    ].join('\n'),
+  },
+  {
     n: 6,
     slug: 'vidal-benjamin-donov',
     label: 'MiniClub#6',

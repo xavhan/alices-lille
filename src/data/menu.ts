@@ -114,7 +114,6 @@ export const wines: Wine[] = [
   },
 ];
 
-
 export const cocktails: Cocktail[] = [
   {
     label: 'LONDON MULE',
@@ -125,11 +124,13 @@ export const cocktails: Cocktail[] = [
     label: 'Pimm’s cup',
     composition: `Pimm’s, Ginger ale, Tellement de fruits`,
     price: 7,
-  }, {
+  },
+  {
     label: 'Margarita',
     composition: 'Tequila, Liqueur orange, Citron, Agave',
     price: 10,
-  }, {
+  },
+  {
     label: 'Bloody Mary',
     composition: 'Vodka, Jus de tomate, Épices, Céleri',
     price: 7,
