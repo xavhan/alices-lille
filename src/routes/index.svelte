@@ -77,5 +77,8 @@
 
   <br/>
   <br/>
-  <img src="/images/icons/alices.png" alt="Alice et Alice" width="80"/>
+  <picture>
+    <source srcset="/images/icons/alices-dark.png" media="(prefers-color-scheme: dark)" />
+    <img src="/images/icons/alices.png" alt="Alice et Alice" width="80"/>
+  </picture>
 </Stack>

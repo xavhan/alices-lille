@@ -43,8 +43,10 @@
   description={SEO_DESCRIPTION}
   canonical="https://alices-lille.com/carte"
 />
-
-<img src="/images/icons/friends.png" alt="Amis en train de partager des bières et du vin" width="120"/>
+<picture>
+  <source srcset="/images/icons/friends-dark.png" media="(prefers-color-scheme: dark)" />
+  <img src="/images/icons/friends.png" alt="Amis en train de partager des bières et du vin" width="120"/>
+</picture>
 <br/>
 <br/>
 
@@ -83,6 +85,9 @@
 
   <MenuBlock title="Et pleins d'autres surprises au bar" />
 
-  <img src="/images/icons/cocktail.png" alt="Cocktail" width="40"/>
+  <picture>
+    <source srcset="/images/icons/cocktail-dark.png" media="(prefers-color-scheme: dark)" />
+    <img src="/images/icons/cocktail.png" alt="Cocktail" width="40"/>
+  </picture>
 </Stack>
 
