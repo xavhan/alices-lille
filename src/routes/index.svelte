@@ -43,7 +43,9 @@
           >
         </div>
       {/if}
-      <ButtonLink href="./events">Tous nos events</ButtonLink>
+      <ButtonLink href="./events">
+        Tous nos events
+      </ButtonLink>
     </Stack>
   </div>
 
@@ -66,8 +68,14 @@
   </HomeBlock>
 
   <HomeBlock title="Soutien">
+    ⭐
     <Link external href={GOOGLE_URL} title="Laisser 5 etoiles sur Google">
       Ça vous a plu ? faites-le savoir !
     </Link>
+    ⭐
   </HomeBlock>
+
+  <br/>
+  <br/>
+  <img src="/images/icons/alices.png" alt="Alice et Alice" width="80"/>
 </Stack>
