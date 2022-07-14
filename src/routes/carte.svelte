@@ -44,6 +44,10 @@
   canonical="https://alices-lille.com/carte"
 />
 
+<img src="/images/icons/friends.png" alt="Amis en train de partager des bières et du vin" width="120"/>
+<br/>
+<br/>
+
 <Stack>
   <MenuBlock title="Bières Pression" text="25, 33 ou 50cl">
     <Beers beers={taps} />
@@ -78,4 +82,7 @@
   </MenuBlock>
 
   <MenuBlock title="Et pleins d'autres surprises au bar" />
+
+  <img src="/images/icons/cocktail.png" alt="Cocktail" width="40"/>
 </Stack>
+

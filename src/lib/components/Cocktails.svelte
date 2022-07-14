@@ -27,5 +27,10 @@
         </div>
       </div>
     {/each}
+    <br />
+    <div class="text-right text-rouge flex justify-between">
+      <div>🍸🥂🥃🍹</div>
+      <div>et encore plus sur demande au bar</div>
+    </div>
   </Stack>
 </div>

@@ -5,7 +5,7 @@ export const taps = [
   'blanche',
   'poulemouillee',
   'pascap',
-  'singesavant',
+  'lesingesavant',
 ].map((slug) => BEERS.get(slug));
 export const bottles = [
   'phi',

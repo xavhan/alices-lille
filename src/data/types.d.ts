@@ -37,6 +37,13 @@ export type Beer = {
   abv?: number;
   disabled?: true;
   availability?: `${Season}${Year}`[];
+  slug?: string;
+  about?: {
+    title?: string;
+    description: string;
+    imageSrc?: string;
+    links?: Link[];
+  };
 };
 export type Wine = {
   label: string;

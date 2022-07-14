@@ -31,6 +31,9 @@
 .text-justify {
   text-align: justify;
 }
+.lowercase {
+  text-transform: lowercase;
+}
 .no-underline {
   text-decoration-line: none;
 }
@@ -101,4 +104,10 @@
 }
 .w-full {
   width: 100%;
+}
+.max-w-full {
+  max-width: 100%;
+}
+.text-sm {
+  font-size: 0.875rem;
 }

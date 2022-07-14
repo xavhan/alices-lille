@@ -5,6 +5,7 @@ export const BEERS = new Map<string, Beer>([
     'bise',
     {
       type_label: 'Pils',
+      slug: 'bise',
       label: 'La bise',
       brewery: 'Duyck',
       price: {
@@ -151,13 +152,38 @@ export const BEERS = new Map<string, Beer>([
     },
   ],
   [
-    'singesavant',
+    'lesingesavant',
     {
-      label: 'Bière du singe savant',
+      slug: 'lesingesavant',
+      label: 'Le singe savant',
       brewery: 'Le fut change toute les semaines',
       price: {
         25: 4.8,
         50: 8.5,
+      },
+      about: {
+        title: 'Le singe savant',
+        description: [
+          `Le Singe savant est une micro-brasserie urbaine, située à Lille dans le quartier de Moulins.`,
+          `Ils mettent un point d'honneur à travailler au maximum avec des matières premières biologiques, privilégient les circuits courts tout en reduisant autant que possible les déchets produits.`,
+          `Leur gamme est composée de recettes permanantes et exploratoires.`,
+          `Vous pouvez les retrouver dans leur brasserie au 134 rue d'Arras à Lille.`,
+        ].join('\n\n'),
+        imageSrc: `/images/beers/singesavant.jpg`,
+        links: [
+          {
+            label: 'Le site officiel',
+            href: 'https://www.singe-savant.com/',
+          },
+          {
+            label: 'Insta',
+            href: 'https://www.instagram.com/singesavantbrew/',
+          },
+          {
+            label: 'Facebook',
+            href: 'https://www.facebook.com/brasserie.singe.savant/',
+          },
+        ],
       },
     },
   ],
