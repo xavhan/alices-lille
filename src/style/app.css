@@ -3,7 +3,7 @@
 @import './soon-to-be-tailwind.css';
 
 body {
-  background-color: var(--alices-blanccasse);
+  background-color: var(--app-background);
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: var(--font-letterspacing-2);
   flex-direction: column;
@@ -11,7 +11,7 @@ body {
   text-transform: uppercase;
   display: flex;
   padding: 60px 30px;
-  color: var(--alices-vin);
+  color: var(--app-text);
 }
 
 .menu {
@@ -20,5 +20,5 @@ body {
 
 a,
 a:visited {
-  color: var(--alices-vin);
+  color: var(--app-text);
 }
