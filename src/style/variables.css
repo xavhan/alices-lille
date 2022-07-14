@@ -18,4 +18,19 @@
   --alices-beige: #fedbae;
 
   --font-sans-2: 'Trueno Light';
+
+  /* semantics */
+  --app-background: var(--alices-blanccasse);
+  --app-text: var(--alices-vin);
+  --app-text-emphase: var(--alices-rouge);
+  --app-text-hide: var(--alices-dore);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+    --app-background: var(--alices-noir);
+    --app-text: var(--alices-blanccasse);
+    --app-text-emphase: var(--alices-beige);
+    --app-text-hide: var(--alices-rouge);
+	}
 }

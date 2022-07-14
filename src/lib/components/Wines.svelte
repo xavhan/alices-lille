@@ -13,13 +13,13 @@
           <div class:animate-blink={highlight}>
             <div>{label}</div>
             {#if grapes}
-              <div class="text-rouge">{grapes}</div>
+              <div class="text-emphase">{grapes}</div>
             {/if}
             {#if estate}
-              <div class="text-dore">{estate}</div>
+              <div class="text-hide">{estate}</div>
             {/if}
             {#if text}
-              <div class="text-rouge">{text}</div>
+              <div class="text-emphase">{text}</div>
             {/if}
           </div>
         </div>

@@ -57,7 +57,7 @@
 
   {#if beer.about.links?.length}
     <div class="text-left">
-      <h3 class="text-rouge mb-4">Liens</h3>
+      <h3 class="text-emphase mb-4">Liens</h3>
       <ul>
         <Stack>
           {#each beer.about.links as link}

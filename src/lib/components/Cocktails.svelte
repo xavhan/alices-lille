@@ -14,10 +14,10 @@
             <div>
               {label}
               {#if virgin}
-                <span class="text-rouge">(sans alcool)</span>
+                <span class="text-emphase">(sans alcool)</span>
               {/if}
             </div>
-            <div class="text-dore">{composition}</div>
+            <div class="text-hide">{composition}</div>
           </div>
         </div>
         <div>
@@ -28,7 +28,7 @@
       </div>
     {/each}
     <br />
-    <div class="text-right text-rouge flex justify-between">
+    <div class="text-right text-emphase flex justify-between">
       <div>🍸🥂🥃🍹</div>
       <div>et encore plus sur demande au bar</div>
     </div>

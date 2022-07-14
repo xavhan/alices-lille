@@ -21,14 +21,14 @@
         <div class="flex-1 text-left">
           <div>
             <div>{main_label({ abv, label, type_label })}</div>
-            <div class="text-dore">
+            <div class="text-hide">
               {brewery}
             </div>
             {#if about}
               <Link
                 href="about/{slug}"
                 title={about.title || label}
-                klass="text-rouge text-sm"
+                klass="text-emphase text-sm"
               >
                 plus d'infos 👭
               </Link>

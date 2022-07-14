@@ -25,7 +25,7 @@
       <h1 class="logo">Alices</h1>
     </a>
 
-    <h2 class="cbsc mb-2 font-sans-2 text-dore">
+    <h2 class="text-sm mb-2 font-sans-2 text-hide">
       Café • Bar • Saisonnier • Culturel
     </h2>
 
@@ -54,10 +54,5 @@
 
   .logo {
     font-size: var(--font-size-8);
-    color: var(--alices-noir);
-  }
-
-  .cbsc {
-    font-size: var(--font-size-0);
   }
 </style>

@@ -14,7 +14,7 @@
             <div class="label">
               {label}<span class="ml-1 text-ropuge">{abv.toString()}°</span>
             </div>
-            <div class="text-dore">{description}</div>
+            <div class="text-hide">{description}</div>
           </div>
         </div>
         <div>
