@@ -79,7 +79,7 @@
 }
 
 .animate-blink {
-  animation: var(--animation-blink);
+  animation: blink var(--slow) var(--ease-out-3) infinite;
 }
 .blob-1 {
   border-radius: var(--radius-blob-1);
@@ -97,7 +97,7 @@
   border-radius: var(--radius-blob-5);
 }
 .animate-blob {
-  transition: border-radius 1000ms ease-in-out;
+  transition: border-radius var(--slow) ease-in-out;
 }
 .whitespace-pre-wrap {
   white-space: pre-wrap;

@@ -90,7 +90,6 @@ export const wines: Wine[] = [
     label: 'SURPRISE',
     text: 'Pépite à venir découvrir',
     price: 8.5,
-    highlight: true,
   },
   {
     label: 'Petillant Naturel',
@@ -108,7 +107,7 @@ export const wines: Wine[] = [
   {
     label: 'Champagne bouteille 75cl',
     grapes: 'CHARDONNAY, MEUNIER, PINOT NOIR',
-    estate: 'Champagne André Heuck',
+    estate: 'Champagne André Heucq',
     price: 80,
     availability: ['winter2022', 'spring2022', 'summer2022'],
   },

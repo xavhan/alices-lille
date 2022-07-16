@@ -1,19 +1,21 @@
 <script lang="ts">
   import type { DJ } from '$data/types';
-  import { getEvent, getEventsByDj } from '$lib/events';
   import { random } from '$lib/random';
-  import Event from './Event.svelte';
-  import Header from './Header.svelte';
-
+  import { reducedMotion } from '$lib/reduced-motion'
+  import { onMount } from 'svelte'
+ 
   import Link from './Link.svelte';
-  import Stack from './Stack.svelte';
 
   export let dj: DJ;
 
   let n = random([1, 5]);
-  setInterval(() => {
-    n = ((n + 1) % 5) + 1;
-  }, 1000);
+  onMount(() => {
+    setInterval(() => {
+      if(!$reducedMotion) {
+        n = ((n + 1) % 5) + 1;
+      }
+    }, 1000);
+  })
 </script>
 
 <div class="font-serif leading-6">
