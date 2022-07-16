@@ -19,6 +19,9 @@
 
   --font-sans-2: 'Trueno Light';
 
+  --use-motion-preference: 1;
+  --slow: calc(var(--use-motion-preference) * 1000ms);
+
   /* semantics */
   --app-background: var(--alices-blanccasse);
   --app-text: var(--alices-vin);
@@ -32,5 +35,11 @@
     --app-text: var(--alices-blanccasse);
     --app-text-emphase: var(--alices-beige);
     --app-text-hide: var(--alices-rouge);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root {
+    --use-motion-preference: 0;
 	}
 }
