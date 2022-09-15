@@ -21,9 +21,9 @@
 </script>
 
 <SvelteSeo
-  title="Alices | La Carte"
+  title="Alices | Les Cocktails"
   description={SEO_DESCRIPTION}
-  canonical="https://alices-lille.com/carte"
+  canonical="https://alices-lille.com/cocktails"
 />
 <picture>
   <source srcset="/images/icons/cocktail-dark.png" media="(prefers-color-scheme: dark)" />
