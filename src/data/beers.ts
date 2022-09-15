@@ -158,8 +158,8 @@ export const BEERS = new Map<string, Beer>([
       brewery: 'Appie',
       abv: 5,
       price: {
-        25: 4.4,
-        50: 8,
+        25: 4.2,
+        50: 7.5,
       },
     },
   ],

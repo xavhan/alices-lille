@@ -38,6 +38,13 @@ export const wines: Wine[] = [
     estate: 'Domaine Henri et Théophile Milan',
     price: 5.5,
     availability: ['spring2022', 'summer2022'],
+    disabled: true,
+  },
+  {
+    label: 'VIN ROUGE GLOUGLOU',
+    grapes: 'Cépages légers',
+    estate: 'En fonction des bouteilles du moment',
+    price: 5.5,
   },
   {
     label: 'VIN ROUGE TANNIQUE',
@@ -66,6 +73,13 @@ export const wines: Wine[] = [
     estate: 'Domaine Clément Barault',
     price: 7.5,
     availability: ['spring2022', 'summer2022'],
+    disabled: true,
+  },
+  {
+    label: 'VIN BLANC Floral',
+    grapes: 'Macabeu, Muscat petits grains',
+    estate: 'Domaine Vinoceros',
+    price: 7.5,
   },
   {
     label: 'VIN ROSÉ',
