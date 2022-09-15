@@ -1,7 +1,6 @@
 <script lang="ts">
   import type { DJ } from '$data/types';
   import { random } from '$lib/random';
-  import { reducedMotion } from '$lib/reduced-motion'
   import { onMount } from 'svelte'
  
   import Link from './Link.svelte';
@@ -11,9 +10,7 @@
   let n = random([1, 5]);
   onMount(() => {
     setInterval(() => {
-      if(!$reducedMotion) {
         n = ((n + 1) % 5) + 1;
-      }
     }, 1000);
   })
 </script>
