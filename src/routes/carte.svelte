@@ -21,7 +21,6 @@
     softs,
     food,
   } from '$data/menu';
-  import type { Cocktail } from '$data/types';
   export const hydrate = dev;
   export const router = browser;
   export const prerender = true;
@@ -73,9 +72,15 @@
       'Dark & stormy',
       'Moscow Mule',
       'Paddigfigue',
-      'Mocktail - Sans Alcool',
+      'Mocktail',
     ])} />
   </MenuBlock>
+
+  <div class="text-right text-emphase flex justify-between">
+    <div>🍸🥂🥃🍹</div>
+    <a href='/cocktails'>Voir tous nos classiques</a>
+  </div>
+  <br />
 
   <MenuBlock title="Shooters" text="4€ l’unité & 20€ les 6">
     <Shooters />
