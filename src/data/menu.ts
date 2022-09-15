@@ -2,7 +2,7 @@ import { BEERS } from './beers';
 import type { Wine, Cocktail, Spirit, Soft, FoodItem } from './types';
 export const taps = [
   'bise',
-  'blanche',
+  'biseblanche',
   'poulemouillee',
   'appie',
   'pascap',
