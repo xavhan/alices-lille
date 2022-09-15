@@ -18,7 +18,7 @@ export const BEERS = new Map<string, Beer>([
   [
     'biseblanche',
     {
-      label: 'La Bise Blanche - Saison',
+      label: 'La Bise Blanche',
       brewery: 'Duyck',
       price: {
         25: 3.5,

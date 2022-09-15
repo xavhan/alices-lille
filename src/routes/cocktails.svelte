@@ -18,6 +18,7 @@
     'Tous les cocktails du Alices, des plus classiques aux plus aventureux';
 
   const collator = new Intl.Collator('fr-FR');
+  let selected = null
 </script>
 
 <SvelteSeo
@@ -33,8 +34,13 @@
 <br/>
 
 <Stack>
+  <select bind:value={selected} >
+    <option>tout les cocktails</option>
+    <option value='gin'>gin</option>
+  </select>
+
   <MenuBlock title="Tous nos cocktails">
-    <Cocktails cocktails={cocktails.filter(c => c.everyday).sort((a,b) => collator.compare(a.label,b.label))} />
+    <Cocktails cocktails={cocktails.filter(c => c.everyday).filter(c => c.composition.toLocaleLowerCase().includes(selected)).sort((a,b) => collator.compare(a.label,b.label))} />
   </MenuBlock>
   
   <br />
