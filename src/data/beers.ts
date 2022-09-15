@@ -238,6 +238,16 @@ export const BEERS = new Map<string, Beer>([
     },
   ],
   [
+    'hazy',
+    {
+      type_label: 'Sour',
+      label: 'Hazy Diamond',
+      price: 7,
+      abv: 5,
+      brewery: 'La débauche',
+    },
+  ],
+  [
     'gueuzecantillon',
     {
       type_label: 'Gueuze',

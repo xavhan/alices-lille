@@ -11,10 +11,12 @@ export const taps = [
 export const bottles = [
   'bieresdumoment',
   'rocheforttriple',
+  'hazy',
   'brunehaut',
   'alcoolfree',
   'appiecider',
   'appiepoire',
+  'gueuzecantillon',
 ].map((slug) => BEERS.get(slug));
 
 export const shooters = [
