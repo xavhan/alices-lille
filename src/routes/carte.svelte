@@ -1,4 +1,4 @@
-<script context="module">
+<script context="module" lang="ts">
   import SvelteSeo from 'svelte-seo';
   import { browser, dev } from '$app/env';
   import MenuBlock from '$lib/components/MenuBlock.svelte';
@@ -21,6 +21,7 @@
     softs,
     food,
   } from '$data/menu';
+  import type { Cocktail } from '$data/types';
   export const hydrate = dev;
   export const router = browser;
   export const prerender = true;
@@ -36,6 +37,8 @@
         (item.availability === undefined ||
           item.availability.includes(CURRENT_SEASON))
     );
+
+  const getCocktails = (items: string[]) => items.map(label => cocktails.find(c => c.label === label))
 </script>
 
 <SvelteSeo
@@ -64,7 +67,14 @@
   </MenuBlock>
 
   <MenuBlock title="Cocktails">
-    <Cocktails cocktails={filter(cocktails)} />
+    <Cocktails cocktails={getCocktails([
+      'Rome with a view',
+      'Bramble',
+      'Dark & stormy',
+      'Moscow Mule',
+      'Paddigfigue',
+      'Mocktail - Sans Alcool',
+    ])} />
   </MenuBlock>
 
   <MenuBlock title="Shooters" text="4€ l’unité & 20€ les 6">

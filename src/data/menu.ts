@@ -4,6 +4,7 @@ export const taps = [
   'bise',
   'blanche',
   'poulemouillee',
+  'appie',
   'pascap',
   'lesingesavant',
 ].map((slug) => BEERS.get(slug));
@@ -114,6 +115,32 @@ export const wines: Wine[] = [
 
 export const cocktails: Cocktail[] = [
   {
+    label: 'Rome with a view',
+    composition: 'campari, vermouth extra dry, citron',
+    price: 7,
+  },
+  {
+    label: 'Bramble',
+    composition: 'gin, mûre, citron, liqueur de mûre',
+    price: 8,
+  },
+  {
+    label: 'Dark & stormy',
+    composition: 'rhum ambré, gingerbeer, citron & more',
+    price: 10,
+  },
+  {
+    label: 'Paddigfigue',
+    composition:
+      'rhum, confiture de figue, lillet, pamplemousse, dash d’absinthe',
+    price: 10,
+  },
+  {
+    label: 'Clear milk punch #2',
+    composition: 'mezcal, poire, girole, quinine',
+    price: 9,
+  },
+  {
     label: 'LONDON MULE',
     composition: 'Gin, Cordial de gingembre, Ginger Beer, citron',
     price: 10,
@@ -134,83 +161,65 @@ export const cocktails: Cocktail[] = [
     price: 7,
   },
   {
-    label: 'DARK & STORMY',
-    composition: 'Rhum, ginger beer, citron',
-    price: 10,
-    availability: ['winter2022', 'summer2022'],
-  },
-  {
     label: 'NEGRONI',
     composition: 'Gin, Campari, Vermouth',
     price: 9,
-    availability: ['winter2022', 'summer2022'],
   },
   {
     label: 'WHITE RUSSIAN',
     composition: 'Vodka, café, mousse de lait',
     price: 9,
-    availability: ['winter2022'],
   },
   {
     label: 'PALOMA',
     composition: 'Tequila, pamplemousse, citron',
     price: 10,
-    availability: ['winter2022'],
   },
   {
     label: 'IRISH COFFEE',
     composition: 'whisky, café, chantilly',
     price: 8,
-    availability: ['winter2022'],
   },
   {
     label: 'GIMLET',
     composition: "Gin infusé feuille de clémentine, citron, cordial d'agrumes",
     price: 10,
-    availability: ['winter2022'],
   },
   {
     label: "Général Clem'to",
     composition: "Cordial d'agrumes, pamplemousse, citron, tonic",
     virgin: true,
     price: 6,
-    availability: ['winter2022'],
   },
   {
-    label: 'MOSCOW MULE',
+    label: 'Moscow Mule',
     composition: 'Vodka, Cordial de gingembre, Ginger Beer, Citron',
-    price: 10,
-    availability: ['spring2022'],
+    price: 9,
   },
   {
     label: 'NEGRONI BLANC',
     composition: 'Gin, Suze, Vermouth Dry, Sherry Fino',
     price: 9,
-    availability: ['spring2022'],
   },
   {
     label: 'El Diablo',
     composition: 'Tequila, Crème de Cassis, Citron, Ginger Beer, Piment',
     price: 9,
-    availability: ['spring2022'],
   },
   {
     label: 'Old Fashioned',
     composition: 'Bourbon, Angostura Bitter, Sucre',
     price: 8,
-    availability: ['spring2022'],
   },
   {
     label: 'Espresso Martini',
     composition: 'Vodka, Liqueur de Café, Espresso',
     price: 10,
-    availability: ['spring2022'],
   },
   {
-    label: 'Clear Milk Punch',
+    label: 'Clear Milk Punch #1',
     composition: 'Rhum, Argousier, Thé noir, Miel, Citron, Lait',
     price: 9,
-    availability: ['spring2022'],
   },
   {
     label: 'Mocktail - Sans Alcool',
