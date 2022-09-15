@@ -62,6 +62,7 @@ export type Cocktail = {
   price: number;
   disabled?: true;
   availability?: `${Season}${Year}`[];
+  everyday?: true;
 };
 export type Spirit = {
   label: string;

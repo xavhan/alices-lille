@@ -118,22 +118,26 @@ export const cocktails: Cocktail[] = [
     label: 'Rome with a view',
     composition: 'campari, vermouth extra dry, citron',
     price: 7,
+    everyday: true,
   },
   {
     label: 'Bramble',
     composition: 'gin, mûre, citron, liqueur de mûre',
     price: 8,
+    everyday: true,
   },
   {
     label: 'Dark & stormy',
-    composition: 'rhum ambré, gingerbeer, citron & more',
+    composition: 'rhum ambré, ginger beer, citron & more',
     price: 10,
+    everyday: true,
   },
   {
     label: 'Paddigfigue',
     composition:
       'rhum, confiture de figue, lillet, pamplemousse, dash d’absinthe',
     price: 10,
+    everyday: true,
   },
   {
     label: 'Clear milk punch #2',
@@ -144,31 +148,37 @@ export const cocktails: Cocktail[] = [
     label: 'LONDON MULE',
     composition: 'Gin, Cordial de gingembre, Ginger Beer, citron',
     price: 10,
+    everyday: true,
   },
   {
     label: 'Pimm’s cup',
     composition: `Pimm’s, Ginger ale, Tellement de fruits`,
     price: 7,
+    everyday: true,
   },
   {
     label: 'Margarita',
     composition: 'Tequila, Liqueur orange, Citron, Agave',
     price: 10,
+    everyday: true,
   },
   {
     label: 'Bloody Mary',
     composition: 'Vodka, Jus de tomate, Épices, Céleri',
     price: 7,
+    everyday: true,
   },
   {
     label: 'NEGRONI',
     composition: 'Gin, Campari, Vermouth',
     price: 9,
+    everyday: true,
   },
   {
     label: 'WHITE RUSSIAN',
     composition: 'Vodka, café, mousse de lait',
     price: 9,
+    everyday: true,
   },
   {
     label: 'PALOMA',
@@ -179,11 +189,13 @@ export const cocktails: Cocktail[] = [
     label: 'IRISH COFFEE',
     composition: 'whisky, café, chantilly',
     price: 8,
+    everyday: true,
   },
   {
     label: 'GIMLET',
     composition: "Gin infusé feuille de clémentine, citron, cordial d'agrumes",
     price: 10,
+    everyday: true,
   },
   {
     label: "Général Clem'to",
@@ -195,26 +207,31 @@ export const cocktails: Cocktail[] = [
     label: 'Moscow Mule',
     composition: 'Vodka, Cordial de gingembre, Ginger Beer, Citron',
     price: 9,
+    everyday: true,
   },
   {
     label: 'NEGRONI BLANC',
     composition: 'Gin, Suze, Vermouth Dry, Sherry Fino',
     price: 9,
+    everyday: true,
   },
   {
     label: 'El Diablo',
     composition: 'Tequila, Crème de Cassis, Citron, Ginger Beer, Piment',
     price: 9,
+    everyday: true,
   },
   {
     label: 'Old Fashioned',
     composition: 'Bourbon, Angostura Bitter, Sucre',
     price: 8,
+    everyday: true,
   },
   {
     label: 'Espresso Martini',
     composition: 'Vodka, Liqueur de Café, Espresso',
     price: 10,
+    everyday: true,
   },
   {
     label: 'Clear Milk Punch #1',
@@ -222,9 +239,11 @@ export const cocktails: Cocktail[] = [
     price: 9,
   },
   {
-    label: 'Mocktail - Sans Alcool',
+    label: 'Mocktail',
+    virgin: true,
     composition: 'En fonction des produits de saison',
     price: 6.5,
+    everyday: true,
   },
 ];
 
