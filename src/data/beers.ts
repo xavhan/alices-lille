@@ -152,6 +152,18 @@ export const BEERS = new Map<string, Beer>([
     },
   ],
   [
+    'appie',
+    {
+      label: 'Cidre',
+      brewery: 'Appie',
+      abv: 5,
+      price: {
+        25: 4.4,
+        50: 8,
+      },
+    },
+  ],
+  [
     'lesingesavant',
     {
       slug: 'lesingesavant',
