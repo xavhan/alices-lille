@@ -3,6 +3,7 @@
   import { browser, dev } from '$app/env';
   import MenuBlock from '$lib/components/MenuBlock.svelte';
   import Stack from '$lib/components/Stack.svelte';
+  import { writable } from "svelte/store";
 
   import Cocktails from '$lib/components/Cocktails.svelte';
 
@@ -18,7 +19,7 @@
     'Tous les cocktails du Alices, des plus classiques aux plus aventureux';
 
   const collator = new Intl.Collator('fr-FR');
-  let selected = null
+  let selected = writable('')
 </script>
 
 <SvelteSeo
@@ -34,13 +35,25 @@
 <br/>
 
 <Stack>
-  <select bind:value={selected} >
-    <option>tout les cocktails</option>
-    <option value='gin'>gin</option>
+  <select bind:value={$selected} class="w-full p-2 rounded">
+    <option selected value="">Tous les cocktails</option>
+    <option value="gin">Gin</option>
+    <option value="vodka">Vodka</option>
+    <option value="campari">Campari</option>
+    <option value="rhum">Rhum</option>
+    <option value="mezcal">Mezcal</option>
+    <option value="ginger">Ginger</option>
+    <option value="tequila">Tequila</option>
+    <option value="whisky">Whisky</option>
+    <option value="bourbon">Bourbon</option>
   </select>
 
   <MenuBlock title="Tous nos cocktails">
-    <Cocktails cocktails={cocktails.filter(c => c.everyday).filter(c => c.composition.toLocaleLowerCase().includes(selected)).sort((a,b) => collator.compare(a.label,b.label))} />
+    <Cocktails cocktails={
+      cocktails
+        .filter(c => c.everyday)
+        .filter(c => c.composition.toLocaleLowerCase().includes($selected))
+        .sort((a,b) => collator.compare(a.label,b.label))} />
   </MenuBlock>
   
   <br />
