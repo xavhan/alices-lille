@@ -67,11 +67,12 @@
 
   <MenuBlock title="Cocktails">
     <Cocktails cocktails={getCocktails([
-      'Rome with a view',
+      'Amaretto Sour',
       'Bramble',
       'Dark & stormy',
       'Moscow Mule',
       'Paddigfigue',
+      'Rome with a view',
       'Mocktail',
     ])} />
   </MenuBlock>

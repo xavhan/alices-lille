@@ -11,7 +11,6 @@
     cocktails,
   } from '$data/menu';
   
-  export const hydrate = dev;
   export const router = browser;
   export const prerender = true;
 
@@ -37,15 +36,15 @@
 <Stack>
   <select bind:value={$selected} class="w-full p-2 rounded">
     <option selected value="">Tous les cocktails</option>
-    <option value="gin">Gin</option>
-    <option value="vodka">Vodka</option>
-    <option value="campari">Campari</option>
-    <option value="rhum">Rhum</option>
-    <option value="mezcal">Mezcal</option>
-    <option value="ginger">Ginger</option>
-    <option value="tequila">Tequila</option>
-    <option value="whisky">Whisky</option>
+    <option value="amaretto">Amaretto</option>
     <option value="bourbon">Bourbon</option>
+    <option value="campari">Campari</option>
+    <option value="gin">Gin</option>
+    <option value="ginger">Ginger</option>
+    <option value="rhum">Rhum</option>
+    <option value="tequila">Tequila</option>
+    <option value="vodka">Vodka</option>
+    <option value="whisky">Whisky</option>
   </select>
 
   <MenuBlock title="Tous nos cocktails">

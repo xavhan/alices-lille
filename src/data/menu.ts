@@ -2,7 +2,6 @@ import { BEERS } from './beers';
 import type { Wine, Cocktail, Spirit, Soft, FoodItem } from './types';
 export const taps = [
   'bise',
-  'biseblanche',
   'poulemouillee',
   'appie',
   'pascap',
@@ -131,6 +130,12 @@ export const wines: Wine[] = [
 
 export const cocktails: Cocktail[] = [
   {
+    label: 'Amaretto Sour',
+    composition: 'Amaretto, sucre, citron, Angostura',
+    price: 7,
+    everyday: true,
+  },
+  {
     label: 'Rome with a view',
     composition: 'campari, vermouth extra dry, citron',
     price: 7,
@@ -157,7 +162,7 @@ export const cocktails: Cocktail[] = [
   },
   {
     label: 'Clear milk punch #2',
-    composition: 'mezcal, poire, girole, quinine',
+    composition: 'Mezcal, poire, girole, quinine',
     price: 9,
   },
   {
@@ -200,6 +205,7 @@ export const cocktails: Cocktail[] = [
     label: 'PALOMA',
     composition: 'Tequila, pamplemousse, citron',
     price: 10,
+    everyday: true,
   },
   {
     label: 'IRISH COFFEE',
