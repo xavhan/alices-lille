@@ -133,6 +133,7 @@ export const cocktails: Cocktail[] = [
     label: 'Amaretto Sour',
     composition: 'Amaretto, sucre, citron, Angostura',
     price: 7,
+    vegan: true,
     everyday: true,
   },
   {

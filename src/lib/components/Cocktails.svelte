@@ -7,7 +7,7 @@
 
 <div class="flex flex-col pt-2">
   <Stack>
-    {#each cocktails as { label, price, composition, virgin }}
+    {#each cocktails as { label, price, composition, virgin, vegan }}
       <div class="flex items-end">
         <div class="flex-1 text-left">
           <div>
@@ -15,6 +15,9 @@
               {label}
               {#if virgin}
                 <span class="text-emphase">(sans alcool)</span>
+              {/if}
+              {#if vegan}
+                <span role="img" aria-label="vegan">🌱</span>
               {/if}
             </div>
             <div class="text-hide">{composition}</div>
