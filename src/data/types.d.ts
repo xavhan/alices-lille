@@ -73,6 +73,11 @@ export type Spirit = {
   disabled?: true;
   availability?: `${Season}${Year}`[];
 };
+export type Coffee = {
+  label: string;
+  description?: string;
+  price: number;
+};
 
 export type Soft = {
   label: string;

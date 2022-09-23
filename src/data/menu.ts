@@ -1,5 +1,5 @@
 import { BEERS } from './beers';
-import type { Wine, Cocktail, Spirit, Soft, FoodItem } from './types';
+import type { Wine, Cocktail, Spirit, Soft, FoodItem, Coffee } from './types';
 export const taps = [
   'bise',
   'poulemouillee',
@@ -320,6 +320,81 @@ export const spirits: Spirit[] = [
     price: 11,
   },
 ];
+export const coffee: Coffee[] = [
+  {
+    label: 'espresso',
+    price: 2.2,
+  },
+  {
+    label: 'double',
+    price: 3.5,
+  },
+  {
+    label: 'allongé',
+    price: 3,
+  },
+  {
+    label: 'cappuccino',
+    price: 4,
+  },
+  {
+    label: 'latte',
+    price: 4.3,
+  },
+  {
+    label: 'flat white',
+    price: 4.5,
+  },
+  {
+    label: 'moccha ',
+    price: 5,
+  },
+  {
+    label: 'CAFÉ FRAPPÉ',
+    price: 4,
+  },
+  {
+    label: 'THÉ GLACÉ',
+    price: 4,
+  },
+  {
+    label: 'CHOCOLAT CHAUD',
+    price: 5,
+  },
+  {
+    label: 'CHOCOLAT CHAUD + ALCOOL',
+    price: 6,
+  },
+  {
+    label: 'Thé vert grand jasmin',
+    price: 4,
+  },
+  {
+    label: 'Thé noir earl grey, bergamote',
+    price: 4,
+  },
+  {
+    label: 'Thé vert fleur d’oranger, menthe',
+    price: 4,
+  },
+  {
+    label: 'Thé rooibos vanille',
+    price: 4,
+  },
+  {
+    label: 'Tisane camomille, tilleul, lavande',
+    price: 4,
+  },
+  {
+    label: 'Thé de L’ÉTÉ : ROSE, MANGUE, ORANGE',
+    price: 4,
+  },
+  {
+    label: 'chaï (thé d’épices + lait avoine) ',
+    price: 4.5,
+  },
+];
+
 export const softs: Soft[] = [
   { label: 'Jus de Pomme', price: 3.5 },
   { label: 'Jus de Pomme/Rhubarbe', price: 3.5 },

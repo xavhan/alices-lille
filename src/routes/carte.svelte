@@ -8,6 +8,7 @@
   import Shooters from '$lib/components/Shooters.svelte';
   import Wines from '$lib/components/Wines.svelte';
   import Cocktails from '$lib/components/Cocktails.svelte';
+  import Coffee from '$lib/components/Coffee.svelte';
   import Spirits from '$lib/components/Spirits.svelte';
   import Softs from '$lib/components/Softs.svelte';
   import Food from '$lib/components/Food.svelte';
@@ -20,8 +21,8 @@
     spirits,
     softs,
     food,
+    coffee,
   } from '$data/menu';
-  export const hydrate = dev;
   export const router = browser;
   export const prerender = true;
 
@@ -53,6 +54,12 @@
 <br/>
 
 <Stack>
+  {#if (new Date()).getHours() >= 15 && (new Date()).getHours() <= 17}
+    <MenuBlock title="Cafés">
+      <Coffee coffee={coffee} />
+    </MenuBlock>
+  {/if}
+
   <MenuBlock title="Bières Pression" text="25, 33 ou 50cl">
     <Beers beers={taps} />
   </MenuBlock>
@@ -98,6 +105,12 @@
   <MenuBlock title="Tartinades">
     <Food {food} />
   </MenuBlock>
+
+  {#if (new Date()).getHours() < 15 || (new Date()).getHours() > 17}
+    <MenuBlock title="Cafés">
+      <Coffee coffee={coffee} />
+    </MenuBlock>
+  {/if}
 
   <MenuBlock title="Et pleins d'autres surprises au bar" />
 
