@@ -33,7 +33,7 @@ export const BEERS = new Map<string, Beer>([
       label: 'Pas Cap',
       brewery: 'Tandem',
       price: {
-        25: 4.4,
+        25: 4.2,
         50: 8,
       },
       abv: 8,
@@ -72,8 +72,8 @@ export const BEERS = new Map<string, Beer>([
       label: 'Poule mouillée',
       brewery: 'Tandem',
       price: {
-        25: 4,
-        50: 7.3,
+        25: 3.8,
+        50: 7,
       },
       abv: 6.5,
     },
@@ -158,7 +158,7 @@ export const BEERS = new Map<string, Beer>([
       brewery: 'Appie',
       abv: 5,
       price: {
-        25: 4.2,
+        25: 4,
         50: 7.5,
       },
     },
@@ -170,7 +170,7 @@ export const BEERS = new Map<string, Beer>([
       label: 'Le singe savant',
       brewery: 'Le fut change toute les semaines',
       price: {
-        25: 4.8,
+        25: 4.5,
         50: 8.5,
       },
       about: {
@@ -260,7 +260,7 @@ export const BEERS = new Map<string, Beer>([
     'brunehaut',
     {
       type_label: 'Sans Gluten',
-      label: 'Blonde / Blanche',
+      label: 'Blonde / Blanche / Ambrée',
       price: 5.3,
       brewery: 'Brunehaut',
     },

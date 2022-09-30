@@ -77,8 +77,10 @@
       'Amaretto Sour',
       'Bramble',
       'Dark & stormy',
+      'Irish Coffee',
       'Moscow Mule',
       'Paddigfigue',
+      'Paloma',
       'Rome with a view',
       'Mocktail',
     ])} />
