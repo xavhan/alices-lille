@@ -5,7 +5,7 @@ export const EVENTS: Event[] = [
   {
     n: 8,
     slug: 'la-bonne-fete',
-    label: 'MINICLUB : La Bonne Fête chez Alices!',
+    label: 'MINICLUB: La Bonne Fête !',
     guests: [djs.GhaïsLaMalice, djs.JoTabass],
     date: '2022-10-08',
     imageSrc: '/images/miniclub/miniclub008.jpg',

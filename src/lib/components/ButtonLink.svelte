@@ -13,7 +13,7 @@
     text-transform: uppercase;
     text-decoration: none;
     padding: var(--size-4) var(--size-6);
-    border: var(--border-size-2) solid var(--alices-rouge);
+    border: var(--border-size-2) solid var(--app-text-hide);
     border-radius: var(--radius-round);
     color: var(--app-text);
     box-shadow: var(--shadow-1);

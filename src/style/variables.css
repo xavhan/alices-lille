@@ -16,6 +16,7 @@
 
   --alices-blanccasse: #fbfae6;
   --alices-beige: #fedbae;
+  --alices-camel: #CAA577;
 
   --font-sans-2: 'Trueno Light';
 
@@ -34,7 +35,7 @@
     --app-background: var(--alices-noir);
     --app-text: var(--alices-blanccasse);
     --app-text-emphase: var(--alices-beige);
-    --app-text-hide: var(--alices-rouge);
+    --app-text-hide: var(--alices-camel);
   }
 }
 
