@@ -383,10 +383,6 @@ export const coffee: Coffee[] = [
     price: 4,
   },
   {
-    label: 'THÉ GLACÉ',
-    price: 4,
-  },
-  {
     label: 'CHOCOLAT CHAUD',
     price: 5,
   },
