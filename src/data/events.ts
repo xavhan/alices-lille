@@ -3,6 +3,22 @@ import type { Event } from './types';
 
 export const EVENTS: Event[] = [
   {
+    n: 8,
+    slug: 'la-bonne-fete',
+    label: 'MINICLUB : La Bonne Fête chez Alices!',
+    guests: [djs.GhaïsLaMalice, djs.JoTabass],
+    date: '2022-10-08',
+    imageSrc: '/images/miniclub/miniclub008.jpg',
+    facebookEvent: 'https://www.facebook.com/events/630810668455429/',
+    description: [
+      `MINICLUB : La Bonne Fête chez Alices!`,
+      '',
+      `C'est la reprise des Miniclubs!!`,
+      '',
+      `Pour cette nouvelle saison, on commence avec le duo Ghaïs La Malice et JoTabass qui viennent représenter le collectif bien connu de la métropole, La Bonne Fête!!`,
+    ].join('\n'),
+  },
+  {
     n: 7,
     slug: 'kepler-129',
     label: 'MiniClub#7',

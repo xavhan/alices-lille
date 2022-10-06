@@ -35,12 +35,14 @@
     <Stack --spacing="var(--size-4)">
       <ButtonLink href="./carte">Découvrir la carte</ButtonLink>
       {#if next}
-        <div class="animate-blink my-4">
-          <Link href="./miniclub/next" title="Voir le prochain miniclub"
-            >{formatShort(next.date)}: {next.label} avec {list(
+        <div class="my-4">
+          <Link href="./miniclub/next" title="Voir le prochain miniclub">
+            {formatShort(next.date)}: {next.label}
+            <br/>
+            avec {list(
               next.guests.map((g) => g.label)
-            )}</Link
-          >
+            )}
+          </Link>
         </div>
       {/if}
       <ButtonLink href="./events">Tous nos events</ButtonLink>

@@ -120,6 +120,28 @@ export const Kepler129: DJ = {
   imageSrc: `/images/dj/kepler129.jpg`,
 };
 
+export const GhaïsLaMalice: DJ = {
+  label: 'Ghaïs La Malice',
+  slug: 'ghais-la-malice',
+  links: [
+    { type: 'facebook', href: 'https://www.facebook.com/labonnefetemusic' },
+    { type: 'soundcloud', href: 'https://soundcloud.com/ghais_la_malice_lbf' },
+  ],
+  description: `DJ mais aussi producteur, Ghaïs La Malice officie dans un spectre large et explore les musiques électroniques d’hier et d’aujourd’hui pour proposer un univers et un voyage sur mesure, en direction du groove et des percus.`,
+  imageSrc: `/images/dj/ghais-la-malice.jpg`,
+};
+
+export const JoTabass: DJ = {
+  label: 'JoTabass',
+  slug: 'jotabass',
+  links: [
+    { type: 'facebook', href: 'https://www.facebook.com/MezenpleinRecords' },
+    { type: 'soundcloud', href: 'https://soundcloud.com/mezen-plein' },
+  ],
+  description: `Producteur avant d’etre dj, JoTabass s’est fait connaitre à travers le premier various de La Bonne Fête: LBF001. Son credo? Faire vibrer le public au rythme de ce qu’il déniche: house, techno, tout y passe!`,
+  imageSrc: `/images/dj/jotabass.jpg`,
+};
+
 export const DJS = [
   Donov,
   InnerSense,
@@ -129,4 +151,6 @@ export const DJS = [
   Garage83C,
   VidalBenjamin,
   Kepler129,
+  GhaïsLaMalice,
+  JoTabass,
 ];
