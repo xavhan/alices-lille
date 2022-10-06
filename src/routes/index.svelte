@@ -43,9 +43,7 @@
           >
         </div>
       {/if}
-      <ButtonLink href="./events">
-        Tous nos events
-      </ButtonLink>
+      <ButtonLink href="./events">Tous nos events</ButtonLink>
     </Stack>
   </div>
 
@@ -75,10 +73,13 @@
     ⭐
   </HomeBlock>
 
-  <br/>
-  <br/>
+  <br />
+  <br />
   <picture>
-    <source srcset="/images/icons/alices-dark.png" media="(prefers-color-scheme: dark)" />
-    <img src="/images/icons/alices.png" alt="Alice et Alice" width="80"/>
+    <source
+      srcset="/images/icons/alices-dark.png"
+      media="(prefers-color-scheme: dark)"
+    />
+    <img src="/images/icons/alices.png" alt="Alice et Alice" width="80" />
   </picture>
 </Stack>

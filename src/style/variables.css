@@ -30,16 +30,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
+  :root {
     --app-background: var(--alices-noir);
     --app-text: var(--alices-blanccasse);
     --app-text-emphase: var(--alices-beige);
     --app-text-hide: var(--alices-rouge);
-	}
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-	:root {
+  :root {
     --use-motion-preference: 0;
-	}
+  }
 }

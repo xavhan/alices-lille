@@ -3,14 +3,12 @@
   import { browser, dev } from '$app/env';
   import MenuBlock from '$lib/components/MenuBlock.svelte';
   import Stack from '$lib/components/Stack.svelte';
-  import { writable } from "svelte/store";
+  import { writable } from 'svelte/store';
 
   import Cocktails from '$lib/components/Cocktails.svelte';
 
-  import {
-    cocktails,
-  } from '$data/menu';
-  
+  import { cocktails } from '$data/menu';
+
   export const router = browser;
   export const prerender = true;
 
@@ -18,7 +16,7 @@
     'Tous les cocktails du Alices, des plus classiques aux plus aventureux';
 
   const collator = new Intl.Collator('fr-FR');
-  let selected = writable('')
+  let selected = writable('');
 </script>
 
 <SvelteSeo
@@ -27,11 +25,14 @@
   canonical="https://alices-lille.com/cocktails"
 />
 <picture>
-  <source srcset="/images/icons/cocktail-dark.png" media="(prefers-color-scheme: dark)" />
-  <img src="/images/icons/cocktail.png" alt="Cocktail" width="40"/>
+  <source
+    srcset="/images/icons/cocktail-dark.png"
+    media="(prefers-color-scheme: dark)"
+  />
+  <img src="/images/icons/cocktail.png" alt="Cocktail" width="40" />
 </picture>
-<br/>
-<br/>
+<br />
+<br />
 
 <Stack>
   <select bind:value={$selected} class="w-full p-2 rounded">
@@ -48,17 +49,17 @@
   </select>
 
   <MenuBlock title="Tous nos cocktails">
-    <Cocktails cocktails={
-      cocktails
-        .filter(c => c.everyday)
-        .filter(c => c.composition.toLocaleLowerCase().includes($selected))
-        .sort((a,b) => collator.compare(a.label,b.label))} />
+    <Cocktails
+      cocktails={cocktails
+        .filter((c) => c.everyday)
+        .filter((c) => c.composition.toLocaleLowerCase().includes($selected))
+        .sort((a, b) => collator.compare(a.label, b.label))}
+    />
   </MenuBlock>
-  
+
   <br />
   <div class="text-right text-emphase flex justify-between">
     <div>🍻🍷🥂🥤</div>
-    <a href='/carte'>Revenir à la carte</a>
+    <a href="/carte">Revenir à la carte</a>
   </div>
 </Stack>
-

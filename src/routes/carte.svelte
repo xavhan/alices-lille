@@ -38,7 +38,8 @@
           item.availability.includes(CURRENT_SEASON))
     );
 
-  const getCocktails = (items: string[]) => items.map(label => cocktails.find(c => c.label === label))
+  const getCocktails = (items: string[]) =>
+    items.map((label) => cocktails.find((c) => c.label === label));
 </script>
 
 <SvelteSeo
@@ -47,16 +48,29 @@
   canonical="https://alices-lille.com/carte"
 />
 <picture>
-  <source srcset="/images/icons/friends-dark.png" media="(prefers-color-scheme: dark)" />
-  <img src="/images/icons/friends.png" alt="Amis en train de partager des bières et du vin" width="120"/>
+  <source
+    srcset="/images/icons/friends-dark.png"
+    media="(prefers-color-scheme: dark)"
+  />
+  <img
+    src="/images/icons/friends.png"
+    alt="Amis en train de partager des bières et du vin"
+    width="120"
+  />
 </picture>
-<br/>
-<br/>
+<br />
+<br />
 
 <Stack>
-  {#if (new Date()).getHours() >= 15 && (new Date()).getHours() <= 17}
+  {#if new Date().getHours() >= 15 && new Date().getHours() <= 17}
     <MenuBlock title="Cafés">
-      <Coffee coffee={coffee} />
+      <Coffee {coffee} />
+    </MenuBlock>
+  {/if}
+
+  {#if new Date().getDay() === 6 && new Date().getHours() >= 17}
+    <MenuBlock title="🍸 Samedi c'est espresso Martini !">
+      <Cocktails cocktails={getCocktails(['Espresso Martini'])} />
     </MenuBlock>
   {/if}
 
@@ -73,22 +87,24 @@
   </MenuBlock>
 
   <MenuBlock title="Cocktails">
-    <Cocktails cocktails={getCocktails([
-      'Amaretto Sour',
-      'Bramble',
-      'Dark & stormy',
-      'Irish Coffee',
-      'Moscow Mule',
-      'Paddigfigue',
-      'Paloma',
-      'Rome with a view',
-      'Mocktail',
-    ])} />
+    <Cocktails
+      cocktails={getCocktails([
+        'Amaretto Sour',
+        'Bramble',
+        'Dark & stormy',
+        'Irish Coffee',
+        'Moscow Mule',
+        'Paddigfigue',
+        'Paloma',
+        'Rome with a view',
+        'Mocktail',
+      ])}
+    />
   </MenuBlock>
 
   <div class="text-right text-emphase flex justify-between">
     <div>🍸🥂🥃🍹</div>
-    <a href='/cocktails'>Voir tous nos classiques</a>
+    <a href="/cocktails">Voir tous nos classiques</a>
   </div>
   <br />
 
@@ -108,17 +124,19 @@
     <Food {food} />
   </MenuBlock>
 
-  {#if (new Date()).getHours() < 15 || (new Date()).getHours() > 17}
+  {#if new Date().getHours() < 15 || new Date().getHours() > 17}
     <MenuBlock title="Cafés">
-      <Coffee coffee={coffee} />
+      <Coffee {coffee} />
     </MenuBlock>
   {/if}
 
   <MenuBlock title="Et pleins d'autres surprises au bar" />
 
   <picture>
-    <source srcset="/images/icons/cocktail-dark.png" media="(prefers-color-scheme: dark)" />
-    <img src="/images/icons/cocktail.png" alt="Cocktail" width="40"/>
+    <source
+      srcset="/images/icons/cocktail-dark.png"
+      media="(prefers-color-scheme: dark)"
+    />
+    <img src="/images/icons/cocktail.png" alt="Cocktail" width="40" />
   </picture>
 </Stack>
-

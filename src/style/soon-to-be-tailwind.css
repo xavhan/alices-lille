@@ -84,6 +84,9 @@
 .animate-blink {
   animation: blink var(--slow) var(--ease-out-3) infinite;
 }
+.animate-pulse {
+  animation: pulse var(--slow) var(--ease-out-3) infinite;
+}
 .blob-1 {
   border-radius: var(--radius-blob-1);
 }
@@ -114,7 +117,6 @@
 .text-sm {
   font-size: 0.875rem;
 }
-.rounded{
+.rounded {
   border-radius: 0.25rem;
 }
-

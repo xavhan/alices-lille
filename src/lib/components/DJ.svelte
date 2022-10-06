@@ -1,8 +1,8 @@
 <script lang="ts">
   import type { DJ } from '$data/types';
   import { random } from '$lib/random';
-  import { onMount } from 'svelte'
- 
+  import { onMount } from 'svelte';
+
   import Link from './Link.svelte';
 
   export let dj: DJ;
@@ -10,9 +10,9 @@
   let n = random([1, 5]);
   onMount(() => {
     setInterval(() => {
-        n = ((n + 1) % 5) + 1;
+      n = ((n + 1) % 5) + 1;
     }, 1000);
-  })
+  });
 </script>
 
 <div class="font-serif leading-6">

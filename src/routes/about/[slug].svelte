@@ -1,7 +1,9 @@
 <script context="module">
   export const prerender = true;
   export async function load({ params, fetch }) {
-    const beer = await fetch(`/about/${params.slug}.json`).then((r) => r.json());
+    const beer = await fetch(`/about/${params.slug}.json`).then((r) =>
+      r.json()
+    );
     return {
       props: {
         beer,

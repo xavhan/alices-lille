@@ -1,10 +1,11 @@
-import { readable } from "svelte/store";
+import { readable } from 'svelte/store';
 
 const reducedMotionQuery = '(prefers-reduced-motion: reduce)';
-const getInitialMotionPreference = () => window.matchMedia(reducedMotionQuery).matches;
+const getInitialMotionPreference = () =>
+  window.matchMedia(reducedMotionQuery).matches;
 
-export const reducedMotion = readable(getInitialMotionPreference(), set => {
-  const updateMotionPreference = event => {
+export const reducedMotion = readable(getInitialMotionPreference(), (set) => {
+  const updateMotionPreference = (event) => {
     set(event.matches);
   };
 
