@@ -35,20 +35,30 @@
 <br />
 
 <Stack>
-  <select bind:value={$selected} class="w-full p-2 rounded">
-    <option selected value="">Tous les cocktails</option>
-    <option value="amaretto">Amaretto</option>
-    <option value="bourbon">Bourbon</option>
-    <option value="campari">Campari</option>
-    <option value="gin">Gin</option>
-    <option value="ginger">Ginger</option>
-    <option value="rhum">Rhum</option>
-    <option value="tequila">Tequila</option>
-    <option value="vodka">Vodka</option>
-    <option value="whisky">Whisky</option>
-  </select>
-
   <MenuBlock title="Tous nos cocktails">
+    <select
+      bind:value={$selected}
+      class="w-full p-2 mt-2 mb-2 rounded"
+      style={[
+        'color: var(--app-text)',
+        'font-family: "Trueno Light"',
+        'font-size: var(--font-size-1)',
+        'border: 1px solid var(--app-text-emphase)',
+        'background-color: var(--app-background)',
+      ].join(';')}
+    >
+      <option selected value="">Choisir la base</option>
+      <option value="amaretto">Amaretto</option>
+      <option value="bourbon">Bourbon</option>
+      <option value="campari">Campari</option>
+      <!-- comma hack to avoid gin / ginger overlap 🙃 -->
+      <option value="gin,">Gin</option>
+      <option value="ginger">Ginger</option>
+      <option value="rhum">Rhum</option>
+      <option value="tequila">Tequila</option>
+      <option value="vodka">Vodka</option>
+      <option value="whisky">Whisky</option>
+    </select>
     <Cocktails
       cocktails={cocktails
         .filter((c) => c.everyday)

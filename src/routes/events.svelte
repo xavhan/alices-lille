@@ -61,6 +61,7 @@
     <Stack>
       {#each eventList.past as event}
         <li class="flex flex-col">
+          'angoisse
           <Event {event} hideDesc />
         </li>
       {/each}

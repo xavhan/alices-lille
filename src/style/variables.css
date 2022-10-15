@@ -16,12 +16,12 @@
 
   --alices-blanccasse: #fbfae6;
   --alices-beige: #fedbae;
-  --alices-camel: #CAA577;
+  --alices-camel: #caa577;
 
   --font-sans-2: 'Trueno Light';
 
   --use-motion-preference: 1;
-  --slow: calc(var(--use-motion-preference) * 1000ms);
+  --slow: calc(var(--use-motion-preference) * 700ms);
 
   /* semantics */
   --app-background: var(--alices-blanccasse);

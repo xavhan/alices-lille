@@ -42,7 +42,9 @@
               <div>{euro(price)}</div>
             {:else}
               {#each Object.entries(price) as [_, p]}
-                <div>{euro(p)}</div>
+                <div class="flex justify-end" style="width: 40px">
+                  {euro(p)}
+                </div>
               {/each}
             {/if}
           </Stack>

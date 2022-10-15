@@ -20,7 +20,12 @@
                 <span role="img" aria-label="vegan">🌱</span>
               {/if}
             </div>
-            <div class="text-hide">{composition}</div>
+            <div class="text-hide">
+              {@html composition.replace(
+                'Liqueur de violette',
+                '<span class="violette">Liqueur de violette</span>'
+              )}
+            </div>
           </div>
         </div>
         <div>

@@ -10,10 +10,20 @@
     {#each wines as { label, estate, price, grapes, text, highlight }}
       <div class="flex items-center">
         <div class="flex-1 text-left">
-          <div class:animate-blink={highlight}>
-            <div>{label}</div>
+          <div>
+            <div>
+              {@html label.replace(
+                'Pétillant',
+                '<span class="petillant">Pétillant</span>'
+              )}
+            </div>
             {#if grapes}
-              <div class="text-emphase">{grapes}</div>
+              <div class="text-emphase">
+                {@html grapes.replace(
+                  'petits grains',
+                  '<span class="petitsgrains">petits grains</span>'
+                )}
+              </div>
             {/if}
             {#if estate}
               <div class="text-hide">{estate}</div>
