@@ -187,7 +187,6 @@ export const cocktails: Cocktail[] = [
     label: 'Bloody Mary',
     composition: 'Vodka, Jus de tomate, Épices, Céleri',
     price: 7,
-    everyday: true,
   },
   {
     label: 'NEGRONI',
@@ -285,7 +284,7 @@ export const cocktails: Cocktail[] = [
     everyday: true,
   },
   {
-    label: 'Last Words',
+    label: 'Last Word',
     composition: 'Gin, Chartreuse, Marasquin, Citron',
     price: 10,
     everyday: true,
@@ -295,6 +294,33 @@ export const cocktails: Cocktail[] = [
     vegan: true,
     composition: 'Whisky, Sucre, Citron, Angostura',
     price: 9,
+    everyday: true,
+  },
+  {
+    label: 'Whisky Sour',
+    vegan: true,
+    composition: 'Whisky, Sucre, Citron, Angostura',
+    price: 9,
+    everyday: true,
+  },
+  {
+    label: 'Champs-Élysées',
+    composition:
+      'Jus de citron, Sirop de sucre, Chartreuse verte, Cognac, Angostura',
+    price: 10,
+    everyday: true,
+  },
+  {
+    label: 'Negroni Sbagliato',
+    composition: 'Campari, Vermouth Rouge, Prosecco, Orange',
+    price: 8,
+    everyday: true,
+  },
+  {
+    label: 'Penicilin',
+    composition:
+      'Gingembre, Sirop de miel, Jus de citron, Whisky scotch, Islay',
+    price: 11,
     everyday: true,
   },
 ];
