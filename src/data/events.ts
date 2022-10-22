@@ -3,6 +3,20 @@ import type { Event } from './types';
 
 export const EVENTS: Event[] = [
   {
+    n: 9,
+    slug: 'miniclub-booty-bounce',
+    label: 'MINICLUB: booty bounce edition !',
+    guests: [djs.Zazu, djs.Margaux59000],
+    date: '2022-10-29',
+    imageSrc: '/images/miniclub/miniclub009.jpg',
+    facebookEvent: 'https://www.facebook.com/events/2195083447320070/',
+    description: [
+      `Nouveau miniclub, booty bounce edition!!!!! 🔥`,
+      '',
+      `On est hyper contentes de recevoir Zazu & margaux59000, deux DJs qu'on affectionne particulièrement, l'une venue de Rennes, ambassadrice du son Gqom et Baile Funk de passage dans le Nord, et l'autre qu'on ne présente plus à Lille, qui a tout retourné à la braderie, et qui va continuer à vous faire suer jusqu'à ce que vous soyez tout mouillés !!!`,
+    ].join('\n'),
+  },
+  {
     n: 8,
     slug: 'la-bonne-fete',
     label: 'MINICLUB: La Bonne Fête !',

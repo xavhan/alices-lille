@@ -141,6 +141,26 @@ export const JoTabass: DJ = {
   description: `Producteur avant d’etre dj, JoTabass s’est fait connaitre à travers le premier various de La Bonne Fête: LBF001. Son credo? Faire vibrer le public au rythme de ce qu’il déniche: house, techno, tout y passe!`,
   imageSrc: `/images/dj/jotabass.jpg`,
 };
+export const Zazu: DJ = {
+  label: 'Zazu',
+  slug: 'zazu',
+  links: [
+    { type: 'soundcloud', href: 'https://soundcloud.com/zazu_dj' },
+    { type: 'instagram', href: 'https://instagram.com/zazu__dj/' },
+  ],
+  description: `De la Gqom sud-africaine aux sons tribaux du Maroc en passant par de l’électro breakée, Zazu nous transporte dans un voyage sonore passionnant. Ses expériences dans les clubs rennais et parisiens ont affûté sa vision mondialisée et transversale de la musique, avec des sélections toujours plus aventureuses, qui l'ont menée jusqu'au festival des Transmusicales de Rennes. \nCette amazone rennaise a fréquenté très tôt les free party bretonnes et mêle très habilement les héritages qui lui tiennent à cœur pour aboutir à une vibe hybride terriblement excitante. Elle est co-fondatrice du collectif Sudar qui propose des soirées triangulées sur les musiques électroniques d’Afrique, d’Amérique Latine et d’Europe par le biais d’événements et de contenus médiatiques.`,
+  imageSrc: `/images/dj/zazu.jpg`,
+};
+export const Margaux59000: DJ = {
+  label: 'Margaux59000',
+  slug: 'margaux59000',
+  links: [
+    { type: 'soundcloud', href: 'https://soundcloud.com/margaux59000' },
+    { type: 'instagram', href: 'https://instagram.com/m4rgox/' },
+  ],
+  description: `Du Baile Funk au Breakbeat, margaux59000 aime avant tout viber. Ambianceuse de père en fille, elle ne laisse personne indifférent. \nDécouverte grâce au crew lillois Laisse Tomber les Filles, elle sévit depuis plusieurs mois maintenant dans la métropole avec des sets rythmés aux influences variées. Active sur la scène queer, et nouvelle recrue d’Enlace Records, margaux59000 n’est pas prête de s’arrêter !!`,
+  imageSrc: `/images/dj/margaux59000.jpg`,
+};
 
 export const DJS = [
   Donov,
@@ -153,4 +173,6 @@ export const DJS = [
   Kepler129,
   GhaïsLaMalice,
   JoTabass,
+  Zazu,
+  Margaux59000,
 ];
