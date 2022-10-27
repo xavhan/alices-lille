@@ -297,13 +297,6 @@ export const cocktails: Cocktail[] = [
     everyday: true,
   },
   {
-    label: 'Whisky Sour',
-    vegan: true,
-    composition: 'Whisky, Sucre, Citron, Angostura',
-    price: 9,
-    everyday: true,
-  },
-  {
     label: 'Champs-Élysées',
     composition:
       'Jus de citron, Sirop de sucre, Chartreuse verte, Cognac, Angostura',
