@@ -3,6 +3,22 @@ import type { Event } from './types';
 
 export const EVENTS: Event[] = [
   {
+    n: 10,
+    slug: 'one-year-birthday',
+    label: '🎂 Alices fête ses 1 an 🎂',
+    guests: [djs.Donov, djs.InnerSense],
+    date: '2022-11-10',
+    imageSrc: '/images/miniclub/miniclub010.jpg',
+    facebookEvent: 'https://www.facebook.com/events/438484375068116/',
+    description: [
+      `Première bougie aux Alices !`,
+      '',
+      `On a trop hâte de fêter avec vous le premier anniversaire d'une longue série aux Alices ! 🔥`,
+      '',
+      `Au programme : des bières, du vin, des cocktails de fou, des surprises, des copains·copines et toujours... des shots !!`,
+    ].join('\n'),
+  },
+  {
     n: 9,
     slug: 'miniclub-booty-bounce',
     label: 'MINICLUB: booty bounce edition !',
