@@ -26,7 +26,7 @@
 <SvelteSeo
   title="Alices | Biere | {beer.about.title || beer.label}"
   description={`${beer.label} - ${beer.brewery}`}
-  canonical={'https://alices-lille.com/beer/' + beer.slug}
+  canonical={'https://alices-lille.com/about/' + beer.slug}
 />
 
 <Stack>
