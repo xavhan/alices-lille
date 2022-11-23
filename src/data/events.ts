@@ -3,6 +3,25 @@ import type { Event } from './types';
 
 export const EVENTS: Event[] = [
   {
+    n: 11,
+    slug: 'festoch',
+    label: "Ça part en festoch'",
+    imageSrc: '/images/miniclub/miniclub011.jpg',
+    guests: [djs.MarcJean],
+    date: '2022-12-03',
+    facebookEvent:
+      'https://www.facebook.com/events/s/miniclub-ca-part-en-festoch-w-/1078199129522505/',
+    description: [
+      `𝗟𝗲 𝗠𝗜𝗡𝗜𝗖𝗟𝗨𝗕 𝗽𝗮𝗿𝘁 𝗲𝗻 𝗳𝗲𝘀𝘁𝗼𝗰𝗵' 𝘄/ 𝗠𝗔𝗥𝗖 𝗝𝗘𝗔𝗡 :`,
+      '',
+      `Let There Be House!`,
+      '',
+      `On est très contentes d'accueillir Marc Jean pour cette nouvelle soirée 💥`,
+      '',
+      `Trublion reconnu des clubs et bars lillois depuis quelques années déjà, le miniclub l'attend de pied ferme avec une seule envie, que ça parte en festoch'!`,
+    ].join('\n'),
+  },
+  {
     n: 10,
     slug: 'one-year-birthday',
     label: '🎂 Alices fête ses 1 an 🎂',

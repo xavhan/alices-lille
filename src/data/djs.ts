@@ -161,6 +161,16 @@ export const Margaux59000: DJ = {
   description: `Du Baile Funk au Breakbeat, margaux59000 aime avant tout viber. Ambianceuse de père en fille, elle ne laisse personne indifférent. \nDécouverte grâce au crew lillois Laisse Tomber les Filles, elle sévit depuis plusieurs mois maintenant dans la métropole avec des sets rythmés aux influences variées. Active sur la scène queer, et nouvelle recrue d’Enlace Records, margaux59000 n’est pas prête de s’arrêter !!`,
   imageSrc: `/images/dj/margaux59000.jpg`,
 };
+export const MarcJean: DJ = {
+  label: 'MarcJean',
+  slug: 'marcjean',
+  links: [
+    { type: 'soundcloud', href: 'https://soundcloud.com/hugomarcjean' },
+    { type: 'facebook', href: 'https://facebook.com/h.marc.jean' },
+  ],
+  description: `Alias idiot pour profil décomplexé. Influencé par la Belgique et l'ambiance des festivals, Marc Jean prône avant tout le partage d'un esprit joyeux et festif. Inlassable teufeur, il se retrouve à l'époque à la direction artistique et l'organisation de soirées avec le collectif La Classique et le LAPS festival à Lille. C'est désormais derrière les platines qu'il transmet sa bonne humeur et sa vision de la fête, en naviguant à travers les styles sans se mettre de barrière.`,
+  imageSrc: `/images/dj/marcjean.jpg`,
+};
 
 export const DJS = [
   Donov,
@@ -175,4 +185,5 @@ export const DJS = [
   JoTabass,
   Zazu,
   Margaux59000,
+  MarcJean,
 ];
