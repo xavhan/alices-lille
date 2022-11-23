@@ -162,7 +162,7 @@ export const Margaux59000: DJ = {
   imageSrc: `/images/dj/margaux59000.jpg`,
 };
 export const MarcJean: DJ = {
-  label: 'MarcJean',
+  label: 'Marc Jean',
   slug: 'marcjean',
   links: [
     { type: 'soundcloud', href: 'https://soundcloud.com/hugomarcjean' },
