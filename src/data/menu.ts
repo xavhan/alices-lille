@@ -2,9 +2,9 @@ import { BEERS } from './beers';
 import type { Wine, Cocktail, Spirit, Soft, FoodItem, Coffee } from './types';
 export const taps = [
   'bise',
-  'poulemouillee',
-  'appie',
-  'pascap',
+  'etoiledunord',
+  'tarasboulba',
+  'mongyambree',
   'lesingesavant',
 ].map((slug) => BEERS.get(slug));
 export const bottles = [
@@ -26,22 +26,7 @@ export const shooters = [
 export const wines: Wine[] = [
   {
     label: 'VIN ROUGE GLOUGLOU',
-    grapes: 'cinsault, syrah',
-    estate: 'Domaine Guillaume Armand',
-    price: 5.5,
-    availability: ['winter2022'],
-  },
-  {
-    label: 'VIN ROUGE GLOUGLOU',
-    grapes: 'Merlot, Carignan',
-    estate: 'Domaine Henri et Théophile Milan',
-    price: 5.5,
-    availability: ['spring2022', 'summer2022'],
-    disabled: true,
-  },
-  {
-    label: 'VIN ROUGE GLOUGLOU',
-    grapes: 'Cépages légers',
+    grapes: 'Cépages legers (Gamay, Grolleau, Grenache...)',
     estate: 'En fonction des bouteilles du moment',
     price: 5.5,
   },
@@ -50,56 +35,24 @@ export const wines: Wine[] = [
     grapes: 'Cabernet franc, merlot',
     estate: 'Domaine Daniel & Nicolas Roux',
     price: 6,
-    availability: ['winter2022', 'spring2022', 'summer2022'],
   },
   {
-    label: 'VIN BLANC MINERAL ',
-    grapes: 'Muscadet',
-    estate: 'Domaine Luneau-Papin',
+    label: 'VIN ROUGE GLOUGLOU',
+    grapes: 'Chenin, Colombard',
+    estate: 'Domaine Lise et Bertrand Jousset',
     price: 7,
-    availability: ['winter2022', 'spring2022', 'summer2022'],
-  },
-  // {
-  //   label: 'VIN BLANC FRUITÉ',
-  //   grapes: 'Chardonnay, viognier',
-  //   estate: 'Domaine de la Croix Gratiot',
-  //   price: 7.5,
-  //   availability: ['winter2022', 'spring2022'],
-  // },
-  {
-    label: 'VIN BLANC FRUITÉ',
-    grapes: 'Chenin, sauvignon',
-    estate: 'Domaine Clément Barault',
-    price: 7.5,
-    availability: ['spring2022', 'summer2022'],
-    disabled: true,
   },
   {
-    label: 'VIN BLANC Floral',
-    grapes: 'Macabeu, Muscat petits grains',
-    estate: 'Domaine Vinoceros',
+    label: 'VIN BLANC de l’hiver',
+    grapes: 'CÉpages blancs (Savagnin, Chardo, muscadet...)',
+    estate: 'En fonction des bouteilles du moment',
     price: 7.5,
-  },
-  {
-    label: 'VIN ROSÉ',
-    grapes: 'Syrah, Cinsault',
-    estate: 'Domaine Henri et Théophile Milan',
-    price: 7.5,
-    disabled: true,
-    availability: ['spring2022', 'summer2022'],
   },
   {
     label: 'MOELLEUX',
-    grapes: 'Semillon',
-    estate: 'Domaine Plaisance Penavayre',
-    price: 7.5,
-  },
-  {
-    label: 'Pétillant Naturel',
     grapes: 'Chenin',
-    estate: 'Domaine Lise et Bertrand Jousset',
-    price: 9,
-    availability: ['spring2022'],
+    estate: 'Domaine Matignon',
+    price: 7.5,
   },
   {
     label: 'SURPRISE',
@@ -109,7 +62,7 @@ export const wines: Wine[] = [
   {
     label: 'Pétillant Naturel',
     text: "Petnat' du mois",
-    price: 9,
+    price: 8,
     highlight: true,
   },
   {
@@ -117,14 +70,12 @@ export const wines: Wine[] = [
     grapes: 'PINOT MEUNIER',
     estate: 'Champagne André Heucq',
     price: 55,
-    availability: ['winter2022', 'spring2022', 'summer2022'],
   },
   {
     label: 'Champagne bouteille 75cl',
     grapes: 'CHARDONNAY, MEUNIER, PINOT NOIR',
     estate: 'Champagne André Heucq',
     price: 80,
-    availability: ['winter2022', 'spring2022', 'summer2022'],
   },
 ];
 
@@ -207,6 +158,12 @@ export const cocktails: Cocktail[] = [
     everyday: true,
   },
   {
+    label: 'Pamela',
+    composition: 'Tequila, pamplemousse, citron, Fleur oranger, Miel',
+    price: 10,
+    everyday: true,
+  },
+  {
     label: 'Irish Coffee',
     composition: 'whisky, café, chantilly',
     price: 7.5,
@@ -274,7 +231,7 @@ export const cocktails: Cocktail[] = [
   {
     label: 'Daiquiri Cacahuète',
     composition: 'Rhum infusé cacahuètte, citron vert, sucre',
-    price: 10,
+    price: 8,
     everyday: true,
   },
   {
@@ -313,6 +270,12 @@ export const cocktails: Cocktail[] = [
     label: 'Penicilin',
     composition:
       'Gingembre, Sirop de miel, Jus de citron, Whisky scotch, Islay',
+    price: 11,
+    everyday: true,
+  },
+  {
+    label: 'Vieux Carré',
+    composition: 'Cognac, Rye Whisky, Vermouth, Benedictine & more',
     price: 11,
     everyday: true,
   },
@@ -384,30 +347,46 @@ export const coffee: Coffee[] = [
   {
     label: 'cappuccino',
     price: 4,
+    description: '1 café + cacao + lait + mousse de lait',
   },
   {
     label: 'latte',
     price: 4.3,
+    description: '1 café + lait + mousse de lait',
   },
   {
     label: 'flat white',
     price: 4.5,
+    description: '2 cafés + lait + mousse de lait',
   },
   {
     label: 'moccha ',
     price: 5,
+    description: ' 1 café + chocolat + lait + mousse de lait',
   },
-  {
-    label: 'CAFÉ FRAPPÉ',
-    price: 4,
-  },
+  // {
+  //   label: 'CAFÉ FRAPPÉ',
+  //   price: 4,
+  // },
   {
     label: 'CHOCOLAT CHAUD',
     price: 5,
   },
   {
+    label: 'CHOCOLAT CHAUD + CHANTILLY',
+    price: 5.5,
+  },
+  {
     label: 'CHOCOLAT CHAUD + ALCOOL',
     price: 6,
+  },
+  {
+    label: 'IRISH COFFEE',
+    price: 7.5,
+  },
+  {
+    label: 'Thé vert rose - orange - mangue',
+    price: 4,
   },
   {
     label: 'Thé vert grand jasmin',
@@ -430,7 +409,7 @@ export const coffee: Coffee[] = [
     price: 4,
   },
   {
-    label: 'Thé de L’ÉTÉ : ROSE, MANGUE, ORANGE',
+    label: 'Thé de L’HIVER ORANGE - CANNELLE - AMAMDE',
     price: 4,
   },
   {
@@ -441,13 +420,14 @@ export const coffee: Coffee[] = [
 
 export const softs: Soft[] = [
   { label: 'Jus de Pomme', price: 3.5 },
-  { label: 'Jus de Pomme/Rhubarbe', price: 3.5 },
+  { label: 'Jus de Poire', price: 3.5 },
+  { label: 'Jus de Pomme/Rhubarbe', price: 3.5, disabled: true },
   { label: 'Jus de Pomme/Cassis', price: 3.5 },
   { label: 'Jus de Pamplemousse', price: 3.5, disabled: true },
-  { label: 'Jus de Poire', price: 3.5 },
   { label: 'Limo nature', price: 4.3 },
-  { label: 'Limo fleur de sureau', price: 4.3, disabled: true },
   { label: 'Limo Rhubarbe', price: 4.3 },
+  { label: 'Limo fleur de sureau', price: 4.3, disabled: true },
+  { label: 'Fritz Cola sans sucre', price: 4.3 },
   { label: 'Meuh Cola', price: 4.3 },
   { label: 'Kombucha', price: 4.5 },
   { label: 'Frênette', price: 4.5 },

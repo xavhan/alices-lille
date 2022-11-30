@@ -7,6 +7,7 @@ type Year = '2022';
 type BeerType =
   | 'Blanche'
   | 'Pils'
+  | 'Saison'
   | 'Blonde'
   | 'IPA'
   | 'Belgian IPA'

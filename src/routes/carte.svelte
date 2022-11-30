@@ -91,12 +91,11 @@
       cocktails={getCocktails([
         'Amaretto Sour',
         'Bramble',
-        'Dark & stormy',
-        'Irish Coffee',
+        'Daiquiri Cacahuète',
         'Moscow Mule',
-        'Paddigfigue',
-        'Paloma',
-        'Rome with a view',
+        'Espresso Martini',
+        'Pamela',
+        'Vieux Carré',
         'Mocktail',
       ])}
     />
