@@ -16,6 +16,20 @@ export const BEERS = new Map<string, Beer>([
     },
   ],
   [
+    'etoiledunord',
+    {
+      type_label: 'Saison',
+      slug: 'etoiledunord',
+      label: 'Étoile du Nord',
+      brewery: 'Thiriez',
+      price: {
+        25: 3.5,
+        50: 6.5,
+      },
+      abv: 5.5,
+    },
+  ],
+  [
     'biseblanche',
     {
       label: 'La Bise Blanche',
@@ -59,8 +73,8 @@ export const BEERS = new Map<string, Beer>([
       label: 'Taras Boulba',
       brewery: 'Brasserie de la Senne',
       price: {
-        25: 3.5,
-        50: 6.5,
+        25: 4,
+        50: 7.5,
       },
       abv: 4.5,
     },
@@ -92,13 +106,13 @@ export const BEERS = new Map<string, Beer>([
     },
   ],
   [
-    'mongyhiver',
+    'mongyambree',
     {
       type_label: 'Ambrée',
-      label: "MONGY d'hiver",
+      label: 'MONGY',
       brewery: 'Cambier',
       price: {
-        25: 4.4,
+        25: 4.2,
         50: 8,
       },
       abv: 8,
