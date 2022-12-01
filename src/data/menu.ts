@@ -5,7 +5,7 @@ export const taps = [
   'etoiledunord',
   'tarasboulba',
   'mongyambree',
-  'lesingesavant',
+  'speciale',
 ].map((slug) => BEERS.get(slug));
 export const bottles = [
   'bieresdumoment',
@@ -37,7 +37,7 @@ export const wines: Wine[] = [
     price: 6,
   },
   {
-    label: 'VIN ROUGE GLOUGLOU',
+    label: 'VIN BLANC GLOUGLOU',
     grapes: 'Chenin, Colombard',
     estate: 'Domaine Lise et Bertrand Jousset',
     price: 7,

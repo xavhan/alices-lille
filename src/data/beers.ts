@@ -69,7 +69,7 @@ export const BEERS = new Map<string, Beer>([
   [
     'tarasboulba',
     {
-      type_label: 'Blonde',
+      type_label: 'Amère',
       label: 'Taras Boulba',
       brewery: 'Brasserie de la Senne',
       price: {
@@ -174,6 +174,18 @@ export const BEERS = new Map<string, Beer>([
       price: {
         25: 4,
         50: 7.5,
+      },
+    },
+  ],
+  [
+    'speciale',
+    {
+      slug: 'speciale',
+      label: 'Bière Spéciale',
+      brewery: 'Brasserie du singe savant, Hub ou autres copains',
+      price: {
+        25: 4.5,
+        50: 8.5,
       },
     },
   ],
