@@ -9,6 +9,7 @@ type BeerType =
   | 'Pils'
   | 'Saison'
   | 'Blonde'
+  | 'Amère'
   | 'IPA'
   | 'Belgian IPA'
   | 'Ambrée'
