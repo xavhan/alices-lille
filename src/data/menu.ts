@@ -4,7 +4,7 @@ export const taps = [
   'bise',
   'etoiledunord',
   'tarasboulba',
-  'mongyambree',
+  'mongytriple',
   'speciale',
 ].map((slug) => BEERS.get(slug));
 export const bottles = [
@@ -172,7 +172,8 @@ export const cocktails: Cocktail[] = [
   {
     label: 'GIMLET',
     composition: "Gin infusé feuille de clémentine, citron, cordial d'agrumes",
-    price: 10,
+    price: 9,
+    everyday: true,
   },
   {
     label: "Général Clem'to",
@@ -277,6 +278,12 @@ export const cocktails: Cocktail[] = [
     label: 'Vieux Carré',
     composition: 'Cognac, Rye Whisky, Vermouth, Benedictine & more',
     price: 11,
+    everyday: true,
+  },
+  {
+    label: 'New York Sour',
+    composition: 'bourbon, sucre, citron, vin rouge',
+    price: 9,
     everyday: true,
   },
 ];

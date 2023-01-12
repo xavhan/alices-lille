@@ -171,6 +171,26 @@ export const MarcJean: DJ = {
   description: `Alias idiot pour profil décomplexé. Influencé par la Belgique et l'ambiance des festivals, Marc Jean prône avant tout le partage d'un esprit joyeux et festif. Inlassable teufeur, il se retrouve à l'époque à la direction artistique et l'organisation de soirées avec le collectif La Classique et le LAPS festival à Lille. C'est désormais derrière les platines qu'il transmet sa bonne humeur et sa vision de la fête, en naviguant à travers les styles sans se mettre de barrière.`,
   imageSrc: `/images/dj/marcjean.jpg`,
 };
+export const FlashSaba: DJ = {
+  label: 'Flash Saba',
+  slug: 'flashsaba',
+  links: [
+    { type: 'soundcloud', href: 'https://soundcloud.com/flash_saba' },
+    { type: 'instagram', href: 'https://instagram.com/flash_saba/' },
+  ],
+  description: `Flash Saba (Laisse Tomber les Filles, Taste My Groove, Lille)  a récemment fait ses débuts sur la scène Lilloise avec Laisse Tomber Les Filles. DJ au nom énigmatique et évocateur, c’est un réel retour vers les années 90 qu’elle partage. L’acid house, la trance ou encore des tracks venant de ses jeux vidéos favoris sont pour Flash Saba de réelles inspirations qui lui permettent de créer un univers éclectique et dansant.`,
+  imageSrc: `/images/dj/flashsaba.jpg`,
+};
+export const Jozzaka: DJ = {
+  label: 'Jozzaka',
+  slug: 'jozzaka',
+  links: [
+    { type: 'soundcloud', href: 'https://soundcloud.com/jozzaka' },
+    { type: 'instagram', href: 'https://instagram.com/jozzaka/' },
+  ],
+  description: `Les rythmes, les percussions et le groove de Jozzaka  (Taste My Groove, Lille) lui viennent tout droit de ses origines vénézuéliennes. La house 90 et la trance sont ses principales inspirations qui permettent à ses sets de vous faire voyager jusqu’à Caracas.`,
+  imageSrc: `/images/dj/jozzaka.jpg`,
+};
 
 export const DJS = [
   Donov,
@@ -186,4 +206,6 @@ export const DJS = [
   Zazu,
   Margaux59000,
   MarcJean,
+  FlashSaba,
+  Jozzaka,
 ];

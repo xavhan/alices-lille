@@ -3,6 +3,18 @@ import type { Event } from './types';
 
 export const EVENTS: Event[] = [
   {
+    n: 12,
+    slug: 'falsh-saba-b2b-jozzaka',
+    label: 'Flash Saba B2B Jozzaka',
+    imageSrc: '/images/miniclub/miniclub012.jpg',
+    guests: [djs.FlashSaba, djs.Jozzaka],
+    date: '2023-01-23',
+    facebookEvent: 'https://www.facebook.com/events/555758149759059',
+    description: [
+      `On ouvre 2023 avec deux chouettes DJs pour cette première date aux accents électroniques, on a hâte de vous revoir ❤️`,
+    ].join('\n'),
+  },
+  {
     n: 11,
     slug: 'festoch',
     label: "Ça part en festoch'",
