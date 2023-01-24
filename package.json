@@ -32,7 +32,7 @@
   },
   "type": "module",
   "dependencies": {
-    "open-props": "^1.5.3",
+    "open-props": "^1.5.4",
     "qs": "^6.11.0",
     "svelte-seo": "^1.4.1"
   },
