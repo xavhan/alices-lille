@@ -191,6 +191,13 @@ export const Jozzaka: DJ = {
   description: `Les rythmes, les percussions et le groove de Jozzaka  (Taste My Groove, Lille) lui viennent tout droit de ses origines vénézuéliennes. La house 90 et la trance sont ses principales inspirations qui permettent à ses sets de vous faire voyager jusqu’à Caracas.`,
   imageSrc: `/images/dj/jozzaka.jpg`,
 };
+export const Choupichatte: DJ = {
+  label: 'Choupichatte',
+  slug: 'choupichatte',
+  links: [{ type: 'instagram', href: 'https://instagram.com/choupichatte/' }],
+  description: `Who is Choupichatte ? Avec son petit nombre d'événements par an, Choupichatte la supra discrète propose un dancefloor intimiste, inclusif et débridé, un lieu de célébration de la musique et de l’amour. C'est à ne pas manquer !\nLe style musical de Choupichatte est essentiellement de la house, italo disco, indie dance, acid et breakbeat.\nAux commandes du MINICLUB : JaneB, Joli.c.o.e.u.r, Kolaps Model, Sígmet`,
+  imageSrc: `/images/dj/choupichatte.jpeg`,
+};
 
 export const DJS = [
   Donov,
@@ -208,4 +215,5 @@ export const DJS = [
   MarcJean,
   FlashSaba,
   Jozzaka,
+  Choupichatte,
 ];

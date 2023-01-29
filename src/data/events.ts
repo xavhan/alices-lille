@@ -3,6 +3,18 @@ import type { Event } from './types';
 
 export const EVENTS: Event[] = [
   {
+    n: 13,
+    slug: 'choupichatte',
+    label: 'Miniclub',
+    imageSrc: '/images/miniclub/miniclub013.jpeg',
+    guests: [djs.Choupichatte],
+    date: '2023-02-11',
+    facebookEvent: 'https://www.facebook.com/events/636630111796138',
+    description: [
+      `On continue 2023 avec les 4 Djs du collectif Choupichatte qui embarquent pour un mini club version B2B2B2B ❤️`,
+    ].join('\n'),
+  },
+  {
     n: 12,
     slug: 'falsh-saba-b2b-jozzaka',
     label: 'Flash Saba B2B Jozzaka',
