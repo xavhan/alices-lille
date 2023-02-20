@@ -34,7 +34,7 @@
   "dependencies": {
     "open-props": "^1.5.5",
     "qs": "^6.11.0",
-    "svelte-seo": "^1.4.1"
+    "svelte-seo": "^1.5.2"
   },
   "license": "UNLICENSED"
 }
