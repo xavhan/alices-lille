@@ -3,6 +3,19 @@ import type { Event } from './types';
 
 export const EVENTS: Event[] = [
   {
+    n: 14,
+    slug: 'ango-supa-2',
+    label: 'Miniclub',
+    imageSrc: '/images/miniclub/miniclub014.jpg',
+    guests: [djs.Ango],
+    date: '2023-03-04',
+    facebookEvent: 'https://www.facebook.com/events/721354506371213',
+    description: [
+      `MINICLUB nouvelle version, toujours MINI pour une MAXITEUF`,
+      `On retrouve Ango au platine pour un samedi soir chaud au premier étage du Alices de 22h à 2h`,
+    ].join('\n'),
+  },
+  {
     n: 13,
     slug: 'choupichatte',
     label: 'Miniclub',
