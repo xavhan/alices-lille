@@ -1,8 +1,8 @@
-import type { SvelteSeoProps } from 'svelte-seo/types/SvelteSeo';
+import type { SvelteSeo } from 'svelte-seo/types';
 
 export const alicesJSONLD = (
   description: string
-): SvelteSeoProps['jsonLd'] => ({
+): SvelteSeo['jsonLd'] => ({
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'Alices',

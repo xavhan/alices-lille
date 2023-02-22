@@ -1,7 +1,8 @@
 import type { DJ } from '$data/types';
-import type { SvelteSeoProps } from 'svelte-seo/types/SvelteSeo';
+import type { } from 'svelte-seo';
+import type { SvelteSeo } from 'svelte-seo/types';
 
-export const djJSONLD = (dj: DJ): SvelteSeoProps['jsonLd'] => ({
+export const djJSONLD = (dj: DJ): SvelteSeo['jsonLd'] => ({
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: dj.label,
