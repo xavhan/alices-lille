@@ -1453,10 +1453,10 @@ svelte-preprocess@^5.0.1:
     sorcery "^0.11.0"
     strip-indent "^3.0.0"
 
-svelte-seo@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/svelte-seo/-/svelte-seo-1.5.2.tgz#ad81812aa8e84e599a6b8c64332c47ceb45495c7"
-  integrity sha512-C/NE0DSd/ZlG2FdTps4s/5/PP1GkhJLtCKvj3rfCbMX+5zKPb248ZjQgkm60KgejmHgb1naSUdKEROgVhtJgpg==
+svelte-seo@^1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/svelte-seo/-/svelte-seo-1.5.3.tgz#55997e13c6d530fe991310d4fabd6823c9fb815c"
+  integrity sha512-xkaVGNaQOWiNYApx6ehFSEVfdpfzy4pJLKWqQucFepl4SxJWcKDugCcND2k8bF4FskQ1M/4v4/Js35dDE/xFjg==
 
 svelte-sitemap@^2.6.0:
   version "2.6.0"
