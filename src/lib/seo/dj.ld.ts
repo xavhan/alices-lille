@@ -1,5 +1,5 @@
 import type { DJ } from '$data/types';
-import type {} from 'svelte-seo';
+import type { } from 'svelte-seo';
 import type { SvelteSeo } from 'svelte-seo/types';
 
 export const djJSONLD = (dj: DJ): SvelteSeo['jsonLd'] => ({

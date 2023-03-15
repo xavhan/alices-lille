@@ -1,17 +1,17 @@
 <script context="module" lang="ts">
   import { browser, dev } from '$app/env';
+  import SvelteSeo from 'svelte-seo';
+  import { GOOGLE_URL } from '$lib/url';
   import { FACEBOOK_URL, INSTAGRAM_URL } from '$data/links';
-  import ButtonLink from '$lib/components/ButtonLink.svelte';
   import HomeBlock from '$lib/components/HomeBlock.svelte';
-  import Link from '$lib/components/Link.svelte';
   import Stack from '$lib/components/Stack.svelte';
-  import { formatShort } from '$lib/date';
+  import { timerange } from '$lib/time';
+  import ButtonLink from '$lib/components/ButtonLink.svelte';
+  import Link from '$lib/components/Link.svelte';
   import { getNextEvent } from '$lib/events';
+  import { formatShort } from '$lib/date';
   import { list } from '$lib/list';
   import { alicesJSONLD } from '$lib/seo/alices.ld';
-  import { timerange } from '$lib/time';
-  import { GOOGLE_URL } from '$lib/url';
-  import SvelteSeo from 'svelte-seo';
 
   export const hydrate = dev;
   export const router = browser;

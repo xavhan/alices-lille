@@ -1,8 +1,8 @@
 <script context="module" lang="ts">
-  import { browser } from '$app/env';
+  import SvelteSeo from 'svelte-seo';
+  import { browser, dev } from '$app/env';
   import MenuBlock from '$lib/components/MenuBlock.svelte';
   import Stack from '$lib/components/Stack.svelte';
-  import SvelteSeo from 'svelte-seo';
   import { writable } from 'svelte/store';
 
   import Cocktails from '$lib/components/Cocktails.svelte';

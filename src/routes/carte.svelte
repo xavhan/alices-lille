@@ -1,27 +1,27 @@
 <script context="module" lang="ts">
-  import { browser } from '$app/env';
+  import SvelteSeo from 'svelte-seo';
+  import { browser, dev } from '$app/env';
   import MenuBlock from '$lib/components/MenuBlock.svelte';
   import Stack from '$lib/components/Stack.svelte';
-  import SvelteSeo from 'svelte-seo';
 
   import Beers from '$lib/components/Beers.svelte';
+  import Shooters from '$lib/components/Shooters.svelte';
+  import Wines from '$lib/components/Wines.svelte';
   import Cocktails from '$lib/components/Cocktails.svelte';
   import Coffee from '$lib/components/Coffee.svelte';
-  import Food from '$lib/components/Food.svelte';
-  import Shooters from '$lib/components/Shooters.svelte';
-  import Softs from '$lib/components/Softs.svelte';
   import Spirits from '$lib/components/Spirits.svelte';
-  import Wines from '$lib/components/Wines.svelte';
+  import Softs from '$lib/components/Softs.svelte';
+  import Food from '$lib/components/Food.svelte';
 
   import {
-    bottles,
-    cocktails,
-    coffee,
-    food,
-    softs,
-    spirits,
     taps,
+    bottles,
     wines,
+    cocktails,
+    spirits,
+    softs,
+    food,
+    coffee,
   } from '$data/menu';
   export const router = browser;
   export const prerender = true;

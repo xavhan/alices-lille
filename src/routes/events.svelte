@@ -1,11 +1,11 @@
 <script context="module">
   import Event from '$lib/components/Event.svelte';
 
+  import SvelteSeo from 'svelte-seo';
   import { browser, dev } from '$app/env';
-  import Header from '$lib/components/Header.svelte';
   import Stack from '$lib/components/Stack.svelte';
   import { eventList } from '$lib/events';
-  import SvelteSeo from 'svelte-seo';
+  import Header from '$lib/components/Header.svelte';
 
   export const hydrate = dev;
   export const router = browser;
@@ -35,11 +35,11 @@
 
         <div class="font-serif leading-6">
           ALICES est ouvert le samedi à partir de 16h La soirée commence à 21h
-          <br />
+          <br/>
           ALICES est un lieu safe ! Nous attendons de vous que vous soyez
-          <br />
-          respectueux.euses envers les autres, quels que soient leurs origines, genres,
-          orientations sexuelles, religions ou âges
+          <br/>
+          respectueux.euses envers les autres, quels que soient leurs origines,
+          genres, orientations sexuelles, religions ou âges
         </div>
 
         <br />

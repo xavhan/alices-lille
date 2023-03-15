@@ -13,12 +13,12 @@
 </script>
 
 <script lang="ts">
-  import type { Beer } from '$data/types';
-  import ButtonLink from '$lib/components/ButtonLink.svelte';
   import Header from '$lib/components/Header.svelte';
-  import Link from '$lib/components/Link.svelte';
-  import Stack from '$lib/components/Stack.svelte';
   import SvelteSeo from 'svelte-seo';
+  import Stack from '$lib/components/Stack.svelte';
+  import type { Beer } from '$data/types';
+  import Link from '$lib/components/Link.svelte';
+  import ButtonLink from '$lib/components/ButtonLink.svelte';
 
   export let beer: Beer;
 </script>

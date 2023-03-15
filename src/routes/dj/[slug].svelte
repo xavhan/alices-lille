@@ -11,14 +11,14 @@
 </script>
 
 <script lang="ts">
+  import Header from '$lib/components/Header.svelte';
+  import SvelteSeo from 'svelte-seo';
+  import Stack from '$lib/components/Stack.svelte';
   import type { DJ } from '$data/types';
   import Dj from '$lib/components/DJ.svelte';
-  import Event from '$lib/components/Event.svelte';
-  import Header from '$lib/components/Header.svelte';
-  import Stack from '$lib/components/Stack.svelte';
-  import { getEventsByDj } from '$lib/events';
   import { djJSONLD } from '$lib/seo/dj.ld';
-  import SvelteSeo from 'svelte-seo';
+  import { getEventsByDj } from '$lib/events';
+  import Event from '$lib/components/Event.svelte';
 
   export let dj: DJ;
 </script>

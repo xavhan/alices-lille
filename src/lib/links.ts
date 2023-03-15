@@ -1,6 +1,6 @@
-import { FACEBOOK_URL, LINKS } from '$data/links';
-import type { Link } from '$data/types';
 import { eventList, linkToCalendar } from './events';
+import type { Link } from '$data/types';
+import { FACEBOOK_URL, LINKS } from '$data/links';
 
 export const links: Link[] = [
   ...eventList.future.flatMap((event) => [

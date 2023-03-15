@@ -1,9 +1,9 @@
 <script context="module" lang="ts">
   import { browser, dev } from '$app/env';
-  import ButtonLink from '$lib/components/ButtonLink.svelte';
-  import Stack from '$lib/components/Stack.svelte';
-  import { links } from '$lib/links';
   import SvelteSeo from 'svelte-seo';
+  import Stack from '$lib/components/Stack.svelte';
+  import ButtonLink from '$lib/components/ButtonLink.svelte';
+  import { links } from '$lib/links';
 
   export const hydrate = dev;
   export const router = browser;
