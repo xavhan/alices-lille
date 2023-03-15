@@ -14,13 +14,13 @@
 
 <script lang="ts">
   import type { Event as EventT } from '$data/types';
-  import Header from '$lib/components/Header.svelte';
   import Event from '$lib/components/Event.svelte';
-  import SvelteSeo from 'svelte-seo';
-  import { format } from '$lib/date';
+  import Header from '$lib/components/Header.svelte';
   import Stack from '$lib/components/Stack.svelte';
+  import { format } from '$lib/date';
   import { list } from '$lib/list';
   import { miniclubJSONLD } from '$lib/seo/miniclub.ld';
+  import SvelteSeo from 'svelte-seo';
 
   export let miniclub: EventT;
 </script>

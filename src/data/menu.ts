@@ -1,5 +1,5 @@
 import { BEERS } from './beers';
-import type { Wine, Cocktail, Spirit, Soft, FoodItem, Coffee } from './types';
+import type { Cocktail, Coffee, FoodItem, Soft, Spirit, Wine } from './types';
 export const taps = [
   'bise',
   'etoiledunord',

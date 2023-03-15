@@ -1,7 +1,7 @@
 <script lang="ts">
-  import '../style/reset.css';
-  import '../style/app.css';
   import Link from '$lib/components/Link.svelte';
+  import '../style/app.css';
+  import '../style/reset.css';
 </script>
 
 <svelte:head>
