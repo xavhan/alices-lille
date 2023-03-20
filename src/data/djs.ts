@@ -198,6 +198,41 @@ export const Choupichatte: DJ = {
   description: `Who is Choupichatte ? Avec son petit nombre d'événements par an, Choupichatte la supra discrète propose un dancefloor intimiste, inclusif et débridé, un lieu de célébration de la musique et de l’amour. C'est à ne pas manquer !\nLe style musical de Choupichatte est essentiellement de la house, italo disco, indie dance, acid et breakbeat.\nAux commandes du MINICLUB : JaneB, Joli.c.o.e.u.r, Kolaps Model, Sígmet`,
   imageSrc: `/images/dj/choupichatte.jpeg`,
 };
+export const VBK: DJ = {
+  label: 'VBK',
+  slug: 'vbk',
+  links: [
+    { type: 'instagram', href: 'https://www.instagram.com/vbk_eug/' },
+    { type: 'soundcloud', href: 'https://soundcloud.com/eugvbk' },
+    { type: 'facebook', href: 'https://www.facebook.com/vbkdj/' },
+    { type: 'residentadvisor', href: 'https://ra.co/dj/vbk/biography' },
+  ],
+  description: `
+VBK construit son univers avec des sonorités obscures et hypnotiques pour y révéler une techno mentale et recherchée. 
+Inspirée par la vibe berlinoise, l’ambiance et le rythme de ses sets vous plonge dans un voyage atmosphérique. 
+Déjà vue aux côtés d’artistes de renoms comme Setaoc Mass, Stef Mendesidis, Claudio PRC, Rebekah ou encore Blazej Malinowski, VBK a pu montrer la puissance de ses performances au mythique Rex Club de Paris ou encore à Anomalie et au Griessmuhle de Berlin.
+Fondatrice d’Underrated Agency, VBK cherche à mettre en avant des talents naissants et à partager une nouvelle vision de la musique.
+  `,
+  imageSrc: `/images/dj/vbk.jpg`,
+};
+export const Zaatar: DJ = {
+  label: 'Zaatar زَعْتَر',
+  slug: 'zaatar',
+  links: [
+    { type: 'instagram', href: 'https://www.instagram.com/zaatar___' },
+    { type: 'residentadvisor', href: 'https://ra.co/dj/zaatar/biography' },
+    { type: 'facebook', href: 'https://www.facebook.com/zaatar.dj/' },
+  ],
+  description: `
+La musique de Zaatar ترَعْزَ est la combinaison particulière de ses deux origines : marocaine et belge. Elle trouve son inspiration dans le mouvement post-punk et EBM de la fin des années 80 et du début des années 90.
+Ses morceaux sont donc construits autour d'une ligne de basse grinçante et rugueuse qui crée l'ambiance pour des danses corporelles frénétiques. 
+Des mélodies et des sons hérités de son pays d'origine - le Maroc - complètent son paysage sonore d'une manière qui lui est propre.
+Lors de ses DJ sets, elle invite le public à un voyage captivant entre lumière et obscurité, une oscillation entre joie et mélancolie parfois ponctuée de mélodies orientales.
+Co-fondatrice du collectif Laisse Tomber Les Filles, elle œuvre pour célébrer les femmes aux platines, la liberté et la diversité, des valeurs qui ne la quittent jamais.
+Avec sa sortie d'Abiad Al Layali prévue en février sur Ritmo Fatale, Zaatar ترَعْزَ rejoint la famille du label.
+  `,
+  imageSrc: `/images/dj/zaatar.jpg`,
+};
 
 export const DJS = [
   Donov,
@@ -216,4 +251,6 @@ export const DJS = [
   FlashSaba,
   Jozzaka,
   Choupichatte,
+  VBK,
+  Zaatar,
 ];

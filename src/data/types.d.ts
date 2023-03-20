@@ -121,6 +121,10 @@ export type DJLink =
   | {
       type: 'facebook';
       href: string;
+    }
+  | {
+      type: 'residentadvisor';
+      href: string;
     };
 export type DJ = {
   label: string;

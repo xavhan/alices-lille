@@ -43,6 +43,10 @@
               <Link external href={link.href} title="aller sur son Instagram"
                 >Instagram</Link
               >
+            {:else if link.type === 'residentadvisor'}
+              <Link external href={link.href} title="aller sur ResidentAdvisor"
+                >Resident Advisor</Link
+              >
             {/if}
           </li>
         {/each}

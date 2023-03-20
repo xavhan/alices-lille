@@ -3,6 +3,19 @@ import type { Event } from './types';
 
 export const EVENTS: Event[] = [
   {
+    n: 15,
+    slug: 'zaatar-b2b-vbk-ltlf',
+    label: 'Miniclub: Laisse Tomber Les Filles',
+    imageSrc: '/images/miniclub/miniclub015.jpg',
+    guests: [djs.Zaatar, djs.VBK],
+    date: '2023-04-01',
+    facebookEvent: 'https://www.facebook.com/events/1173385630032246',
+    description: [
+      `💥 MINICLUB pour une maxiteuf 💫`,
+      `Le premier étage du Alices s'enflamme pour accueillir Zaatar زَعْتَر en b2b avec VBK (Laisse Tomber Les Filles) 🪩📀`,
+    ].join('\n'),
+  },
+  {
     n: 14,
     slug: 'ango-supa-2',
     label: 'Miniclub',
