@@ -1,5 +1,5 @@
 import { BEERS } from './beers';
-import type { Wine, Cocktail, Spirit, Soft, FoodItem, Coffee } from './types';
+import type { Cocktail, Coffee, FoodItem, Soft, Spirit, Wine } from './types';
 export const taps = [
   'bise',
   'etoiledunord',
@@ -111,6 +111,7 @@ export const cocktails: Cocktail[] = [
       'rhum, confiture de figue, lillet, pamplemousse, dash d’absinthe',
     price: 10,
     everyday: true,
+    disabled: true,
   },
   {
     label: 'Clear milk punch #2',
@@ -284,6 +285,56 @@ export const cocktails: Cocktail[] = [
     label: 'New York Sour',
     composition: 'bourbon, sucre, citron, vin rouge',
     price: 9,
+    everyday: true,
+    vegan: true,
+  },
+  //
+  {
+    label: 'Hemingway Daïquiri',
+    composition: 'rhum blanc, liqueur de marasquin, pamplemousse, citron vert',
+    price: 9,
+    everyday: true,
+  },
+  {
+    label: 'Clover & Alex',
+    composition: 'gin, citron, liqueur de framboise, prosecco',
+    price: 8,
+    everyday: true,
+  },
+  {
+    label: 'Spritz Campari',
+    composition: 'Campari, Prosecco, eau pétillante',
+    price: 7,
+    everyday: true,
+  },
+  {
+    label: 'Spritz Limoncello',
+    composition: 'Limoncello maison, prosecco, eau pétillante',
+    price: 7,
+    everyday: true,
+  },
+  {
+    label: 'Naked & Famous',
+    composition: 'Mezcal, Chartreuse, Campari, Citron',
+    price: 11,
+    everyday: true,
+  },
+  {
+    label: 'Inna Di Yard',
+    composition: 'rhum blanc, suze, orgeat, citron',
+    price: 7,
+    everyday: true,
+  },
+  {
+    label: 'Suze Tonic',
+    composition: 'de la suze et du tonic',
+    price: 7,
+    everyday: true,
+  },
+  {
+    label: 'Rhubarbe Fizz',
+    composition: 'gin, sirop rhubarbe, citron, eau pétillante',
+    price: 8,
     everyday: true,
   },
 ];

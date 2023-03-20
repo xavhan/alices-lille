@@ -1,8 +1,8 @@
 <script context="module" lang="ts">
-  import SvelteSeo from 'svelte-seo';
-  import { browser, dev } from '$app/env';
+  import { browser } from '$app/env';
   import MenuBlock from '$lib/components/MenuBlock.svelte';
   import Stack from '$lib/components/Stack.svelte';
+  import SvelteSeo from 'svelte-seo';
   import { writable } from 'svelte/store';
 
   import Cocktails from '$lib/components/Cocktails.svelte';
@@ -57,14 +57,17 @@
       <option value="gin,">Gin</option>
       <option value="ginger">Ginger</option>
       <option value="rhum">Rhum</option>
+      <option value="sour">Sour</option>
       <option value="tequila">Tequila</option>
       <option value="vodka">Vodka</option>
       <option value="whisky">Whisky</option>
     </select>
     <Cocktails
       cocktails={cocktails
-        .filter((c) => c.everyday)
-        .filter((c) => c.composition.toLocaleLowerCase().includes($selected))
+        .filter((c) => c.everyday && !c.disabled)
+        .filter((c) =>
+          (c.label + c.composition).toLocaleLowerCase().includes($selected)
+        )
         .sort((a, b) => collator.compare(a.label, b.label))}
     />
   </MenuBlock>
