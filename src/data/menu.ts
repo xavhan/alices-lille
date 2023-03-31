@@ -102,7 +102,7 @@ export const cocktails: Cocktail[] = [
   {
     label: 'Dark & stormy',
     composition: 'rhum ambré, ginger beer, citron & more',
-    price: 10,
+    price: 9,
     everyday: true,
   },
   {
