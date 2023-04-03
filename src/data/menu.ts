@@ -2,15 +2,14 @@ import { BEERS } from './beers';
 import type { Cocktail, Coffee, FoodItem, Soft, Spirit, Wine } from './types';
 export const taps = [
   'bise',
-  'etoiledunord',
   'tarasboulba',
-  'mongytriple',
+  'pinpon',
+  'thirieztriple',
   'speciale',
 ].map((slug) => BEERS.get(slug));
 export const bottles = [
   'bieresdumoment',
-  'rocheforttriple',
-  'hazy',
+  'rochefort8',
   'brunehaut',
   'alcoolfree',
   'appiecider',
@@ -26,32 +25,27 @@ export const shooters = [
 export const wines: Wine[] = [
   {
     label: 'VIN ROUGE GLOUGLOU',
-    grapes: 'Cépages legers (Gamay, Grolleau, Grenache...)',
-    estate: 'En fonction des bouteilles du moment',
-    price: 5.5,
-  },
-  {
-    label: 'VIN ROUGE TANNIQUE',
-    grapes: 'Cabernet franc, merlot',
-    estate: 'Domaine Daniel & Nicolas Roux',
+    text: 'En fonction des bouteilles du moment',
     price: 6,
   },
   {
+    label: 'VIN ROUGE TANNIQUE',
+    text: 'Accord tacite entre tanin et astringence',
+    price: 6.5,
+  },
+  {
     label: 'VIN BLANC GLOUGLOU',
-    grapes: 'Chenin, Colombard',
-    estate: 'Domaine Lise et Bertrand Jousset',
+    text: 'Bien sec ça ce boit si bien',
     price: 7,
   },
   {
-    label: 'VIN BLANC de l’hiver',
-    grapes: 'CÉpages blancs (Savagnin, Chardo, muscadet...)',
-    estate: 'En fonction des bouteilles du moment',
+    label: 'VIN BLANC du printemps',
+    text: '💣 de fruits sans sucre !!',
     price: 7.5,
   },
   {
     label: 'MOELLEUX',
-    grapes: 'Chenin',
-    estate: 'Domaine Matignon',
+    text: 'Doux mais pas trop sucré',
     price: 7.5,
   },
   {
@@ -70,12 +64,6 @@ export const wines: Wine[] = [
     grapes: 'PINOT MEUNIER',
     estate: 'Champagne André Heucq',
     price: 55,
-  },
-  {
-    label: 'Champagne bouteille 75cl',
-    grapes: 'CHARDONNAY, MEUNIER, PINOT NOIR',
-    estate: 'Champagne André Heucq',
-    price: 80,
   },
 ];
 
@@ -337,6 +325,12 @@ export const cocktails: Cocktail[] = [
     price: 8,
     everyday: true,
   },
+  {
+    label: 'Spicy Margarita',
+    composition: 'Tequila, Agave, Citron, Sel au piment',
+    price: 10,
+    everyday: true,
+  },
 ];
 
 export const spirits: Spirit[] = [
@@ -345,6 +339,7 @@ export const spirits: Spirit[] = [
     description: 'santiago de los caballeros 🇩🇴',
     abv: 40,
     price: 9,
+    disabled: true,
   },
   {
     label: 'RHUM BULLION',
@@ -353,7 +348,7 @@ export const spirits: Spirit[] = [
     price: 11,
   },
   {
-    label: 'WHISKY BULLEIT BOURBON',
+    label: 'WHISKY BULLEIT BOURBON/RYE',
     description: 'Frontier Whiskey 🇺🇸',
     abv: 45,
     price: 7,
@@ -375,17 +370,31 @@ export const spirits: Spirit[] = [
     description: 'Christian Drouin 🇫🇷',
     abv: 40,
     price: 8,
+    disabled: true,
+  },
+  {
+    label: 'Menthe Pastille',
+    description: 'Giffard 🇫🇷',
+    abv: 24,
+    price: 5,
   },
   {
     label: 'MIRABELLE VIEILLE RESERVE',
     description: 'Rozelieures 🇫🇷',
     abv: 45,
     price: 9,
+    disabled: true,
   },
   {
     label: 'HOULLE',
     description: 'Genièvre Flandre Artois 🇫🇷',
     abv: 42,
+    price: 11,
+  },
+  {
+    label: 'Tequila Anejo',
+    description: 'Calle 23 🇲🇽/🇫🇷',
+    abv: 40,
     price: 11,
   },
 ];
@@ -483,13 +492,11 @@ export const softs: Soft[] = [
   { label: 'Jus de Pomme/Cassis', price: 3.5 },
   { label: 'Jus de Pamplemousse', price: 3.5, disabled: true },
   { label: 'Limo nature', price: 4.3 },
-  { label: 'Limo Rhubarbe', price: 4.3 },
   { label: 'Limo fleur de sureau', price: 4.3, disabled: true },
   { label: 'Fritz Cola sans sucre', price: 4.3 },
   { label: 'Meuh Cola', price: 4.3 },
-  { label: 'Kombucha', price: 4.5 },
-  { label: 'Frênette', price: 4.5 },
-  { label: 'Club Maté', price: 4.5 },
+  { label: 'Kombucha', price: 4.6 },
+  { label: 'Club Maté', price: 4.6 },
   { label: 'Sirop Citron', price: 2.5 },
   { label: 'Sirop Grenadine', price: 2.5 },
   { label: 'Sirop Menthe', price: 2.5 },

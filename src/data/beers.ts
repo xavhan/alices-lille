@@ -9,10 +9,24 @@ export const BEERS = new Map<string, Beer>([
       label: 'La bise',
       brewery: 'Duyck',
       price: {
-        25: 3,
-        50: 5,
+        25: 3.3,
+        50: 5.5,
       },
       abv: 5.4,
+    },
+  ],
+  [
+    'pinpon',
+    {
+      type_label: 'Saison',
+      slug: 'pinpon',
+      label: 'Pin Pon',
+      brewery: 'Tandem',
+      price: {
+        25: 4,
+        50: 7.5,
+      },
+      abv: 7,
     },
   ],
   [
@@ -27,6 +41,20 @@ export const BEERS = new Map<string, Beer>([
         50: 6.5,
       },
       abv: 5.5,
+    },
+  ],
+  [
+    'thirieztriple',
+    {
+      type_label: 'Triple',
+      slug: 'thirieztriple',
+      label: 'Thiriez Triple',
+      brewery: 'Thiriez',
+      price: {
+        25: 4.2,
+        50: 8,
+      },
+      abv: 8.5,
     },
   ],
   [
@@ -73,8 +101,8 @@ export const BEERS = new Map<string, Beer>([
       label: 'Taras Boulba',
       brewery: 'Brasserie de la Senne',
       price: {
-        25: 4,
-        50: 7.5,
+        25: 3.8,
+        50: 7,
       },
       abv: 4.5,
     },
@@ -277,6 +305,16 @@ export const BEERS = new Map<string, Beer>([
     },
   ],
   [
+    'rochefort8',
+    {
+      type_label: 'Trappiste',
+      label: 'Rochefort 8',
+      price: 6,
+      abv: 9.2,
+      brewery: 'Abbaye de Rochefort',
+    },
+  ],
+  [
     'hazy',
     {
       type_label: 'Sour',
@@ -284,6 +322,7 @@ export const BEERS = new Map<string, Beer>([
       price: 7,
       abv: 5,
       brewery: 'La débauche',
+      disabled: true,
     },
   ],
   [
@@ -299,7 +338,7 @@ export const BEERS = new Map<string, Beer>([
     'brunehaut',
     {
       type_label: 'Sans Gluten',
-      label: 'Blonde / Blanche / Ambrée',
+      label: 'Blonde / Blanche',
       price: 5.3,
       brewery: 'Brunehaut',
     },
@@ -308,10 +347,10 @@ export const BEERS = new Map<string, Beer>([
     'alcoolfree',
     {
       label: 'Bière sans Alcool',
-      price: 5,
+      price: 5.5,
       brewery: 'BBP / Gobrecht',
     },
   ],
-  ['appiecider', { label: 'CIDRE - Brut', price: 5.3, brewery: 'Appie' }],
-  ['appiepoire', { label: 'POIRÉ - Brut', price: 5.3, brewery: 'Appie' }],
+  ['appiecider', { label: 'CIDRE - Brut', price: 6, brewery: 'Appie' }],
+  ['appiepoire', { label: 'POIRÉ - Brut', price: 6, brewery: 'Appie' }],
 ]);
