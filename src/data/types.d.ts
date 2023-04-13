@@ -62,6 +62,7 @@ export type Cocktail = {
   composition: string;
   virgin?: true;
   vegan?: true;
+  spicy?: true;
   price: number;
   disabled?: true;
   availability?: `${Season}${Year}`[];

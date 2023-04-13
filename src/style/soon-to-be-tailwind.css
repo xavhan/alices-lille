@@ -134,6 +134,12 @@
 .violette {
   color: #a25eeb;
 }
+.mure {
+  color: #633654;
+}
+.pamplemousse {
+  color: #da6167;
+}
 .petitsgrains {
   font-size: calc(var(--font-size-2) * 0.8);
 }

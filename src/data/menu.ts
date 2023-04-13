@@ -83,7 +83,7 @@ export const cocktails: Cocktail[] = [
   },
   {
     label: 'Bramble',
-    composition: 'gin, mûre, citron, liqueur de mûre',
+    composition: 'gin, mûre, citron, Liqueur de mûre',
     price: 8,
     everyday: true,
   },
@@ -142,6 +142,7 @@ export const cocktails: Cocktail[] = [
   },
   {
     label: 'Paloma',
+    spicy: true,
     composition: 'Tequila, pamplemousse, citron, piment (ou pas)',
     price: 10,
     everyday: true,
@@ -184,6 +185,7 @@ export const cocktails: Cocktail[] = [
   },
   {
     label: 'El Diablo',
+    spicy: true,
     composition: 'Tequila, Crème de Cassis, Citron, Ginger Beer, Piment',
     price: 9,
     everyday: true,
@@ -327,6 +329,7 @@ export const cocktails: Cocktail[] = [
   },
   {
     label: 'Spicy Margarita',
+    spicy: true,
     composition: 'Tequila, Agave, Citron, Sel au piment',
     price: 10,
     everyday: true,

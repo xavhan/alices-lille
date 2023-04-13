@@ -103,7 +103,7 @@
 
   <div class="text-right text-emphase flex justify-between">
     <div>🍸🥂🥃🍹</div>
-    <a href="/cocktails">Voir tous nos classiques</a>
+    <a href="/cocktails">Voir tous nos cocktails</a>
   </div>
   <br />
 
