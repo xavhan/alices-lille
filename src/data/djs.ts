@@ -233,6 +233,14 @@ Avec sa sortie d'Abiad Al Layali prévue en février sur Ritmo Fatale, Zaatar ت
   `,
   imageSrc: `/images/dj/zaatar.jpg`,
 };
+export const Milhade: DJ = {
+  label: 'Milhade',
+  slug: 'milhade',
+  links: [{ type: 'instagram', href: 'https://www.instagram.com/milhaaaade' }],
+  description:
+    "Jeune artiste bordelais de 24 ans, est un des membres fondateurs du crew l’Atelier et résidant à l'iBoat à Bordeaux. Passionné de musique du monde il parcourt un vaste domaine musical : de la disco aux classiques de la house en passant par la musique africaine ou brésilienne, il mettra un point d’honneur à faire la pluie et le beau temps sur le dancefloor tout en gardant un set rythmé et mélodieux.",
+  imageSrc: `/images/dj/milhade.jpg`,
+};
 
 export const DJS = [
   Donov,
@@ -253,4 +261,5 @@ export const DJS = [
   Choupichatte,
   VBK,
   Zaatar,
+  Milhade,
 ];

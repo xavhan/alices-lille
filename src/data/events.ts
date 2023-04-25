@@ -3,6 +3,19 @@ import type { Event } from './types';
 
 export const EVENTS: Event[] = [
   {
+    n: 16,
+    slug: 'donov-milhade',
+    label: 'MINICLUB#16',
+    imageSrc: '/images/miniclub/miniclub016.jpg',
+    guests: [djs.Milhade, djs.Donov],
+    date: '2023-04-28',
+    facebookEvent: 'https://www.facebook.com/events/1902153036834356',
+    description: [
+      `💥 MINICLUB pour une maxiteuf 💫`,
+      `On remet ça avec Donov qui nous fait l'honneur d'inviter Milhade pour venir jouer sous la boule à facette du Alices à partir de 22h et jusque 2h viens boire les meilleurs cocktails et danser avant ce long week-end`,
+    ].join('\n'),
+  },
+  {
     n: 15,
     slug: 'zaatar-b2b-vbk-ltlf',
     label: 'Miniclub: Laisse Tomber Les Filles',
