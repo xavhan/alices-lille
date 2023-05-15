@@ -241,6 +241,31 @@ export const Milhade: DJ = {
     "Jeune artiste bordelais de 24 ans, est un des membres fondateurs du crew l’Atelier et résidant à l'iBoat à Bordeaux. Passionné de musique du monde il parcourt un vaste domaine musical : de la disco aux classiques de la house en passant par la musique africaine ou brésilienne, il mettra un point d’honneur à faire la pluie et le beau temps sur le dancefloor tout en gardant un set rythmé et mélodieux.",
   imageSrc: `/images/dj/milhade.jpg`,
 };
+export const Sweetance: DJ = {
+  label: 'Sweetance',
+  slug: 'sweetance',
+  links: [{ type: 'mixcloud', href: 'https://www.mixcloud.com/Sweetance/' }],
+  description:
+    'Sweetance est un Dj niçois basé à Lille, membre du collectif Maroilles Records. Influencé par la culture urbaine, il aime voyage rentre les sonorités UK, la house de Chicago, ou encore les basses des suburbs de Rio et de Joburg.',
+};
+export const Serak: DJ = {
+  label: 'Serak',
+  slug: 'serak',
+  links: [
+    {
+      type: 'instagram',
+      href: 'https://www.instagram.com/serakmusic/',
+    },
+  ],
+  description:
+    'SERÄK est un DJ/producteur situé à Lille et également co-fondateur du collectif Maroilles Records. Inspiré par Richie Hawtin, 999999999 ou Luke Vibert ; il travaille des productions Techno Acid musclés; armées de 303, de 909 et de basslines rondes et rebondies. Initialement entré dans l’univers de la musique à travers le rap français des 90, il garde un goût particulier pour le sampling et les rythmes syncopés du breakbeat. A la base d’une production émotionnellement forte et engagée, il aime partager son ressenti sur l’actualité à travers des samples vocaux méticuleusement choisis.',
+};
+export const Mancha: DJ = {
+  label: 'Mancha',
+  slug: 'mancha',
+  links: [],
+  description: `Mancha  des DJ sets éclectiques qui ont pour seul objectif de vous faire voyager et danser. C'est des compositions électronique inspirées par l'amour du métal et de la musique en générale. C'est également des percussions, une melancholie heureuse et beaucoup de passion`,
+};
 
 export const DJS = [
   Donov,
@@ -262,4 +287,7 @@ export const DJS = [
   VBK,
   Zaatar,
   Milhade,
+  Sweetance,
+  Serak,
+  Mancha,
 ];

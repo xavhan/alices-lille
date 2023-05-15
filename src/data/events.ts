@@ -3,6 +3,20 @@ import type { Event } from './types';
 
 export const EVENTS: Event[] = [
   {
+    n: 17,
+    slug: 'maroilles-records',
+    label: 'MINICLUB#17',
+    imageSrc: '/images/miniclub/miniclub017.jpg',
+    guests: [djs.Sweetance, djs.Serak, djs.Mancha],
+    date: '2023-05-17',
+    facebookEvent: 'https://www.facebook.com/events/625798982744575',
+    description: [
+      `NEW MINICLUB FOR EVER MAXITEUF`,
+      `Veille de jour ferié = on fait la fête au premier étage du ALICES`,
+      `Cette fois ci on a l'honneur de recevoir Maroilles Records & Mancha. Un line up maxi Lillois pour une soirée maxiteuf`,
+    ].join('\n'),
+  },
+  {
     n: 16,
     slug: 'donov-milhade',
     label: 'MINICLUB#16',
