@@ -33,7 +33,7 @@
   "type": "module",
   "dependencies": {
     "open-props": "^1.5.8",
-    "qs": "^6.11.1",
+    "qs": "^6.11.2",
     "svelte-seo": "^1.5.3"
   },
   "license": "UNLICENSED"
