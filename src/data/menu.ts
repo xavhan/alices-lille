@@ -2,9 +2,9 @@ import { BEERS } from './beers';
 import type { Cocktail, Coffee, FoodItem, Soft, Spirit, Wine } from './types';
 export const taps = [
   'bise',
+  'oiseaublanc',
   'tarasboulba',
   'pinpon',
-  'biseblanche',
   'speciale',
 ].map((slug) => BEERS.get(slug));
 export const bottles = [

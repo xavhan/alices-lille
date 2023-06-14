@@ -69,6 +69,19 @@ export const BEERS = new Map<string, Beer>([
     },
   ],
   [
+    'oiseaublanc',
+    {
+      label: 'Oiseau Blanc',
+      type_label: 'Blanche',
+      brewery: 'Brasserie du grand Paris',
+      abv: 4.5,
+      price: {
+        25: 3.6,
+        50: 6.5,
+      },
+    },
+  ],
+  [
     'pascap',
     {
       type_label: 'Triple',
@@ -97,7 +110,7 @@ export const BEERS = new Map<string, Beer>([
   [
     'tarasboulba',
     {
-      type_label: 'Amère',
+      type_label: 'IPA',
       label: 'Taras Boulba',
       brewery: 'Brasserie de la Senne',
       price: {
