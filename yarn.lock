@@ -1309,6 +1309,11 @@ sander@^0.5.0:
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
+schema-dts@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/schema-dts/-/schema-dts-1.1.2.tgz#82ccf71b5dcb80065a1cc5941888507a4ce1e44b"
+  integrity sha512-MpNwH0dZJHinVxk9bT8XUdjKTxMYrA5bLtrrGmFA6PTLwlOKnhi67XoRd6/ty+Djt6ZC0slR57qFhZDNMI6DhQ==
+
 semver@^7.3.7:
   version "7.5.3"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.3.tgz#161ce8c2c6b4b3bdca6caadc9fa3317a4c4fe88e"
@@ -1450,10 +1455,12 @@ svelte-preprocess@^5.0.4:
     sorcery "^0.11.0"
     strip-indent "^3.0.0"
 
-svelte-seo@^1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/svelte-seo/-/svelte-seo-1.5.3.tgz#55997e13c6d530fe991310d4fabd6823c9fb815c"
-  integrity sha512-xkaVGNaQOWiNYApx6ehFSEVfdpfzy4pJLKWqQucFepl4SxJWcKDugCcND2k8bF4FskQ1M/4v4/Js35dDE/xFjg==
+svelte-seo@^1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/svelte-seo/-/svelte-seo-1.5.4.tgz#57e43959139e2e15a8499c7d328dddd8e42e3ab9"
+  integrity sha512-pevGUiWkqLrSWXVkxE0SbkBLNsz2dVaiK8/kBq2eUHYdyzuPEZGbqtUARyJZHouv28xre7IU9t0VnoYt8d4kzA==
+  dependencies:
+    schema-dts "^1.1.2"
 
 svelte-sitemap@^2.6.0:
   version "2.6.0"
