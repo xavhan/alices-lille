@@ -89,13 +89,13 @@
   <MenuBlock title="Cocktails">
     <Cocktails
       cocktails={getCocktails([
-        'Pimm’s cup',
-        'Limoncello Spritz',
-        'Bramble',
-        'Inna Di Yard',
-        'Bloody Mary',
-        'Spicy Margarita',
-        'Negroni Mezcal',
+        'Rome with a view',
+        'Cloud Lily',
+        'Pumpkin spice amaretto sour',
+        'Mai tai',
+        'Espresso Martini',
+        'Manhattan',
+        'El Diablo',
         'Mocktail',
       ])}
     />
@@ -107,7 +107,7 @@
   </div>
   <br />
 
-  <MenuBlock title="Shooters" text="4€ l’unité & 20€ les 6">
+  <MenuBlock title="Shooters" text="3.5€ l’unité & 18€ les 6">
     <Shooters />
   </MenuBlock>
 

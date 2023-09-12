@@ -2,9 +2,9 @@ import { BEERS } from './beers';
 import type { Cocktail, Coffee, FoodItem, Soft, Spirit, Wine } from './types';
 export const taps = [
   'bise',
-  'oiseaublanc',
-  'tarasboulba',
-  'pinpon',
+  'zinnebir',
+  'greenkiller',
+  'lasauvage',
   'speciale',
 ].map((slug) => BEERS.get(slug));
 export const bottles = [
@@ -12,7 +12,7 @@ export const bottles = [
   'rochefort8',
   'brunehaut',
   'alcoolfree',
-  'appiecider',
+  'fdp',
   'appiepoire',
   'gueuzecantillon',
 ].map((slug) => BEERS.get(slug));
@@ -36,10 +36,10 @@ export const wines: Wine[] = [
   {
     label: 'VIN BLANC GLOUGLOU',
     text: 'Bien sec ça ce boit si bien',
-    price: 7,
+    price: 7.5,
   },
   {
-    label: 'VIN BLANC du printemps',
+    label: "VIN BLANC de l'automne",
     text: '💣 de fruits sans sucre !!',
     price: 7.5,
   },
@@ -73,7 +73,6 @@ export const cocktails: Cocktail[] = [
     composition: 'Amaretto, sucre, citron, Angostura',
     price: 7,
     vegan: true,
-    everyday: true,
   },
   {
     label: 'Rome with a view',
@@ -127,7 +126,6 @@ export const cocktails: Cocktail[] = [
     label: 'Bloody Mary',
     composition: 'Vodka, Jus de tomate, Épices, Céleri',
     price: 8,
-    everyday: true,
   },
   {
     label: 'Negroni',
@@ -139,6 +137,11 @@ export const cocktails: Cocktail[] = [
     label: 'Negroni Mezcal',
     composition: 'Mezcal, Campari, Vermouth',
     price: 12,
+    everyday: true,
+  },
+  {
+    label: 'Gin tonic',
+    composition: 'Demandez nos gins',
     everyday: true,
   },
   {
@@ -168,9 +171,14 @@ export const cocktails: Cocktail[] = [
   },
   {
     label: 'Paloma',
-    spicy: true,
     composition: 'Tequila, pamplemousse, citron, piment (ou pas)',
     price: 10,
+    everyday: true,
+  },
+  {
+    label: 'Club maté vodka',
+    composition: 'Du club maté, de la vodka',
+    price: 9,
     everyday: true,
   },
   {
@@ -214,9 +222,8 @@ export const cocktails: Cocktail[] = [
   },
   {
     label: 'El Diablo',
-    spicy: true,
     composition: 'Tequila, Crème de Cassis, Citron, Ginger Beer, Piment',
-    price: 9,
+    price: 10,
     everyday: true,
   },
   {
@@ -247,7 +254,6 @@ export const cocktails: Cocktail[] = [
     label: 'Aviation',
     composition: 'Gin, Liqueur de violette, Marasquin, Citron',
     price: 8,
-    everyday: true,
   },
   {
     label: 'Daiquiri Cacahuète',
@@ -343,7 +349,6 @@ export const cocktails: Cocktail[] = [
     label: 'Inna Di Yard',
     composition: 'rhum blanc, suze, orgeat, citron',
     price: 8,
-    everyday: true,
   },
   {
     label: 'Suze Tonic',
@@ -362,6 +367,31 @@ export const cocktails: Cocktail[] = [
     label: 'Spicy Margarita',
     spicy: true,
     composition: 'Tequila, Agave, Citron, Sel au piment',
+    price: 10,
+    everyday: true,
+  },
+  {
+    label: 'Cloud Lily',
+    vegan: true,
+    composition: 'Gin, Cointreau, Liqueur de Violette, Citron',
+    price: 8,
+    everyday: true,
+  },
+  {
+    label: 'Pumpkin spice amaretto sour',
+    composition: 'Amaretto, Calvados, Citron, Épices de l’automne',
+    price: 8,
+    everyday: true,
+  },
+  {
+    label: 'Mai tai',
+    composition: 'Rhum blanc, Rhum Ambré, Cointreau, Orgeat',
+    price: 9,
+    everyday: true,
+  },
+  {
+    label: 'Manhattan',
+    composition: 'Whisky, Vermouth Rouge, Angostura',
     price: 10,
     everyday: true,
   },
@@ -385,7 +415,7 @@ export const spirits: Spirit[] = [
     label: 'WHISKY BULLEIT BOURBON/RYE',
     description: 'Frontier Whiskey 🇺🇸',
     abv: 45,
-    price: 7,
+    price: 8,
   },
   {
     label: 'WHISKY COFFEY GRAIN',
@@ -394,7 +424,7 @@ export const spirits: Spirit[] = [
     price: 9,
   },
   {
-    label: 'SCOTCH ISLAY SINGLE MALT',
+    label: 'scottish barley - the Classic laddie',
     description: 'Port Charlotte 🏴󠁧󠁢󠁳󠁣󠁴󠁿',
     abv: 50,
     price: 12,
@@ -405,6 +435,12 @@ export const spirits: Spirit[] = [
     abv: 40,
     price: 8,
     disabled: true,
+  },
+  {
+    label: 'CALVADOS VS',
+    description: 'Coquerel 🇫🇷',
+    abv: 40,
+    price: 8,
   },
   {
     label: 'Menthe Pastille',
@@ -518,24 +554,25 @@ export const coffee: Coffee[] = [
 export const softs: Soft[] = [
   { label: 'Jus de Pomme', price: 3.5 },
   { label: 'Jus de Poire', price: 3.5 },
-  { label: 'Jus de Pomme/Rhubarbe', price: 3.5 },
+  { label: 'Jus du moment', price: 3.5 },
   { label: 'Jus de Pomme/Cassis', price: 3.5, disabled: true },
   { label: 'Jus de Pamplemousse', price: 3.5, disabled: true },
-  { label: 'Limo nature', price: 4.3 },
-  { label: 'Limo mirabelle', price: 4.3 },
-  { label: 'Limo rhubarbe', price: 4.3 },
-  { label: 'Limo fleur de sureau', price: 4.3, disabled: true },
-  { label: 'Fritz Cola sans sucre', price: 4.3 },
-  { label: 'Meuh Cola', price: 4.3, disabled: true },
-  { label: 'Kombucha', price: 4.6 },
-  { label: 'Club Maté', price: 4.6 },
+  { label: 'Limo nature', price: 4.4 },
+  { label: 'Limo mirabelle', price: 4.4 },
+  { label: 'Limo rhubarbe', price: 4.4 },
+  { label: 'Limo fleur de sureau', price: 4.4, disabled: true },
+  { label: 'Fritz Cola sans sucre', price: 4.4 },
+  { label: 'Meuh Cola', price: 4.4, disabled: true },
+  { label: 'Kombucha', price: 6 },
+  { label: 'Club Maté', price: 6 },
   { label: 'Thé glacé maison 🥶', price: 4 },
   { label: 'Café frappé 🥶', price: 4 },
   { label: 'Sirop Citron', price: 2.5 },
   { label: 'Sirop Grenadine', price: 2.5 },
   { label: 'Sirop Menthe', price: 2.5 },
   { label: 'Sirop Orgeat', price: 2.5 },
-  { label: 'Eau Gazeuse Celtic', price: 3 },
+  { label: 'Eau Gazeuse', price: 3 },
+  { label: 'Ginger Beer', price: 4.5 },
 ];
 export const food: FoodItem[] = [
   {

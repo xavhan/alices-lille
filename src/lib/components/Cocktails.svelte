@@ -42,7 +42,7 @@
         </div>
         <div>
           <Stack horizontal>
-            <div>{euro(price)}</div>
+            <div>{price ? euro(price) : ''}</div>
           </Stack>
         </div>
       </div>
@@ -53,7 +53,7 @@
   <Stack>
     <ul class="flex flex-col text-left">
       <li>🌱 vegan</li>
-      <li>🌶️ ça pique !</li>
+      <!--li>🌶️ ça pique !</li -->
     </ul>
   </Stack>
 </div>
