@@ -9,7 +9,7 @@ export const BEERS = new Map<string, Beer>([
       label: 'La bise',
       brewery: 'Duyck',
       price: {
-        25: 3.5,
+        25: 3.3,
         50: 5.5,
       },
       abv: 5.4,
@@ -118,32 +118,6 @@ export const BEERS = new Map<string, Beer>([
         50: 7,
       },
       abv: 4.5,
-    },
-  ],
-  [
-    'zinnebir',
-    {
-      type_label: 'Blonde',
-      label: 'Zinnebir',
-      brewery: 'Brasserie de la Senne',
-      price: {
-        25: 3.7,
-        50: 6.9,
-      },
-      abv: 5.8,
-    },
-  ],
-  [
-    'greenkiller',
-    {
-      type_label: 'IPA',
-      label: 'Green Killer',
-      brewery: 'Brasserie Silly',
-      price: {
-        25: 3.7,
-        50: 6.9,
-      },
-      abv: 6.5,
     },
   ],
   [
@@ -258,23 +232,11 @@ export const BEERS = new Map<string, Beer>([
     },
   ],
   [
-    'lasauvage',
-    {
-      label: 'Cidre - La Sauvage',
-      brewery: 'Fils de pomme',
-      abv: 5.5,
-      price: {
-        25: 4,
-        50: 7.5,
-      },
-    },
-  ],
-  [
     'speciale',
     {
       slug: 'speciale',
       label: 'Bière Spéciale',
-      brewery: 'Brasserie du singe savant ou autres copains',
+      brewery: 'Brasserie du singe savant, Hub ou autres copains',
       price: {
         25: 4.5,
         50: 8.5,
@@ -332,7 +294,7 @@ export const BEERS = new Map<string, Beer>([
     {
       label: 'Bières du moment',
       price: 7,
-      brewery: 'Singe Savant, Nautile, Cambier...',
+      brewery: 'Singe Savant, Hub, Cambier...',
     },
   ],
   [
@@ -360,7 +322,7 @@ export const BEERS = new Map<string, Beer>([
     {
       type_label: 'Trappiste',
       label: 'Rochefort 8',
-      price: 6.3,
+      price: 6,
       abv: 9.2,
       brewery: 'Abbaye de Rochefort',
     },
@@ -398,11 +360,10 @@ export const BEERS = new Map<string, Beer>([
     'alcoolfree',
     {
       label: 'Bière sans Alcool',
-      price: 6,
+      price: 5.5,
       brewery: 'BBP',
     },
   ],
   ['appiecider', { label: 'CIDRE - Brut', price: 6, brewery: 'Appie' }],
-  ['fdp', { label: 'CIDRE - Brut', price: 6, brewery: 'Fils de Pomme' }],
   ['appiepoire', { label: 'POIRÉ - Brut', price: 6, brewery: 'Appie' }],
 ]);

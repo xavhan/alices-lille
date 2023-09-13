@@ -63,7 +63,7 @@ export type Cocktail = {
   virgin?: true;
   vegan?: true;
   spicy?: true;
-  price?: number;
+  price: number;
   disabled?: true;
   availability?: `${Season}${Year}`[];
   everyday?: true;
