@@ -4,12 +4,12 @@ export const taps = [
   'bise',
   'zinnebir',
   'greenkiller',
-  'lasauvage',
+  'lesauvage',
   'speciale',
 ].map((slug) => BEERS.get(slug));
 export const bottles = [
   'bieresdumoment',
-  'rochefort8',
+  'trappiste',
   'brunehaut',
   'alcoolfree',
   'fdp',
@@ -440,7 +440,7 @@ export const spirits: Spirit[] = [
     label: 'CALVADOS VS',
     description: 'Coquerel 🇫🇷',
     abv: 40,
-    price: 8,
+    price: 9,
   },
   {
     label: 'Menthe Pastille',

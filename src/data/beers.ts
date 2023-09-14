@@ -258,9 +258,9 @@ export const BEERS = new Map<string, Beer>([
     },
   ],
   [
-    'lasauvage',
+    'lesauvage',
     {
-      label: 'Cidre - La Sauvage',
+      label: 'Cidre - Le Sauvage',
       brewery: 'Fils de pomme',
       abv: 5.5,
       price: {
@@ -353,6 +353,15 @@ export const BEERS = new Map<string, Beer>([
       price: 6,
       abv: 8.1,
       brewery: 'Abbaye de Rochefort',
+    },
+  ],
+  [
+    'trappiste',
+    {
+      type_label: 'Trappiste',
+      label: 'Trappiste',
+      price: 6,
+      brewery: 'Abbaye',
     },
   ],
   [
