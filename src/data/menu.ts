@@ -349,6 +349,7 @@ export const cocktails: Cocktail[] = [
     label: 'Inna Di Yard',
     composition: 'rhum blanc, suze, orgeat, citron',
     price: 8,
+    everyday: true,
   },
   {
     label: 'Suze Tonic',
