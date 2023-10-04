@@ -160,7 +160,6 @@ export const cocktails: Cocktail[] = [
     label: 'Mojito',
     composition: 'Menthe, citron, Rhum ambré, eau pétillante',
     price: 8,
-    everyday: true,
   },
   {
     label: 'WHITE RUSSIAN',
