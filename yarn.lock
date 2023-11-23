@@ -1130,10 +1130,10 @@ once@^1.3.0:
   dependencies:
     wrappy "1"
 
-open-props@^1.6.12:
-  version "1.6.12"
-  resolved "https://registry.yarnpkg.com/open-props/-/open-props-1.6.12.tgz#d3fc37d706c60ae1607c5d7f3bcfaf56cdc0e574"
-  integrity sha512-cYbjhnGiYitOa8UgDgIo3fs1qR7Vd/Mtyr1nZC/d1/kdIBPupF/xTcNV6cuWUHsI01oTGykJhgE7gDQMj2nTZg==
+open-props@^1.6.13:
+  version "1.6.13"
+  resolved "https://registry.yarnpkg.com/open-props/-/open-props-1.6.13.tgz#1967ec195238c682b1678509e6afa3d2f5b9cc3c"
+  integrity sha512-2RnJCI3tBHpj1FHSw+jTF1BjdfnpV99IMzZB00srkEX5wy33sR6zdcE0xFVE61VKrgd6QIW6w90NAaR2lIKhqQ==
 
 optionator@^0.9.3:
   version "0.9.3"
