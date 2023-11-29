@@ -6,7 +6,12 @@ export const alicesJSONLD = (description: string): SvelteSeo['jsonLd'] => ({
   name: 'Alices',
   description,
   currenciesAccepted: 'EUR',
-  openingHours: ['Tu-Th 16:00-00:00', 'Fr 16:00-01:00', 'Sa 15:00-02:00'],
+  openingHours: [
+    'Mo 16:00-01:00',
+    'Tu-Th 16:00-00:00',
+    'Fr 16:00-01:00',
+    'Sa 15:00-02:00',
+  ],
   address: '12 rue des 3 couronnes, 59000 Lille, France',
   paymentAccepted: 'Cash, Credit Card',
   latitude: '50.6375004',

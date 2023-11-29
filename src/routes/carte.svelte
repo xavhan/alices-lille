@@ -89,13 +89,13 @@
   <MenuBlock title="Cocktails">
     <Cocktails
       cocktails={getCocktails([
-        'Rome with a view',
-        'Cloud Lily',
-        'Pumpkin spice amaretto sour',
-        'Mai tai',
-        'Espresso Martini',
-        'Manhattan',
-        'El Diablo',
+        'Negroni Sbagliato',
+        'Cosmo',
+        'Gimlet Clémentine',
+        'Old Fashioned',
+        'Daiquiri Cacahuète',
+        'Paloma',
+        'Cocktail chaud',
         'Mocktail',
       ])}
     />

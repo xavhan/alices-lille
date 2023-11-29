@@ -199,6 +199,32 @@ export const BEERS = new Map<string, Beer>([
     },
   ],
   [
+    'winterpepper',
+    {
+      type_label: 'Ambrée',
+      label: 'Winter Pepper',
+      brewery: 'Thiriez',
+      price: {
+        25: 4.2,
+        50: 8,
+      },
+      abv: 7,
+    },
+  ],
+  [
+    'mongyipa',
+    {
+      type_label: 'IPA',
+      label: 'MONGY',
+      brewery: 'Cambier',
+      price: {
+        25: 4,
+        50: 7.5,
+      },
+      abv: 6,
+    },
+  ],
+  [
     'wal',
     {
       type_label: 'Triple',
@@ -360,7 +386,7 @@ export const BEERS = new Map<string, Beer>([
     {
       type_label: 'Trappiste',
       label: 'Trappiste',
-      price: 6,
+      price: 6.3,
       brewery: 'Abbaye',
     },
   ],
@@ -408,7 +434,7 @@ export const BEERS = new Map<string, Beer>([
     {
       label: 'Bière sans Alcool',
       price: 6,
-      brewery: 'BBP',
+      brewery: 'Pico Nova ou Trottinette',
     },
   ],
   ['appiecider', { label: 'CIDRE - Brut', price: 6, brewery: 'Appie' }],

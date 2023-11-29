@@ -3,8 +3,8 @@ import type { Cocktail, Coffee, FoodItem, Soft, Spirit, Wine } from './types';
 export const taps = [
   'bise',
   'zinnebir',
-  'greenkiller',
-  'lesauvage',
+  'mongyipa',
+  'winterpepper',
   'speciale',
 ].map((slug) => BEERS.get(slug));
 export const bottles = [
@@ -71,7 +71,7 @@ export const cocktails: Cocktail[] = [
   {
     label: 'Amaretto Sour',
     composition: 'Amaretto, sucre, citron, Angostura',
-    price: 7,
+    price: 8,
     vegan: true,
   },
   {
@@ -108,7 +108,7 @@ export const cocktails: Cocktail[] = [
   {
     label: 'LONDON MULE',
     composition: 'Gin, Cordial de gingembre, Ginger Beer, citron',
-    price: 10,
+    price: 9,
     everyday: true,
   },
   {
@@ -148,7 +148,6 @@ export const cocktails: Cocktail[] = [
     label: 'Carafe du moment',
     composition: 'Surprises de saison',
     price: 30,
-    everyday: true,
   },
   {
     label: 'Baby dirty martini',
@@ -175,6 +174,11 @@ export const cocktails: Cocktail[] = [
     everyday: true,
   },
   {
+    label: 'Cocktail chaud',
+    composition: 'Irish cofee, Grog, Calva Chaud, ...',
+    everyday: true,
+  },
+  {
     label: 'Club maté vodka',
     composition: 'Du club maté, de la vodka',
     price: 9,
@@ -188,18 +192,16 @@ export const cocktails: Cocktail[] = [
     disabled: true,
   },
   {
-    label: 'Irish Coffee',
+    label: 'Irish Coffee (ou italian, jamaican, french)',
     composition: 'whisky, café, chantilly',
     price: 7.5,
     everyday: true,
-    disabled: true,
   },
   {
-    label: 'GIMLET',
-    composition: "Gin infusé feuille de clémentine, citron, cordial d'agrumes",
-    price: 9,
+    label: 'Gimlet Clémentine',
+    composition: "Gin feuille de clémentine, citron, cordial d'agrumes",
+    price: 8,
     everyday: true,
-    disabled: true,
   },
   {
     label: "Général Clem'to",
@@ -259,7 +261,6 @@ export const cocktails: Cocktail[] = [
     composition: 'Rhum infusé cacahuètte, citron vert, sucre',
     price: 8,
     everyday: true,
-    disabled: true,
   },
   {
     label: 'Gin Fizz',
@@ -290,6 +291,12 @@ export const cocktails: Cocktail[] = [
   {
     label: 'Negroni Sbagliato',
     composition: 'Campari, Vermouth Rouge, Prosecco, Orange',
+    price: 7,
+    everyday: true,
+  },
+  {
+    label: 'Cosmo',
+    composition: 'Vodka, Cointreau, Citron, Cranberry',
     price: 8,
     everyday: true,
   },
@@ -337,6 +344,7 @@ export const cocktails: Cocktail[] = [
     composition: 'Limoncello maison, prosecco, eau pétillante',
     price: 8,
     everyday: true,
+    disabled: true,
   },
   {
     label: 'Naked & Famous',
@@ -410,6 +418,7 @@ export const spirits: Spirit[] = [
     description: 'four square distillery 🇧🇧',
     abv: 40,
     price: 11,
+    disabled: true,
   },
   {
     label: 'WHISKY BULLEIT BOURBON/RYE',
@@ -518,8 +527,12 @@ export const coffee: Coffee[] = [
     price: 6,
   },
   {
-    label: 'Thé vert rose - orange - mangue',
-    price: 4,
+    label: 'Grog',
+    price: 6,
+  },
+  {
+    label: 'Irish Coffee (ou italian, jamaican, french)',
+    price: 7.5,
   },
   {
     label: 'Thé vert grand jasmin',
@@ -558,15 +571,15 @@ export const softs: Soft[] = [
   { label: 'Jus de Pomme/Cassis', price: 3.5, disabled: true },
   { label: 'Jus de Pamplemousse', price: 3.5, disabled: true },
   { label: 'Limo nature', price: 4.4 },
-  { label: 'Limo mirabelle', price: 4.4 },
+  { label: 'Limo mirabelle', price: 4.4, disabled: true },
   { label: 'Limo rhubarbe', price: 4.4 },
-  { label: 'Limo fleur de sureau', price: 4.4, disabled: true },
+  { label: 'Limo fleur de sureau', price: 4.4 },
   { label: 'Fritz Cola sans sucre', price: 4.4 },
   { label: 'Meuh Cola', price: 4.4, disabled: true },
   { label: 'Kombucha', price: 6 },
   { label: 'Club Maté', price: 6 },
-  { label: 'Thé glacé maison 🥶', price: 4 },
-  { label: 'Café frappé 🥶', price: 4 },
+  { label: 'Thé glacé maison 🥶', price: 4, disabled: true },
+  { label: 'Café frappé 🥶', price: 4, disabled: true },
   { label: 'Sirop Citron', price: 2.5 },
   { label: 'Sirop Grenadine', price: 2.5 },
   { label: 'Sirop Menthe', price: 2.5 },
@@ -576,8 +589,8 @@ export const softs: Soft[] = [
 ];
 export const food: FoodItem[] = [
   {
-    label: 'Pot de tartinade du moment (150g)',
-    price: 9,
+    label: 'Pot de tartinade du moment (120g)',
+    price: 7,
   },
   {
     label: 'Olives',
