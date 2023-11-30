@@ -70,9 +70,10 @@ export const wines: Wine[] = [
 export const cocktails: Cocktail[] = [
   {
     label: 'Amaretto Sour',
-    composition: 'Amaretto, sucre, citron, Angostura',
+    composition: 'Amaretto, calvados, citron, sucre',
     price: 8,
     vegan: true,
+    everyday: true,
   },
   {
     label: 'Rome with a view',
@@ -389,7 +390,7 @@ export const cocktails: Cocktail[] = [
     label: 'Pumpkin spice amaretto sour',
     composition: 'Amaretto, Calvados, Citron, Épices de l’automne',
     price: 8,
-    everyday: true,
+    disabled: true,
   },
   {
     label: 'Mai tai',

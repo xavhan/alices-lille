@@ -424,7 +424,7 @@ export const BEERS = new Map<string, Beer>([
     'brunehaut',
     {
       type_label: 'Sans Gluten',
-      label: 'Blonde / Blanche',
+      label: 'Blonde / Ambrée',
       price: 5.3,
       brewery: 'Brunehaut',
     },

@@ -51,6 +51,7 @@
       <option value="amaretto">Amaretto</option>
       <option value="bourbon">Bourbon</option>
       <option value="campari">Campari</option>
+      <option value="calvados">Calvados</option>
       <option value="chartreuse">Chartreuse</option>
       <option value="cognac">Cognac</option>
       <!-- comma hack to avoid gin / ginger overlap 🙃 -->
