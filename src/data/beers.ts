@@ -127,8 +127,8 @@ export const BEERS = new Map<string, Beer>([
       label: 'Zinnebir',
       brewery: 'Brasserie de la Senne',
       price: {
-        25: 3.7,
-        50: 6.9,
+        25: 3.8,
+        50: 7,
       },
       abv: 5.8,
     },
@@ -191,6 +191,19 @@ export const BEERS = new Map<string, Beer>([
       type_label: 'Triple',
       label: 'MONGY',
       brewery: 'Cambier',
+      price: {
+        25: 4.2,
+        50: 8,
+      },
+      abv: 8,
+    },
+  ],
+  [
+    'bellenaert',
+    {
+      type_label: 'Triple',
+      label: 'bellenaert',
+      brewery: 'bellenaert',
       price: {
         25: 4.2,
         50: 8,
@@ -366,7 +379,7 @@ export const BEERS = new Map<string, Beer>([
     {
       type_label: 'Trappiste',
       label: 'Westmalle tripel',
-      price: 6,
+      price: 6.3,
       abv: 9.5,
       brewery: 'Abbaye de Westmalle',
     },

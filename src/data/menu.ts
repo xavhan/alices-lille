@@ -4,7 +4,7 @@ export const taps = [
   'bise',
   'zinnebir',
   'mongyipa',
-  'winterpepper',
+  'bellenaert',
   'speciale',
 ].map((slug) => BEERS.get(slug));
 export const bottles = [
@@ -13,7 +13,6 @@ export const bottles = [
   'brunehaut',
   'alcoolfree',
   'fdp',
-  'appiepoire',
   'gueuzecantillon',
 ].map((slug) => BEERS.get(slug));
 
@@ -39,7 +38,7 @@ export const wines: Wine[] = [
     price: 7.5,
   },
   {
-    label: "VIN BLANC de l'automne",
+    label: "VIN BLANC de l'hiver",
     text: '💣 de fruits sans sucre !!',
     price: 7.5,
   },
@@ -71,7 +70,7 @@ export const cocktails: Cocktail[] = [
   {
     label: 'Amaretto Sour',
     composition: 'Amaretto, calvados, citron, sucre',
-    price: 8,
+    price: 9,
     vegan: true,
     everyday: true,
   },
@@ -171,12 +170,12 @@ export const cocktails: Cocktail[] = [
   {
     label: 'Paloma',
     composition: 'Tequila, pamplemousse, citron, piment (ou pas)',
-    price: 10,
+    price: 11,
     everyday: true,
   },
   {
     label: 'Cocktail chaud',
-    composition: 'Irish cofee, Grog, Calva Chaud, ...',
+    composition: 'Irish coffee, Grog, Calva Chaud, ...',
     everyday: true,
   },
   {
@@ -193,15 +192,15 @@ export const cocktails: Cocktail[] = [
     disabled: true,
   },
   {
-    label: 'Irish Coffee (ou italian, jamaican, french)',
-    composition: 'whisky, café, chantilly',
+    label: 'Irish Coffee (ou  jamaican, french)',
+    composition: 'whisky, café, chantilly maison',
     price: 7.5,
     everyday: true,
   },
   {
     label: 'Gimlet Clémentine',
     composition: "Gin feuille de clémentine, citron, cordial d'agrumes",
-    price: 8,
+    price: 9,
     everyday: true,
   },
   {
@@ -236,7 +235,7 @@ export const cocktails: Cocktail[] = [
   },
   {
     label: 'Espresso Martini',
-    composition: 'Vodka, Liqueur de Café, Espresso',
+    composition: 'Vodka, Liqueur de Café maison, Espresso Muda',
     price: 10,
     everyday: true,
   },
@@ -249,7 +248,7 @@ export const cocktails: Cocktail[] = [
     label: 'Mocktail',
     virgin: true,
     composition: 'En fonction des produits de saison',
-    price: 6.5,
+    price: 7,
     everyday: true,
   },
   {
@@ -260,7 +259,7 @@ export const cocktails: Cocktail[] = [
   {
     label: 'Daiquiri Cacahuète',
     composition: 'Rhum infusé cacahuètte, citron vert, sucre',
-    price: 8,
+    price: 9,
     everyday: true,
   },
   {
@@ -298,7 +297,7 @@ export const cocktails: Cocktail[] = [
   {
     label: 'Cosmo',
     composition: 'Vodka, Cointreau, Citron, Cranberry',
-    price: 8,
+    price: 10,
     everyday: true,
   },
   {
@@ -443,14 +442,14 @@ export const spirits: Spirit[] = [
     label: 'CALVADOS',
     description: 'Christian Drouin 🇫🇷',
     abv: 40,
-    price: 8,
+    price: 9,
     disabled: true,
   },
   {
-    label: 'CALVADOS VS',
-    description: 'Coquerel 🇫🇷',
-    abv: 40,
-    price: 9,
+    label: 'RHUM BAYOU',
+    description: 'Louisiane 🇺🇸',
+    abv: 43.4,
+    price: 8,
   },
   {
     label: 'Menthe Pastille',
