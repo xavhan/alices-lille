@@ -99,7 +99,7 @@
         'Espresso Martini',
         'Penicilin',
         'Paloma',
-        'Irish Coffee (ou  jamaican, french)'
+        'Irish Coffee (ou  jamaican, french)',
         'Mocktail',
       ])}
     />
