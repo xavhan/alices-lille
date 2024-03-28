@@ -89,17 +89,17 @@
   <MenuBlock title="Cocktails">
     <Cocktails
       cocktails={getCocktails([
-        'Gin Fizz',
+        'Suze Tonic',
+        'Clover Club',
+        'Old Fashioned',
+        'Moscow Mule',
+        'Negroni (rouge, blanc, mezcal, sbagliato)',
         'Amaretto Sour',
-        'Negroni',
-        'Gimlet Clémentine',
-        'Daiquiri Cacahuète',
-        'Dark & stormy',
-        'Cosmo',
+        'Paddington',
+        'Pisco Sour',
         'Espresso Martini',
-        'Penicilin',
-        'Paloma',
-        'Irish Coffee (ou  jamaican, french)',
+        'Margarita',
+        'Closing Argument',
         'Mocktail',
       ])}
     />

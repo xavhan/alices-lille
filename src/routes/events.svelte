@@ -24,6 +24,7 @@
 
   <div style="position: relative">
     <img
+      alt="miniboule"
       src="/images/icons/mini-boule.png"
       style="position: absolute; zoom: 0.4; left:-410px;top: 400px;"
     />

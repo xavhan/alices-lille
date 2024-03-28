@@ -2,8 +2,8 @@ import { BEERS } from './beers';
 import type { Cocktail, Coffee, FoodItem, Soft, Spirit, Wine } from './types';
 export const taps = [
   'bise',
-  'zinnebir',
-  'mongyipa',
+  'tarasboulba',
+  'pinpon',
   'bellenaert',
   'speciale',
 ].map((slug) => BEERS.get(slug));
@@ -23,22 +23,22 @@ export const shooters = [
 
 export const wines: Wine[] = [
   {
-    label: 'VIN ROUGE GLOUGLOU',
-    text: 'En fonction des bouteilles du moment',
+    label: 'VIN ROUGE FRUITÉ',
+    text: 'Full glouglou',
     price: 6,
   },
   {
-    label: 'VIN ROUGE TANNIQUE',
-    text: 'Accord tacite entre tanin et astringence',
+    label: 'VIN ROUGE CORSÉ',
+    text: "Du corps, du fruit et un peu d'astringence",
     price: 6.5,
   },
   {
-    label: 'VIN BLANC GLOUGLOU',
+    label: 'VIN BLANC sec',
     text: 'Bien sec ça ce boit si bien',
     price: 7.5,
   },
   {
-    label: "VIN BLANC de l'hiver",
+    label: 'VIN BLANC du printemps',
     text: '💣 de fruits sans sucre !!',
     price: 7.5,
   },
@@ -48,13 +48,13 @@ export const wines: Wine[] = [
     price: 7.5,
   },
   {
-    label: 'SURPRISE',
-    text: 'Pépite à venir découvrir',
+    label: 'Orange',
+    text: 'Macération, acidité ou autres bizarreries, toujours fait avec talent',
     price: 8.5,
   },
   {
     label: 'Pétillant Naturel',
-    text: "Petnat' du mois",
+    text: 'Pas besoin d’une grande occasion pour boire des bulles ! Le stock change souvent',
     price: 8,
     highlight: true,
   },
@@ -62,7 +62,7 @@ export const wines: Wine[] = [
     label: 'CHAMPAGNE BOUtEILLE 75CL',
     grapes: 'PINOT MEUNIER',
     estate: 'Champagne André Heucq',
-    price: 55,
+    price: 60,
   },
 ];
 
@@ -101,6 +101,12 @@ export const cocktails: Cocktail[] = [
     disabled: true,
   },
   {
+    label: 'Paddington',
+    composition: 'Rhum, Marmelade, Lillet, Pamplemousse',
+    price: 9,
+    everyday: true,
+  },
+  {
     label: 'Clear milk punch #2',
     composition: 'Mezcal, poire, girole, quinine',
     price: 9,
@@ -128,8 +134,8 @@ export const cocktails: Cocktail[] = [
     price: 8,
   },
   {
-    label: 'Negroni',
-    composition: 'Gin, Campari, Vermouth',
+    label: 'Negroni (rouge, blanc, mezcal, sbagliato)',
+    composition: 'Gin, Campari, Vermouth rouge',
     price: 9,
     everyday: true,
   },
@@ -282,6 +288,13 @@ export const cocktails: Cocktail[] = [
     everyday: true,
   },
   {
+    label: 'Pisco Sour',
+    vegan: true,
+    composition: 'Pisco, Citron, Sucre, Foam',
+    price: 10,
+    everyday: true,
+  },
+  {
     label: 'Champs-Élysées',
     composition:
       'Jus de citron, Sirop de sucre, Chartreuse verte, Cognac, Angostura',
@@ -332,6 +345,13 @@ export const cocktails: Cocktail[] = [
     composition: 'gin, citron, liqueur de framboise, prosecco',
     price: 8,
     everyday: true,
+  },
+  {
+    label: 'Clover Club',
+    composition: 'Gin, Framboise, Citron, Sucre, Foam',
+    price: 8,
+    everyday: true,
+    vegan: true,
   },
   {
     label: 'Spritz Campari',
@@ -403,6 +423,12 @@ export const cocktails: Cocktail[] = [
     price: 10,
     everyday: true,
   },
+  {
+    label: 'Closing Argument',
+    composition: 'Mezcal, Chartreuse, Liqueur Marasquin, Citron',
+    price: 12,
+    everyday: true,
+  },
 ];
 
 export const spirits: Spirit[] = [
@@ -443,7 +469,6 @@ export const spirits: Spirit[] = [
     description: 'Christian Drouin 🇫🇷',
     abv: 40,
     price: 9,
-    disabled: true,
   },
   {
     label: 'RHUM BAYOU',
