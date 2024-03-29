@@ -208,6 +208,7 @@ export const cocktails: Cocktail[] = [
     composition: "Gin feuille de clémentine, citron, cordial d'agrumes",
     price: 9,
     everyday: true,
+    disabled: true,
   },
   {
     label: "Général Clem'to",
@@ -265,6 +266,13 @@ export const cocktails: Cocktail[] = [
   {
     label: 'Daiquiri Cacahuète',
     composition: 'Rhum infusé cacahuètte, citron vert, sucre',
+    price: 9,
+    everyday: true,
+    disabled: true,
+  },
+  {
+    label: 'Daiquiri',
+    composition: 'Rhum, citron vert, sucre',
     price: 9,
     everyday: true,
   },
@@ -572,10 +580,6 @@ export const coffee: Coffee[] = [
     price: 4,
   },
   {
-    label: 'Thé rooibos vanille',
-    price: 4,
-  },
-  {
     label: 'Tisane camomille, tilleul, lavande',
     price: 4,
   },
@@ -591,14 +595,15 @@ export const coffee: Coffee[] = [
 
 export const softs: Soft[] = [
   { label: 'Jus de Pomme', price: 3.5 },
-  { label: 'Jus de Poire', price: 3.5 },
+  { label: 'Jus de Poire', price: 3.5, disabled: true },
   { label: 'Jus du moment', price: 3.5 },
   { label: 'Jus de Pomme/Cassis', price: 3.5, disabled: true },
   { label: 'Jus de Pamplemousse', price: 3.5, disabled: true },
   { label: 'Limo nature', price: 4.4 },
   { label: 'Limo mirabelle', price: 4.4, disabled: true },
   { label: 'Limo rhubarbe', price: 4.4 },
-  { label: 'Limo fleur de sureau', price: 4.4 },
+  { label: 'Limo fleur de sureau', price: 4.4, disabled: true },
+  { label: "Limo fleur d'oranger", price: 4.4 },
   { label: 'Fritz Cola sans sucre', price: 4.4 },
   { label: 'Meuh Cola', price: 4.4, disabled: true },
   { label: 'Kombucha', price: 6 },
