@@ -5,7 +5,7 @@ export const taps = [
   'tarasboulba',
   'pinpon',
   'bellenaert',
-  'speciale',
+  'malice',
 ].map((slug) => BEERS.get(slug));
 export const bottles = [
   'bieresdumoment',
@@ -31,6 +31,11 @@ export const wines: Wine[] = [
     label: 'VIN ROUGE CORSÉ',
     text: "Du corps, du fruit et un peu d'astringence",
     price: 6.5,
+  },
+  {
+    label: 'VIN ROSÉ',
+    text: 'Fruité comme une piscine en centre ville',
+    price: 7,
   },
   {
     label: 'VIN BLANC sec',
@@ -129,7 +134,7 @@ export const cocktails: Cocktail[] = [
     everyday: true,
   },
   {
-    label: 'Bloody Mary',
+    label: 'Bloody Mary (existe en baby)',
     composition: 'Vodka, Jus de tomate, Épices, Céleri',
     price: 8,
   },
@@ -271,8 +276,8 @@ export const cocktails: Cocktail[] = [
     disabled: true,
   },
   {
-    label: 'Daiquiri',
-    composition: 'Rhum, citron vert, sucre',
+    label: 'Daiquiri (fraise, coco, abricot...)',
+    composition: 'Rhum infusé du moment, citron vert, sucre',
     price: 9,
     everyday: true,
   },
@@ -362,9 +367,9 @@ export const cocktails: Cocktail[] = [
     vegan: true,
   },
   {
-    label: 'Spritz Campari',
-    composition: 'Campari, Prosecco, eau pétillante',
-    price: 7,
+    label: 'Spritz Campari ou Limoncello maison',
+    composition: 'Choisis ta base, Prosecco, eau pétillante',
+    price: 8,
     everyday: true,
   },
   {
@@ -434,6 +439,24 @@ export const cocktails: Cocktail[] = [
   {
     label: 'Closing Argument',
     composition: 'Mezcal, Chartreuse, Liqueur Marasquin, Citron',
+    price: 12,
+    everyday: true,
+  },
+  {
+    label: 'Basil Smash',
+    composition: 'Gin, Basilic, Citron, Sucre',
+    price: 9,
+    everyday: true,
+  },
+  {
+    label: 'French Blond',
+    composition: 'Lillet, Pamplemousse, Gin, St Germain, Citron, Bitter',
+    price: 10,
+    everyday: true,
+  },
+  {
+    label: 'Mezcalita',
+    composition: 'Mezcal, Citron, Liqueur d’orange, Sel fumé',
     price: 12,
     everyday: true,
   },
@@ -543,18 +566,18 @@ export const coffee: Coffee[] = [
     price: 5,
     description: ' 1 café + chocolat + lait + mousse de lait',
   },
-  // {
-  //   label: 'CAFÉ FRAPPÉ',
-  //   price: 4,
-  // },
+  {
+    label: 'CAFÉ Glacé',
+    price: 4,
+  },
   {
     label: 'CHOCOLAT CHAUD',
     price: 5,
   },
-  {
-    label: 'CHOCOLAT CHAUD + CHANTILLY',
-    price: 5.5,
-  },
+  // {
+  //   label: 'CHOCOLAT CHAUD + CHANTILLY',
+  //   price: 5.5,
+  // },
   {
     label: 'CHOCOLAT CHAUD + ALCOOL',
     price: 6,
@@ -563,9 +586,13 @@ export const coffee: Coffee[] = [
     label: 'Grog',
     price: 6,
   },
+  // {
+  //   label: 'Irish Coffee (ou italian, jamaican, french)',
+  //   price: 7.5,
+  // },
   {
-    label: 'Irish Coffee (ou italian, jamaican, french)',
-    price: 7.5,
+    label: 'Tisane',
+    price: 4,
   },
   {
     label: 'Thé vert grand jasmin',
@@ -585,6 +612,10 @@ export const coffee: Coffee[] = [
   },
   {
     label: 'Thé de L’HIVER ORANGE - CANNELLE - AMAMDE',
+    price: 4,
+  },
+  {
+    label: 'Thé Glacé',
     price: 4,
   },
   {
