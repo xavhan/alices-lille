@@ -349,7 +349,7 @@ export const BEERS = new Map<string, Beer>([
     'francbelge',
     {
       slug: 'francbelge',
-      label: 'Franc Belge',
+      label: 'Franc Belge ambrée',
       brewery: 'De ranke',
       price: {
         25: 4,
