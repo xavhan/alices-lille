@@ -285,6 +285,19 @@ export const BEERS = new Map<string, Beer>([
     },
   ],
   [
+    'quidam',
+    {
+      type_label: 'IPA',
+      label: 'Quidam',
+      brewery: 'Brasserie Jenlain',
+      price: {
+        25: 3.8,
+        50: 7,
+      },
+      abv: 6.5,
+    },
+  ],
+  [
     'appie',
     {
       label: 'Cidre',
@@ -330,6 +343,19 @@ export const BEERS = new Map<string, Beer>([
         25: 4.5,
         50: 8.5,
       },
+    },
+  ],
+  [
+    'francbelge',
+    {
+      slug: 'francbelge',
+      label: 'Franc Belge',
+      brewery: 'De ranke',
+      price: {
+        25: 4,
+        50: 8,
+      },
+      abv: 5.2,
     },
   ],
   [
@@ -449,7 +475,7 @@ export const BEERS = new Map<string, Beer>([
     'brunehaut',
     {
       type_label: 'Sans Gluten',
-      label: 'Blonde / Blanche',
+      label: 'Blonde',
       price: 5.3,
       brewery: 'Brunehaut',
     },
@@ -459,7 +485,7 @@ export const BEERS = new Map<string, Beer>([
     {
       label: 'Bière sans Alcool',
       price: 6,
-      brewery: 'Pico Nova ou Trottinette',
+      brewery: 'Trottinette',
     },
   ],
   ['appiecider', { label: 'CIDRE - Brut', price: 6, brewery: 'Appie' }],

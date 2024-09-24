@@ -2,17 +2,16 @@ import { BEERS } from './beers';
 import type { Cocktail, Coffee, FoodItem, Soft, Spirit, Wine } from './types';
 export const taps = [
   'bise',
-  'tarasboulba',
-  'pinpon',
-  'bellenaert',
-  'malice',
+  'quidam',
+  'lesauvage',
+  'francbelge',
+  'speciale',
 ].map((slug) => BEERS.get(slug));
 export const bottles = [
   'bieresdumoment',
-  'trappiste',
   'brunehaut',
   'alcoolfree',
-  'fdp',
+  'appiepoire',
   'gueuzecantillon',
 ].map((slug) => BEERS.get(slug));
 
@@ -32,18 +31,18 @@ export const wines: Wine[] = [
     text: "Du corps, du fruit et un peu d'astringence",
     price: 6.5,
   },
-  {
-    label: 'VIN ROSÉ',
-    text: 'Fruité comme une piscine en centre ville',
-    price: 7,
-  },
+  // {
+  //   label: 'VIN ROSÉ',
+  //   text: 'Fruité comme une piscine en centre ville',
+  //   price: 7,
+  // },
   {
     label: 'VIN BLANC sec',
     text: 'Bien sec ça ce boit si bien',
     price: 7.5,
   },
   {
-    label: 'VIN BLANC du printemps',
+    label: "VIN BLANC de l'automne",
     text: '💣 de fruits sans sucre !!',
     price: 7.5,
   },
@@ -82,7 +81,7 @@ export const cocktails: Cocktail[] = [
   {
     label: 'Rome with a view',
     composition: 'campari, vermouth extra dry, citron',
-    price: 7,
+    price: 8,
     everyday: true,
   },
   {
@@ -98,6 +97,12 @@ export const cocktails: Cocktail[] = [
     everyday: true,
   },
   {
+    label: 'Lemon drop',
+    composition: 'Vodka citron, Triple sec, sucre, citron',
+    price: 9,
+    everyday: true,
+  },
+  {
     label: 'Paddigfigue',
     composition:
       'rhum, confiture de figue, lillet, pamplemousse, dash d’absinthe',
@@ -109,7 +114,7 @@ export const cocktails: Cocktail[] = [
     label: 'Paddington',
     composition: 'Rhum, Marmelade, Lillet, Pamplemousse',
     price: 9,
-    everyday: true,
+    // everyday: true,
   },
   {
     label: 'Clear milk punch #2',
@@ -216,6 +221,12 @@ export const cocktails: Cocktail[] = [
     disabled: true,
   },
   {
+    label: 'Gimlet Poire',
+    composition: 'Gin, cordial poire, citron',
+    price: 9,
+    everyday: true,
+  },
+  {
     label: "Général Clem'to",
     composition: "Cordial d'agrumes, pamplemousse, citron, tonic",
     virgin: true,
@@ -276,7 +287,7 @@ export const cocktails: Cocktail[] = [
     disabled: true,
   },
   {
-    label: 'Daiquiri (fraise, coco, abricot...)',
+    label: 'Daiquiri (classique, fraise, abricot...)',
     composition: 'Rhum infusé du moment, citron vert, sucre',
     price: 9,
     everyday: true,
@@ -288,7 +299,7 @@ export const cocktails: Cocktail[] = [
     everyday: true,
   },
   {
-    label: 'Last Word',
+    label: 'Last Word et ses variantes',
     composition: 'Gin, Chartreuse, Marasquin, Citron',
     price: 10,
     everyday: true,
@@ -298,6 +309,12 @@ export const cocktails: Cocktail[] = [
     vegan: true,
     composition: 'Whisky, Sucre, Citron, Angostura',
     price: 9,
+    everyday: true,
+  },
+  {
+    label: 'Sazerac',
+    composition: 'Cognac, rye, sucre, peychaud, absinthe',
+    price: 11,
     everyday: true,
   },
   {
@@ -412,11 +429,18 @@ export const cocktails: Cocktail[] = [
     everyday: true,
   },
   {
+    label: 'Spicy Tequilaberry',
+    spicy: true,
+    composition: 'Tequila, triple sec, Mure, Piment agave',
+    price: 10,
+    everyday: true,
+  },
+  {
     label: 'Cloud Lily',
     vegan: true,
     composition: 'Gin, Cointreau, Liqueur de Violette, Citron',
     price: 8,
-    everyday: true,
+    // everyday: true,
   },
   {
     label: 'Pumpkin spice amaretto sour',
@@ -446,7 +470,7 @@ export const cocktails: Cocktail[] = [
     label: 'Basil Smash',
     composition: 'Gin, Basilic, Citron, Sucre',
     price: 9,
-    everyday: true,
+    // everyday: true,
   },
   {
     label: 'French Blond',
