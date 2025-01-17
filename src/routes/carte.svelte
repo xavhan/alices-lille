@@ -5,6 +5,7 @@
   import SvelteSeo from 'svelte-seo';
 
   import Beers from '$lib/components/Beers.svelte';
+  import BottlesAndCans from '$lib/components/BottlesAndCans.svelte';
   import Cocktails from '$lib/components/Cocktails.svelte';
   import Coffee from '$lib/components/Coffee.svelte';
   import Food from '$lib/components/Food.svelte';
@@ -14,7 +15,6 @@
   import Wines from '$lib/components/Wines.svelte';
 
   import {
-    bottles,
     cocktails,
     coffee,
     food,
@@ -79,7 +79,7 @@
   </MenuBlock>
 
   <MenuBlock title="Bières Bouteilles">
-    <Beers beers={bottles} />
+    <BottlesAndCans />
   </MenuBlock>
 
   <MenuBlock title="Vin" text="Au verre ou en bouteille">
@@ -89,18 +89,20 @@
   <MenuBlock title="Cocktails">
     <Cocktails
       cocktails={getCocktails([
-        'Rome with a view',
-        'Amaretto Sour',
-        'Lemon drop',
-        'Negroni (rouge, blanc, mezcal, sbagliato)',
-        'Gimlet Poire',
-        'Daiquiri (classique, fraise, abricot...)',
-        'Dark & stormy',
-        'Spicy Tequilaberry',
-        'Espresso Martini',
-        'Last Word et ses variantes',
-        'Sazerac',
         'Mocktail',
+        'Granny Daddy',
+        'Berry Please',
+        'Gimlet',
+        'Amaretto Sour',
+        'Olive Dry Martini',
+        'Daiquiri',
+        'Negroni',
+        'Dark & stormy',
+        'French Margarita',
+        'Paloma',
+        'Espresso Martini',
+        'Penicillin',
+        'Vieux Carré',
       ])}
     />
   </MenuBlock>
@@ -123,8 +125,8 @@
     <Softs softs={filter(softs)} />
   </MenuBlock>
 
-  <MenuBlock title="Tartinades">
-    <Food {food} />
+  <MenuBlock title="A manger">
+    <Food />
   </MenuBlock>
 
   {#if new Date().getHours() < 15 || new Date().getHours() > 17}

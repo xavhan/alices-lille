@@ -291,8 +291,8 @@ export const BEERS = new Map<string, Beer>([
       label: 'Quidam',
       brewery: 'Brasserie Jenlain',
       price: {
-        25: 3.8,
-        50: 7,
+        25: 4,
+        50: 7.5,
       },
       abv: 6.5,
     },

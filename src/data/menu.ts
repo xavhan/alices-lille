@@ -4,15 +4,8 @@ export const taps = [
   'bise',
   'quidam',
   'lesauvage',
-  'francbelge',
+  'mongytriple',
   'speciale',
-].map((slug) => BEERS.get(slug));
-export const bottles = [
-  'bieresdumoment',
-  'brunehaut',
-  'alcoolfree',
-  'appiepoire',
-  'gueuzecantillon',
 ].map((slug) => BEERS.get(slug));
 
 export const shooters = [
@@ -42,7 +35,7 @@ export const wines: Wine[] = [
     price: 7.5,
   },
   {
-    label: "VIN BLANC de l'automne",
+    label: "VIN BLANC de l'hiver",
     text: '💣 de fruits sans sucre !!',
     price: 7.5,
   },
@@ -144,7 +137,7 @@ export const cocktails: Cocktail[] = [
     price: 8,
   },
   {
-    label: 'Negroni (rouge, blanc, mezcal, sbagliato)',
+    label: 'Negroni',
     composition: 'Gin, Campari, Vermouth rouge',
     price: 9,
     everyday: true,
@@ -157,7 +150,7 @@ export const cocktails: Cocktail[] = [
   },
   {
     label: 'Gin tonic',
-    composition: 'Demandez nos gins',
+    composition: 'Gin du moment, Tonic Thomas Henry',
     everyday: true,
   },
   {
@@ -185,8 +178,9 @@ export const cocktails: Cocktail[] = [
   },
   {
     label: 'Paloma',
-    composition: 'Tequila, pamplemousse, citron, piment (ou pas)',
-    price: 11,
+    composition:
+      'Tequila, Jus Pamplemousse acidifié, Tonic Pamplemousse, Spray Mezcal',
+    price: 10,
     everyday: true,
   },
   {
@@ -214,15 +208,8 @@ export const cocktails: Cocktail[] = [
     everyday: true,
   },
   {
-    label: 'Gimlet Clémentine',
-    composition: "Gin feuille de clémentine, citron, cordial d'agrumes",
-    price: 9,
-    everyday: true,
-    disabled: true,
-  },
-  {
-    label: 'Gimlet Poire',
-    composition: 'Gin, cordial poire, citron',
+    label: 'Gimlet',
+    composition: 'gin feuille de clementine, Cordial d’agrume, Citron',
     price: 9,
     everyday: true,
   },
@@ -276,18 +263,13 @@ export const cocktails: Cocktail[] = [
   },
   {
     label: 'Aviation',
-    composition: 'Gin, Liqueur de violette, Marasquin, Citron',
-    price: 8,
-  },
-  {
-    label: 'Daiquiri Cacahuète',
-    composition: 'Rhum infusé cacahuètte, citron vert, sucre',
+    composition:
+      'Gin, Liqueur de violette, Citron, Liqueur de Marasquin, Cerise Marasquin',
     price: 9,
     everyday: true,
-    disabled: true,
   },
   {
-    label: 'Daiquiri (classique, fraise, abricot...)',
+    label: 'Daiquiri',
     composition: 'Rhum infusé du moment, citron vert, sucre',
     price: 9,
     everyday: true,
@@ -344,7 +326,7 @@ export const cocktails: Cocktail[] = [
     everyday: true,
   },
   {
-    label: 'Penicilin',
+    label: 'Penicillin',
     composition:
       'Gingembre, Sirop de miel, Jus de citron, Whisky scotch, Islay',
     price: 11,
@@ -484,6 +466,39 @@ export const cocktails: Cocktail[] = [
     price: 12,
     everyday: true,
   },
+  //
+  {
+    label: 'Granny Daddy',
+    composition: 'Granny Smith, Lillet, Absinthe',
+    price: 8,
+    everyday: true,
+  },
+  {
+    label: 'Berry Please',
+    composition: 'Vodka Myrtille, Liqueur de mûre, Citron, VeganFoam',
+    price: 9,
+    everyday: true,
+    vegan: true,
+  },
+  {
+    label: 'Olive Dry Martini',
+    composition: 'Gin Fatwash Huile d’Olive, Vermouth Dry, Saumure d’olive',
+    price: 9,
+    everyday: true,
+  },
+  {
+    label: 'French Margarita',
+    composition: 'Cognac, Triple Sec, Citron Jaune, (piment d’espelette 🌶️)',
+    price: 12,
+    everyday: true,
+    spicy: true,
+  },
+  {
+    label: 'Mezcalita',
+    composition: 'Mezcal, Citron, Liqueur d’orange, Sel fumé',
+    price: 12,
+    everyday: true,
+  },
 ];
 
 export const spirits: Spirit[] = [
@@ -577,7 +592,7 @@ export const coffee: Coffee[] = [
   },
   {
     label: 'latte',
-    price: 4.3,
+    price: 4.5,
     description: '1 café + lait + mousse de lait',
   },
   {
@@ -590,10 +605,10 @@ export const coffee: Coffee[] = [
     price: 5,
     description: ' 1 café + chocolat + lait + mousse de lait',
   },
-  {
-    label: 'CAFÉ Glacé',
-    price: 4,
-  },
+  // {
+  //   label: 'CAFÉ Glacé',
+  //   price: 4,
+  // },
   {
     label: 'CHOCOLAT CHAUD',
     price: 5,
@@ -657,6 +672,7 @@ export const softs: Soft[] = [
   { label: "Limo fleur d'oranger", price: 4.5, disabled: true },
   { label: 'Fritz Cola sans sucre', price: 4.5 },
   { label: 'Meuh Cola', price: 4.4, disabled: true },
+  { label: 'Loven Soda', price: 5.5 },
   { label: 'Kombucha', price: 6 },
   { label: 'Club Maté', price: 6 },
   { label: 'Thé glacé maison 🥶', price: 4, disabled: true },
