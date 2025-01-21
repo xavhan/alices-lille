@@ -1,4 +1,4 @@
-type Beer = {
+export type Beer = {
   label: string;
   price:
     | {
@@ -12,7 +12,7 @@ type Beer = {
   abv?: number;
 };
 
-const BISE: Beer = {
+export const BISE: Beer = {
   type_label: "Pils",
   slug: "bise",
   label: "La bise",
@@ -24,7 +24,7 @@ const BISE: Beer = {
   abv: 5.4,
 };
 
-const PINPON: Beer = {
+export const PINPON: Beer = {
   type_label: "Saison",
   slug: "pinpon",
   label: "Pin Pon",
@@ -36,7 +36,7 @@ const PINPON: Beer = {
   abv: 7,
 };
 
-const ETOILEDUNORD: Beer = {
+export const ETOILEDUNORD: Beer = {
   type_label: "Saison",
   slug: "etoiledunord",
   label: "Étoile du Nord",
@@ -48,7 +48,7 @@ const ETOILEDUNORD: Beer = {
   abv: 5.5,
 };
 
-const THIRIEZTRIPLE: Beer = {
+export const THIRIEZTRIPLE: Beer = {
   type_label: "Triple",
   slug: "thirieztriple",
   label: "Thiriez Triple",
@@ -60,7 +60,7 @@ const THIRIEZTRIPLE: Beer = {
   abv: 8.5,
 };
 
-const BISEBLANCHE: Beer = {
+export const BISEBLANCHE: Beer = {
   label: "La Bise Blanche",
   brewery: "Duyck",
   price: {
@@ -69,7 +69,7 @@ const BISEBLANCHE: Beer = {
   },
 };
 
-const OISEAUBLANC: Beer = {
+export const OISEAUBLANC: Beer = {
   label: "Oiseau Blanc",
   type_label: "Blanche",
   brewery: "Brasserie du grand Paris",
@@ -80,7 +80,7 @@ const OISEAUBLANC: Beer = {
   },
 };
 
-const PASCAP: Beer = {
+export const PASCAP: Beer = {
   type_label: "Triple",
   label: "Pas Cap",
   brewery: "Tandem",
@@ -91,7 +91,7 @@ const PASCAP: Beer = {
   abv: 8,
 };
 
-const LILBLONDE: Beer = {
+export const LILBLONDE: Beer = {
   type_label: "Blonde",
   label: "LIL Blonde",
   brewery: "Gobrecht",
@@ -102,7 +102,7 @@ const LILBLONDE: Beer = {
   abv: 5.5,
 };
 
-const TARASBOULBA: Beer = {
+export const TARASBOULBA: Beer = {
   type_label: "IPA",
   label: "Taras Boulba",
   brewery: "Brasserie de la Senne",
@@ -113,7 +113,7 @@ const TARASBOULBA: Beer = {
   abv: 4.5,
 };
 
-const ZINNEBIR: Beer = {
+export const ZINNEBIR: Beer = {
   type_label: "Blonde",
   label: "Zinnebir",
   brewery: "Brasserie de la Senne",
@@ -124,7 +124,7 @@ const ZINNEBIR: Beer = {
   abv: 5.8,
 };
 
-const GREENKILLER: Beer = {
+export const GREENKILLER: Beer = {
   type_label: "IPA",
   label: "Green Killer",
   brewery: "Brasserie Silly",
@@ -135,7 +135,7 @@ const GREENKILLER: Beer = {
   abv: 6.5,
 };
 
-const POULEMOUILLEE: Beer = {
+export const POULEMOUILLEE: Beer = {
   type_label: "IPA",
   label: "Poule mouillée",
   brewery: "Tandem",
@@ -146,7 +146,7 @@ const POULEMOUILLEE: Beer = {
   abv: 6.5,
 };
 
-const XXBITTER: Beer = {
+export const XXBITTER: Beer = {
   type_label: "Belgian IPA",
   label: "XX Bitter",
   brewery: "De Ranke",
@@ -157,7 +157,7 @@ const XXBITTER: Beer = {
   abv: 6.2,
 };
 
-const MONGYAMBREE: Beer = {
+export const MONGYAMBREE: Beer = {
   type_label: "Ambrée",
   label: "MONGY",
   brewery: "Cambier",
@@ -168,7 +168,7 @@ const MONGYAMBREE: Beer = {
   abv: 8,
 };
 
-const MONGYTRIPLE: Beer = {
+export const MONGYTRIPLE: Beer = {
   type_label: "Triple",
   label: "MONGY",
   brewery: "Cambier",
@@ -179,7 +179,7 @@ const MONGYTRIPLE: Beer = {
   abv: 8,
 };
 
-const BELLENAERT: Beer = {
+export const BELLENAERT: Beer = {
   type_label: "Triple",
   label: "bellenaert",
   brewery: "bellenaert",
@@ -190,7 +190,7 @@ const BELLENAERT: Beer = {
   abv: 8,
 };
 
-const WINTERPEPPER: Beer = {
+export const WINTERPEPPER: Beer = {
   type_label: "Ambrée",
   label: "Winter Pepper",
   brewery: "Thiriez",
@@ -201,7 +201,7 @@ const WINTERPEPPER: Beer = {
   abv: 7,
 };
 
-const MONGYIPA: Beer = {
+export const MONGYIPA: Beer = {
   type_label: "IPA",
   label: "MONGY",
   brewery: "Cambier",
@@ -212,7 +212,7 @@ const MONGYIPA: Beer = {
   abv: 6,
 };
 
-const WAL: Beer = {
+export const WAL: Beer = {
   type_label: "Triple",
   label: "Wal",
   brewery: "Célestin",
@@ -223,7 +223,7 @@ const WAL: Beer = {
   abv: 8.3,
 };
 
-const FREEBIRD: Beer = {
+export const FREEBIRD: Beer = {
   label: "Free Bird",
   brewery: "Le singe savant",
   price: {
@@ -232,7 +232,7 @@ const FREEBIRD: Beer = {
   },
 };
 
-const SPRINGSIN: Beer = {
+export const SPRINGSIN: Beer = {
   label: "Spring Sin",
   abv: 5.8,
   brewery: "Le singe savant",
@@ -242,7 +242,7 @@ const SPRINGSIN: Beer = {
   },
 };
 
-const BANDICOT: Beer = {
+export const BANDICOT: Beer = {
   label: "Bandicot",
   brewery: "Le singe savant",
   price: {
@@ -251,7 +251,7 @@ const BANDICOT: Beer = {
   },
 };
 
-const QUIDAM: Beer = {
+export const QUIDAM: Beer = {
   type_label: "IPA",
   label: "Quidam",
   brewery: "Brasserie Jenlain",
@@ -262,7 +262,7 @@ const QUIDAM: Beer = {
   abv: 6.5,
 };
 
-const APPIE: Beer = {
+export const APPIE: Beer = {
   label: "Cidre",
   brewery: "Appie",
   abv: 5,
@@ -272,7 +272,7 @@ const APPIE: Beer = {
   },
 };
 
-const LESAUVAGE: Beer = {
+export const LESAUVAGE: Beer = {
   label: "Cidre - Le Sauvage",
   brewery: "Fils de pomme",
   abv: 5.5,
@@ -282,7 +282,7 @@ const LESAUVAGE: Beer = {
   },
 };
 
-const SPECIALE: Beer = {
+export const SPECIALE: Beer = {
   slug: "speciale",
   label: "Bière Spéciale",
   brewery: "Brasserie du singe savant ou autres copains",
@@ -292,7 +292,7 @@ const SPECIALE: Beer = {
   },
 };
 
-const MALICE: Beer = {
+export const MALICE: Beer = {
   slug: "malice",
   label: "LA MALICE",
   brewery: "Alices x Singe Savant",
@@ -302,7 +302,7 @@ const MALICE: Beer = {
   },
 };
 
-const FRANCBELGE: Beer = {
+export const FRANCBELGE: Beer = {
   slug: "francbelge",
   label: "Franc Belge ambrée",
   brewery: "De ranke",
@@ -313,7 +313,7 @@ const FRANCBELGE: Beer = {
   abv: 5.2,
 };
 
-const LESINGESAVANT: Beer = {
+export const LESINGESAVANT: Beer = {
   slug: "lesingesavant",
   label: "Le singe savant",
   brewery: "Le fut change toute les semaines",
@@ -323,7 +323,7 @@ const LESINGESAVANT: Beer = {
   },
 };
 
-const PHI: Beer = {
+export const PHI: Beer = {
   type_label: "Sour",
   label: "Phi rabarber",
   price: 8,
@@ -331,13 +331,13 @@ const PHI: Beer = {
   brewery: "Brasserie alvinne",
 };
 
-const BIERESDUMOMENT: Beer = {
+export const BIERESDUMOMENT: Beer = {
   label: "Bières du moment",
   price: 7,
   brewery: "Singe Savant, Nautile, Cambier...",
 };
 
-const WESTMALLETRIPEL: Beer = {
+export const WESTMALLETRIPEL: Beer = {
   type_label: "Trappiste",
   label: "Westmalle tripel",
   price: 6.3,
@@ -345,7 +345,7 @@ const WESTMALLETRIPEL: Beer = {
   brewery: "Abbaye de Westmalle",
 };
 
-const ROCHEFORTTRIPLE: Beer = {
+export const ROCHEFORTTRIPLE: Beer = {
   type_label: "Trappiste",
   label: "Rochefort triple",
   price: 6,
@@ -353,14 +353,14 @@ const ROCHEFORTTRIPLE: Beer = {
   brewery: "Abbaye de Rochefort",
 };
 
-const TRAPPISTE: Beer = {
+export const TRAPPISTE: Beer = {
   type_label: "Trappiste",
   label: "Trappiste",
   price: 6.3,
   brewery: "Abbaye",
 };
 
-const ROCHEFORT8: Beer = {
+export const ROCHEFORT8: Beer = {
   type_label: "Trappiste",
   label: "Rochefort 8",
   price: 6.3,
@@ -368,7 +368,7 @@ const ROCHEFORT8: Beer = {
   brewery: "Abbaye de Rochefort",
 };
 
-const HAZY: Beer = {
+export const HAZY: Beer = {
   type_label: "Sour",
   label: "Hazy Diamond",
   price: 7,
@@ -376,39 +376,39 @@ const HAZY: Beer = {
   brewery: "La débauche",
 };
 
-const GUEUZECANTILLON: Beer = {
+export const GUEUZECANTILLON: Beer = {
   type_label: "Gueuze",
   label: "GUEUZE 75cl",
   price: 30,
   brewery: "Brasserie Cantillon",
 };
 
-const BRUNEHAUT: Beer = {
+export const BRUNEHAUT: Beer = {
   type_label: "Sans Gluten",
   label: "Blonde",
   price: 5.3,
   brewery: "Brunehaut",
 };
 
-const ALCOOLFREE: Beer = {
+export const ALCOOLFREE: Beer = {
   label: "Bière sans Alcool",
   price: 6,
   brewery: "Trottinette",
 };
 
-const APPIECIDER: Beer = {
+export const APPIECIDER: Beer = {
   label: "CIDRE - Brut",
   price: 6,
   brewery: "Appie",
 };
 
-const FDP: Beer = {
+export const FDP: Beer = {
   label: "CIDRE - Brut",
   price: 6,
   brewery: "Fils de Pomme",
 };
 
-const APPIEPOIRE: Beer = {
+export const APPIEPOIRE: Beer = {
   label: "POIRÉ - Brut",
   price: 6,
   brewery: "Appie",

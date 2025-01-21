@@ -1,8 +1,8 @@
 "use client";
 
 import { Header, Select, Title } from "@/components";
-import * as COCKTAILS from "./../products/cocktails";
-import type { Cocktail } from "./../products/cocktails";
+import * as COCKTAILS from "@/data/cocktails";
+import type { Cocktail } from "@/data/cocktails";
 import { useEffect, useState } from "react";
 
 const CocktailsArray = Object.values(COCKTAILS)
