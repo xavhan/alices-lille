@@ -1,25 +1,49 @@
+"use client";
+
+import { Header, Select, Title } from "@/components";
 import * as COCKTAILS from "./../products/cocktails";
 import type { Cocktail } from "./../products/cocktails";
+import { useEffect, useState } from "react";
 
 const CocktailsArray = Object.values(COCKTAILS)
   .filter((c) => c.availableEveryday)
   .sort((a, b) => a.label.localeCompare(b.label));
 
+const BASE = ["Calvados", "Vodka"];
+
 export default function CockailsPage() {
+  const [base, setBase] = useState<string>();
+  const [displayedCocktails, setDisplayedCocktails] = useState(CocktailsArray);
+
+  useEffect(() => {
+    setDisplayedCocktails(
+      CocktailsArray.filter((c) =>
+        c.composition
+          .toLocaleLowerCase()
+          .includes((base ?? "").toLocaleLowerCase())
+      )
+    );
+  }, [base]);
+
   return (
-    <div className="flex flex-col max-w-[300px]">
-      <Title>Tous nos cocktails</Title>
+    <div className="flex flex-col gap-8">
+      <Header>
+        <Title>Tous nos cocktails</Title>
+      </Header>
 
       <div>
-        <select name="" id="">
-          <option>a</option>
-          <option>b</option>
-          <option>c</option>
-        </select>
+        <Select
+          onChange={(e) => setBase(e.target.value)}
+          options={BASE.map((b) => ({
+            value: b,
+            label: b,
+          }))}
+          placeholder="Choisir une base"
+        />
       </div>
 
       <ul className="flex flex-col gap-2">
-        {CocktailsArray.map((c) => (
+        {displayedCocktails.map((c) => (
           <li key={c.label}>
             <Cocktail {...c} />
           </li>
@@ -28,10 +52,6 @@ export default function CockailsPage() {
     </div>
   );
 }
-
-const Title = ({ children }: { children: React.ReactNode }) => (
-  <h2 className="text-2xl">{children}</h2>
-);
 
 const Cocktail = ({
   label,
