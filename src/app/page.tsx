@@ -4,6 +4,7 @@ import { FACEBOOK_URL, GOOGLE_REVIEW_URL, INSTAGRAM_URL } from "@/data/links";
 import { timerange } from "@/utils/time";
 import Link from "next/link";
 import { ComponentPropsWithRef } from "react";
+import { HugeButtonLink } from "@/components/Buttons";
 
 export const metadata: Metadata = {
   title: "Alices | Lille",
@@ -109,24 +110,3 @@ export default function HomePage() {
     </div>
   );
 }
-
-type HugeButtonLinkProps = ButtonLinkProps;
-const HugeButtonLink = ({ ...rest }: HugeButtonLinkProps) => {
-  return (
-    <ButtonLink
-      {...rest}
-      className="p-4 rounded-full w-full border-2 border-gold hover:shadow-md"
-    />
-  );
-};
-
-type ButtonLinkProps = ComponentPropsWithRef<"button"> & {
-  href: string;
-};
-const ButtonLink = ({ href, ...rest }: ButtonLinkProps) => {
-  return (
-    <Link href={href}>
-      <button {...rest} />
-    </Link>
-  );
-};
