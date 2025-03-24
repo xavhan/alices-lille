@@ -1,21 +1,72 @@
+@import "open-props/style";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --alices-rouge: #a61a2f;
+
+  --alices-noir: #302a25;
+  --alices-vin: #4d101c;
+
+  --alices-dore: #ba9a60;
+  --alices-biere: #e2ac68;
+
+  --alices-cappucino: #dab398;
+  --alices-cafe: #b8734c;
+
+  --alices-gris: #cbc9bd;
+  --alices-chocolat: #8e5a49;
+
+  --alices-blanccasse: #fbfae6;
+  --alices-beige: #fedbae;
+  --alices-camel: #caa577;
+
+  --font-sans-2: "Trueno Light";
+
+  --use-motion-preference: 1;
+  --slow: calc(var(--use-motion-preference) * 700ms);
+
+  /* semantics */
+  --app-background: var(--alices-blanccasse);
+  --app-text: var(--alices-vin);
+  --app-text-emphase: var(--alices-rouge);
+  --app-text-hide: var(--alices-dore);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --app-background: var(--alices-noir);
+    --app-text: var(--alices-blanccasse);
+    --app-text-emphase: var(--alices-beige);
+    --app-text-hide: var(--alices-camel);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --use-motion-preference: 0;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--app-background);
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: var(--font-letterspacing-3);
+  font-size: var(--font-size-2);
+  line-height: var(--font-lineheight-1);
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  padding: 60px 30px;
+}
+
+.menu {
+  margin-bottom: var(--size-5);
+}
+
+a,
+a:visited {
+  color: var(--app-text);
 }
