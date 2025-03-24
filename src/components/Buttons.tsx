@@ -13,10 +13,11 @@ export const HugeButtonLink = ({ ...rest }: HugeButtonLinkProps) => {
 
 type ButtonLinkProps = ComponentPropsWithRef<"button"> & {
   href: string;
+  target?: string;
 };
-export const ButtonLink = ({ href, ...rest }: ButtonLinkProps) => {
+export const ButtonLink = ({ href, target, ...rest }: ButtonLinkProps) => {
   return (
-    <Link href={href}>
+    <Link href={href} target={target}>
       <button {...rest} />
     </Link>
   );
