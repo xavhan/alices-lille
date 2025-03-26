@@ -19,7 +19,7 @@ export const COFFEE = [
   {
     label: "latte",
     description: "1 café + lait + mousse de lait",
-    price: 4.3,
+    price: 4.5,
   },
   {
     label: "flat white",
@@ -60,7 +60,7 @@ export const COFFEE = [
     price: 4,
   },
   {
-    label: "Thé vert fleur d’oranger, menthe",
+    label: "Thé vert menthe bergamote",
     price: 4,
   },
   {
@@ -73,6 +73,6 @@ export const COFFEE = [
   },
   {
     label: "chaï (thé d’épices + lait avoine)",
-    price: 4.5,
+    price: 5,
   },
 ];

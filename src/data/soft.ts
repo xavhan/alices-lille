@@ -4,19 +4,15 @@ export const SOFTS = [
     price: 3.5,
   },
   {
-    label: "Jus du moment",
+    label: "Jus de la saison",
     price: 3.5,
   },
   {
-    label: "Limo nature",
+    label: "Limonade nature",
     price: 4.5,
   },
   {
-    label: "Limo rhubarbe",
-    price: 4.5,
-  },
-  {
-    label: "Limo fleur de sureau",
+    label: "Limo du moment",
     price: 4.5,
   },
   {
@@ -54,5 +50,13 @@ export const SOFTS = [
   {
     label: "Ginger Beer",
     price: 4.5,
+  },
+  {
+    label: "Loven Soda",
+    price: 5.5,
+  },
+  {
+    label: "Biere sans alcool",
+    price: 6,
   },
 ];

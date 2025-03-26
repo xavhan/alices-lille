@@ -1,5 +1,12 @@
 import { CenteredText, Header, Title } from "@/components";
-import { BISE, LESAUVAGE, MONGYTRIPLE, QUIDAM, SPECIALE } from "@/data/beers";
+import {
+  BISE,
+  HOUTLAND,
+  LESAUVAGE,
+  MONGYTRIPLE,
+  QUIDAM,
+  SPECIALE,
+} from "@/data/beers";
 import {
   AMARETTOSOUR,
   BerryPlease,
@@ -42,7 +49,7 @@ export default function () {
         </Header>
 
         <ul>
-          {[BISE, QUIDAM, LESAUVAGE, MONGYTRIPLE, SPECIALE].map((beer) => {
+          {[BISE, HOUTLAND, LESAUVAGE, MONGYTRIPLE, SPECIALE].map((beer) => {
             return (
               <li key={beer.label}>
                 <Product
@@ -63,12 +70,13 @@ export default function () {
         </Header>
 
         <CenteredText>
-          🍾🥫🍺🥫🍾
+          <br />
+          🍾🍺🍾🍺🍾
           <br />
           Notre sélection de bières bouteilles <br /> et canettes craft <br />{" "}
           avec des options sans alcool & sans gluten <br /> est à retrouver
           directement au bar <br />
-          🍺🥫🍾🥫🍺
+          🍺🍾🍺🍾🍺
         </CenteredText>
       </Block>
 
@@ -100,7 +108,6 @@ export default function () {
               Mocktail,
               GrannyDaddy,
               BerryPlease,
-              Gimlet,
               AMARETTOSOUR,
               OliveDryMartini,
               Daiquiri,
@@ -142,13 +149,14 @@ export default function () {
         </Header>
 
         <CenteredText>
-          🥛🥛🥛🥛🥛🥛
+          <br />
+          🔫💥🔫💥🔫
           <br />
           Nos recettes maison changent régulièrement
           <br />
-          Viens voir lesjarres au bar !
+          Viens voir les jarres au bar !
           <br />
-          🥛🥛🥛🥛🥛🥛
+          💥🔫💥🔫💥
         </CenteredText>
       </Block>
 
@@ -185,24 +193,19 @@ export default function () {
         <Header>
           <Title>Tartinades</Title>
         </Header>
-        {[
-          {
-            label: "Tartinades [120g]",
-            price: 7,
-          },
-          {
-            label: "Olives",
-            price: 2.5,
-          },
-        ].map((product) => {
-          return (
-            <Product
-              key={product.label}
-              label={product.label}
-              price={product.price}
-            />
-          );
-        })}
+
+        <CenteredText>
+          <br />
+          🍽️🧀🍽️🧀🍽️
+          <br />
+          Voir ardoise au bar
+          <br />
+          tartinades, grilled cheese, fromage,
+          <br />
+          garlic bread, saucisson et autres
+          <br />
+          🧀🍽️🧀🍽️🧀
+        </CenteredText>
       </Block>
 
       <Block>

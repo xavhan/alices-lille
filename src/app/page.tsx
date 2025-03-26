@@ -27,13 +27,13 @@ export default function HomePage() {
         </Header>
 
         <CenteredText>
-          Lundi : {timerange(["16:00", "23:00"])}
+          Lundi, Mardi, Mercredi : {timerange(["16:00", "00:00"])}
           <br />
-          Mardi, Mercredi : {timerange(["16:00", "00:00"])}
+          Jeudi : {timerange(["16:00", "1:00"])}
           <br />
-          Jeudi, Vendredi : {timerange(["16:00", "1:00"])}
+          Vendredi : {timerange(["16:00", "2:00"])}
           <br />
-          Samedi : {timerange(["15:00", "1:00"])}
+          Samedi : {timerange(["15:00", "2:00"])}
         </CenteredText>
       </div>
 
@@ -94,10 +94,10 @@ export default function HomePage() {
             "Situé entre la grand place et l'opéra de Lille, Alices vous accueille pour un café, un verre de vin nature, une pinte de bière locale ou même faire la fête le soir dans son Mini Club. Réservation possible sur Instagram ou Facebook.",
           currenciesAccepted: "EUR",
           openingHours: [
-            "Mo 16:00-23:00",
-            "Tu-We 16:00-00:00",
-            "Tu-Fr 16:00-01:00",
-            "Sa 15:00-01:00",
+            "Mo-We 16:00-00:00",
+            "Th 16:00-10:00",
+            "Fr 16:00-02:00",
+            "Sa 15:00-02:00",
           ],
           address: "12 rue des 3 couronnes, 59000 Lille, France",
           paymentAccepted: "Cash, Credit Card",

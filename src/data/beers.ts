@@ -3,6 +3,7 @@ export type Beer = {
   price:
     | {
         25: number;
+        33?: number;
         50: number;
       }
     | number;
@@ -19,9 +20,23 @@ export const BISE: Beer = {
   brewery: "Duyck",
   price: {
     25: 3.5,
+    33: 4.4,
     50: 5.5,
   },
   abv: 5.4,
+};
+``;
+export const HOUTLAND: Beer = {
+  type_label: "IPA",
+  slug: "houtland",
+  label: "Houtland",
+  brewery: "Bellenaert",
+  price: {
+    25: 3.8,
+    33: 6,
+    50: 7,
+  },
+  abv: 6.5,
 };
 
 export const PINPON: Beer = {
@@ -174,6 +189,7 @@ export const MONGYTRIPLE: Beer = {
   brewery: "Cambier",
   price: {
     25: 4.2,
+    33: 6.4,
     50: 8,
   },
   abv: 8,
@@ -278,16 +294,18 @@ export const LESAUVAGE: Beer = {
   abv: 5.5,
   price: {
     25: 4,
+    33: 6,
     50: 7.5,
   },
 };
 
 export const SPECIALE: Beer = {
   slug: "speciale",
-  label: "Bière Spéciale",
+  label: "Bière de la semaine",
   brewery: "Brasserie du singe savant ou autres copains",
   price: {
     25: 4.5,
+    33: 6.8,
     50: 8.5,
   },
 };

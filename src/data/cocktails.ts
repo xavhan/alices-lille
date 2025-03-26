@@ -91,7 +91,7 @@ export const NegroniMezcal: Cocktail = {
 };
 export const Gintonic: Cocktail = {
   label: "Gin tonic",
-  composition: "Gin du moment, Tonic Thomas Henry",
+  composition: "Gin du moment, Tonic Fever tree",
   availableEveryday: true,
 };
 export const Carafe: Cocktail = {
@@ -218,7 +218,7 @@ export const GinFizz: Cocktail = {
   availableEveryday: true,
 };
 export const LastWord: Cocktail = {
-  label: "Last Word et ses variantes",
+  label: "Last Word (et ses variantes)",
   composition: "Gin, Chartreuse, Marasquin, Citron",
   price: 10,
   availableEveryday: true,

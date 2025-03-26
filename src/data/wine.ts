@@ -15,14 +15,14 @@ export const WINES = [
     price: 7.5,
   },
   {
-    label: "VIN BLANC de l'automne",
-    description: "💣 de fruits sans sucre !!",
+    label: "VIN BLANC de l'hiver",
+    description: "Bien sec ça se boit si bien",
     price: 7.5,
   },
   {
     label: "MOELLEUX",
     description: "Doux mais pas trop sucré",
-    price: 7.5,
+    price: 8,
   },
   {
     label: "Orange",
