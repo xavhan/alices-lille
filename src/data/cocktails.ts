@@ -19,7 +19,6 @@ export const ROMEWITHAVIEW: Cocktail = {
   label: "Rome with a view",
   composition: "campari, vermouth extra dry, citron",
   price: 8,
-  availableEveryday: true,
 };
 export const Bramble: Cocktail = {
   label: "Bramble",
@@ -59,7 +58,6 @@ export const LONDONMULE: Cocktail = {
   label: "LONDON MULE",
   composition: "Gin, Cordial de gingembre, Ginger Beer, citron",
   price: 9,
-  availableEveryday: true,
 };
 export const Pimmscup: Cocktail = {
   label: "Pimm’s cup",
@@ -103,7 +101,6 @@ export const Babydirtymartini: Cocktail = {
   label: "Baby dirty martini",
   composition: "Gin infusé du moment, Vermouth extra dry",
   price: 6.5,
-  availableEveryday: true,
 };
 export const Mojito: Cocktail = {
   label: "Mojito",
@@ -125,13 +122,11 @@ export const Paloma: Cocktail = {
 export const CocktailChaud: Cocktail = {
   label: "Cocktail chaud",
   composition: "Irish coffee, Grog, Calva Chaud, ...",
-  availableEveryday: true,
 };
 export const ClubmatéVodka: Cocktail = {
   label: "Club maté vodka",
   composition: "Du club maté, de la vodka",
   price: 9,
-  availableEveryday: true,
 };
 export const Pamela: Cocktail = {
   label: "Pamela",
@@ -142,13 +137,11 @@ export const IrishCoffee: Cocktail = {
   label: "Irish Coffee (ou  jamaican, french)",
   composition: "whisky, café, chantilly maison",
   price: 7.5,
-  availableEveryday: true,
 };
 export const Gimlet: Cocktail = {
   label: "Gimlet",
   composition: "gin feuille de clementine, Cordial d’agrume, Citron",
   price: 9,
-  availableEveryday: true,
 };
 export const GénéralClemto: Cocktail = {
   label: "Général Clem'to",
@@ -291,7 +284,6 @@ export const CloverAndAlex: Cocktail = {
   label: "Clover & Alex",
   composition: "gin, citron, liqueur de framboise, prosecco",
   price: 8,
-  availableEveryday: true,
 };
 export const CloverClub: Cocktail = {
   label: "Clover Club",
@@ -339,7 +331,6 @@ export const SpicyMargarita: Cocktail = {
   spicy: true,
   composition: "Tequila, Agave, Citron, Sel au piment",
   price: 10,
-  availableEveryday: true,
 };
 export const SpicyTequilaberry: Cocktail = {
   label: "Spicy Tequilaberry",
@@ -415,7 +406,7 @@ export const OliveDryMartini: Cocktail = {
 };
 export const FrenchMargarita: Cocktail = {
   label: "French Margarita",
-  composition: "Cognac, Triple Sec, Citron Jaune, (piment d’espelette 🌶️)",
+  composition: "Cognac, Triple Sec, Citron Jaune, Piment d’espelette",
   price: 12,
   availableEveryday: true,
   spicy: true,

@@ -14,6 +14,8 @@ const BASES = [
   { label: "Cognac", value: "cognac" },
   { label: "Gin", value: "gin," }, //avoid gin and ginger overlap
   { label: "Ginger", value: "ginger" },
+  { label: "Mescal", value: "mescal" },
+  { label: "Pisco", value: "pisco" },
   { label: "Rhum", value: "rhum" },
   { label: "Sour", value: "sour" },
   { label: "Tequila", value: "tequila" },

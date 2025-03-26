@@ -185,7 +185,7 @@ export const MONGYAMBREE: Beer = {
 
 export const MONGYTRIPLE: Beer = {
   type_label: "Triple",
-  label: "MONGY",
+  label: "MONGY triple",
   brewery: "Cambier",
   price: {
     25: 4.2,

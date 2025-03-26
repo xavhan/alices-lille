@@ -14,7 +14,6 @@ import {
   DarkAndStormy,
   EspressoMartini,
   FrenchMargarita,
-  Gimlet,
   GrannyDaddy,
   Mocktail,
   Negroni,
@@ -25,8 +24,6 @@ import {
 } from "@/data/cocktails";
 import { Metadata } from "next";
 import Link from "next/link";
-import { Cocktail } from "../cocktails/Cocktail";
-import { euro } from "@/utils/money";
 import { WINES } from "@/data/wine";
 import { SPIRITS } from "@/data/spirits";
 import { SOFTS } from "@/data/soft";
@@ -48,7 +45,7 @@ export default function () {
           <span className="whitespace-nowrap">25, 33 ou 50cl</span>
         </Header>
 
-        <ul>
+        <ul className="flex flex-col gap-2">
           {[BISE, HOUTLAND, LESAUVAGE, MONGYTRIPLE, SPECIALE].map((beer) => {
             return (
               <li key={beer.label}>
@@ -57,6 +54,7 @@ export default function () {
                   label={beer.label}
                   description={beer.brewery}
                   price={beer.price}
+                  abv={beer.abv}
                 />
               </li>
             );
@@ -73,17 +71,23 @@ export default function () {
           <br />
           🍾🍺🍾🍺🍾
           <br />
+          <br />
           Notre sélection de bières bouteilles <br /> et canettes craft <br />{" "}
           avec des options sans alcool & sans gluten <br /> est à retrouver
-          directement au bar <br />
+          directement au bar
+          <br />
+          <br />
           🍺🍾🍺🍾🍺
+          <br />
         </CenteredText>
       </Block>
 
       <Block>
         <Header>
           <Title>Vin</Title>
-          <span className="whitespace-nowrap">Au verre ou en bouteille</span>
+          <span className="whitespace-nowrap">
+            Au verre ou en bouteille 🍷🍾
+          </span>
         </Header>
         {WINES.map((wine) => {
           return (
@@ -121,7 +125,16 @@ export default function () {
             ].map((cocktail) => {
               return (
                 <li key={cocktail.label}>
-                  <Cocktail {...cocktail} />
+                  <Product
+                    label={
+                      cocktail.label +
+                      (cocktail.spicy ? " 🌶️" : "") +
+                      (cocktail.vegan ? " 🌱" : "") +
+                      (cocktail.virgin ? " 😇" : "")
+                    }
+                    description={cocktail.composition}
+                    price={cocktail.price ?? 0}
+                  />
                 </li>
               );
             })}
@@ -138,7 +151,9 @@ export default function () {
 
         <div className="flex justify-between">
           <span>🍸🥂🥃🍹</span>
-          <Link href="/cocktails">Voir tous nos cocktails</Link>
+          <Link href="/cocktails" className="underline">
+            Voir tous nos cocktails ➡️
+          </Link>
         </div>
       </Block>
 
@@ -152,11 +167,14 @@ export default function () {
           <br />
           🔫💥🔫💥🔫
           <br />
+          <br />
           Nos recettes maison changent régulièrement
           <br />
           Viens voir les jarres au bar !
           <br />
+          <br />
           💥🔫💥🔫💥
+          <br />
         </CenteredText>
       </Block>
 
@@ -172,6 +190,7 @@ export default function () {
               label={spirit.label}
               description={spirit.description}
               price={spirit.price}
+              abv={spirit.abv}
             />
           );
         })}
@@ -191,12 +210,14 @@ export default function () {
 
       <Block>
         <Header>
-          <Title>Tartinades</Title>
+          <Title>Nourriture</Title>
         </Header>
 
         <CenteredText>
           <br />
+          <br />
           🍽️🧀🍽️🧀🍽️
+          <br />
           <br />
           Voir ardoise au bar
           <br />
@@ -204,7 +225,9 @@ export default function () {
           <br />
           garlic bread, saucisson et autres
           <br />
+          <br />
           🧀🍽️🧀🍽️🧀
+          <br />
         </CenteredText>
       </Block>
 
@@ -226,7 +249,10 @@ export default function () {
 
       <Block>
         <Header>
-          <Title>Et pleins d'autres surprises au bar</Title>
+          <Title>
+            Et pleins d'autres surprises
+            <br /> au bar
+          </Title>
         </Header>
       </Block>
 

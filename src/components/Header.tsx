@@ -5,7 +5,7 @@ export const Header = ({ children }: HeaderProps) => {
   return (
     <div>
       <hr />
-      <div className="flex flex-row items-center justify-between py-2">
+      <div className="flex flex-row items-baseline justify-between py-2">
         {children}
       </div>
       <hr />

@@ -11,8 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        red: "var(--alices-vin)",
+        red: "var(--alices-rouge)",
         gold: "var(--alices-dore)",
+        black: "var(--alices-noir)",
       },
     },
   },

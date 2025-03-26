@@ -5,7 +5,7 @@ type TitleProps = ComponentPropsWithRef<"h2"> & {
 };
 
 export const Title = ({ className, children, ...rest }: TitleProps) => (
-  <h2 className={className + " w-full"} {...rest}>
+  <h2 className={className + " w-full text-red text-3xl"} {...rest}>
     {children}
   </h2>
 );

@@ -68,7 +68,7 @@ export const COFFEE = [
     price: 4,
   },
   {
-    label: "Thé de L’HIVER ORANGE - CANNELLE - AMAMDE",
+    label: "Thé de L’HIVER ORANGE - CANNELLE - AMANDE",
     price: 4,
   },
   {

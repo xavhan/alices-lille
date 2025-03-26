@@ -29,7 +29,7 @@
 
   /* semantics */
   --app-background: var(--alices-blanccasse);
-  --app-text: var(--alices-vin);
+  --app-text: var(--alices-black);
   --app-text-emphase: var(--alices-rouge);
   --app-text-hide: var(--alices-dore);
 }

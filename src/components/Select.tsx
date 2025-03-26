@@ -8,7 +8,11 @@ type SelectProps = ComponentPropsWithoutRef<"select"> & {
 
 export const Select = forwardRef<HTMLSelectElement, SelectProps>(
   ({ options, placeholder, ...rest }, ref) => (
-    <select ref={ref} {...rest} className="w-full py-2 border rounded-md">
+    <select
+      ref={ref}
+      {...rest}
+      className="w-full p-2 border rounded-md border-red text-black bg-background"
+    >
       {placeholder && <option value="">{placeholder}</option>}
       {options.map((option) => (
         <option key={option.value} value={option.value}>

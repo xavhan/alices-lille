@@ -23,7 +23,7 @@ export default function RootLayout({
         <meta name="google" content="notranslate" />
       </head>
       <body
-        className={`${bebasNeue.className} antialiased flex flex-col h-full py-16 px-8 uppercase text-red`}
+        className={`${bebasNeue.className} antialiased flex flex-col h-full py-16 px-8 uppercase text-black`}
       >
         <div className="w-full max-w-[360px] mx-auto flex flex-col gap-8">
           <Header />
