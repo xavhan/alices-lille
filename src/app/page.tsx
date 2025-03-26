@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 py-6">
         <HugeButtonLink href="/carte">Découvrir la carte</HugeButtonLink>
         <HugeButtonLink href="/cocktails">Nos cocktails</HugeButtonLink>
         {/* <HugeButtonLink href="/events">Tous nos events</HugeButtonLink> */}
@@ -27,13 +27,24 @@ export default function HomePage() {
         </Header>
 
         <CenteredText>
-          Lundi, Mardi, Mercredi : {timerange(["16:00", "00:00"])}
-          <br />
-          Jeudi : {timerange(["16:00", "1:00"])}
-          <br />
-          Vendredi : {timerange(["16:00", "2:00"])}
-          <br />
-          Samedi : {timerange(["15:00", "2:00"])}
+          <div className="flex flex-col w-full gap-2 py-2">
+            <div className="flex justify-between">
+              <div>Lundi, Mardi, Mercredi</div>
+              <div>{timerange(["16:00", "00:00"])}</div>
+            </div>
+            <div className="flex justify-between">
+              <div>Jeudi</div>
+              <div>{timerange(["16:00", "01:00"])}</div>
+            </div>
+            <div className="flex justify-between">
+              <div>Vendredi</div>
+              <div>{timerange(["16:00", "02:00"])}</div>
+            </div>
+            <div className="flex justify-between">
+              <div>Samedi</div>
+              <div>{timerange(["15:00", "02:00"])}</div>
+            </div>
+          </div>
         </CenteredText>
       </div>
 
