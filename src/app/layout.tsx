@@ -2,7 +2,6 @@ import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { GOOGLE_MAPS_URL } from "@/data/links";
-import Script from "next/script";
 import { GoogleTagManager } from "@next/third-parties/google";
 
 const bebasNeue = Bebas_Neue({
