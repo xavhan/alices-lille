@@ -1,4 +1,4 @@
-import { CenteredText, Header, Title } from "@/components";
+import { AdditionalText, CenteredText, Header, Title } from "@/components";
 import {
   BISE,
   HOUTLAND,
@@ -6,20 +6,29 @@ import {
   MONGYTRIPLE,
   QUIDAM,
   SPECIALE,
+  ZINNEBIR,
 } from "@/data/beers";
 import {
   AMARETTOSOUR,
   BerryPlease,
+  ChampsÉlysées,
   Daiquiri,
   DarkAndStormy,
+  ElDiablo,
   EspressoMartini,
   FrenchMargarita,
+  Garibaldi,
   GrannyDaddy,
+  HibiscusFizz,
+  LitchiMartini,
+  Mezcalita,
   Mocktail,
   Negroni,
   OliveDryMartini,
   Paloma,
   Penicillin,
+  SpritzCampari,
+  SumacManhattan,
   VieuxCarré,
 } from "@/data/cocktails";
 import { Metadata } from "next";
@@ -46,12 +55,16 @@ export default function () {
         </Header>
 
         <ul className="flex flex-col gap-2">
-          {[BISE, HOUTLAND, LESAUVAGE, MONGYTRIPLE, SPECIALE].map((beer) => {
+          {[BISE, HOUTLAND, ZINNEBIR, MONGYTRIPLE, SPECIALE].map((beer) => {
             return (
               <li key={beer.label}>
                 <Product
                   key={beer.label}
-                  label={beer.label}
+                  label={
+                    beer.type_label
+                      ? `[${beer.type_label}] ${beer.label}`
+                      : beer.label
+                  }
                   description={beer.brewery}
                   price={beer.price}
                   abv={beer.abv}
@@ -109,19 +122,19 @@ export default function () {
         <div>
           <ul className="flex flex-col gap-2">
             {[
-              Mocktail,
-              GrannyDaddy,
-              BerryPlease,
-              AMARETTOSOUR,
-              OliveDryMartini,
+              Garibaldi,
+              SpritzCampari,
+              HibiscusFizz,
               Daiquiri,
               Negroni,
               DarkAndStormy,
-              FrenchMargarita,
-              Paloma,
+              LitchiMartini,
+              ElDiablo,
               EspressoMartini,
-              Penicillin,
-              VieuxCarré,
+              ChampsÉlysées,
+              SumacManhattan,
+              Mezcalita,
+              Mocktail,
             ].map((cocktail) => {
               return (
                 <li key={cocktail.label}>
@@ -245,6 +258,8 @@ export default function () {
             />
           );
         })}
+
+        <AdditionalText>suppl lait vegetal +0.4€</AdditionalText>
       </Block>
 
       <Block>

@@ -27,8 +27,10 @@ export const Product = ({ label, description, price, abv }: ProductProps) => {
         <div>{euro(price)}</div>
       ) : (
         <div className="flex gap-2 tracking-tight">
-          {Object.entries(price).map(([_, p]) => (
-            <div className="w-10 text-right">{euro(p)}</div>
+          {Object.entries(price).map(([_, p], i) => (
+            <div className="w-10 text-right" key={i}>
+              {euro(p)}
+            </div>
           ))}
         </div>
       )}

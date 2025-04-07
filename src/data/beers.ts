@@ -25,7 +25,7 @@ export const BISE: Beer = {
   },
   abv: 5.4,
 };
-``;
+
 export const HOUTLAND: Beer = {
   type_label: "IPA",
   slug: "houtland",
@@ -133,8 +133,9 @@ export const ZINNEBIR: Beer = {
   label: "Zinnebir",
   brewery: "Brasserie de la Senne",
   price: {
-    25: 3.8,
-    50: 7,
+    25: 4,
+    33: 6,
+    50: 7.5,
   },
   abv: 5.8,
 };
@@ -185,7 +186,7 @@ export const MONGYAMBREE: Beer = {
 
 export const MONGYTRIPLE: Beer = {
   type_label: "Triple",
-  label: "MONGY triple",
+  label: "Mongy",
   brewery: "Cambier",
   price: {
     25: 4.2,

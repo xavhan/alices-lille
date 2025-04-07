@@ -52,6 +52,18 @@ export const COFFEE = [
     price: 4,
   },
   {
+    label: "Thé glacé",
+    price: 4,
+  },
+  {
+    label: "café glacé - café + lait",
+    price: 4,
+  },
+  {
+    label: "café glacé Alices - café + lait vegetal + sirop fleur d’oranger",
+    price: 4.5,
+  },
+  {
     label: "Thé vert grand jasmin",
     price: 4,
   },

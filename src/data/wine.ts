@@ -15,7 +15,7 @@ export const WINES = [
     price: 7.5,
   },
   {
-    label: "Vin blanc de l'hiver",
+    label: "Vin blanc du printemps",
     description: "💣 de fruits sans sucre !",
     price: 7.5,
   },

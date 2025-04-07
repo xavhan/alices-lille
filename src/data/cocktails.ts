@@ -166,6 +166,7 @@ export const ElDiablo: Cocktail = {
   composition: "Tequila, Crème de Cassis, Citron, Ginger Beer, Piment",
   price: 10,
   availableEveryday: true,
+  spicy: true,
 };
 export const OldFashioned: Cocktail = {
   label: "Old Fashioned",
@@ -174,7 +175,7 @@ export const OldFashioned: Cocktail = {
   availableEveryday: true,
 };
 export const EspressoMartini: Cocktail = {
-  label: "Espresso Martini",
+  label: "Espresso Martini (deca possible)",
   composition: "Vodka, Liqueur de Café maison, Espresso Muda",
   price: 10,
   availableEveryday: true,
@@ -187,7 +188,8 @@ export const ClearMilkPunch1: Cocktail = {
 export const Mocktail: Cocktail = {
   label: "Mocktail",
   virgin: true,
-  composition: "En fonction des produits de saison",
+  composition:
+    "un large choix à demander au bar - notre carte du moment fait maison",
   price: 7,
   availableEveryday: true,
 };
@@ -200,7 +202,7 @@ export const Aviation: Cocktail = {
 };
 export const Daiquiri: Cocktail = {
   label: "Daiquiri",
-  composition: "Rhum infusé du moment, citron vert, sucre",
+  composition: "choisis ton rhum infusé, citron, sucre",
   price: 9,
   availableEveryday: true,
 };
@@ -238,9 +240,8 @@ export const PiscoSour: Cocktail = {
 };
 export const ChampsÉlysées: Cocktail = {
   label: "Champs-Élysées",
-  composition:
-    "Jus de citron, Sirop de sucre, Chartreuse verte, Cognac, Angostura",
-  price: 10,
+  composition: "Cognac, Chartreuse, citron, sucre, angostura",
+  price: 11,
   availableEveryday: true,
 };
 export const NegroniSbagliato: Cocktail = {
@@ -389,7 +390,6 @@ export const GrannyDaddy: Cocktail = {
   label: "Granny Daddy",
   composition: "Granny Smith, Lillet, Absinthe",
   price: 8,
-  availableEveryday: true,
 };
 export const BerryPlease: Cocktail = {
   label: "Berry Please",
@@ -410,4 +410,29 @@ export const FrenchMargarita: Cocktail = {
   price: 12,
   availableEveryday: true,
   spicy: true,
+};
+export const Garibaldi: Cocktail = {
+  label: "Garibaldi",
+  composition: "Campari, jus d'Orange",
+  price: 7.5,
+  availableEveryday: true,
+};
+export const HibiscusFizz: Cocktail = {
+  label: "Hibiscus Fizz",
+  composition: " Gin hibiscus, citron, sucre, vegan foam",
+  price: 9,
+  vegan: true,
+  availableEveryday: true,
+};
+export const LitchiMartini: Cocktail = {
+  label: "Litchi Martini",
+  composition: "Vodka, litchi, vermouth dry, st germain",
+  price: 10,
+  availableEveryday: true,
+};
+export const SumacManhattan: Cocktail = {
+  label: "Sumac Manhattan",
+  composition: "Whisky infusé au sumac, Vermouth rouge, cerise marasqui",
+  price: 11,
+  availableEveryday: true,
 };

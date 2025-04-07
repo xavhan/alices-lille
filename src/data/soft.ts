@@ -45,7 +45,7 @@ export const SOFTS = [
   },
   {
     label: "Eau Gazeuse",
-    price: 3,
+    price: 3.5,
   },
   {
     label: "Ginger Beer",
