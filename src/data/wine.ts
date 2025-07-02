@@ -5,11 +5,6 @@ export const WINES = [
     price: 6,
   },
   {
-    label: "Vin rouge corsé",
-    description: "Du corps, du fruit et un peu d'astringence",
-    price: 6.5,
-  },
-  {
     label: "Vin blanc sec",
     description: "Bien sec ça se boit si bien",
     price: 7.5,
@@ -25,10 +20,15 @@ export const WINES = [
     price: 8,
   },
   {
-    label: "Orange",
+    label: "Orange ou Blouje",
     description:
       "Macération, acidité ou autres bizarreries, toujours fait avec talent",
     price: 8.5,
+  },
+  {
+    label: "Rosé",
+    description: "Sec mais pas trop",
+    price: 7.5,
   },
   {
     label: "Pétillant naturel",
