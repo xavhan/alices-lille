@@ -62,7 +62,7 @@ export const LONDONMULE: Cocktail = {
 export const Pimmscup: Cocktail = {
   label: "Pimm’s cup",
   composition: `Pimm’s, Ginger ale, Tellement de fruits`,
-  price: 7.5,
+  price: 7,
 };
 export const Margarita: Cocktail = {
   label: "Margarita",
@@ -354,7 +354,7 @@ export const PumpkinAmarettoSour: Cocktail = {
 export const MaiTai: Cocktail = {
   label: "Mai tai",
   composition: "Rhum blanc, Rhum Ambré, Cointreau, Orgeat",
-  price: 10,
+  price: 9,
   availableEveryday: true,
 };
 export const Manhattan: Cocktail = {
@@ -435,36 +435,4 @@ export const SumacManhattan: Cocktail = {
   composition: "Whisky infusé au sumac, Vermouth rouge, cerise marasqui",
   price: 11,
   availableEveryday: true,
-};
-export const HoneyDeuce: Cocktail = {
-  label: "Honey Deuce",
-  composition: "Vodka melon, liqueur de framboise, citron, limonade",
-  price: 9,
-  availableEveryday: true,
-};
-export const DirtyTonicMartini: Cocktail = {
-  label: "Dirty Tonic Martini",
-  composition: "Gin fat wash huile d'olive, vermouth dry, tonic, olives",
-  price: 9,
-  availableEveryday: true,
-};
-export const SummerFizz: Cocktail = {
-  label: "Summer Fizz",
-  composition: "Tequila feuille de figuier, suze, citron, veganfoam",
-  price: 10,
-  availableEveryday: true,
-  vegan: true,
-};
-export const MonkeyPenicillin: Cocktail = {
-  label: "Monkey Penicillin",
-  composition: "Whisky monkey shoulder, miel, gingembre, citron, isolat",
-  price: 11,
-  availableEveryday: true,
-};
-export const HotHoneyMargarita: Cocktail = {
-  label: "Hot Honey Margarita",
-  composition: "Tequila, Cointreau, miel, piment, citron",
-  price: 11,
-  availableEveryday: true,
-  spicy: true,
 };

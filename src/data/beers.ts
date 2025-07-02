@@ -196,16 +196,6 @@ export const MONGYTRIPLE: Beer = {
   abv: 8,
 };
 
-export const BIEREETE: Beer = {
-  label: "Biere de l'été",
-  brewery: "On la change souvent",
-  price: {
-    25: 4,
-    33: 6,
-    50: 7.5,
-  },
-};
-
 export const BELLENAERT: Beer = {
   type_label: "Triple",
   label: "bellenaert",
