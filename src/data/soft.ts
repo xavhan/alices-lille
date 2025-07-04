@@ -53,7 +53,7 @@ export const SOFTS = [
   },
   {
     label: "Loven Soda",
-    price: 5.5,
+    price: 6,
   },
   {
     label: "Biere sans alcool",

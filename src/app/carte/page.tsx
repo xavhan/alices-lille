@@ -1,35 +1,20 @@
 import { AdditionalText, CenteredText, Header, Title } from "@/components";
+import { BIEREETE, BISE, HOUTLAND, SPECIALE, ZINNEBIR } from "@/data/beers";
 import {
-  BISE,
-  HOUTLAND,
-  LESAUVAGE,
-  MONGYTRIPLE,
-  QUIDAM,
-  SPECIALE,
-  ZINNEBIR,
-} from "@/data/beers";
-import {
-  AMARETTOSOUR,
-  BerryPlease,
-  ChampsÉlysées,
+  BasilSmash,
   Daiquiri,
-  DarkAndStormy,
-  ElDiablo,
+  DirtyTonicMartini,
   EspressoMartini,
-  FrenchMargarita,
-  Garibaldi,
-  GrannyDaddy,
-  HibiscusFizz,
-  LitchiMartini,
-  Mezcalita,
+  FrenchBlond,
+  HoneyDeuce,
+  HotHoneyMargarita,
+  MaiTai,
   Mocktail,
-  Negroni,
-  OliveDryMartini,
-  Paloma,
-  Penicillin,
+  MonkeyPenicillin,
+  NegroniMezcal,
+  Pimmscup,
   SpritzCampari,
-  SumacManhattan,
-  VieuxCarré,
+  SummerFizz,
 } from "@/data/cocktails";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -55,7 +40,7 @@ export default function () {
         </Header>
 
         <ul className="flex flex-col gap-2">
-          {[BISE, HOUTLAND, ZINNEBIR, MONGYTRIPLE, SPECIALE].map((beer) => {
+          {[BISE, HOUTLAND, ZINNEBIR, BIEREETE, SPECIALE].map((beer) => {
             return (
               <li key={beer.label}>
                 <Product
@@ -122,18 +107,19 @@ export default function () {
         <div>
           <ul className="flex flex-col gap-2">
             {[
-              Garibaldi,
               SpritzCampari,
-              HibiscusFizz,
               Daiquiri,
-              Negroni,
-              DarkAndStormy,
-              LitchiMartini,
-              ElDiablo,
               EspressoMartini,
-              ChampsÉlysées,
-              SumacManhattan,
-              Mezcalita,
+              HoneyDeuce,
+              DirtyTonicMartini,
+              SummerFizz,
+              MonkeyPenicillin,
+              HotHoneyMargarita,
+              Pimmscup,
+              BasilSmash,
+              MaiTai,
+              FrenchBlond,
+              NegroniMezcal,
               Mocktail,
             ].map((cocktail) => {
               return (
@@ -229,17 +215,17 @@ export default function () {
         <CenteredText>
           <br />
           <br />
-          🍽️🧀🍽️🧀🍽️
+          🍽️🧀🌭🧀🍽️
           <br />
           <br />
           Voir ardoise au bar
           <br />
           tartinades, grilled cheese, fromage,
           <br />
-          garlic bread, saucisson et autres
+          garlic bread, hot-dog, saucisson et autres
           <br />
           <br />
-          🧀🍽️🧀🍽️🧀
+          🌭🍽️🧀🍽️🌭
           <br />
         </CenteredText>
       </Block>
