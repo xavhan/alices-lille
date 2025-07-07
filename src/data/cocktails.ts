@@ -422,7 +422,6 @@ export const HibiscusFizz: Cocktail = {
   composition: " Gin hibiscus, citron, sucre, vegan foam",
   price: 9,
   vegan: true,
-  availableEveryday: true,
 };
 export const LitchiMartini: Cocktail = {
   label: "Litchi Martini",
