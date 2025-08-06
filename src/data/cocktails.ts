@@ -427,7 +427,7 @@ export const LitchiMartini: Cocktail = {
   label: "Litchi Martini",
   composition: "Vodka, litchi, vermouth dry, st germain",
   price: 10,
-  availableEveryday: true,
+  availableEveryday: false,
 };
 export const SumacManhattan: Cocktail = {
   label: "Sumac Manhattan",
