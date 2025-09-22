@@ -10,7 +10,7 @@ export type Cocktail = {
 
 export const AMARETTOSOUR: Cocktail = {
   label: "Amaretto Sour",
-  composition: "Amaretto, calvados, citron, sucre",
+  composition: "Amaretto, Calvados, Citron, Sucre, Angostura, Vegan foam",
   price: 9,
   vegan: true,
   availableEveryday: true,
@@ -66,9 +66,10 @@ export const Pimmscup: Cocktail = {
 };
 export const Margarita: Cocktail = {
   label: "Margarita",
-  composition: "Tequila, Liqueur orange, Citron, Agave",
-  price: 10,
+  composition: "Tequila, Citron Vert, Cointreau, Agave, Piment",
+  price: 11,
   availableEveryday: true,
+  spicy: true,
 };
 export const BloodyMary: Cocktail = {
   label: "Bloody Mary (existe en baby)",
@@ -176,8 +177,8 @@ export const OldFashioned: Cocktail = {
 };
 export const EspressoMartini: Cocktail = {
   label: "Espresso Martini (deca possible)",
-  composition: "Vodka, Liqueur de Café maison, Espresso Muda",
-  price: 10,
+  composition: "Vodka, Liqueur de Café maison, Espresso MUDA, Sucre",
+  price: 11,
   availableEveryday: true,
 };
 export const ClearMilkPunch1: Cocktail = {
@@ -192,6 +193,61 @@ export const Mocktail: Cocktail = {
     "un large choix à demander au bar - notre carte du moment fait maison",
   price: 7,
   availableEveryday: true,
+};
+
+// Nouveaux cocktails automne 2025
+export const EndlessSummer: Cocktail = {
+  label: "Endless Summer",
+  composition: "Gin, concombre, basilic, liqueur de sureau, tonic",
+  price: 9,
+};
+
+export const NewCuban: Cocktail = {
+  label: "New Cuban",
+  composition: "rhum infusé aux fruits rouges, Citron, Sucre, Prosecco",
+  price: 9,
+};
+
+export const GimletFigue: Cocktail = {
+  label: "Gimlet Figue",
+  composition: "Gin feuille de figuier, Verjus, Sirop de figue",
+  price: 9,
+};
+
+export const CherryWine: Cocktail = {
+  label: "Cherry Wine",
+  composition: "Vodka infusée cerise vanille, Liqueur de marasquin, Club Soda",
+  price: 10,
+};
+
+export const DirtyDirtyMartini: Cocktail = {
+  label: "Dirty Dirty Martini",
+  composition: "Vodka, Saumure, Vermouth Dry",
+  price: 10,
+};
+
+export const SpicyTequilaBerry: Cocktail = {
+  label: "Spicy Tequila Berry",
+  composition: "Tequila, Mure, Piment, Gingerbeer",
+  price: 11,
+  spicy: true,
+};
+
+// Champs-Élysées déjà présent plus bas: on l'utilise et on met à jour son contenu
+
+export const GoldMonkeyRush: Cocktail = {
+  label: "Gold Monkey Rush",
+  composition: "Monkey Shoulder Whisky, Poire, Miel, Canelle",
+  price: 11,
+};
+
+// Mezcalita existe déjà plus bas, on garde la version existante
+
+export const AngelDraft: Cocktail = {
+  label: "Angel Draft",
+  composition: "Rhum infusé Menthe, Chartreuse Jaune, Citron, Agave, VeganFoam",
+  price: 12,
+  vegan: true,
 };
 export const Aviation: Cocktail = {
   label: "Aviation",

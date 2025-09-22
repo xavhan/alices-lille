@@ -1,7 +1,7 @@
 export const COFFEE = [
   {
     label: "espresso",
-    price: 2.2,
+    price: 2.3,
   },
   {
     label: "double",
@@ -9,7 +9,7 @@ export const COFFEE = [
   },
   {
     label: "allongé",
-    price: 3,
+    price: 3.2,
   },
   {
     label: "cappuccino",
@@ -40,28 +40,31 @@ export const COFFEE = [
     price: 5,
   },
   {
-    label: "CHOCOLAT CHAUD + ALCOOL",
-    price: 6,
+    label: "CHOCOLAT CHAUD + WHISKY",
+    price: 6.5,
   },
   {
     label: "Grog",
+    description: "rhum + miel + gingembre + citron",
     price: 6,
+  },
+  {
+    label: "HOT CC",
+    description: "cidre + calva + épices",
+    price: 7.5,
+  },
+  {
+    label: "IRISH COFFEE",
+    description: "whisky + café + chantilly maison",
+    price: 7.5,
   },
   {
     label: "Tisane",
     price: 4,
   },
   {
-    label: "Thé glacé",
-    price: 4,
-  },
-  {
     label: "café glacé - café + lait",
     price: 4,
-  },
-  {
-    label: "café glacé Alices - café + lait vegetal + sirop fleur d’oranger",
-    price: 4.5,
   },
   {
     label: "Thé vert grand jasmin",

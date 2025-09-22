@@ -20,8 +20,8 @@ export const BISE: Beer = {
   brewery: "Duyck",
   price: {
     25: 3.5,
-    33: 4.4,
-    50: 5.5,
+    33: 4.5,
+    50: 6,
   },
   abv: 5.4,
 };
@@ -32,9 +32,9 @@ export const HOUTLAND: Beer = {
   label: "Houtland",
   brewery: "Bellenaert",
   price: {
-    25: 3.8,
+    25: 4,
     33: 6,
-    50: 7,
+    50: 7.5,
   },
   abv: 6.5,
 };
@@ -197,8 +197,8 @@ export const MONGYTRIPLE: Beer = {
 };
 
 export const BIEREETE: Beer = {
-  label: "Biere de l'été",
-  brewery: "On la change souvent",
+  label: "Bière de l’automne",
+  brewery: "On la change souvent (Triple, Zinnebir, Taras…)",
   price: {
     25: 4,
     33: 6,
@@ -300,8 +300,8 @@ export const APPIE: Beer = {
 };
 
 export const LESAUVAGE: Beer = {
-  label: "Cidre - Le Sauvage",
-  brewery: "Fils de pomme",
+  label: "Cidre 5,5° • Fils de Pomme",
+  brewery: "Fils de Pomme",
   abv: 5.5,
   price: {
     25: 4,
@@ -312,8 +312,8 @@ export const LESAUVAGE: Beer = {
 
 export const SPECIALE: Beer = {
   slug: "speciale",
-  label: "Bière de la semaine",
-  brewery: "Brasserie du singe savant ou autres copains",
+  label: "Bière des Singes",
+  brewery: "Brasserie du Singe Savant",
   price: {
     25: 4.5,
     33: 6.8,

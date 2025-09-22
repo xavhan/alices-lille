@@ -1,20 +1,21 @@
 import { AdditionalText, CenteredText, Header, Title } from "@/components";
-import { BIEREETE, BISE, HOUTLAND, SPECIALE, ZINNEBIR } from "@/data/beers";
+import { BIEREETE, BISE, HOUTLAND, LESAUVAGE, SPECIALE } from "@/data/beers";
 import {
-  BasilSmash,
-  Daiquiri,
-  DirtyTonicMartini,
+  AMARETTOSOUR,
+  AngelDraft,
+  CherryWine,
+  DirtyDirtyMartini,
+  EndlessSummer,
   EspressoMartini,
-  FrenchBlond,
-  HoneyDeuce,
-  HotHoneyMargarita,
-  MaiTai,
+  GimletFigue,
+  Margarita,
+  Mezcalita,
   Mocktail,
-  MonkeyPenicillin,
-  NegroniMezcal,
-  Pimmscup,
-  SpritzCampari,
-  SummerFizz,
+  Negroni,
+  SpicyTequilaBerry,
+  ChampsÉlysées,
+  NewCuban,
+  GoldMonkeyRush,
 } from "@/data/cocktails";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -40,7 +41,7 @@ export default function () {
         </Header>
 
         <ul className="flex flex-col gap-2">
-          {[BISE, HOUTLAND, ZINNEBIR, BIEREETE, SPECIALE].map((beer) => {
+          {[BISE, HOUTLAND, LESAUVAGE, BIEREETE, SPECIALE].map((beer) => {
             return (
               <li key={beer.label}>
                 <Product
@@ -107,19 +108,20 @@ export default function () {
         <div>
           <ul className="flex flex-col gap-2">
             {[
-              SpritzCampari,
-              Daiquiri,
+              EndlessSummer,
+              AMARETTOSOUR,
+              NewCuban,
+              GimletFigue,
+              Negroni,
+              CherryWine,
+              DirtyDirtyMartini,
+              SpicyTequilaBerry,
               EspressoMartini,
-              HoneyDeuce,
-              DirtyTonicMartini,
-              SummerFizz,
-              MonkeyPenicillin,
-              HotHoneyMargarita,
-              Pimmscup,
-              BasilSmash,
-              MaiTai,
-              FrenchBlond,
-              NegroniMezcal,
+              ChampsÉlysées,
+              GoldMonkeyRush,
+              Mezcalita,
+              AngelDraft,
+              Margarita,
               Mocktail,
             ].map((cocktail) => {
               return (
