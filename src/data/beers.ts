@@ -197,12 +197,12 @@ export const MONGYTRIPLE: Beer = {
 };
 
 export const BIEREETE: Beer = {
-  label: "Bière de l’automne",
+  label: "Bière de l’hiver",
   brewery: "On la change souvent (Triple, Zinnebir, Taras…)",
   price: {
-    25: 4,
-    33: 6,
-    50: 7.5,
+    25: 4.3,
+    33: 6.4,
+    50: 8,
   },
 };
 

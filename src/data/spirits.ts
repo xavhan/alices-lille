@@ -42,9 +42,9 @@ export const SPIRITS = [
     abv: 42,
   },
   {
-    label: "Tequila Anejo",
-    description: "Calle 23 🇲🇽/🇫🇷",
-    price: 11,
-    abv: 40,
+    label: "Fernet Branca",
+    description: "Amaro 🇮🇹",
+    price: 5,
+    abv: 39,
   },
 ];

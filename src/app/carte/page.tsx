@@ -3,11 +3,11 @@ import { BIEREETE, BISE, HOUTLAND, LESAUVAGE, SPECIALE } from "@/data/beers";
 import {
   AMARETTOSOUR,
   AngelDraft,
-  CherryWine,
-  DirtyDirtyMartini,
-  EndlessSummer,
+  ChristmasFrench75,
+  DirtyMartini,
   EspressoMartini,
-  GimletFigue,
+  GimletPoire,
+  HotMargarita,
   Margarita,
   Mezcalita,
   Mocktail,
@@ -16,6 +16,11 @@ import {
   ChampsÉlysées,
   NewCuban,
   GoldMonkeyRush,
+  NakedAndFamous,
+  VieuxCarré,
+  InnaDiYard,
+  LitchiMartini,
+  Marseillan,
 } from "@/data/cocktails";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -108,19 +113,24 @@ export default function () {
         <div>
           <ul className="flex flex-col gap-2">
             {[
-              EndlessSummer,
+              ChristmasFrench75,
               AMARETTOSOUR,
               NewCuban,
-              GimletFigue,
+              GimletPoire,
+              InnaDiYard,
               Negroni,
-              CherryWine,
-              DirtyDirtyMartini,
+              Marseillan,
+              LitchiMartini,
               SpicyTequilaBerry,
               EspressoMartini,
               ChampsÉlysées,
               GoldMonkeyRush,
+              NakedAndFamous,
+              VieuxCarré,
               Mezcalita,
               AngelDraft,
+              HotMargarita,
+              DirtyMartini,
               Margarita,
               Mocktail,
             ].map((cocktail) => {

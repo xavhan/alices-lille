@@ -22,8 +22,8 @@ export const ROMEWITHAVIEW: Cocktail = {
 };
 export const Bramble: Cocktail = {
   label: "Bramble",
-  composition: "gin, mûre, citron, Liqueur de mûre",
-  price: 8,
+  composition: "Gin, mûre, citron, Liqueur de mûre",
+  price: 9,
   availableEveryday: true,
 };
 export const DarkAndStormy: Cocktail = {
@@ -33,9 +33,9 @@ export const DarkAndStormy: Cocktail = {
   availableEveryday: true,
 };
 export const LemonDrop: Cocktail = {
-  label: "Lemon drop",
+  label: "Lemon Drop",
   composition: "Vodka citron, Triple sec, sucre, citron",
-  price: 9,
+  price: 10,
   availableEveryday: true,
 };
 export const Paddigfigue: Cocktail = {
@@ -89,8 +89,9 @@ export const NegroniMezcal: Cocktail = {
   availableEveryday: true,
 };
 export const Gintonic: Cocktail = {
-  label: "Gin tonic",
-  composition: "Gin du moment, Tonic Fever tree",
+  label: "Hendricks & Tonic",
+  composition: "Gin Hendricks, Tonic Fever Tree",
+  price: 11,
   availableEveryday: true,
 };
 export const Carafe: Cocktail = {
@@ -117,7 +118,7 @@ export const Paloma: Cocktail = {
   label: "Paloma",
   composition:
     "Tequila, Jus Pamplemousse acidifié, Tonic Pamplemousse, Spray Mezcal",
-  price: 10,
+  price: 11,
   availableEveryday: true,
 };
 export const CocktailChaud: Cocktail = {
@@ -176,8 +177,8 @@ export const OldFashioned: Cocktail = {
   availableEveryday: true,
 };
 export const EspressoMartini: Cocktail = {
-  label: "Espresso Martini (deca possible)",
-  composition: "Vodka, Liqueur de Café maison, Espresso MUDA, Sucre",
+  label: "Espresso Martini",
+  composition: "Vodka, Liqueur café maison, Espresso MUDA, Sucre (+1€ tequila)",
   price: 11,
   availableEveryday: true,
 };
@@ -196,11 +197,11 @@ export const Mocktail: Cocktail = {
 };
 
 // Nouveaux cocktails automne 2025
-export const EndlessSummer: Cocktail = {
-  label: "Endless Summer",
-  composition: "Gin, concombre, basilic, liqueur de sureau, tonic",
-  price: 9,
-};
+// export const EndlessSummer: Cocktail = {
+//   label: "Endless Summer",
+//   composition: "Gin, concombre, basilic, liqueur de sureau, tonic",
+//   price: 9,
+// };
 
 export const NewCuban: Cocktail = {
   label: "New Cuban",
@@ -208,27 +209,28 @@ export const NewCuban: Cocktail = {
   price: 9,
 };
 
-export const GimletFigue: Cocktail = {
-  label: "Gimlet Figue",
-  composition: "Gin feuille de figuier, Verjus, Sirop de figue",
-  price: 9,
-};
+// export const GimletFigue: Cocktail = {
+//   label: "Gimlet Figue",
+//   composition: "Gin feuille de figuier, Verjus, Sirop de figue",
+//   price: 9,
+// };
 
-export const CherryWine: Cocktail = {
-  label: "Cherry Wine",
-  composition: "Vodka infusée cerise vanille, Liqueur de marasquin, Club Soda",
-  price: 10,
-};
+// export const CherryWine: Cocktail = {
+//   label: "Cherry Wine",
+//   composition: "Vodka infusée cerise vanille, Liqueur de marasquin, Club Soda",
+//   price: 10,
+// };
 
-export const DirtyDirtyMartini: Cocktail = {
-  label: "Dirty Dirty Martini",
+export const DirtyMartini: Cocktail = {
+  label: "Dirty Martini",
   composition: "Vodka, Saumure, Vermouth Dry",
   price: 10,
+  availableEveryday: true,
 };
 
 export const SpicyTequilaBerry: Cocktail = {
   label: "Spicy Tequila Berry",
-  composition: "Tequila, Mure, Piment, Gingerbeer",
+  composition: "Tequila, Mure, Piment, Ginger Beer",
   price: 11,
   spicy: true,
 };
@@ -237,7 +239,7 @@ export const SpicyTequilaBerry: Cocktail = {
 
 export const GoldMonkeyRush: Cocktail = {
   label: "Gold Monkey Rush",
-  composition: "Monkey Shoulder Whisky, Poire, Miel, Canelle",
+  composition: "Monkey Shoulder Whisky, Poire, Miel, Cannelle",
   price: 11,
 };
 
@@ -248,6 +250,29 @@ export const AngelDraft: Cocktail = {
   composition: "Rhum infusé Menthe, Chartreuse Jaune, Citron, Agave, VeganFoam",
   price: 12,
   vegan: true,
+  availableEveryday: true,
+};
+export const ChristmasFrench75: Cocktail = {
+  label: "Christmas French 75",
+  composition: "Cognac, Citron, Sucré d’airelle, Prosecco",
+  price: 9,
+};
+export const GimletPoire: Cocktail = {
+  label: "Gimlet Poire",
+  composition: "Gin poire, Jus poire acidifié, Sirop vanille",
+  price: 9,
+};
+export const Marseillan: Cocktail = {
+  label: "Marseillan",
+  composition: "Whisky fatwash beurre salé, Noilly Prat ambré, Cerise confite",
+  price: 10,
+};
+export const HotMargarita: Cocktail = {
+  label: "Hot Margarita",
+  composition: "Tequila, Agave, Citron, Piment",
+  price: 11,
+  spicy: true,
+  availableEveryday: true,
 };
 export const Aviation: Cocktail = {
   label: "Aviation",
@@ -269,9 +294,9 @@ export const GinFizz: Cocktail = {
   availableEveryday: true,
 };
 export const LastWord: Cocktail = {
-  label: "Last Word (et ses variantes)",
+  label: "Last Word",
   composition: "Gin, Chartreuse, Marasquin, Citron",
-  price: 10,
+  price: 11,
   availableEveryday: true,
 };
 export const WhiskySour: Cocktail = {
@@ -312,16 +337,16 @@ export const Cosmo: Cocktail = {
   price: 10,
   availableEveryday: true,
 };
-export const Penicillin: Cocktail = {
-  label: "Penicillin",
-  composition: "Gingembre, Sirop de miel, Jus de citron, Whisky scotch, Islay",
-  price: 11,
-  availableEveryday: true,
-};
+// export const Penicillin: Cocktail = {
+//   label: "Penicillin",
+//   composition: "Gingembre, Sirop de miel, Jus de citron, Whisky scotch, Islay",
+//   price: 11,
+//   availableEveryday: true,
+// };
 export const VieuxCarré: Cocktail = {
   label: "Vieux Carré",
-  composition: "Cognac, Rye Whisky, Vermouth, Benedictine & more",
-  price: 11,
+  composition: "Rye, Vermouth rouge, Cognac, Bénédictine, Angostura, Peychaud’s",
+  price: 12,
   availableEveryday: true,
 };
 export const NewYorkSour: Cocktail = {
@@ -345,7 +370,7 @@ export const CloverAndAlex: Cocktail = {
 export const CloverClub: Cocktail = {
   label: "Clover Club",
   composition: "Gin, Framboise, Citron, Sucre, Foam",
-  price: 8,
+  price: 9,
   availableEveryday: true,
   vegan: true,
 };
@@ -362,14 +387,14 @@ export const LimoncelloSpritz: Cocktail = {
 };
 export const NakedAndFamous: Cocktail = {
   label: "Naked & Famous",
-  composition: "Mezcal, Chartreuse, Campari, Citron",
-  price: 11,
+  composition: "Mezcal, Campari, Chartreuse Jaune, Citron vert",
+  price: 12,
   availableEveryday: true,
 };
 export const InnaDiYard: Cocktail = {
   label: "Inna Di Yard",
-  composition: "rhum blanc, suze, orgeat, citron",
-  price: 8,
+  composition: "Suze, rhum, citron, sirop d’orgeat",
+  price: 9,
   availableEveryday: true,
 };
 export const SuzeTonic: Cocktail = {
@@ -454,25 +479,25 @@ export const BerryPlease: Cocktail = {
   availableEveryday: true,
   vegan: true,
 };
-export const OliveDryMartini: Cocktail = {
-  label: "Olive Dry Martini",
-  composition: "Gin Fatwash Huile d’Olive, Vermouth Dry, Saumure d’olive",
-  price: 9,
-  availableEveryday: true,
-};
+// export const OliveDryMartini: Cocktail = {
+//   label: "Olive Dry Martini",
+//   composition: "Gin Fatwash Huile d’Olive, Vermouth Dry, Saumure d’olive",
+//   price: 9,
+//   availableEveryday: true,
+// };
 export const FrenchMargarita: Cocktail = {
   label: "French Margarita",
-  composition: "Cognac, Triple Sec, Citron Jaune, Piment d’espelette",
+  composition: "Cognac, Grand Marnier, Citron Jaune, Piment d’Espelette",
   price: 12,
   availableEveryday: true,
   spicy: true,
 };
-export const Garibaldi: Cocktail = {
-  label: "Garibaldi",
-  composition: "Campari, jus d'Orange",
-  price: 7.5,
-  availableEveryday: true,
-};
+// export const Garibaldi: Cocktail = {
+//   label: "Garibaldi",
+//   composition: "Campari, jus d'Orange",
+//   price: 7.5,
+//   availableEveryday: true,
+// };
 export const HibiscusFizz: Cocktail = {
   label: "Hibiscus Fizz",
   composition: " Gin hibiscus, citron, sucre, vegan foam",
@@ -485,24 +510,24 @@ export const LitchiMartini: Cocktail = {
   price: 10,
   availableEveryday: false,
 };
-export const SumacManhattan: Cocktail = {
-  label: "Sumac Manhattan",
-  composition: "Whisky infusé au sumac, Vermouth rouge, cerise marasqui",
-  price: 11,
-  availableEveryday: true,
-};
-export const HoneyDeuce: Cocktail = {
-  label: "Honey Deuce",
-  composition: "Vodka melon, liqueur de framboise, citron, limonade",
-  price: 9,
-  availableEveryday: true,
-};
-export const DirtyTonicMartini: Cocktail = {
-  label: "Dirty Tonic Martini",
-  composition: "Gin fat wash huile d'olive, vermouth dry, tonic, olives",
-  price: 9,
-  availableEveryday: true,
-};
+// export const SumacManhattan: Cocktail = {
+//   label: "Sumac Manhattan",
+//   composition: "Whisky infusé au sumac, Vermouth rouge, cerise marasqui",
+//   price: 11,
+//   availableEveryday: true,
+// };
+// export const HoneyDeuce: Cocktail = {
+//   label: "Honey Deuce",
+//   composition: "Vodka melon, liqueur de framboise, citron, limonade",
+//   price: 9,
+//   availableEveryday: true,
+// };
+// export const DirtyTonicMartini: Cocktail = {
+//   label: "Dirty Tonic Martini",
+//   composition: "Gin fat wash huile d'olive, vermouth dry, tonic, olives",
+//   price: 9,
+//   availableEveryday: true,
+// };
 export const SummerFizz: Cocktail = {
   label: "Summer Fizz",
   composition: "Tequila feuille de figuier, suze, citron, veganfoam",
@@ -512,14 +537,14 @@ export const SummerFizz: Cocktail = {
 };
 export const MonkeyPenicillin: Cocktail = {
   label: "Monkey Penicillin",
-  composition: "Whisky monkey shoulder, miel, gingembre, citron, isolat",
+  composition: "Whisky Monkey Shoulder, miel, gingembre, citron, Islay",
   price: 11,
   availableEveryday: true,
 };
-export const HotHoneyMargarita: Cocktail = {
-  label: "Hot Honey Margarita",
-  composition: "Tequila, Cointreau, miel, piment, citron",
-  price: 11,
-  availableEveryday: true,
-  spicy: true,
-};
+// export const Hot Honey Margarita: Cocktail = {
+//   label: "Hot Honey Margarita",
+//   composition: "Tequila, Cointreau, miel, piment, citron",
+//   price: 11,
+//   availableEveryday: true,
+//   spicy: true,
+// };

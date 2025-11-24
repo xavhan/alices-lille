@@ -38,11 +38,11 @@ export default function HomePage() {
             </div>
             <div className="flex justify-between">
               <div>Vendredi</div>
-              <div>{timerange(["16:00", "02:00"])}</div>
+              <div>{timerange(["16:00", "01:00"])}</div>
             </div>
             <div className="flex justify-between">
               <div>Samedi</div>
-              <div>{timerange(["15:00", "02:00"])}</div>
+              <div>{timerange(["15:00", "01:00"])}</div>
             </div>
           </div>
         </CenteredText>
@@ -107,8 +107,8 @@ export default function HomePage() {
           openingHours: [
             "Mo-We 16:00-00:00",
             "Th 16:00-10:00",
-            "Fr 16:00-02:00",
-            "Sa 15:00-02:00",
+            "Fr 16:00-01:00",
+            "Sa 15:00-01:00",
           ],
           address: "12 rue des 3 couronnes, 59000 Lille, France",
           paymentAccepted: "Cash, Credit Card",
