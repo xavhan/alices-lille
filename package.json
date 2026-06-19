@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/third-parties": "^15.1.7",
-    "next": "15.1.5",
+    "@next/third-parties": "^15.5.19",
+    "next": "15.5.19",
     "open-props": "^1.7.12",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
