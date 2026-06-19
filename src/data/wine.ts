@@ -37,8 +37,7 @@ export const WINES = [
     price: 8.5,
   },
   {
-    label: "Champagne bouteille 75cl",
-    description: "Pinot meunier",
-    price: 60,
+    label: "Rosé",
+    price: 7,
   },
 ];

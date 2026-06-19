@@ -1,26 +1,20 @@
 import { AdditionalText, CenteredText, Header, Title } from "@/components";
-import { BIEREETE, BISE, HOUTLAND, LESAUVAGE, SPECIALE } from "@/data/beers";
+import { ANOSTEKE, BIEREETE, BISE, HOUTLAND, SPECIALE } from "@/data/beers";
 import {
-  AMARETTOSOUR,
-  AngelDraft,
-  ChristmasFrench75,
-  DirtyMartini,
+  AbricotFizz,
+  AlicesSpritz,
+  BasicSmashCucumber,
+  Bramble,
+  DirtyMargatini,
+  DoctorFunk,
+  ElDiablo,
   EspressoMartini,
-  GimletPoire,
-  HotMargarita,
-  Margarita,
+  GraniteDuJour,
+  HoneyDeuce,
+  LimoncelloSour,
   Mezcalita,
   Mocktail,
   Negroni,
-  SpicyTequilaBerry,
-  ChampsÉlysées,
-  NewCuban,
-  GoldMonkeyRush,
-  NakedAndFamous,
-  VieuxCarré,
-  InnaDiYard,
-  LitchiMartini,
-  Marseillan,
 } from "@/data/cocktails";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -46,7 +40,7 @@ export default function () {
         </Header>
 
         <ul className="flex flex-col gap-2">
-          {[BISE, HOUTLAND, LESAUVAGE, BIEREETE, SPECIALE].map((beer) => {
+          {[BISE, HOUTLAND, ANOSTEKE, BIEREETE, SPECIALE].map((beer) => {
             return (
               <li key={beer.label}>
                 <Product
@@ -113,25 +107,19 @@ export default function () {
         <div>
           <ul className="flex flex-col gap-2">
             {[
-              ChristmasFrench75,
-              AMARETTOSOUR,
-              NewCuban,
-              GimletPoire,
-              InnaDiYard,
+              AlicesSpritz,
+              Bramble,
+              LimoncelloSour,
+              HoneyDeuce,
+              BasicSmashCucumber,
               Negroni,
-              Marseillan,
-              LitchiMartini,
-              SpicyTequilaBerry,
+              DoctorFunk,
+              AbricotFizz,
+              ElDiablo,
               EspressoMartini,
-              ChampsÉlysées,
-              GoldMonkeyRush,
-              NakedAndFamous,
-              VieuxCarré,
+              DirtyMargatini,
               Mezcalita,
-              AngelDraft,
-              HotMargarita,
-              DirtyMartini,
-              Margarita,
+              GraniteDuJour,
               Mocktail,
             ].map((cocktail) => {
               return (
@@ -230,11 +218,11 @@ export default function () {
           🍽️🧀🌭🧀🍽️
           <br />
           <br />
-          Voir ardoise au bar
+          Voir miroir au bar
           <br />
-          tartinades, grilled cheese, fromage,
+          saucisson, tartinades,
           <br />
-          garlic bread, hot-dog, saucisson et autres
+          pain au levain d’Auguste et Ferdinand
           <br />
           <br />
           🌭🍽️🧀🍽️🌭

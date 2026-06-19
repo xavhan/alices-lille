@@ -1,6 +1,6 @@
 export const SPIRITS = [
   {
-    label: "Whisky Bulleit bourbon/rye",
+    label: "Whisky Bulleit rye",
     description: "Frontier Whiskey 🇺🇸",
     price: 8,
     abv: 45,
@@ -12,14 +12,8 @@ export const SPIRITS = [
     abv: 45,
   },
   {
-    label: "Scottish barley - the classic laddie",
-    description: "Port Charlotte 🏴",
-    price: 12,
-    abv: 50,
-  },
-  {
     label: "Calvados",
-    description: "Christian Drouin 🇫🇷",
+    description: "Coquerel VS 🇫🇷",
     price: 9,
     abv: 40,
   },
@@ -36,10 +30,10 @@ export const SPIRITS = [
     abv: 24,
   },
   {
-    label: "Houlle",
-    description: "Genièvre Flandre Artois 🇫🇷",
-    price: 11,
-    abv: 42,
+    label: "Golden Eight",
+    description: "Liqueur Poire & Cognac 🇫🇷",
+    price: 7,
+    abv: 25,
   },
   {
     label: "Fernet Branca",

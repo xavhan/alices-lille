@@ -32,7 +32,16 @@ export const COFFEE = [
     price: 5,
   },
   {
-    label: "CAFÉ Glacé",
+    label: "Café glacé",
+    price: 3.5,
+  },
+  {
+    label: "Café latte glacé",
+    description: "café + lait",
+    price: 4.5,
+  },
+  {
+    label: "Thé glacé",
     price: 4,
   },
   {
@@ -44,26 +53,7 @@ export const COFFEE = [
     price: 6.5,
   },
   {
-    label: "Grog",
-    description: "rhum + miel + gingembre + citron",
-    price: 6,
-  },
-  {
-    label: "HOT CC",
-    description: "cidre + calva + épices",
-    price: 7.5,
-  },
-  {
-    label: "IRISH COFFEE",
-    description: "whisky + café + chantilly maison",
-    price: 7.5,
-  },
-  {
     label: "Tisane",
-    price: 4,
-  },
-  {
-    label: "café glacé - café + lait",
     price: 4,
   },
   {

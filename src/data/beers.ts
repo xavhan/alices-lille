@@ -198,7 +198,7 @@ export const MONGYTRIPLE: Beer = {
 
 export const BIEREETE: Beer = {
   label: "Bière de l’hiver",
-  brewery: "On la change souvent (Triple, Zinnebir, Taras…)",
+  brewery: "Brasserie de la Senne",
   price: {
     25: 4.3,
     33: 6.4,
@@ -299,10 +299,11 @@ export const APPIE: Beer = {
   },
 };
 
-export const LESAUVAGE: Beer = {
-  label: "Cidre 5,5° • Fils de Pomme",
-  brewery: "Fils de Pomme",
-  abv: 5.5,
+export const ANOSTEKE: Beer = {
+  type_label: "Saison",
+  label: "Anosteke Saison",
+  brewery: "Brasserie du Pays Flamand",
+  abv: 6,
   price: {
     25: 4,
     33: 6,
